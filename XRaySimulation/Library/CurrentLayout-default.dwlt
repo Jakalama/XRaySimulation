@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: -1632
-    y: 50
-    width: 1624.6667
-    height: 1342.6667
+    x: -2560
+    y: 42.666668
+    width: 2560
+    height: 1357.3334
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 9}
-  m_MinSize: {x: 875, y: 443}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -40,14 +40,14 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 811
-    width: 350
-    height: 482
+    y: 820
+    width: 551
+    height: 488
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 25}
+  m_ActualView: {fileID: 26}
   m_Panes:
-  - {fileID: 25}
+  - {fileID: 26}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &3
@@ -67,14 +67,14 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 1275
+    x: 2009
     y: 0
-    width: 350
-    height: 1293
-  m_MinSize: {x: 277, y: 192}
-  m_MaxSize: {x: 4002, y: 8042}
+    width: 551
+    height: 1308
+  m_MinSize: {x: 276, y: 192}
+  m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 164
+  controlID: 186
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85,21 +85,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 254
-    height: 898
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 23}
+    width: 399
+    height: 958
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 23}
-  m_Selected: 0
+  - {fileID: 24}
+  - {fileID: 16}
+  m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -116,15 +117,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 931
+    x: 1560
     y: 0
-    width: 344
-    height: 898
+    width: 449
+    height: 958
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 23}
   m_Panes:
-  - {fileID: 22}
+  - {fileID: 23}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &6
@@ -147,12 +148,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1275
-    height: 898
-  m_MinSize: {x: 535, y: 271}
+    width: 2009
+    height: 958
+  m_MinSize: {x: 435, y: 271}
   m_MaxSize: {x: 18005, y: 10021}
   vertical: 0
-  controlID: 47
+  controlID: 103
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,12 +172,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1625
-    height: 1293
-  m_MinSize: {x: 812, y: 392}
-  m_MaxSize: {x: 22007, y: 14042}
+    width: 2560
+    height: 1308
+  m_MinSize: {x: 711, y: 392}
+  m_MaxSize: {x: 22006, y: 14042}
   vertical: 1
-  controlID: 162
+  controlID: 100
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,21 +188,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 350
-    height: 811
-  m_MinSize: {x: 275, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
+    width: 551
+    height: 820
+  m_MinSize: {x: 276, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 17}
+  - {fileID: 20}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &9
@@ -224,8 +225,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1625
-    height: 1343
+    width: 2560
+    height: 1358
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &10
@@ -245,7 +246,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1625
+    width: 2560
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -266,8 +267,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1323
-    width: 1625
+    y: 1338
+    width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -290,12 +291,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1625
-    height: 1293
-  m_MinSize: {x: 812, y: 392}
-  m_MaxSize: {x: 22007, y: 14042}
+    width: 2560
+    height: 1308
+  m_MinSize: {x: 711, y: 392}
+  m_MaxSize: {x: 22006, y: 14042}
   vertical: 0
-  controlID: 163
+  controlID: 101
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -315,12 +316,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1275
-    height: 1293
-  m_MinSize: {x: 535, y: 392}
+    width: 2009
+    height: 1308
+  m_MinSize: {x: 435, y: 392}
   m_MaxSize: {x: 18005, y: 14042}
   vertical: 1
-  controlID: 46
+  controlID: 102
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -331,23 +332,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 254
+    x: 399
     y: 0
-    width: 677
-    height: 898
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
+    width: 1161
+    height: 958
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 20}
   - {fileID: 21}
-  - {fileID: 18}
-  - {fileID: 16}
+  - {fileID: 22}
+  - {fileID: 19}
+  - {fileID: 17}
   m_Selected: 2
   m_LastSelected: 3
 --- !u!114 &15
@@ -366,17 +367,921 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 898
-    width: 1275
-    height: 395
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 24}
+    y: 958
+    width: 2009
+    height: 350
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 25}
   m_Panes:
-  - {fileID: 24}
+  - {fileID: 25}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: -2560
+    y: 72.66667
+    width: 398
+    height: 937
+  m_ViewDataDictionary: {fileID: 0}
+  m_TestTypeToolbarIndex: 1
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 0}
+    newResultList: []
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories: []
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 16}
+    newResultList:
+    - id: 1000
+      uniqueId: '[XRaySimulation][suite]'
+      name: XRaySimulation
+      fullName: XRaySimulation
+      resultStatus: 2
+      duration: 0.2310674
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1016
+      uniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+      name: Assembly-CSharp-Editor.dll
+      fullName: "D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll"
+      resultStatus: 2
+      duration: 0.1849685
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[XRaySimulation][suite]'
+    - id: 1001
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ColorCalculatorTest][suite]
+      name: ColorCalculatorTest
+      fullName: ColorCalculatorTest
+      resultStatus: 2
+      duration: 0.0164704
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1042
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1003
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor][suite]
+      name: ReturnsExpectedColor
+      fullName: ColorCalculatorTest.ReturnsExpectedColor
+      resultStatus: 2
+      duration: 0.0085497
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ColorCalculatorTest][suite]
+    - id: 1002
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/ReturnsExpectedColor/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor]
+      name: ReturnsExpectedColor
+      fullName: ColorCalculatorTest.ReturnsExpectedColor
+      resultStatus: 2
+      duration: 0
+      messages: 'System.Reflection.TargetParameterCountException : Incorrect number
+        of parameters specified for TestCase'
+      output: 
+      stacktrace: 
+      notRunnable: 1
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor][suite]
+    - id: 1001
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMeshTest][suite]
+      name: DocMeshTest
+      fullName: DocMeshTest
+      resultStatus: 1
+      duration: 0.0885208
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1018
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1022
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshHasCorrectNumOfRelevantVertices_Test][suite]
+      name: DocMeshHasCorrectNumOfRelevantVertices_Test
+      fullName: DocMeshTest.DocMeshHasCorrectNumOfRelevantVertices_Test
+      resultStatus: 1
+      duration: 0.0101504
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMeshTest][suite]
+    - id: 1020
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshHasCorrectNumOfRelevantVertices_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshHasCorrectNumOfRelevantVertices_Test("Prefabs/Doc",4)]
+      name: DocMeshHasCorrectNumOfRelevantVertices_Test("Prefabs/Doc",4)
+      fullName: DocMeshTest.DocMeshHasCorrectNumOfRelevantVertices_Test("Prefabs/Doc",4)
+      resultStatus: 1
+      duration: 0.0018682
+      messages: 
+      output: '4
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshHasCorrectNumOfRelevantVertices_Test][suite]
+    - id: 1021
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshHasCorrectNumOfRelevantVertices_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshHasCorrectNumOfRelevantVertices_Test("Prefabs/Mock_complex",16)]
+      name: DocMeshHasCorrectNumOfRelevantVertices_Test("Prefabs/Mock_complex",16)
+      fullName: DocMeshTest.DocMeshHasCorrectNumOfRelevantVertices_Test("Prefabs/Mock_complex",16)
+      resultStatus: 1
+      duration: 0.0023435
+      messages: 
+      output: '16
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshHasCorrectNumOfRelevantVertices_Test][suite]
+    - id: 1004
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshInstanceExists_Test][suite]
+      name: DocMeshInstanceExists_Test
+      fullName: DocMeshTest.DocMeshInstanceExists_Test
+      resultStatus: 1
+      duration: 0.0102646
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMeshTest][suite]
+    - id: 1002
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshInstanceExists_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshInstanceExists_Test("Prefabs/Doc")]
+      name: DocMeshInstanceExists_Test("Prefabs/Doc")
+      fullName: DocMeshTest.DocMeshInstanceExists_Test("Prefabs/Doc")
+      resultStatus: 1
+      duration: 0.0003229
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshInstanceExists_Test][suite]
+    - id: 1003
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshInstanceExists_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshInstanceExists_Test("Prefabs/Mock_complex")]
+      name: DocMeshInstanceExists_Test("Prefabs/Mock_complex")
+      fullName: DocMeshTest.DocMeshInstanceExists_Test("Prefabs/Mock_complex")
+      resultStatus: 1
+      duration: 0.0002176
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshInstanceExists_Test][suite]
+    - id: 1010
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshRelevantVerticesExists_Test][suite]
+      name: DocMeshRelevantVerticesExists_Test
+      fullName: DocMeshTest.DocMeshRelevantVerticesExists_Test
+      resultStatus: 1
+      duration: 0.0095036
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMeshTest][suite]
+    - id: 1008
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshRelevantVerticesExists_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshRelevantVerticesExists_Test("Prefabs/Doc")]
+      name: DocMeshRelevantVerticesExists_Test("Prefabs/Doc")
+      fullName: DocMeshTest.DocMeshRelevantVerticesExists_Test("Prefabs/Doc")
+      resultStatus: 1
+      duration: 0.0003111
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshRelevantVerticesExists_Test][suite]
+    - id: 1009
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshRelevantVerticesExists_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshRelevantVerticesExists_Test("Prefabs/Mock_complex")]
+      name: DocMeshRelevantVerticesExists_Test("Prefabs/Mock_complex")
+      fullName: DocMeshTest.DocMeshRelevantVerticesExists_Test("Prefabs/Mock_complex")
+      resultStatus: 1
+      duration: 0.0002018
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshRelevantVerticesExists_Test][suite]
+    - id: 1019
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshRelevantVerticesIsNotNull_Test][suite]
+      name: DocMeshRelevantVerticesIsNotNull_Test
+      fullName: DocMeshTest.DocMeshRelevantVerticesIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0093197
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMeshTest][suite]
+    - id: 1017
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshRelevantVerticesIsNotNull_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshRelevantVerticesIsNotNull_Test("Prefabs/Doc")]
+      name: DocMeshRelevantVerticesIsNotNull_Test("Prefabs/Doc")
+      fullName: DocMeshTest.DocMeshRelevantVerticesIsNotNull_Test("Prefabs/Doc")
+      resultStatus: 1
+      duration: 0.0003449
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1019
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshRelevantVerticesIsNotNull_Test][suite]
+    - id: 1018
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshRelevantVerticesIsNotNull_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshRelevantVerticesIsNotNull_Test("Prefabs/Mock_complex")]
+      name: DocMeshRelevantVerticesIsNotNull_Test("Prefabs/Mock_complex")
+      fullName: DocMeshTest.DocMeshRelevantVerticesIsNotNull_Test("Prefabs/Mock_complex")
+      resultStatus: 1
+      duration: 0.000217
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1019
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshRelevantVerticesIsNotNull_Test][suite]
+    - id: 1007
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshVerticesExists_Test][suite]
+      name: DocMeshVerticesExists_Test
+      fullName: DocMeshTest.DocMeshVerticesExists_Test
+      resultStatus: 1
+      duration: 0.0094439
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMeshTest][suite]
+    - id: 1005
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshVerticesExists_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshVerticesExists_Test("Prefabs/Doc")]
+      name: DocMeshVerticesExists_Test("Prefabs/Doc")
+      fullName: DocMeshTest.DocMeshVerticesExists_Test("Prefabs/Doc")
+      resultStatus: 1
+      duration: 0.0003228
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshVerticesExists_Test][suite]
+    - id: 1006
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshVerticesExists_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshVerticesExists_Test("Prefabs/Mock_complex")]
+      name: DocMeshVerticesExists_Test("Prefabs/Mock_complex")
+      fullName: DocMeshTest.DocMeshVerticesExists_Test("Prefabs/Mock_complex")
+      resultStatus: 1
+      duration: 0.0002069
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshVerticesExists_Test][suite]
+    - id: 1013
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshVerticesIsNotNull_Test][suite]
+      name: DocMeshVerticesIsNotNull_Test
+      fullName: DocMeshTest.DocMeshVerticesIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0093868
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMeshTest][suite]
+    - id: 1011
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshVerticesIsNotNull_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshVerticesIsNotNull_Test("Prefabs/Doc")]
+      name: DocMeshVerticesIsNotNull_Test("Prefabs/Doc")
+      fullName: DocMeshTest.DocMeshVerticesIsNotNull_Test("Prefabs/Doc")
+      resultStatus: 1
+      duration: 0.0003143
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshVerticesIsNotNull_Test][suite]
+    - id: 1012
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/DocMeshVerticesIsNotNull_Test/[Assembly-CSharp-Editor][DocMeshTest.DocMeshVerticesIsNotNull_Test("Prefabs/Mock_complex")]
+      name: DocMeshVerticesIsNotNull_Test("Prefabs/Mock_complex")
+      fullName: DocMeshTest.DocMeshVerticesIsNotNull_Test("Prefabs/Mock_complex")
+      resultStatus: 1
+      duration: 0.0002101
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.DocMeshVerticesIsNotNull_Test][suite]
+    - id: 1016
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.SimpleDocMeshHasCorrectNumOfVertices_Test][suite]
+      name: SimpleDocMeshHasCorrectNumOfVertices_Test
+      fullName: DocMeshTest.SimpleDocMeshHasCorrectNumOfVertices_Test
+      resultStatus: 1
+      duration: 0.0103429
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMeshTest][suite]
+    - id: 1014
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/SimpleDocMeshHasCorrectNumOfVertices_Test/[Assembly-CSharp-Editor][DocMeshTest.SimpleDocMeshHasCorrectNumOfVertices_Test("Prefabs/Doc",24)]
+      name: SimpleDocMeshHasCorrectNumOfVertices_Test("Prefabs/Doc",24)
+      fullName: DocMeshTest.SimpleDocMeshHasCorrectNumOfVertices_Test("Prefabs/Doc",24)
+      resultStatus: 1
+      duration: 0.0003195
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1016
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.SimpleDocMeshHasCorrectNumOfVertices_Test][suite]
+    - id: 1015
+      uniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/SimpleDocMeshHasCorrectNumOfVertices_Test/[Assembly-CSharp-Editor][DocMeshTest.SimpleDocMeshHasCorrectNumOfVertices_Test("Prefabs/Mock_complex",54)]
+      name: SimpleDocMeshHasCorrectNumOfVertices_Test("Prefabs/Mock_complex",54)
+      fullName: DocMeshTest.SimpleDocMeshHasCorrectNumOfVertices_Test("Prefabs/Mock_complex",54)
+      resultStatus: 1
+      duration: 0.0002827
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1016
+      parentUniqueId: Assembly-CSharp-Editor.dll/DocMeshTest/[Assembly-CSharp-Editor][DocMeshTest.SimpleDocMeshHasCorrectNumOfVertices_Test][suite]
+    - id: 1023
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoseCalculatorTest][suite]
+      name: DoseCalculatorTest
+      fullName: DoseCalculatorTest
+      resultStatus: 1
+      duration: 0.0239172
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1032
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1031
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+      name: CalculateDoseTest
+      fullName: DoseCalculatorTest.CalculateDoseTest
+      resultStatus: 1
+      duration: 0.0109506
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1023
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoseCalculatorTest][suite]
+    - id: 1024
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(1,0.796f)]
+      name: CalculateDoseTest(1,0.796f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(1,0.796f)
+      resultStatus: 1
+      duration: 0.0002496
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+    - id: 1025
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(2.0f,0.199f)]
+      name: CalculateDoseTest(2.0f,0.199f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(2.0f,0.199f)
+      resultStatus: 1
+      duration: 0.0001316
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+    - id: 1026
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(2.1f,0.18f)]
+      name: CalculateDoseTest(2.1f,0.18f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(2.1f,0.18f)
+      resultStatus: 1
+      duration: 0.0001193
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+    - id: 1027
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(0.0f,float.PositiveInfinity)]
+      name: CalculateDoseTest(0.0f,float.PositiveInfinity)
+      fullName: DoseCalculatorTest.CalculateDoseTest(0.0f,float.PositiveInfinity)
+      resultStatus: 1
+      duration: 0.0001129
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+    - id: 1028
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(150.0f,0.0f)]
+      name: CalculateDoseTest(150.0f,0.0f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(150.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0001141
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+    - id: 1029
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(float.NaN,0.0f)]
+      name: CalculateDoseTest(float.NaN,0.0f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(float.NaN,0.0f)
+      resultStatus: 1
+      duration: 0.0001107
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1031
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+    - id: 1030
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(-1.0f,0.796f)]
+      name: CalculateDoseTest(-1.0f,0.796f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(-1.0f,0.796f)
+      resultStatus: 1
+      duration: 0.0001138
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+    - id: 1031
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(-150.0f,0.0f)]
+      name: CalculateDoseTest(-150.0f,0.0f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(-150.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0001121
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1032
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+    - id: 1036
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSBColorTest][suite]
+      name: HSBColorTest
+      fullName: HSBColorTest
+      resultStatus: 1
+      duration: 0.010175
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1046
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1039
+      uniqueId: Assembly-CSharp-Editor.dll/HSBColorTest/[Assembly-CSharp-Editor][HSBColorTest.HSBConstructorColor]
+      name: HSBConstructorColor
+      fullName: HSBColorTest.HSBConstructorColor
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1036
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSBColorTest][suite]
+    - id: 1038
+      uniqueId: Assembly-CSharp-Editor.dll/HSBColorTest/[Assembly-CSharp-Editor][HSBColorTest.HSBConstructurHSB]
+      name: HSBConstructurHSB
+      fullName: HSBColorTest.HSBConstructurHSB
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1036
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSBColorTest][suite]
+    - id: 1037
+      uniqueId: Assembly-CSharp-Editor.dll/HSBColorTest/[Assembly-CSharp-Editor][HSBColorTest.HSBConstructurHSBA]
+      name: HSBConstructurHSBA
+      fullName: HSBColorTest.HSBConstructurHSBA
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1036
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSBColorTest][suite]
+    - id: 1012
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
+      name: RayTracerTest
+      fullName: RayTracerTest
+      resultStatus: 1
+      duration: 0.0267627
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1016
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1013
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHits_Test]
+      name: CreateRayHits_Test
+      fullName: RayTracerTest.CreateRayHits_Test
+      resultStatus: 1
+      duration: 0.0002226
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
+    - id: 1014
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsDoc_Test]
+      name: CreateRayHitsDoc_Test
+      fullName: RayTracerTest.CreateRayHitsDoc_Test
+      resultStatus: 1
+      duration: 0.0005232
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
+    - id: 1015
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsOther_Test]
+      name: CreateRayHitsOther_Test
+      fullName: RayTracerTest.CreateRayHitsOther_Test
+      resultStatus: 1
+      duration: 0.0002043
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
+    - id: 1029
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRaySourceToDoc_Test][suite]
+      name: CreateRaySourceToDoc_Test
+      fullName: RayTracerTest.CreateRaySourceToDoc_Test
+      resultStatus: 1
+      duration: 0.0126722
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1023
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
+    - id: 1027
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/CreateRaySourceToDoc_Test/[Assembly-CSharp-Editor][RayTracerTest.CreateRaySourceToDoc_Test("Mock_simple")]
+      name: CreateRaySourceToDoc_Test("Mock_simple")
+      fullName: RayTracerTest.CreateRaySourceToDoc_Test("Mock_simple")
+      resultStatus: 1
+      duration: 0.0003087
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRaySourceToDoc_Test][suite]
+    - id: 1028
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/CreateRaySourceToDoc_Test/[Assembly-CSharp-Editor][RayTracerTest.CreateRaySourceToDoc_Test("Mock_complex")]
+      name: CreateRaySourceToDoc_Test("Mock_complex")
+      fullName: RayTracerTest.CreateRaySourceToDoc_Test("Mock_complex")
+      resultStatus: 1
+      duration: 0.0002216
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRaySourceToDoc_Test][suite]
+    m_ResultText: 'ReturnsExpectedColor (0,009s)
+
+      ---
+
+      One or more child
+      tests had errors'
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 14b4636e
+      m_LastClickedID: 1852027924
+      m_ExpandedIDs: 734991c75b0205e234d6281b24e32e204755f323d055cd2b036213361a4e535982eb2679ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -397,10 +1302,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1378
-    y: 80
-    width: 675
-    height: 879
+    x: -2160.6667
+    y: 72.66667
+    width: 1159
+    height: 937
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewsNames: []
   m_SerializedViewsValues: []
@@ -408,10 +1313,10 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 640, y: 480}
+  m_TargetSize: {x: 1738.5, y: 978}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
-  m_RenderIMGUI: 0
+  m_RenderIMGUI: 1
   m_MaximizeOnPlay: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -422,10 +1327,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -337.5
-    m_HBaseRangeMax: 337.5
-    m_VBaseRangeMin: -190
-    m_VBaseRangeMax: 190
+    m_HBaseRangeMin: -579.5
+    m_HBaseRangeMax: 579.5
+    m_VBaseRangeMin: -326
+    m_VBaseRangeMax: 326
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -434,7 +1339,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -443,29 +1348,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 675
-      height: 858
+      width: 1159
+      height: 916
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 337.5, y: 429}
+    m_Translation: {x: 579.5, y: 458}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -337.5
-      y: -429
-      width: 675
-      height: 858
+      x: -579.5
+      y: -458
+      width: 1159
+      height: 916
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1012.5, y: 1318.5}
+  m_LastWindowPixelSize: {x: 1738.5, y: 1405.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -486,12 +1391,12 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -448
-    y: 80
-    width: 446
-    height: 795
+    x: 2009.3334
+    y: 72.66667
+    width: 550
+    height: 799
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -512,10 +1417,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1378
-    y: 80
-    width: 675
-    height: 877
+    x: -2160.6667
+    y: 72.66667
+    width: 1159
+    height: 937
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 2a4099751352f0447a31ce7ceda00ada
@@ -527,9 +1432,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 0.0032862811, y: -0.005348682, z: -0.0043192273}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 0.0032862811, y: -0.005348682, z: -0.0043192273}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -575,13 +1480,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: -0.37505746, y: 0.061255734, z: -0.02474917, w: -0.924726}
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: -0.37502912, y: 0.061251104, z: -0.024747299, w: -0.92465615}
   m_Size:
-    m_Target: 10
+    m_Target: 0.35629827
     speed: 2
-    m_Value: 10
+    m_Value: 0.35629827
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -606,7 +1511,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -627,10 +1532,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -356.6665
-    y: 80
-    width: 348
-    height: 790
+    x: -550.6666
+    y: 72.66667
+    width: 550
+    height: 799
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -644,7 +1549,7 @@ MonoBehaviour:
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
---- !u!114 &20
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -708,7 +1613,7 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &21
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -734,7 +1639,7 @@ MonoBehaviour:
     width: 820
     height: 1001
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &22
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -755,10 +1660,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -700.6666
-    y: 80
-    width: 342
-    height: 877
+    x: -1000
+    y: 72.66667
+    width: 447
+    height: 937
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -773,20 +1678,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Editor/Tests
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Editor/Tests
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9c3d0000
-    m_LastClickedID: 15772
-    m_ExpandedIDs: 00000000263c000000ca9a3b
+    m_SelectedIDs: b0330000
+    m_LastClickedID: 13232
+    m_ExpandedIDs: 000000009e330000a0330000a2330000a433000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -814,7 +1719,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000009e330000a0330000a2330000a4330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -842,21 +1747,21 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 48220000d0210000aa22000012230000ce21000064c9ffffb6220000d2210000d6210000868efdfff0040000d4210000dc210000a42b0000622200000a2200002828000012220000305000008422000016220000c032faff5c5bf7ffea2a00001e2c000020ca000016300000262d00004e630000d6620000d262000066620000342d0300bc350000fa3d0000ae41000000000000244500006e4100008a3200006437000078370000
+    m_ExpandedInstanceIDs: 48220000d0210000aa22000012230000ce21000064c9ffffb6220000d2210000d6210000868efdfff0040000d4210000dc210000a42b0000622200000a2200002828000012220000305000008422000016220000c032faff5c5bf7ffea2a00001e2c000020ca000016300000262d00004e630000d6620000d262000066620000342d0300bc350000fa3d0000ae410000244500006e4100008a320000643700007837000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Test
-      m_OriginalName: Test
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 15788
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -869,8 +1774,8 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 162
---- !u!114 &23
+  m_DirectoriesAreaWidth: 110
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -891,17 +1796,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1632
-    y: 80
-    width: 253
-    height: 877
+    x: -2560
+    y: 72.66667
+    width: 398
+    height: 937
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 44320000
       m_LastClickedID: 0
-      m_ExpandedIDs: 3afbffff
+      m_ExpandedIDs: 42f1ffffbcf2ffff96f4ffff1af5ffff94f6ffff0ef8ffffecf8ffff5efaffff72fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -925,7 +1830,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 66beb951ecb1cfa409b5b5ca8bd76afa
---- !u!114 &24
+--- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -946,12 +1851,12 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1632
-    y: 978
-    width: 1274
-    height: 374
+    x: -2560
+    y: 1030.6667
+    width: 2008
+    height: 329
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &25
+--- !u!114 &26
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -972,10 +1877,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -356.6665
-    y: 891.3334
-    width: 348
-    height: 461
+    x: -550.6666
+    y: 892.6667
+    width: 550
+    height: 467
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []

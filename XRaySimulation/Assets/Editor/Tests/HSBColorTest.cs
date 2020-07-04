@@ -47,9 +47,14 @@ public class HSBColorTest
 
         HSBColor color = new HSBColor(col);
 
+        float h = 1f;
+        float s = 1f;
+        float b_ = 1f;
+        float a = 1f;
+
         Assert.AreEqual(h, color.h);
         Assert.AreEqual(s, color.s);
-        Assert.AreEqual(b, color.b);
+        Assert.AreEqual(b_, color.b);
         Assert.AreEqual(a, color.a);
     }
 }
