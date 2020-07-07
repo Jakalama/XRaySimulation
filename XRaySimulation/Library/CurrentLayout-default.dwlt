@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 820
     width: 551
     height: 488
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 26}
   m_Panes:
   - {fileID: 26}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 186
+  controlID: 65
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_MinSize: {x: 435, y: 271}
   m_MaxSize: {x: 18005, y: 10021}
   vertical: 0
-  controlID: 103
+  controlID: 147
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_MinSize: {x: 711, y: 392}
   m_MaxSize: {x: 22006, y: 14042}
   vertical: 1
-  controlID: 100
+  controlID: 144
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_MinSize: {x: 711, y: 392}
   m_MaxSize: {x: 22006, y: 14042}
   vertical: 0
-  controlID: 101
+  controlID: 145
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -321,7 +321,7 @@ MonoBehaviour:
   m_MinSize: {x: 435, y: 392}
   m_MaxSize: {x: 18005, y: 14042}
   vertical: 1
-  controlID: 102
+  controlID: 146
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -404,15 +404,31 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 0}
-    newResultList: []
+    m_Window: {fileID: 16}
+    newResultList:
+    - id: 1250
+      uniqueId: '[XRaySimulation][suite]'
+      name: XRaySimulation
+      fullName: XRaySimulation
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
     m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 
+      m_ExpandedIDs: 5b0205e2ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -436,7 +452,8 @@ MonoBehaviour:
       NotRunHidden: 0
       m_SearchString: 
       selectedCategoryMask: 0
-      availableCategories: []
+      availableCategories:
+      - Uncategorized
   m_EditModeTestListGUI:
     m_Window: {fileID: 16}
     newResultList:
@@ -445,7 +462,7 @@ MonoBehaviour:
       name: XRaySimulation
       fullName: XRaySimulation
       resultStatus: 2
-      duration: 0.2310674
+      duration: 0.296604
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -461,7 +478,7 @@ MonoBehaviour:
       name: Assembly-CSharp-Editor.dll
       fullName: "D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll"
       resultStatus: 2
-      duration: 0.1849685
+      duration: 0.237999
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -477,7 +494,7 @@ MonoBehaviour:
       name: ColorCalculatorTest
       fullName: ColorCalculatorTest
       resultStatus: 2
-      duration: 0.0164704
+      duration: 0.0502283
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -493,7 +510,7 @@ MonoBehaviour:
       name: ReturnsExpectedColor
       fullName: ColorCalculatorTest.ReturnsExpectedColor
       resultStatus: 2
-      duration: 0.0085497
+      duration: 0.0419036
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -505,29 +522,70 @@ MonoBehaviour:
       parentId: 1001
       parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ColorCalculatorTest][suite]
     - id: 1002
-      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/ReturnsExpectedColor/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor]
-      name: ReturnsExpectedColor
-      fullName: ColorCalculatorTest.ReturnsExpectedColor
-      resultStatus: 2
-      duration: 0
-      messages: 'System.Reflection.TargetParameterCountException : Incorrect number
-        of parameters specified for TestCase'
-      output: 
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/ReturnsExpectedColor/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor(0.0f,0.0f,1.0f,0.0f)]
+      name: ReturnsExpectedColor(0.0f,0.0f,1.0f,0.0f)
+      fullName: ColorCalculatorTest.ReturnsExpectedColor(0.0f,0.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0169477
+      messages: 
+      output: 'stepSize: 0,5555556, newH0,3333333
+
+'
       stacktrace: 
-      notRunnable: 1
+      notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1003
+      parentId: 1005
+      parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor][suite]
+    - id: 1003
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/ReturnsExpectedColor/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor(10.0f,0.0f,1.0f,0.1686275f)]
+      name: ReturnsExpectedColor(10.0f,0.0f,1.0f,0.1686275f)
+      fullName: ColorCalculatorTest.ReturnsExpectedColor(10.0f,0.0f,1.0f,0.1686275f)
+      resultStatus: 1
+      duration: 0.0011714
+      messages: 
+      output: 'stepSize: 0,5555556, newH0,3611111
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor][suite]
+    - id: 1004
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/ReturnsExpectedColor/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor(200.0f,1.0f,0.0f,0.0f)]
+      name: ReturnsExpectedColor(200.0f,1.0f,0.0f,0.0f)
+      fullName: ColorCalculatorTest.ReturnsExpectedColor(200.0f,1.0f,0.0f,0.0f)
+      resultStatus: 2
+      duration: 0.0081419
+      messages: "  Expected: RGBA(255, 0, 0, 255)\r\n  But was:  RGBA(255, 0, 170,
+        255)\r\n"
+      output: 'stepSize: 0,5555556, newH0,888889
+
+'
+      stacktrace: "at ColorCalculatorTest.ReturnsExpectedColor (System.Single dose,
+        System.Single r, System.Single g, System.Single b) [0x00017] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\ColorCalculatorTest.cs:17\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
       parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor][suite]
     - id: 1001
       uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMeshTest][suite]
       name: DocMeshTest
       fullName: DocMeshTest
       resultStatus: 1
-      duration: 0.0885208
+      duration: 0.1152947
       messages: 
       output: 
       stacktrace: 
@@ -543,7 +601,7 @@ MonoBehaviour:
       name: DocMeshHasCorrectNumOfRelevantVertices_Test
       fullName: DocMeshTest.DocMeshHasCorrectNumOfRelevantVertices_Test
       resultStatus: 1
-      duration: 0.0101504
+      duration: 0.0219174
       messages: 
       output: 
       stacktrace: 
@@ -559,11 +617,9 @@ MonoBehaviour:
       name: DocMeshHasCorrectNumOfRelevantVertices_Test("Prefabs/Doc",4)
       fullName: DocMeshTest.DocMeshHasCorrectNumOfRelevantVertices_Test("Prefabs/Doc",4)
       resultStatus: 1
-      duration: 0.0018682
+      duration: 0.0133991
       messages: 
-      output: '4
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -578,11 +634,9 @@ MonoBehaviour:
       name: DocMeshHasCorrectNumOfRelevantVertices_Test("Prefabs/Mock_complex",16)
       fullName: DocMeshTest.DocMeshHasCorrectNumOfRelevantVertices_Test("Prefabs/Mock_complex",16)
       resultStatus: 1
-      duration: 0.0023435
+      duration: 0.0010487
       messages: 
-      output: '16
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -597,7 +651,7 @@ MonoBehaviour:
       name: DocMeshInstanceExists_Test
       fullName: DocMeshTest.DocMeshInstanceExists_Test
       resultStatus: 1
-      duration: 0.0102646
+      duration: 0.0135317
       messages: 
       output: 
       stacktrace: 
@@ -613,7 +667,7 @@ MonoBehaviour:
       name: DocMeshInstanceExists_Test("Prefabs/Doc")
       fullName: DocMeshTest.DocMeshInstanceExists_Test("Prefabs/Doc")
       resultStatus: 1
-      duration: 0.0003229
+      duration: 0.0022593
       messages: 
       output: 
       stacktrace: 
@@ -630,7 +684,7 @@ MonoBehaviour:
       name: DocMeshInstanceExists_Test("Prefabs/Mock_complex")
       fullName: DocMeshTest.DocMeshInstanceExists_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.0002176
+      duration: 0.0002332
       messages: 
       output: 
       stacktrace: 
@@ -647,7 +701,7 @@ MonoBehaviour:
       name: DocMeshRelevantVerticesExists_Test
       fullName: DocMeshTest.DocMeshRelevantVerticesExists_Test
       resultStatus: 1
-      duration: 0.0095036
+      duration: 0.0094344
       messages: 
       output: 
       stacktrace: 
@@ -663,7 +717,7 @@ MonoBehaviour:
       name: DocMeshRelevantVerticesExists_Test("Prefabs/Doc")
       fullName: DocMeshTest.DocMeshRelevantVerticesExists_Test("Prefabs/Doc")
       resultStatus: 1
-      duration: 0.0003111
+      duration: 0.0004411
       messages: 
       output: 
       stacktrace: 
@@ -680,7 +734,7 @@ MonoBehaviour:
       name: DocMeshRelevantVerticesExists_Test("Prefabs/Mock_complex")
       fullName: DocMeshTest.DocMeshRelevantVerticesExists_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.0002018
+      duration: 0.0002087
       messages: 
       output: 
       stacktrace: 
@@ -697,7 +751,7 @@ MonoBehaviour:
       name: DocMeshRelevantVerticesIsNotNull_Test
       fullName: DocMeshTest.DocMeshRelevantVerticesIsNotNull_Test
       resultStatus: 1
-      duration: 0.0093197
+      duration: 0.0128825
       messages: 
       output: 
       stacktrace: 
@@ -713,7 +767,7 @@ MonoBehaviour:
       name: DocMeshRelevantVerticesIsNotNull_Test("Prefabs/Doc")
       fullName: DocMeshTest.DocMeshRelevantVerticesIsNotNull_Test("Prefabs/Doc")
       resultStatus: 1
-      duration: 0.0003449
+      duration: 0.0005406
       messages: 
       output: 
       stacktrace: 
@@ -730,7 +784,7 @@ MonoBehaviour:
       name: DocMeshRelevantVerticesIsNotNull_Test("Prefabs/Mock_complex")
       fullName: DocMeshTest.DocMeshRelevantVerticesIsNotNull_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.000217
+      duration: 0.0002434
       messages: 
       output: 
       stacktrace: 
@@ -747,7 +801,7 @@ MonoBehaviour:
       name: DocMeshVerticesExists_Test
       fullName: DocMeshTest.DocMeshVerticesExists_Test
       resultStatus: 1
-      duration: 0.0094439
+      duration: 0.0098353
       messages: 
       output: 
       stacktrace: 
@@ -763,7 +817,7 @@ MonoBehaviour:
       name: DocMeshVerticesExists_Test("Prefabs/Doc")
       fullName: DocMeshTest.DocMeshVerticesExists_Test("Prefabs/Doc")
       resultStatus: 1
-      duration: 0.0003228
+      duration: 0.0004335
       messages: 
       output: 
       stacktrace: 
@@ -780,7 +834,7 @@ MonoBehaviour:
       name: DocMeshVerticesExists_Test("Prefabs/Mock_complex")
       fullName: DocMeshTest.DocMeshVerticesExists_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.0002069
+      duration: 0.0002163
       messages: 
       output: 
       stacktrace: 
@@ -797,7 +851,7 @@ MonoBehaviour:
       name: DocMeshVerticesIsNotNull_Test
       fullName: DocMeshTest.DocMeshVerticesIsNotNull_Test
       resultStatus: 1
-      duration: 0.0093868
+      duration: 0.0094185
       messages: 
       output: 
       stacktrace: 
@@ -813,7 +867,7 @@ MonoBehaviour:
       name: DocMeshVerticesIsNotNull_Test("Prefabs/Doc")
       fullName: DocMeshTest.DocMeshVerticesIsNotNull_Test("Prefabs/Doc")
       resultStatus: 1
-      duration: 0.0003143
+      duration: 0.0004356
       messages: 
       output: 
       stacktrace: 
@@ -830,7 +884,7 @@ MonoBehaviour:
       name: DocMeshVerticesIsNotNull_Test("Prefabs/Mock_complex")
       fullName: DocMeshTest.DocMeshVerticesIsNotNull_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.0002101
+      duration: 0.000219
       messages: 
       output: 
       stacktrace: 
@@ -847,7 +901,7 @@ MonoBehaviour:
       name: SimpleDocMeshHasCorrectNumOfVertices_Test
       fullName: DocMeshTest.SimpleDocMeshHasCorrectNumOfVertices_Test
       resultStatus: 1
-      duration: 0.0103429
+      duration: 0.0100859
       messages: 
       output: 
       stacktrace: 
@@ -863,7 +917,7 @@ MonoBehaviour:
       name: SimpleDocMeshHasCorrectNumOfVertices_Test("Prefabs/Doc",24)
       fullName: DocMeshTest.SimpleDocMeshHasCorrectNumOfVertices_Test("Prefabs/Doc",24)
       resultStatus: 1
-      duration: 0.0003195
+      duration: 0.0004751
       messages: 
       output: 
       stacktrace: 
@@ -880,7 +934,7 @@ MonoBehaviour:
       name: SimpleDocMeshHasCorrectNumOfVertices_Test("Prefabs/Mock_complex",54)
       fullName: DocMeshTest.SimpleDocMeshHasCorrectNumOfVertices_Test("Prefabs/Mock_complex",54)
       resultStatus: 1
-      duration: 0.0002827
+      duration: 0.0002177
       messages: 
       output: 
       stacktrace: 
@@ -897,7 +951,7 @@ MonoBehaviour:
       name: DoseCalculatorTest
       fullName: DoseCalculatorTest
       resultStatus: 1
-      duration: 0.0239172
+      duration: 0.0233904
       messages: 
       output: 
       stacktrace: 
@@ -913,7 +967,7 @@ MonoBehaviour:
       name: CalculateDoseTest
       fullName: DoseCalculatorTest.CalculateDoseTest
       resultStatus: 1
-      duration: 0.0109506
+      duration: 0.0120475
       messages: 
       output: 
       stacktrace: 
@@ -924,12 +978,12 @@ MonoBehaviour:
       categories: []
       parentId: 1023
       parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoseCalculatorTest][suite]
-    - id: 1024
-      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(1,0.796f)]
-      name: CalculateDoseTest(1,0.796f)
-      fullName: DoseCalculatorTest.CalculateDoseTest(1,0.796f)
+    - id: 1027
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(1,152.98f)]
+      name: CalculateDoseTest(1,152.98f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(1,152.98f)
       resultStatus: 1
-      duration: 0.0002496
+      duration: 0.0012992
       messages: 
       output: 
       stacktrace: 
@@ -939,14 +993,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1032
+      parentId: 1035
       parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
-    - id: 1025
-      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(2.0f,0.199f)]
-      name: CalculateDoseTest(2.0f,0.199f)
-      fullName: DoseCalculatorTest.CalculateDoseTest(2.0f,0.199f)
+    - id: 1028
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(2.0f,38.245f)]
+      name: CalculateDoseTest(2.0f,38.245f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(2.0f,38.245f)
       resultStatus: 1
-      duration: 0.0001316
+      duration: 0.0001348
       messages: 
       output: 
       stacktrace: 
@@ -956,12 +1010,12 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1032
+      parentId: 1035
       parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
-    - id: 1026
-      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(2.1f,0.18f)]
-      name: CalculateDoseTest(2.1f,0.18f)
-      fullName: DoseCalculatorTest.CalculateDoseTest(2.1f,0.18f)
+    - id: 1029
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(2.1f,34.689f)]
+      name: CalculateDoseTest(2.1f,34.689f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(2.1f,34.689f)
       resultStatus: 1
       duration: 0.0001193
       messages: 
@@ -973,65 +1027,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1032
+      parentId: 1035
       parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
     - id: 1027
       uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(0.0f,float.PositiveInfinity)]
       name: CalculateDoseTest(0.0f,float.PositiveInfinity)
       fullName: DoseCalculatorTest.CalculateDoseTest(0.0f,float.PositiveInfinity)
       resultStatus: 1
-      duration: 0.0001129
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1032
-      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
-    - id: 1028
-      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(150.0f,0.0f)]
-      name: CalculateDoseTest(150.0f,0.0f)
-      fullName: DoseCalculatorTest.CalculateDoseTest(150.0f,0.0f)
-      resultStatus: 1
-      duration: 0.0001141
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1032
-      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
-    - id: 1029
-      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(float.NaN,0.0f)]
-      name: CalculateDoseTest(float.NaN,0.0f)
-      fullName: DoseCalculatorTest.CalculateDoseTest(float.NaN,0.0f)
-      resultStatus: 1
-      duration: 0.0001107
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1031
-      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
-    - id: 1030
-      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(-1.0f,0.796f)]
-      name: CalculateDoseTest(-1.0f,0.796f)
-      fullName: DoseCalculatorTest.CalculateDoseTest(-1.0f,0.796f)
-      resultStatus: 1
-      duration: 0.0001138
+      duration: 0.0001218
       messages: 
       output: 
       stacktrace: 
@@ -1044,11 +1047,11 @@ MonoBehaviour:
       parentId: 1032
       parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
     - id: 1031
-      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(-150.0f,0.0f)]
-      name: CalculateDoseTest(-150.0f,0.0f)
-      fullName: DoseCalculatorTest.CalculateDoseTest(-150.0f,0.0f)
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(150.0f,0.007f)]
+      name: CalculateDoseTest(150.0f,0.007f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(150.0f,0.007f)
       resultStatus: 1
-      duration: 0.0001121
+      duration: 0.0001165
       messages: 
       output: 
       stacktrace: 
@@ -1058,14 +1061,65 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1032
+      parentId: 1035
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+    - id: 1029
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(float.NaN,0.0f)]
+      name: CalculateDoseTest(float.NaN,0.0f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(float.NaN,0.0f)
+      resultStatus: 1
+      duration: 0.0001176
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1031
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+    - id: 1033
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(-1.0f,152.98f)]
+      name: CalculateDoseTest(-1.0f,152.98f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(-1.0f,152.98f)
+      resultStatus: 1
+      duration: 0.0001201
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
+    - id: 1034
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoseTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest(-150.0f,0.007f)]
+      name: CalculateDoseTest(-150.0f,0.007f)
+      fullName: DoseCalculatorTest.CalculateDoseTest(-150.0f,0.007f)
+      resultStatus: 1
+      duration: 0.0001173
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
       parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoseTest][suite]
     - id: 1036
-      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSBColorTest][suite]
-      name: HSBColorTest
-      fullName: HSBColorTest
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSVColorTest][suite]
+      name: HSVColorTest
+      fullName: HSVColorTest
       resultStatus: 1
-      duration: 0.010175
+      duration: 0.0085515
       messages: 
       output: 
       stacktrace: 
@@ -1074,14 +1128,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1046
+      parentId: 1047
       parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
     - id: 1039
-      uniqueId: Assembly-CSharp-Editor.dll/HSBColorTest/[Assembly-CSharp-Editor][HSBColorTest.HSBConstructorColor]
-      name: HSBConstructorColor
-      fullName: HSBColorTest.HSBConstructorColor
-      resultStatus: 0
-      duration: 0
+      uniqueId: Assembly-CSharp-Editor.dll/HSVColorTest/[Assembly-CSharp-Editor][HSVColorTest.HSVConstructorRGBColor]
+      name: HSVConstructorRGBColor
+      fullName: HSVColorTest.HSVConstructorRGBColor
+      resultStatus: 1
+      duration: 0.0003557
       messages: 
       output: 
       stacktrace: 
@@ -1092,47 +1146,13 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1036
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSBColorTest][suite]
-    - id: 1038
-      uniqueId: Assembly-CSharp-Editor.dll/HSBColorTest/[Assembly-CSharp-Editor][HSBColorTest.HSBConstructurHSB]
-      name: HSBConstructurHSB
-      fullName: HSBColorTest.HSBConstructurHSB
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1036
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSBColorTest][suite]
-    - id: 1037
-      uniqueId: Assembly-CSharp-Editor.dll/HSBColorTest/[Assembly-CSharp-Editor][HSBColorTest.HSBConstructurHSBA]
-      name: HSBConstructurHSBA
-      fullName: HSBColorTest.HSBConstructurHSBA
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1036
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSBColorTest][suite]
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSVColorTest][suite]
     - id: 1012
       uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
       name: RayTracerTest
       fullName: RayTracerTest
       resultStatus: 1
-      duration: 0.0267627
+      duration: 0.0236092
       messages: 
       output: 
       stacktrace: 
@@ -1148,7 +1168,7 @@ MonoBehaviour:
       name: CreateRayHits_Test
       fullName: RayTracerTest.CreateRayHits_Test
       resultStatus: 1
-      duration: 0.0002226
+      duration: 0.0012366
       messages: 
       output: 
       stacktrace: 
@@ -1165,7 +1185,7 @@ MonoBehaviour:
       name: CreateRayHitsDoc_Test
       fullName: RayTracerTest.CreateRayHitsDoc_Test
       resultStatus: 1
-      duration: 0.0005232
+      duration: 0.0016188
       messages: 
       output: 
       stacktrace: 
@@ -1182,7 +1202,7 @@ MonoBehaviour:
       name: CreateRayHitsOther_Test
       fullName: RayTracerTest.CreateRayHitsOther_Test
       resultStatus: 1
-      duration: 0.0002043
+      duration: 0.0002864
       messages: 
       output: 
       stacktrace: 
@@ -1199,7 +1219,7 @@ MonoBehaviour:
       name: CreateRaySourceToDoc_Test
       fullName: RayTracerTest.CreateRaySourceToDoc_Test
       resultStatus: 1
-      duration: 0.0126722
+      duration: 0.0095181
       messages: 
       output: 
       stacktrace: 
@@ -1215,7 +1235,7 @@ MonoBehaviour:
       name: CreateRaySourceToDoc_Test("Mock_simple")
       fullName: RayTracerTest.CreateRaySourceToDoc_Test("Mock_simple")
       resultStatus: 1
-      duration: 0.0003087
+      duration: 0.0005295
       messages: 
       output: 
       stacktrace: 
@@ -1232,7 +1252,7 @@ MonoBehaviour:
       name: CreateRaySourceToDoc_Test("Mock_complex")
       fullName: RayTracerTest.CreateRaySourceToDoc_Test("Mock_complex")
       resultStatus: 1
-      duration: 0.0002216
+      duration: 0.0002136
       messages: 
       output: 
       stacktrace: 
@@ -1244,18 +1264,18 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1029
       parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRaySourceToDoc_Test][suite]
-    m_ResultText: 'ReturnsExpectedColor (0,009s)
-
-      ---
-
-      One or more child
-      tests had errors'
-    m_ResultStacktrace: 
+    m_ResultText: "ReturnsExpectedColor(200.0f,1.0f,0.0f,0.0f) (0,008s)\n---\nExpected:
+      RGBA(255, 0, 0, 255)\r\n  But was:  RGBA(255, 0, 170, 255)\n---\nat ColorCalculatorTest.ReturnsExpectedColor
+      (System.Single dose, System.Single r, System.Single g, System.Single b) [0x00017]
+      in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\ColorCalculatorTest.cs:17\n---\nstepSize:
+      0,5555556, newH0,888889"
+    m_ResultStacktrace: "at ColorCalculatorTest.ReturnsExpectedColor (System.Single
+      dose, System.Single r, System.Single g, System.Single b) [0x00017] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\ColorCalculatorTest.cs:17\r\n"
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 14b4636e
-      m_LastClickedID: 1852027924
-      m_ExpandedIDs: 734991c75b0205e234d6281b24e32e204755f323d055cd2b036213361a4e535982eb2679ffffff7f
+      m_SelectedIDs: 65e6bcb5
+      m_LastClickedID: -1245911451
+      m_ExpandedIDs: 734991c75b0205e234d6281b24e32e204755f323036213369fcff33e1a4e535914b4636e82eb2679ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1678,20 +1698,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Editor/Tests
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Editor/Tests
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b0330000
-    m_LastClickedID: 13232
-    m_ExpandedIDs: 000000009e330000a0330000a2330000a433000000ca9a3b
+    m_SelectedIDs: a4330000
+    m_LastClickedID: 13220
+    m_ExpandedIDs: 00000000a4330000a6330000a8330000aa33000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1719,7 +1739,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009e330000a0330000a2330000a4330000
+    m_ExpandedIDs: 00000000a4330000a6330000a8330000aa330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1746,22 +1766,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 48220000d0210000aa22000012230000ce21000064c9ffffb6220000d2210000d6210000868efdfff0040000d4210000dc210000a42b0000622200000a2200002828000012220000305000008422000016220000c032faff5c5bf7ffea2a00001e2c000020ca000016300000262d00004e630000d6620000d262000066620000342d0300bc350000fa3d0000ae410000244500006e4100008a320000643700007837000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: RayTracerTest
+      m_OriginalName: RayTracerTest
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 12674
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -1804,9 +1824,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 44320000
+      m_SelectedIDs: 82310000
       m_LastClickedID: 0
-      m_ExpandedIDs: 42f1ffffbcf2ffff96f4ffff1af5ffff94f6ffff0ef8ffffecf8ffff5efaffff72fbffff
+      m_ExpandedIDs: d4bcffffb4befffffcc0ffffd4c2ffff10c5fffff4c6ffffd2c8ffff1acbffffa2ccffff88ceffff68d0ffffead1ffff28d4ffff0ed6fffff4d7ffff76d9ffff56dbffffd8dcffff5adeffff98e0ffffa2e3ffff82e5ffff6ae7ffffece8ffffd2eaffff5aecffff3aeeffff1cf0ffff84f2ffff08f4ffff6cfaffff72fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

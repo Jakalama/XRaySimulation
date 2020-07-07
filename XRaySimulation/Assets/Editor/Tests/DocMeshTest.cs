@@ -101,7 +101,7 @@ public class DocMeshTest
         Vector3[] vertices = dm.GetVertices();
         dm.UpdateRelevantVertices(vertices);
 
-        Debug.Log(dm.RelevantVertices.Count);
+        //Debug.Log(dm.RelevantVertices.Count);
         
         Assert.AreEqual(expected, dm.RelevantVertices.Count);
     }

@@ -5,7 +5,8 @@ using UnityEngine;
 
 public static class DoseCalculator
 {
-    private static float SourceEnergy = 10f;
+    private static float sourceVoltage = 120f;
+    private static float electronCharge = 1.602e-19f;
 
     public static float Calculate(float distance)
     {
@@ -14,13 +15,15 @@ public static class DoseCalculator
 
         distance = Math.Abs(distance);
 
-        float dose = SourceEnergy / (4f * (float)Math.PI * distance * distance);
+        float sourceEnergy = sourceVoltage * electronCharge;
+        float intensity = sourceEnergy / (4f * (float)Math.PI * distance * distance);
 
-        //Debug.Log(distance + ", " + dose);
+        intensity /= 1e-20f;
 
-        dose = (float)Math.Round(dose, 3);
+        //Debug.Log(distance + ", " + intensity);
 
+        intensity = (float)Math.Round(intensity, 3);
 
-        return dose;
+        return intensity;
     }
 }

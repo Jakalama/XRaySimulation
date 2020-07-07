@@ -6,7 +6,7 @@ public class DocMesh : MonoBehaviour
 {
     public static DocMesh Instance;
 
-    public Dictionary<int, Tuple<Vector3, Color32>> Vertices;
+    public Dictionary<int, Tuple<Vector3, float>> Vertices;
     public List<int> RelevantVertices;
 
     private void Start()
@@ -17,7 +17,7 @@ public class DocMesh : MonoBehaviour
 
     public void Init()
     {
-        Vertices = new Dictionary<int, Tuple<Vector3, Color32>>();
+        Vertices = new Dictionary<int, Tuple<Vector3, float>>();
         RelevantVertices = new List<int>();
     }
 
