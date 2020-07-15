@@ -26,4 +26,17 @@ public static class DoseCalculator
 
         return intensity;
     }
+
+    public static float[] Calculate(float[] distances)
+    {
+        int num = distances.Length;
+        float[] doses = new float[num];
+
+        for (int i = 0; i < num; i++)
+        {
+            doses[i] = Calculate(distances[i]);
+        }
+
+        return doses;
+    }
 }

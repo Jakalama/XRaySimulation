@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,5 +30,18 @@ public class RayTracer : MonoBehaviour
     public bool CreateRaySourceToDoc(Vector3 destination)
     {
         return true;
+    }
+
+    public float[] GetDistances(Vector3[] positions)
+    {
+        int num = positions.Length;
+        float[] distances = new float[num];
+
+        for (int i = 0; i < num; i++)
+        {
+            distances[i] = (float)Math.Round(Vector3.Distance(Vector3.zero, positions[i]), 3);
+        }
+
+        return distances;
     }
 }

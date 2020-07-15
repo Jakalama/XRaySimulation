@@ -8,39 +8,36 @@ public class ColorCalculatorTest
     [Test]
     [TestCase(0f, 0f, 1f, 0f)]
     [TestCase(10f, 0f, 1f, 43f / 255f)]
-    [TestCase(200f, 1f, 0f, 0f)]
-    public void ReturnsExpectedColor(float dose, float r, float g, float b)
+    [TestCase(200f, 1f, 0f, 170f / 255f)]
+    public void ReturnsExpectedColor_Test(float dose, float r, float g, float b)
     {
         Color32 rgbColor = new Color(r, g, b);
         Color32 color = ColorCalculator.Calculate(dose);
 
         Assert.AreEqual(rgbColor, color);
     }
-}
 
-public static class ColorCalculator
-{
-    private static readonly HSVColor startColor = new HSVColor(new Color(0f, 1f, 0f));
-    private static float maxDose = 200f;
-
-    public static Color32 Calculate(float dose)
+    [Test]
+    [TestCase(new float[] { }, new float[] { }, new float[] { }, new float[] { })]
+    [TestCase(new float[] { 0f, 10f, 200f }, new float[] { 0f, 0f, 1f}, new float[] { 1f, 1f, 0f }, new float[] { 0f, 43f / 255f, 170f / 255f })]
+    public void ReturnsExpectedColors_Test(float[] doses, float[] r, float[] g, float [] b)
     {
-        float baseH = startColor.h;
+        Color32[] rgbColors = GetColors(r, g, b);
 
-        //Debug.Log("BaseH: " + baseH);
+        Color32[] colors = ColorCalculator.Calculate(doses);
 
-        float stepSize = maxDose / 360f;
-        float newH = (dose / maxDose) * stepSize + baseH;
+        Assert.AreEqual(rgbColors, colors);
+    }
 
-        if (newH > 1f)
-            newH -= 1f;
+    private Color32[] GetColors(float[] r, float[] g, float[] b)
+    {
+        Color32[] rgbColors = new Color32[r.Length];
 
-        Debug.Log("stepSize: " + stepSize + ", newH" + newH);
+        for (int i = 0; i < r.Length; i++)
+        {
+            rgbColors[i] = new Color(r[i], g[i], b[i]);
+        }
 
-        HSVColor hsvColor = startColor.Set(newH);
-
-        //Debug.Log(hsvColor.h + " " + hsvColor.s + " " + hsvColor.v);
-
-        return (Color32) hsvColor.ToRGB();
+        return rgbColors;
     }
 }
