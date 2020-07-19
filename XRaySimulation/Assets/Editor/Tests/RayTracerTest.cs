@@ -56,11 +56,13 @@ public class RayTracerTest
     }
 
     [Test]
-    public void CreateRayHitsDoc_Test()
+    [TestCase("Mock_simple")]
+    [TestCase("Mock_complex")]
+    public void CreateRayHitsDoc_Test(string mockName)
     {
         GameObject mock = CreateMock("Doc", "Mock_simple");
-
         RayTracer rt = RayTracer.Instance;
+
         bool hitted = rt.CreateRay(origin, destination);
 
         Assert.IsTrue(hitted);
@@ -68,9 +70,11 @@ public class RayTracerTest
     }
 
     [Test]
-    public void CreateRayHitsOther_Test()
+    [TestCase("Mock_simple")]
+    [TestCase("Mock_complex")]
+    public void CreateRayHitsOther_Test(string mockName)
     {
-        GameObject mock = CreateMock("Other", "Mock_simple");
+        GameObject mock = CreateMock("Other", mockName);
 
         RayTracer rt = RayTracer.Instance;
         bool hitted = rt.CreateRay(origin, destination);
@@ -87,10 +91,9 @@ public class RayTracerTest
         GameObject mock = CreateMock("Doc", mockName);
 
         RayTracer rt = RayTracer.Instance;
-        DocMesh dm = DocMesh.Instance;
-        dm.Init();
+        MeshContainer dm = MeshContainer.Instance;
 
-        bool result = rt.CreateRaySourceToDoc(DocMesh.Instance.GetVertices()[0]);
+        bool result = rt.CreateRaySourceToDoc(MeshContainer.Instance.GetVertices()[0]);
 
         Assert.IsTrue(result);
     }

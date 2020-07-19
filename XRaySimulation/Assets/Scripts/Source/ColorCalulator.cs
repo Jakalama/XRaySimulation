@@ -4,26 +4,18 @@ using UnityEngine;
 
 public static class ColorCalculator
 {
-    private static readonly HSVColor startColor = new HSVColor(new Color(0f, 1f, 0f));
+    private static readonly HSVColor startColor = new HSVColor(new Color(1f, 1f, 0f));
     private static float maxDose = 200000f;
 
     public static Color32 Calculate(float dose)
     {
         float baseH = startColor.h;
 
-        //Debug.Log("BaseH: " + baseH);
-
         float stepSize = maxDose / 360f;
         float newH = (dose / maxDose) * stepSize + baseH;
-
-        if (newH > 1f)
-            newH -= 1f;
-
-        //Debug.Log("stepSize: " + stepSize + ", newH" + newH);
+        newH = Mathf.Clamp(newH, 0f, 1f);
 
         HSVColor hsvColor = startColor.Set(newH);
-
-        //Debug.Log(hsvColor.h + " " + hsvColor.s + " " + hsvColor.v);
 
         return (Color32)hsvColor.ToRGB();
     }

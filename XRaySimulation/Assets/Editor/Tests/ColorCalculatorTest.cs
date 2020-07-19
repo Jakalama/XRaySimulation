@@ -6,9 +6,9 @@ using UnityEngine;
 public class ColorCalculatorTest
 {
     [Test]
-    [TestCase(0f, 0f, 1f, 0f)]
-    [TestCase(10f, 0f, 1f, 43f / 255f)]
-    [TestCase(200f, 1f, 0f, 170f / 255f)]
+    [TestCase(0f, 1f, 1f, 0f)]
+    [TestCase(10f, 212f / 255f, 1f, 0f)]
+    [TestCase(200f, 85f / 255f, 0f, 1f)]
     public void ReturnsExpectedColor_Test(float dose, float r, float g, float b)
     {
         Color32 rgbColor = new Color(r, g, b);
@@ -19,7 +19,7 @@ public class ColorCalculatorTest
 
     [Test]
     [TestCase(new float[] { }, new float[] { }, new float[] { }, new float[] { })]
-    [TestCase(new float[] { 0f, 10f, 200f }, new float[] { 0f, 0f, 1f}, new float[] { 1f, 1f, 0f }, new float[] { 0f, 43f / 255f, 170f / 255f })]
+    [TestCase(new float[] { 0f, 10f, 200f }, new float[] { 1f, 212f / 255f, 85f / 255f}, new float[] { 1f, 1f, 0f }, new float[] { 0f, 0f, 1f })]
     public void ReturnsExpectedColors_Test(float[] doses, float[] r, float[] g, float [] b)
     {
         Color32[] rgbColors = GetColors(r, g, b);
