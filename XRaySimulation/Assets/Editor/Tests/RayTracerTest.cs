@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
-using UnityEngine.SceneManagement;
 using UnityEditor.SceneManagement;
 
 public class RayTracerTest

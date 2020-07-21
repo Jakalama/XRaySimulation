@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RayReciever : MonoBehaviour
 {
-    public MeshContainer container;
+    [SerializeField] public MeshContainer container;
     private MeshController controller; 
 
     private void Start()
