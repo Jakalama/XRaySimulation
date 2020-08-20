@@ -41,7 +41,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 820
-    width: 554
+    width: 458
     height: 488
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -67,14 +67,14 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 2006
+    x: 2102
     y: 0
-    width: 554
+    width: 458
     height: 1308
-  m_MinSize: {x: 276, y: 171}
-  m_MaxSize: {x: 4001, y: 8021}
+  m_MinSize: {x: 276, y: 192}
+  m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 182
+  controlID: 160
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85,23 +85,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneHierarchyWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 336
-    height: 993
-  m_MinSize: {x: 200, y: 200}
+    width: 609
+    height: 866
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 26}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 26}
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 19}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -117,10 +117,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1537
+    x: 1554
     y: 0
-    width: 469
-    height: 993
+    width: 548
+    height: 866
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 25}
@@ -148,12 +148,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2006
-    height: 993
-  m_MinSize: {x: 534, y: 271}
-  m_MaxSize: {x: 18004, y: 10021}
+    width: 2102
+    height: 866
+  m_MinSize: {x: 433, y: 271}
+  m_MaxSize: {x: 18003, y: 10021}
   vertical: 0
-  controlID: 129
+  controlID: 167
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,10 +174,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1308
-  m_MinSize: {x: 810, y: 371}
-  m_MaxSize: {x: 22005, y: 14021}
+  m_MinSize: {x: 709, y: 371}
+  m_MaxSize: {x: 22004, y: 14021}
   vertical: 1
-  controlID: 180
+  controlID: 158
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,10 +195,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 554
+    width: 458
     height: 820
-  m_MinSize: {x: 276, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -293,10 +293,10 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1308
-  m_MinSize: {x: 810, y: 371}
-  m_MaxSize: {x: 22005, y: 14021}
+  m_MinSize: {x: 709, y: 371}
+  m_MaxSize: {x: 22004, y: 14021}
   vertical: 0
-  controlID: 181
+  controlID: 159
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -316,12 +316,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2006
+    width: 2102
     height: 1308
-  m_MinSize: {x: 534, y: 371}
-  m_MaxSize: {x: 18004, y: 14021}
+  m_MinSize: {x: 433, y: 371}
+  m_MaxSize: {x: 18003, y: 14021}
   vertical: 1
-  controlID: 128
+  controlID: 166
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -332,26 +332,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 336
+    x: 609
     y: 0
-    width: 1201
-    height: 993
+    width: 945
+    height: 866
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 23}
   - {fileID: 24}
   - {fileID: 21}
-  - {fileID: 19}
+  - {fileID: 17}
   - {fileID: 16}
-  m_Selected: 3
-  m_LastSelected: 2
+  m_Selected: 2
+  m_LastSelected: 4
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,18 +368,107 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 993
-    width: 2006
-    height: 315
+    y: 866
+    width: 2102
+    height: 442
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 27}
   m_Panes:
   - {fileID: 27}
-  - {fileID: 17}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: 257045534191678443, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: -1950.6666
+    y: 72.66667
+    width: 943
+    height: 845
+  m_ViewDataDictionary: {fileID: 0}
+  m_SerializedViewsNames: []
+  m_SerializedViewsValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 1414.5, y: 1236}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_MaximizeOnPlay: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -471.5
+    m_HBaseRangeMax: 471.5
+    m_VBaseRangeMin: -412
+    m_VBaseRangeMax: 412
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 943
+      height: 824
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 471.5, y: 412}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -471.5
+      y: -412
+      width: 943
+      height: 824
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1414.5, y: 1267.5}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 00000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -400,16 +489,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -2224
+    x: -1950.6666
     y: 72.66667
-    width: 1199
-    height: 972
+    width: 943
+    height: 845
   m_ViewDataDictionary: {fileID: 0}
   m_PosLeft: {x: 0, y: 0}
   m_PosRight: {x: 0, y: 0}
   m_Scope: 1
   m_SplitterFlex: 0.2
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -937,7 +1026,7 @@ MonoBehaviour:
         asm: UnityEditor}
       data:
         m_PaneScroll: {x: 0, y: 0}
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -959,12 +1048,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2560
     y: 72.66667
-    width: 335
-    height: 972
+    width: 608
+    height: 845
   m_ViewDataDictionary: {fileID: 0}
   m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 18}
+    m_Window: {fileID: 19}
     newResultList:
     - id: 1250
       uniqueId: '[XRaySimulation][suite]'
@@ -1015,15 +1104,15 @@ MonoBehaviour:
       availableCategories:
       - Uncategorized
   m_EditModeTestListGUI:
-    m_Window: {fileID: 18}
+    m_Window: {fileID: 19}
     newResultList:
     - id: 1000
       uniqueId: '[XRaySimulation][suite]'
       name: XRaySimulation
       fullName: XRaySimulation
-      resultStatus: 1
-      duration: 0.4899676
-      messages: 
+      resultStatus: 2
+      duration: 0.6315081
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1037,9 +1126,9 @@ MonoBehaviour:
       uniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
       name: Assembly-CSharp-Editor.dll
       fullName: "D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll"
-      resultStatus: 1
-      duration: 0.428811
-      messages: 
+      resultStatus: 2
+      duration: 0.531727
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1050,11 +1139,61 @@ MonoBehaviour:
       parentId: 1000
       parentUniqueId: '[XRaySimulation][suite]'
     - id: 1001
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][CameraPerspectiveTest][suite]
+      name: CameraPerspectiveTest
+      fullName: CameraPerspectiveTest
+      resultStatus: 1
+      duration: 0.0055314
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1140
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1002
+      uniqueId: Assembly-CSharp-Editor.dll/CameraPerspectiveTest/[Assembly-CSharp-Editor][CameraPerspectiveTest.FPVisExistent_Test]
+      name: FPVisExistent_Test
+      fullName: CameraPerspectiveTest.FPVisExistent_Test
+      resultStatus: 1
+      duration: 0.0004211
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][CameraPerspectiveTest][suite]
+    - id: 1003
+      uniqueId: Assembly-CSharp-Editor.dll/CameraPerspectiveTest/[Assembly-CSharp-Editor][CameraPerspectiveTest.TPVisExistent_Test]
+      name: TPVisExistent_Test
+      fullName: CameraPerspectiveTest.TPVisExistent_Test
+      resultStatus: 1
+      duration: 0.0002707
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][CameraPerspectiveTest][suite]
+    - id: 1001
       uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ColorCalculatorTest][suite]
       name: ColorCalculatorTest
       fullName: ColorCalculatorTest
       resultStatus: 1
-      duration: 0.0707603
+      duration: 0.041093
       messages: 
       output: 
       stacktrace: 
@@ -1070,7 +1209,7 @@ MonoBehaviour:
       name: ReturnsExpectedColor_Test
       fullName: ColorCalculatorTest.ReturnsExpectedColor_Test
       resultStatus: 1
-      duration: 0.028618
+      duration: 0.0113978
       messages: 
       output: 
       stacktrace: 
@@ -1086,7 +1225,7 @@ MonoBehaviour:
       name: ReturnsExpectedColor_Test(0.0f,1.0f,1.0f,0.0f)
       fullName: ColorCalculatorTest.ReturnsExpectedColor_Test(0.0f,1.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0135214
+      duration: 0.0002183
       messages: 
       output: 
       stacktrace: 
@@ -1103,7 +1242,7 @@ MonoBehaviour:
       name: ReturnsExpectedColor_Test(10.0f,0.8313726f,1.0f,0.0f)
       fullName: ColorCalculatorTest.ReturnsExpectedColor_Test(10.0f,0.8313726f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0002699
+      duration: 0.000134
       messages: 
       output: 
       stacktrace: 
@@ -1120,7 +1259,7 @@ MonoBehaviour:
       name: ReturnsExpectedColor_Test(200.0f,0.3333333f,0.0f,1.0f)
       fullName: ColorCalculatorTest.ReturnsExpectedColor_Test(200.0f,0.3333333f,0.0f,1.0f)
       resultStatus: 1
-      duration: 0.0001212
+      duration: 0.0001203
       messages: 
       output: 
       stacktrace: 
@@ -1137,7 +1276,7 @@ MonoBehaviour:
       name: ReturnsExpectedColors_Test
       fullName: ColorCalculatorTest.ReturnsExpectedColors_Test
       resultStatus: 1
-      duration: 0.0326488
+      duration: 0.0096896
       messages: 
       output: 
       stacktrace: 
@@ -1153,7 +1292,7 @@ MonoBehaviour:
       name: ReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[])
       fullName: ColorCalculatorTest.ReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[])
       resultStatus: 1
-      duration: 0.0010459
+      duration: 0.000204
       messages: 
       output: 
       stacktrace: 
@@ -1171,7 +1310,7 @@ MonoBehaviour:
       fullName: ColorCalculatorTest.ReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[]
         GeneratedTestCase2)
       resultStatus: 1
-      duration: 0.0001564
+      duration: 0.0001528
       messages: 
       output: 
       stacktrace: 
@@ -1183,513 +1322,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1008
       parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColors_Test][suite]
-    - id: 1037
-      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMovementTest][suite]
-      name: DocMovementTest
-      fullName: DocMovementTest
-      resultStatus: 1
-      duration: 0.105948
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1068
-      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
-    - id: 1010
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.DocMovementIsExistent_Test]
-      name: DocMovementIsExistent_Test
-      fullName: DocMovementTest.DocMovementIsExistent_Test
-      resultStatus: 1
-      duration: 0.0031616
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1009
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMovementTest][suite]
-    - id: 1024
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisEqual_Test][suite]
-      name: MoveInputDOWNisEqual_Test
-      fullName: DocMovementTest.MoveInputDOWNisEqual_Test
-      resultStatus: 1
-      duration: 0.0094864
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1009
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMovementTest][suite]
-    - id: 1023
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputDOWNisEqual_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisEqual_Test(0)]
-      name: MoveInputDOWNisEqual_Test(0)
-      fullName: DocMovementTest.MoveInputDOWNisEqual_Test(0)
-      resultStatus: 1
-      duration: 0.0015226
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1024
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisEqual_Test][suite]
-    - id: 1022
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisLess_Test][suite]
-      name: MoveInputDOWNisLess_Test
-      fullName: DocMovementTest.MoveInputDOWNisLess_Test
-      resultStatus: 1
-      duration: 0.0133968
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1009
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMovementTest][suite]
-    - id: 1018
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputDOWNisLess_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisLess_Test(-0.1f)]
-      name: MoveInputDOWNisLess_Test(-0.1f)
-      fullName: DocMovementTest.MoveInputDOWNisLess_Test(-0.1f)
-      resultStatus: 1
-      duration: 0.0033225
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisLess_Test][suite]
-    - id: 1019
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputDOWNisLess_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisLess_Test(-0.75639f)]
-      name: MoveInputDOWNisLess_Test(-0.75639f)
-      fullName: DocMovementTest.MoveInputDOWNisLess_Test(-0.75639f)
-      resultStatus: 1
-      duration: 0.000212
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisLess_Test][suite]
-    - id: 1020
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputDOWNisLess_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisLess_Test(-1.0f)]
-      name: MoveInputDOWNisLess_Test(-1.0f)
-      fullName: DocMovementTest.MoveInputDOWNisLess_Test(-1.0f)
-      resultStatus: 1
-      duration: 0.0001642
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisLess_Test][suite]
-    - id: 1021
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputDOWNisLess_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisLess_Test(-0.5f)]
-      name: MoveInputDOWNisLess_Test(-0.5f)
-      fullName: DocMovementTest.MoveInputDOWNisLess_Test(-0.5f)
-      resultStatus: 1
-      duration: 0.0001634
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1022
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputDOWNisLess_Test][suite]
-    - id: 1038
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisEqual_Test][suite]
-      name: MoveInputLEFTisEqual_Test
-      fullName: DocMovementTest.MoveInputLEFTisEqual_Test
-      resultStatus: 1
-      duration: 0.009068
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1009
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMovementTest][suite]
-    - id: 1037
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputLEFTisEqual_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisEqual_Test(0)]
-      name: MoveInputLEFTisEqual_Test(0)
-      fullName: DocMovementTest.MoveInputLEFTisEqual_Test(0)
-      resultStatus: 1
-      duration: 0.0004657
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1038
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisEqual_Test][suite]
-    - id: 1034
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisLess_Test][suite]
-      name: MoveInputLEFTisLess_Test
-      fullName: DocMovementTest.MoveInputLEFTisLess_Test
-      resultStatus: 1
-      duration: 0.010249
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1009
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMovementTest][suite]
-    - id: 1030
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputLEFTisLess_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisLess_Test(-0.1f)]
-      name: MoveInputLEFTisLess_Test(-0.1f)
-      fullName: DocMovementTest.MoveInputLEFTisLess_Test(-0.1f)
-      resultStatus: 1
-      duration: 0.0004095
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1034
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisLess_Test][suite]
-    - id: 1031
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputLEFTisLess_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisLess_Test(-0.75639f)]
-      name: MoveInputLEFTisLess_Test(-0.75639f)
-      fullName: DocMovementTest.MoveInputLEFTisLess_Test(-0.75639f)
-      resultStatus: 1
-      duration: 0.0001837
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1034
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisLess_Test][suite]
-    - id: 1032
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputLEFTisLess_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisLess_Test(-1.0f)]
-      name: MoveInputLEFTisLess_Test(-1.0f)
-      fullName: DocMovementTest.MoveInputLEFTisLess_Test(-1.0f)
-      resultStatus: 1
-      duration: 0.0001742
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1034
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisLess_Test][suite]
-    - id: 1033
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputLEFTisLess_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisLess_Test(-0.5f)]
-      name: MoveInputLEFTisLess_Test(-0.5f)
-      fullName: DocMovementTest.MoveInputLEFTisLess_Test(-0.5f)
-      resultStatus: 1
-      duration: 0.0001708
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1034
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputLEFTisLess_Test][suite]
-    - id: 1031
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisEqual_Test][suite]
-      name: MoveInputRIGHTisEqual_Test
-      fullName: DocMovementTest.MoveInputRIGHTisEqual_Test
-      resultStatus: 1
-      duration: 0.0125308
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1009
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMovementTest][suite]
-    - id: 1030
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputRIGHTisEqual_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisEqual_Test(0)]
-      name: MoveInputRIGHTisEqual_Test(0)
-      fullName: DocMovementTest.MoveInputRIGHTisEqual_Test(0)
-      resultStatus: 1
-      duration: 0.0004476
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1031
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisEqual_Test][suite]
-    - id: 1029
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisGreater_Test][suite]
-      name: MoveInputRIGHTisGreater_Test
-      fullName: DocMovementTest.MoveInputRIGHTisGreater_Test
-      resultStatus: 1
-      duration: 0.0103671
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1009
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMovementTest][suite]
-    - id: 1025
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputRIGHTisGreater_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisGreater_Test(0.1f)]
-      name: MoveInputRIGHTisGreater_Test(0.1f)
-      fullName: DocMovementTest.MoveInputRIGHTisGreater_Test(0.1f)
-      resultStatus: 1
-      duration: 0.0005579
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1029
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisGreater_Test][suite]
-    - id: 1026
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputRIGHTisGreater_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisGreater_Test(0.75639f)]
-      name: MoveInputRIGHTisGreater_Test(0.75639f)
-      fullName: DocMovementTest.MoveInputRIGHTisGreater_Test(0.75639f)
-      resultStatus: 1
-      duration: 0.0001764
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1029
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisGreater_Test][suite]
-    - id: 1027
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputRIGHTisGreater_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisGreater_Test(1.0f)]
-      name: MoveInputRIGHTisGreater_Test(1.0f)
-      fullName: DocMovementTest.MoveInputRIGHTisGreater_Test(1.0f)
-      resultStatus: 1
-      duration: 0.00017
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1029
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisGreater_Test][suite]
-    - id: 1028
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputRIGHTisGreater_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisGreater_Test(0.5f)]
-      name: MoveInputRIGHTisGreater_Test(0.5f)
-      fullName: DocMovementTest.MoveInputRIGHTisGreater_Test(0.5f)
-      resultStatus: 1
-      duration: 0.0001683
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1029
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputRIGHTisGreater_Test][suite]
-    - id: 1017
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisEqual_Test][suite]
-      name: MoveInputUPisEqual_Test
-      fullName: DocMovementTest.MoveInputUPisEqual_Test
-      resultStatus: 1
-      duration: 0.0083279
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1009
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMovementTest][suite]
-    - id: 1016
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputUPisEqual_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisEqual_Test(0.0f)]
-      name: MoveInputUPisEqual_Test(0.0f)
-      fullName: DocMovementTest.MoveInputUPisEqual_Test(0.0f)
-      resultStatus: 1
-      duration: 0.0003916
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisEqual_Test][suite]
-    - id: 1015
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisGreater_Test][suite]
-      name: MoveInputUPisGreater_Test
-      fullName: DocMovementTest.MoveInputUPisGreater_Test
-      resultStatus: 1
-      duration: 0.010936
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1009
-      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DocMovementTest][suite]
-    - id: 1011
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputUPisGreater_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisGreater_Test(0.1f)]
-      name: MoveInputUPisGreater_Test(0.1f)
-      fullName: DocMovementTest.MoveInputUPisGreater_Test(0.1f)
-      resultStatus: 1
-      duration: 0.0004162
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisGreater_Test][suite]
-    - id: 1012
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputUPisGreater_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisGreater_Test(0.75639f)]
-      name: MoveInputUPisGreater_Test(0.75639f)
-      fullName: DocMovementTest.MoveInputUPisGreater_Test(0.75639f)
-      resultStatus: 1
-      duration: 0.0001794
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisGreater_Test][suite]
-    - id: 1013
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputUPisGreater_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisGreater_Test(1.0f)]
-      name: MoveInputUPisGreater_Test(1.0f)
-      fullName: DocMovementTest.MoveInputUPisGreater_Test(1.0f)
-      resultStatus: 1
-      duration: 0.0001736
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisGreater_Test][suite]
-    - id: 1014
-      uniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/MoveInputUPisGreater_Test/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisGreater_Test(0.5f)]
-      name: MoveInputUPisGreater_Test(0.5f)
-      fullName: DocMovementTest.MoveInputUPisGreater_Test(0.5f)
-      resultStatus: 1
-      duration: 0.0001721
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1015
-      parentUniqueId: Assembly-CSharp-Editor.dll/DocMovementTest/[Assembly-CSharp-Editor][DocMovementTest.MoveInputUPisGreater_Test][suite]
     - id: 1023
       uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoseCalculatorTest][suite]
       name: DoseCalculatorTest
       fullName: DoseCalculatorTest
       resultStatus: 1
-      duration: 0.0342992
+      duration: 0.0334087
       messages: 
       output: 
       stacktrace: 
@@ -1705,7 +1343,7 @@ MonoBehaviour:
       name: CalculateDose_Test
       fullName: DoseCalculatorTest.CalculateDose_Test
       resultStatus: 1
-      duration: 0.01206
+      duration: 0.0123561
       messages: 
       output: 
       stacktrace: 
@@ -1721,7 +1359,7 @@ MonoBehaviour:
       name: CalculateDose_Test(1,152.98f)
       fullName: DoseCalculatorTest.CalculateDose_Test(1,152.98f)
       resultStatus: 1
-      duration: 0.0008688
+      duration: 0.0002171
       messages: 
       output: 
       stacktrace: 
@@ -1738,7 +1376,7 @@ MonoBehaviour:
       name: CalculateDose_Test(2.0f,38.245f)
       fullName: DoseCalculatorTest.CalculateDose_Test(2.0f,38.245f)
       resultStatus: 1
-      duration: 0.0001354
+      duration: 0.0001315
       messages: 
       output: 
       stacktrace: 
@@ -1755,7 +1393,7 @@ MonoBehaviour:
       name: CalculateDose_Test(2.1f,34.689f)
       fullName: DoseCalculatorTest.CalculateDose_Test(2.1f,34.689f)
       resultStatus: 1
-      duration: 0.0001203
+      duration: 0.0001216
       messages: 
       output: 
       stacktrace: 
@@ -1772,7 +1410,7 @@ MonoBehaviour:
       name: CalculateDose_Test(0.0f,float.PositiveInfinity)
       fullName: DoseCalculatorTest.CalculateDose_Test(0.0f,float.PositiveInfinity)
       resultStatus: 1
-      duration: 0.000116
+      duration: 0.0001192
       messages: 
       output: 
       stacktrace: 
@@ -1789,7 +1427,7 @@ MonoBehaviour:
       name: CalculateDose_Test(150.0f,0.007f)
       fullName: DoseCalculatorTest.CalculateDose_Test(150.0f,0.007f)
       resultStatus: 1
-      duration: 0.0001131
+      duration: 0.0001213
       messages: 
       output: 
       stacktrace: 
@@ -1806,7 +1444,7 @@ MonoBehaviour:
       name: CalculateDose_Test(float.NaN,0.0f)
       fullName: DoseCalculatorTest.CalculateDose_Test(float.NaN,0.0f)
       resultStatus: 1
-      duration: 0.0001121
+      duration: 0.00012
       messages: 
       output: 
       stacktrace: 
@@ -1823,7 +1461,7 @@ MonoBehaviour:
       name: CalculateDose_Test(-1.0f,152.98f)
       fullName: DoseCalculatorTest.CalculateDose_Test(-1.0f,152.98f)
       resultStatus: 1
-      duration: 0.000112
+      duration: 0.0001272
       messages: 
       output: 
       stacktrace: 
@@ -1840,7 +1478,7 @@ MonoBehaviour:
       name: CalculateDose_Test(-150.0f,0.007f)
       fullName: DoseCalculatorTest.CalculateDose_Test(-150.0f,0.007f)
       resultStatus: 1
-      duration: 0.000113
+      duration: 0.000119
       messages: 
       output: 
       stacktrace: 
@@ -1857,7 +1495,7 @@ MonoBehaviour:
       name: CalculateDoses_Test
       fullName: DoseCalculatorTest.CalculateDoses_Test
       resultStatus: 1
-      duration: 0.0095071
+      duration: 0.0094805
       messages: 
       output: 
       stacktrace: 
@@ -1873,7 +1511,7 @@ MonoBehaviour:
       name: CalculateDoses_Test(System.Single[],System.Single[])
       fullName: DoseCalculatorTest.CalculateDoses_Test(System.Single[],System.Single[])
       resultStatus: 1
-      duration: 0.0005969
+      duration: 0.0002072
       messages: 
       output: 
       stacktrace: 
@@ -1891,7 +1529,7 @@ MonoBehaviour:
       fullName: DoseCalculatorTest.CalculateDoses_Test(System.Single[],System.Single[]
         GeneratedTestCase2)
       resultStatus: 1
-      duration: 0.0001503
+      duration: 0.0001405
       messages: 
       output: 
       stacktrace: 
@@ -1908,7 +1546,7 @@ MonoBehaviour:
       name: HSVColorTest
       fullName: HSVColorTest
       resultStatus: 1
-      duration: 0.0084264
+      duration: 0.0091284
       messages: 
       output: 
       stacktrace: 
@@ -1924,7 +1562,7 @@ MonoBehaviour:
       name: HSVConstructorRGBColor
       fullName: HSVColorTest.HSVConstructorRGBColor
       resultStatus: 1
-      duration: 0.0003838
+      duration: 0.0002192
       messages: 
       output: 
       stacktrace: 
@@ -1941,7 +1579,7 @@ MonoBehaviour:
       name: MeshContainerTest
       fullName: MeshContainerTest
       resultStatus: 1
-      duration: 0.0855777
+      duration: 0.0718396
       messages: 
       output: 
       stacktrace: 
@@ -1957,7 +1595,7 @@ MonoBehaviour:
       name: MeshContainerInstanceExists_Test
       fullName: MeshContainerTest.MeshContainerInstanceExists_Test
       resultStatus: 1
-      duration: 0.0180891
+      duration: 0.0079169
       messages: 
       output: 
       stacktrace: 
@@ -1973,7 +1611,7 @@ MonoBehaviour:
       name: MeshContainerInstanceExists_Test("Prefabs/Doc")
       fullName: MeshContainerTest.MeshContainerInstanceExists_Test("Prefabs/Doc")
       resultStatus: 1
-      duration: 0.0107733
+      duration: 0.0007782
       messages: 
       output: 
       stacktrace: 
@@ -1990,7 +1628,7 @@ MonoBehaviour:
       name: MeshContainerInstanceExists_Test("Prefabs/Mock_complex")
       fullName: MeshContainerTest.MeshContainerInstanceExists_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.0010365
+      duration: 0.000863
       messages: 
       output: 
       stacktrace: 
@@ -2007,7 +1645,7 @@ MonoBehaviour:
       name: MeshHasCorrectNumOfNormals_Test
       fullName: MeshContainerTest.MeshHasCorrectNumOfNormals_Test
       resultStatus: 1
-      duration: 0.0106124
+      duration: 0.0092219
       messages: 
       output: 
       stacktrace: 
@@ -2023,7 +1661,7 @@ MonoBehaviour:
       name: MeshHasCorrectNumOfNormals_Test("Prefabs/Doc",24)
       fullName: MeshContainerTest.MeshHasCorrectNumOfNormals_Test("Prefabs/Doc",24)
       resultStatus: 1
-      duration: 0.0016768
+      duration: 0.000342
       messages: 
       output: 
       stacktrace: 
@@ -2040,7 +1678,7 @@ MonoBehaviour:
       name: MeshHasCorrectNumOfNormals_Test("Prefabs/Mock_complex",54)
       fullName: MeshContainerTest.MeshHasCorrectNumOfNormals_Test("Prefabs/Mock_complex",54)
       resultStatus: 1
-      duration: 0.0003604
+      duration: 0.000271
       messages: 
       output: 
       stacktrace: 
@@ -2057,7 +1695,7 @@ MonoBehaviour:
       name: MeshHasCorrectNumOfVertices_Test
       fullName: MeshContainerTest.MeshHasCorrectNumOfVertices_Test
       resultStatus: 1
-      duration: 0.0104038
+      duration: 0.0094384
       messages: 
       output: 
       stacktrace: 
@@ -2073,7 +1711,7 @@ MonoBehaviour:
       name: MeshHasCorrectNumOfVertices_Test("Prefabs/Doc",24)
       fullName: MeshContainerTest.MeshHasCorrectNumOfVertices_Test("Prefabs/Doc",24)
       resultStatus: 1
-      duration: 0.0005668
+      duration: 0.0003295
       messages: 
       output: 
       stacktrace: 
@@ -2090,7 +1728,7 @@ MonoBehaviour:
       name: MeshHasCorrectNumOfVertices_Test("Prefabs/Mock_complex",54)
       fullName: MeshContainerTest.MeshHasCorrectNumOfVertices_Test("Prefabs/Mock_complex",54)
       resultStatus: 1
-      duration: 0.0002144
+      duration: 0.0002065
       messages: 
       output: 
       stacktrace: 
@@ -2107,7 +1745,7 @@ MonoBehaviour:
       name: MeshNormalsAreCorrect
       fullName: MeshContainerTest.MeshNormalsAreCorrect
       resultStatus: 1
-      duration: 0.0126275
+      duration: 0.0112292
       messages: 
       output: 
       stacktrace: 
@@ -2123,7 +1761,7 @@ MonoBehaviour:
       name: MeshNormalsAreCorrect("Prefabs/Doc",0,0.0f,1.0f,0.0f)
       fullName: MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",0,0.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0012854
+      duration: 0.0003719
       messages: 
       output: 
       stacktrace: 
@@ -2140,7 +1778,7 @@ MonoBehaviour:
       name: MeshNormalsAreCorrect("Prefabs/Doc",1,0.0f,1.0f,0.0f)
       fullName: MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",1,0.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0002389
+      duration: 0.0002319
       messages: 
       output: 
       stacktrace: 
@@ -2157,7 +1795,7 @@ MonoBehaviour:
       name: MeshNormalsAreCorrect("Prefabs/Doc",2,0.0f,1.0f,0.0f)
       fullName: MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",2,0.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0002157
+      duration: 0.00023
       messages: 
       output: 
       stacktrace: 
@@ -2174,7 +1812,7 @@ MonoBehaviour:
       name: MeshNormalsAreCorrect("Prefabs/Doc",3,0.0f,1.0f,0.0f)
       fullName: MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",3,0.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0002132
+      duration: 0.0002197
       messages: 
       output: 
       stacktrace: 
@@ -2191,7 +1829,7 @@ MonoBehaviour:
       name: MeshNormalsIsNotNull_Test
       fullName: MeshContainerTest.MeshNormalsIsNotNull_Test
       resultStatus: 1
-      duration: 0.0094262
+      duration: 0.009715
       messages: 
       output: 
       stacktrace: 
@@ -2207,7 +1845,7 @@ MonoBehaviour:
       name: MeshNormalsIsNotNull_Test("Prefabs/Doc")
       fullName: MeshContainerTest.MeshNormalsIsNotNull_Test("Prefabs/Doc")
       resultStatus: 1
-      duration: 0.0004577
+      duration: 0.0003271
       messages: 
       output: 
       stacktrace: 
@@ -2224,7 +1862,7 @@ MonoBehaviour:
       name: MeshNormalsIsNotNull_Test("Prefabs/Mock_complex")
       fullName: MeshContainerTest.MeshNormalsIsNotNull_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.0002282
+      duration: 0.0002239
       messages: 
       output: 
       stacktrace: 
@@ -2241,7 +1879,7 @@ MonoBehaviour:
       name: MeshVerticesIsNotNull_Test
       fullName: MeshContainerTest.MeshVerticesIsNotNull_Test
       resultStatus: 1
-      duration: 0.0096345
+      duration: 0.0095866
       messages: 
       output: 
       stacktrace: 
@@ -2257,7 +1895,7 @@ MonoBehaviour:
       name: MeshVerticesIsNotNull_Test("Prefabs/Doc")
       fullName: MeshContainerTest.MeshVerticesIsNotNull_Test("Prefabs/Doc")
       resultStatus: 1
-      duration: 0.0004385
+      duration: 0.0003271
       messages: 
       output: 
       stacktrace: 
@@ -2274,7 +1912,7 @@ MonoBehaviour:
       name: MeshVerticesIsNotNull_Test("Prefabs/Mock_complex")
       fullName: MeshContainerTest.MeshVerticesIsNotNull_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.0002188
+      duration: 0.000214
       messages: 
       output: 
       stacktrace: 
@@ -2291,7 +1929,7 @@ MonoBehaviour:
       name: MeshControllerTest
       fullName: MeshControllerTest
       resultStatus: 1
-      duration: 0.0290856
+      duration: 0.0319202
       messages: 
       output: 
       stacktrace: 
@@ -2307,7 +1945,7 @@ MonoBehaviour:
       name: AverageDose_Test
       fullName: MeshControllerTest.AverageDose_Test
       resultStatus: 1
-      duration: 0.00123
+      duration: 0.0007773
       messages: 
       output: 
       stacktrace: 
@@ -2324,7 +1962,7 @@ MonoBehaviour:
       name: MeshContainerIsNotNull_Test
       fullName: MeshControllerTest.MeshContainerIsNotNull_Test
       resultStatus: 1
-      duration: 0.0003558
+      duration: 0.0002362
       messages: 
       output: 
       stacktrace: 
@@ -2341,7 +1979,7 @@ MonoBehaviour:
       name: RelevantVertexPositions_Test
       fullName: MeshControllerTest.RelevantVertexPositions_Test
       resultStatus: 1
-      duration: 0.0005405
+      duration: 0.0002151
       messages: 
       output: 
       stacktrace: 
@@ -2358,7 +1996,7 @@ MonoBehaviour:
       name: RelevantVerticesExists_Test
       fullName: MeshControllerTest.RelevantVerticesExists_Test
       resultStatus: 1
-      duration: 0.0002602
+      duration: 0.0002271
       messages: 
       output: 
       stacktrace: 
@@ -2375,7 +2013,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumAfterUpdate_Test
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumAfterUpdate_Test
       resultStatus: 1
-      duration: 0.0107866
+      duration: 0.0100072
       messages: 
       output: 
       stacktrace: 
@@ -2391,7 +2029,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumAfterUpdate_Test("Prefabs/Mock_simple",4)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumAfterUpdate_Test("Prefabs/Mock_simple",4)
       resultStatus: 1
-      duration: 0.0008307
+      duration: 0.0004011
       messages: 
       output: 
       stacktrace: 
@@ -2408,7 +2046,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumAfterUpdate_Test("Prefabs/Mock_complex",16)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumAfterUpdate_Test("Prefabs/Mock_complex",16)
       resultStatus: 1
-      duration: 0.0002916
+      duration: 0.0002908
       messages: 
       output: 
       stacktrace: 
@@ -2425,7 +2063,7 @@ MonoBehaviour:
       name: RelevantVerticesIsNotNullAfterUpdate_Test
       fullName: MeshControllerTest.RelevantVerticesIsNotNullAfterUpdate_Test
       resultStatus: 1
-      duration: 0.0002808
+      duration: 0.0002371
       messages: 
       output: 
       stacktrace: 
@@ -2442,7 +2080,7 @@ MonoBehaviour:
       name: StoreDoses_Test
       fullName: MeshControllerTest.StoreDoses_Test
       resultStatus: 1
-      duration: 0.0013701
+      duration: 0.0002283
       messages: 
       output: 
       stacktrace: 
@@ -2459,7 +2097,7 @@ MonoBehaviour:
       name: VerticeDataExists_Test
       fullName: MeshControllerTest.VerticeDataExists_Test
       resultStatus: 1
-      duration: 0.0005228
+      duration: 0.0002139
       messages: 
       output: 
       stacktrace: 
@@ -2471,12 +2109,526 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1054
       parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshControllerTest][suite]
+    - id: 1056
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+      name: MoveControllerTest
+      fullName: MoveControllerTest
+      resultStatus: 2
+      duration: 0.1168127
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1100
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1121
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test][suite]
+      name: MovesAlongNegativeXforInputLEFT_Test
+      fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test
+      resultStatus: 2
+      duration: 0.0132829
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1094
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1117
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeXforInputLEFT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.1f)]
+      name: MovesAlongNegativeXforInputLEFT_Test(-0.1f)
+      fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.1f)
+      resultStatus: 2
+      duration: 0.001092
+      messages: "  Expected: 0.0d +/- 0.0099999997764825821d\r\n  But was:  -1.5800001621246338d\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test (System.Single
+        value) [0x00042] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:145\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1121
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test][suite]
+    - id: 1118
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeXforInputLEFT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.75639f)]
+      name: MovesAlongNegativeXforInputLEFT_Test(-0.75639f)
+      fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.75639f)
+      resultStatus: 2
+      duration: 0.0007882
+      messages: "  Expected: 0.0d +/- 0.0099999997764825821d\r\n  But was:  1.5196927785873413d\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test (System.Single
+        value) [0x00042] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:145\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1121
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test][suite]
+    - id: 1119
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeXforInputLEFT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-1.0f)]
+      name: MovesAlongNegativeXforInputLEFT_Test(-1.0f)
+      fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-1.0f)
+      resultStatus: 2
+      duration: 0.0007494
+      messages: "  Expected: 0.0d +/- 0.0099999997764825821d\r\n  But was:  1.5196927785873413d\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test (System.Single
+        value) [0x00042] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:145\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1121
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test][suite]
+    - id: 1120
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeXforInputLEFT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.5f)]
+      name: MovesAlongNegativeXforInputLEFT_Test(-0.5f)
+      fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.5f)
+      resultStatus: 2
+      duration: 0.000754
+      messages: "  Expected: 0.0d +/- 0.0099999997764825821d\r\n  But was:  -1.5800001621246338d\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test (System.Single
+        value) [0x00042] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:145\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1121
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test][suite]
+    - id: 1107
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test][suite]
+      name: MovesAlongNegativeZforInputDOWN_Test
+      fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test
+      resultStatus: 2
+      duration: 0.0150802
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1094
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1103
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeZforInputDOWN_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.1f)]
+      name: MovesAlongNegativeZforInputDOWN_Test(-0.1f)
+      fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.1f)
+      resultStatus: 2
+      duration: 0.0009403
+      messages: "  Expected: less than 0.0f\r\n  But was:  1.51969278f\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test (System.Single
+        value) [0x00030] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:78\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1107
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test][suite]
+    - id: 1104
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeZforInputDOWN_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.75639f)]
+      name: MovesAlongNegativeZforInputDOWN_Test(-0.75639f)
+      fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.75639f)
+      resultStatus: 2
+      duration: 0.00072
+      messages: "  Expected: less than 0.0f\r\n  But was:  1.51969278f\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test (System.Single
+        value) [0x00030] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:78\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1107
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test][suite]
+    - id: 1105
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeZforInputDOWN_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-1.0f)]
+      name: MovesAlongNegativeZforInputDOWN_Test(-1.0f)
+      fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-1.0f)
+      resultStatus: 2
+      duration: 0.0007108
+      messages: "  Expected: less than 0.0f\r\n  But was:  1.51969278f\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test (System.Single
+        value) [0x00030] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:78\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1107
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test][suite]
+    - id: 1106
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeZforInputDOWN_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.5f)]
+      name: MovesAlongNegativeZforInputDOWN_Test(-0.5f)
+      fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.5f)
+      resultStatus: 2
+      duration: 0.0007271
+      messages: "  Expected: less than 0.0f\r\n  But was:  1.51969278f\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test (System.Single
+        value) [0x00030] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:78\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1107
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test][suite]
+    - id: 1114
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test][suite]
+      name: MovesAlongPositiveXforInputRIGHT_Test
+      fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test
+      resultStatus: 2
+      duration: 0.0148112
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1094
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1110
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveXforInputRIGHT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.1f)]
+      name: MovesAlongPositiveXforInputRIGHT_Test(0.1f)
+      fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.1f)
+      resultStatus: 2
+      duration: 0.0008609
+      messages: "  Expected: greater than 0.0f\r\n  But was:  -3.05992359E-07f\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test (System.Single
+        value) [0x00030] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:111\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1114
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test][suite]
+    - id: 1111
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveXforInputRIGHT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.75639f)]
+      name: MovesAlongPositiveXforInputRIGHT_Test(0.75639f)
+      fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.75639f)
+      resultStatus: 2
+      duration: 0.0008131
+      messages: "  Expected: 0.0d +/- 0.0099999997764825821d\r\n  But was:  1.5196927785873413d\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test (System.Single
+        value) [0x00042] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:112\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1114
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test][suite]
+    - id: 1112
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveXforInputRIGHT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(1.0f)]
+      name: MovesAlongPositiveXforInputRIGHT_Test(1.0f)
+      fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(1.0f)
+      resultStatus: 2
+      duration: 0.0007282
+      messages: "  Expected: 0.0d +/- 0.0099999997764825821d\r\n  But was:  1.5196927785873413d\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test (System.Single
+        value) [0x00042] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:112\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1114
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test][suite]
+    - id: 1113
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveXforInputRIGHT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.5f)]
+      name: MovesAlongPositiveXforInputRIGHT_Test(0.5f)
+      fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.5f)
+      resultStatus: 2
+      duration: 0.0006228
+      messages: "  Expected: greater than 0.0f\r\n  But was:  -3.05992359E-07f\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test (System.Single
+        value) [0x00030] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:111\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1114
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test][suite]
+    - id: 1100
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test][suite]
+      name: MovesAlongPositiveZforInputUP_Test
+      fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test
+      resultStatus: 2
+      duration: 0.0126305
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1094
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1096
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveZforInputUP_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.1f)]
+      name: MovesAlongPositiveZforInputUP_Test(0.1f)
+      fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.1f)
+      resultStatus: 2
+      duration: 0.0009009
+      messages: "  Expected: greater than 0.0f\r\n  But was:  -1.58000016f\r\n"
+      output: 
+      stacktrace: "at MoveControllerTest.MovesAlongPositiveZforInputUP_Test (System.Single
+        value) [0x00030] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\MoveControllerTest.cs:45\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1100
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test][suite]
+    - id: 1097
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveZforInputUP_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.75639f)]
+      name: MovesAlongPositiveZforInputUP_Test(0.75639f)
+      fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.75639f)
+      resultStatus: 1
+      duration: 0.0003255
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1100
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test][suite]
+    - id: 1098
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveZforInputUP_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test(1.0f)]
+      name: MovesAlongPositiveZforInputUP_Test(1.0f)
+      fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(1.0f)
+      resultStatus: 1
+      duration: 0.0002794
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1100
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test][suite]
+    - id: 1099
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveZforInputUP_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.5f)]
+      name: MovesAlongPositiveZforInputUP_Test(0.5f)
+      fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.5f)
+      resultStatus: 1
+      duration: 0.0002719
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1100
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test][suite]
+    - id: 1109
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputDOWNisZero_Test][suite]
+      name: MovesNotforInputDOWNisZero_Test
+      fullName: MoveControllerTest.MovesNotforInputDOWNisZero_Test
+      resultStatus: 1
+      duration: 0.0096768
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1094
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1108
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesNotforInputDOWNisZero_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputDOWNisZero_Test(0)]
+      name: MovesNotforInputDOWNisZero_Test(0)
+      fullName: MoveControllerTest.MovesNotforInputDOWNisZero_Test(0)
+      resultStatus: 1
+      duration: 0.0004337
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1109
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputDOWNisZero_Test][suite]
+    - id: 1123
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputLEFTisZero_Test][suite]
+      name: MovesNotforInputLEFTisZero_Test
+      fullName: MoveControllerTest.MovesNotforInputLEFTisZero_Test
+      resultStatus: 1
+      duration: 0.0092007
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1094
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1122
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesNotforInputLEFTisZero_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputLEFTisZero_Test(0)]
+      name: MovesNotforInputLEFTisZero_Test(0)
+      fullName: MoveControllerTest.MovesNotforInputLEFTisZero_Test(0)
+      resultStatus: 1
+      duration: 0.0004175
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1123
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputLEFTisZero_Test][suite]
+    - id: 1116
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputRIGHTisZero_Test][suite]
+      name: MovesNotforInputRIGHTisZero_Test
+      fullName: MoveControllerTest.MovesNotforInputRIGHTisZero_Test
+      resultStatus: 1
+      duration: 0.0089985
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1094
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1115
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesNotforInputRIGHTisZero_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputRIGHTisZero_Test(0)]
+      name: MovesNotforInputRIGHTisZero_Test(0)
+      fullName: MoveControllerTest.MovesNotforInputRIGHTisZero_Test(0)
+      resultStatus: 1
+      duration: 0.0004273
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1116
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputRIGHTisZero_Test][suite]
+    - id: 1102
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotForInputUPisZero_Test][suite]
+      name: MovesNotForInputUPisZero_Test
+      fullName: MoveControllerTest.MovesNotForInputUPisZero_Test
+      resultStatus: 1
+      duration: 0.0087356
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1094
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1101
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesNotForInputUPisZero_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotForInputUPisZero_Test(0.0f)]
+      name: MovesNotForInputUPisZero_Test(0.0f)
+      fullName: MoveControllerTest.MovesNotForInputUPisZero_Test(0.0f)
+      resultStatus: 1
+      duration: 0.0004585
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1102
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotForInputUPisZero_Test][suite]
+    - id: 1060
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.PlayerMovementIsExistent_Test]
+      name: PlayerMovementIsExistent_Test
+      fullName: MoveControllerTest.PlayerMovementIsExistent_Test
+      resultStatus: 1
+      duration: 0.0006352
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1059
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
     - id: 1012
       uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
       name: RayTracerTest
       fullName: RayTracerTest
       resultStatus: 1
-      duration: 0.0613615
+      duration: 0.0535652
       messages: 
       output: 
       stacktrace: 
@@ -2492,7 +2644,7 @@ MonoBehaviour:
       name: CreateRayHits_Test
       fullName: RayTracerTest.CreateRayHits_Test
       resultStatus: 1
-      duration: 0.0012877
+      duration: 0.0002294
       messages: 
       output: 
       stacktrace: 
@@ -2509,7 +2661,7 @@ MonoBehaviour:
       name: CreateRayHitsDoc_Test
       fullName: RayTracerTest.CreateRayHitsDoc_Test
       resultStatus: 1
-      duration: 0.0113706
+      duration: 0.0097767
       messages: 
       output: 
       stacktrace: 
@@ -2525,7 +2677,7 @@ MonoBehaviour:
       name: CreateRayHitsDoc_Test("Mock_simple")
       fullName: RayTracerTest.CreateRayHitsDoc_Test("Mock_simple")
       resultStatus: 1
-      duration: 0.0015069
+      duration: 0.0003609
       messages: 
       output: 
       stacktrace: 
@@ -2542,7 +2694,7 @@ MonoBehaviour:
       name: CreateRayHitsDoc_Test("Mock_complex")
       fullName: RayTracerTest.CreateRayHitsDoc_Test("Mock_complex")
       resultStatus: 1
-      duration: 0.0002826
+      duration: 0.0002289
       messages: 
       output: 
       stacktrace: 
@@ -2559,7 +2711,7 @@ MonoBehaviour:
       name: CreateRayHitsOther_Test
       fullName: RayTracerTest.CreateRayHitsOther_Test
       resultStatus: 1
-      duration: 0.010431
+      duration: 0.0097646
       messages: 
       output: 
       stacktrace: 
@@ -2575,7 +2727,7 @@ MonoBehaviour:
       name: CreateRayHitsOther_Test("Mock_simple")
       fullName: RayTracerTest.CreateRayHitsOther_Test("Mock_simple")
       resultStatus: 1
-      duration: 0.0005363
+      duration: 0.0003564
       messages: 
       output: 
       stacktrace: 
@@ -2592,7 +2744,7 @@ MonoBehaviour:
       name: CreateRayHitsOther_Test("Mock_complex")
       fullName: RayTracerTest.CreateRayHitsOther_Test("Mock_complex")
       resultStatus: 1
-      duration: 0.00041
+      duration: 0.0002415
       messages: 
       output: 
       stacktrace: 
@@ -2609,7 +2761,7 @@ MonoBehaviour:
       name: CreateRaySourceToDoc_Test
       fullName: RayTracerTest.CreateRaySourceToDoc_Test
       resultStatus: 1
-      duration: 0.0120579
+      duration: 0.0094052
       messages: 
       output: 
       stacktrace: 
@@ -2625,7 +2777,7 @@ MonoBehaviour:
       name: CreateRaySourceToDoc_Test("Mock_simple")
       fullName: RayTracerTest.CreateRaySourceToDoc_Test("Mock_simple")
       resultStatus: 1
-      duration: 0.0005792
+      duration: 0.0003166
       messages: 
       output: 
       stacktrace: 
@@ -2642,7 +2794,7 @@ MonoBehaviour:
       name: CreateRaySourceToDoc_Test("Mock_complex")
       fullName: RayTracerTest.CreateRaySourceToDoc_Test("Mock_complex")
       resultStatus: 1
-      duration: 0.0002372
+      duration: 0.0002049
       messages: 
       output: 
       stacktrace: 
@@ -2659,7 +2811,7 @@ MonoBehaviour:
       name: GetDistances_Test
       fullName: RayTracerTest.GetDistances_Test
       resultStatus: 1
-      duration: 0.0097879
+      duration: 0.0106055
       messages: 
       output: 
       stacktrace: 
@@ -2675,7 +2827,7 @@ MonoBehaviour:
       name: GetDistances_Test("Mock_simple")
       fullName: RayTracerTest.GetDistances_Test("Mock_simple")
       resultStatus: 1
-      duration: 0.0007862
+      duration: 0.0003791
       messages: 
       output: 
       stacktrace: 
@@ -2692,7 +2844,7 @@ MonoBehaviour:
       name: GetDistances_Test("Mock_complex")
       fullName: RayTracerTest.GetDistances_Test("Mock_complex")
       resultStatus: 1
-      duration: 0.0002226
+      duration: 0.0002331
       messages: 
       output: 
       stacktrace: 
@@ -2704,13 +2856,651 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1055
       parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.GetDistances_Test][suite]
-    m_ResultText: MoveInputRIGHTisGreater_Test(0.5f) (0,000s)
+    - id: 1001
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RotationControllerTest][suite]
+      name: RotationControllerTest
+      fullName: RotationControllerTest
+      resultStatus: 1
+      duration: 0.1131451
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1112
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1002
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.CameraRotationExistent_Test]
+      name: CameraRotationExistent_Test
+      fullName: RotationControllerTest.CameraRotationExistent_Test
+      resultStatus: 1
+      duration: 0.0007943
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RotationControllerTest][suite]
+    - id: 1038
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
+      name: ClampDownRotationFormLessMinus90ToMinus90_Test
+      fullName: RotationControllerTest.ClampDownRotationFormLessMinus90ToMinus90_Test
+      resultStatus: 1
+      duration: 0.0107019
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RotationControllerTest][suite]
+    - id: 1035
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampDownRotationFormLessMinus90ToMinus90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.1f)]
+      name: ClampDownRotationFormLessMinus90ToMinus90_Test(0.1f)
+      fullName: RotationControllerTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.1f)
+      resultStatus: 1
+      duration: 0.0003262
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1038
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
+    - id: 1036
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampDownRotationFormLessMinus90ToMinus90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormLessMinus90ToMinus90_Test(1.0f)]
+      name: ClampDownRotationFormLessMinus90ToMinus90_Test(1.0f)
+      fullName: RotationControllerTest.ClampDownRotationFormLessMinus90ToMinus90_Test(1.0f)
+      resultStatus: 1
+      duration: 0.0002192
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1038
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
+    - id: 1037
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampDownRotationFormLessMinus90ToMinus90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.0f)]
+      name: ClampDownRotationFormLessMinus90ToMinus90_Test(0.0f)
+      fullName: RotationControllerTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.0f)
+      resultStatus: 1
+      duration: 0.000208
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1038
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
+    - id: 1034
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
+      name: ClampDownRotationFormMinus90ToMinus90_Test
+      fullName: RotationControllerTest.ClampDownRotationFormMinus90ToMinus90_Test
+      resultStatus: 1
+      duration: 0.011091
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RotationControllerTest][suite]
+    - id: 1031
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampDownRotationFormMinus90ToMinus90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormMinus90ToMinus90_Test(0.1f)]
+      name: ClampDownRotationFormMinus90ToMinus90_Test(0.1f)
+      fullName: RotationControllerTest.ClampDownRotationFormMinus90ToMinus90_Test(0.1f)
+      resultStatus: 1
+      duration: 0.0003099
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1034
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
+    - id: 1032
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampDownRotationFormMinus90ToMinus90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormMinus90ToMinus90_Test(1.0f)]
+      name: ClampDownRotationFormMinus90ToMinus90_Test(1.0f)
+      fullName: RotationControllerTest.ClampDownRotationFormMinus90ToMinus90_Test(1.0f)
+      resultStatus: 1
+      duration: 0.0002063
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1034
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
+    - id: 1033
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampDownRotationFormMinus90ToMinus90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormMinus90ToMinus90_Test(0.0f)]
+      name: ClampDownRotationFormMinus90ToMinus90_Test(0.0f)
+      fullName: RotationControllerTest.ClampDownRotationFormMinus90ToMinus90_Test(0.0f)
+      resultStatus: 1
+      duration: 0.0002034
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1034
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
+    - id: 1027
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationForm90To90_Test][suite]
+      name: ClampUpRotationForm90To90_Test
+      fullName: RotationControllerTest.ClampUpRotationForm90To90_Test
+      resultStatus: 1
+      duration: 0.0113087
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RotationControllerTest][suite]
+    - id: 1023
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampUpRotationForm90To90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationForm90To90_Test(-0.1f)]
+      name: ClampUpRotationForm90To90_Test(-0.1f)
+      fullName: RotationControllerTest.ClampUpRotationForm90To90_Test(-0.1f)
+      resultStatus: 1
+      duration: 0.0003421
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1026
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationForm90To90_Test][suite]
+    - id: 1024
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampUpRotationForm90To90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationForm90To90_Test(-1.0f)]
+      name: ClampUpRotationForm90To90_Test(-1.0f)
+      fullName: RotationControllerTest.ClampUpRotationForm90To90_Test(-1.0f)
+      resultStatus: 1
+      duration: 0.0002115
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1026
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationForm90To90_Test][suite]
+    - id: 1027
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampUpRotationForm90To90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationForm90To90_Test(0.0f)]
+      name: ClampUpRotationForm90To90_Test(0.0f)
+      fullName: RotationControllerTest.ClampUpRotationForm90To90_Test(0.0f)
+      resultStatus: 1
+      duration: 0.0002007
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1028
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationForm90To90_Test][suite]
+    - id: 1030
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationFormLess90To90_Test][suite]
+      name: ClampUpRotationFormLess90To90_Test
+      fullName: RotationControllerTest.ClampUpRotationFormLess90To90_Test
+      resultStatus: 1
+      duration: 0.0109069
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RotationControllerTest][suite]
+    - id: 1027
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampUpRotationFormLess90To90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationFormLess90To90_Test(-0.1f)]
+      name: ClampUpRotationFormLess90To90_Test(-0.1f)
+      fullName: RotationControllerTest.ClampUpRotationFormLess90To90_Test(-0.1f)
+      resultStatus: 1
+      duration: 0.0003134
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationFormLess90To90_Test][suite]
+    - id: 1028
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampUpRotationFormLess90To90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationFormLess90To90_Test(-1.0f)]
+      name: ClampUpRotationFormLess90To90_Test(-1.0f)
+      fullName: RotationControllerTest.ClampUpRotationFormLess90To90_Test(-1.0f)
+      resultStatus: 1
+      duration: 0.0002212
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationFormLess90To90_Test][suite]
+    - id: 1029
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/ClampUpRotationFormLess90To90_Test/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationFormLess90To90_Test(0.0f)]
+      name: ClampUpRotationFormLess90To90_Test(0.0f)
+      fullName: RotationControllerTest.ClampUpRotationFormLess90To90_Test(0.0f)
+      resultStatus: 1
+      duration: 0.0002884
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.ClampUpRotationFormLess90To90_Test][suite]
+    - id: 1012
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputDownisGreater_Test][suite]
+      name: MouseInputDownisGreater_Test
+      fullName: RotationControllerTest.MouseInputDownisGreater_Test
+      resultStatus: 1
+      duration: 0.0115323
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RotationControllerTest][suite]
+    - id: 1008
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputDownisGreater_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputDownisGreater_Test(-0.1f)]
+      name: MouseInputDownisGreater_Test(-0.1f)
+      fullName: RotationControllerTest.MouseInputDownisGreater_Test(-0.1f)
+      resultStatus: 1
+      duration: 0.0003227
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputDownisGreater_Test][suite]
+    - id: 1009
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputDownisGreater_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputDownisGreater_Test(-0.75639f)]
+      name: MouseInputDownisGreater_Test(-0.75639f)
+      fullName: RotationControllerTest.MouseInputDownisGreater_Test(-0.75639f)
+      resultStatus: 1
+      duration: 0.000216
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputDownisGreater_Test][suite]
+    - id: 1010
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputDownisGreater_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputDownisGreater_Test(-1.0f)]
+      name: MouseInputDownisGreater_Test(-1.0f)
+      fullName: RotationControllerTest.MouseInputDownisGreater_Test(-1.0f)
+      resultStatus: 1
+      duration: 0.0003256
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputDownisGreater_Test][suite]
+    - id: 1011
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputDownisGreater_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputDownisGreater_Test(-0.5f)]
+      name: MouseInputDownisGreater_Test(-0.5f)
+      fullName: RotationControllerTest.MouseInputDownisGreater_Test(-0.5f)
+      resultStatus: 1
+      duration: 0.0002121
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputDownisGreater_Test][suite]
+    - id: 1022
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputLeftisLess_Test][suite]
+      name: MouseInputLeftisLess_Test
+      fullName: RotationControllerTest.MouseInputLeftisLess_Test
+      resultStatus: 1
+      duration: 0.0115574
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RotationControllerTest][suite]
+    - id: 1018
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputLeftisLess_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputLeftisLess_Test(-0.1f)]
+      name: MouseInputLeftisLess_Test(-0.1f)
+      fullName: RotationControllerTest.MouseInputLeftisLess_Test(-0.1f)
+      resultStatus: 1
+      duration: 0.0003551
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputLeftisLess_Test][suite]
+    - id: 1019
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputLeftisLess_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputLeftisLess_Test(-0.75639f)]
+      name: MouseInputLeftisLess_Test(-0.75639f)
+      fullName: RotationControllerTest.MouseInputLeftisLess_Test(-0.75639f)
+      resultStatus: 1
+      duration: 0.000205
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputLeftisLess_Test][suite]
+    - id: 1020
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputLeftisLess_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputLeftisLess_Test(-1.0f)]
+      name: MouseInputLeftisLess_Test(-1.0f)
+      fullName: RotationControllerTest.MouseInputLeftisLess_Test(-1.0f)
+      resultStatus: 1
+      duration: 0.0002486
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputLeftisLess_Test][suite]
+    - id: 1021
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputLeftisLess_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputLeftisLess_Test(-0.5f)]
+      name: MouseInputLeftisLess_Test(-0.5f)
+      fullName: RotationControllerTest.MouseInputLeftisLess_Test(-0.5f)
+      resultStatus: 1
+      duration: 0.0001961
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputLeftisLess_Test][suite]
+    - id: 1017
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputRightisGreater_Test][suite]
+      name: MouseInputRightisGreater_Test
+      fullName: RotationControllerTest.MouseInputRightisGreater_Test
+      resultStatus: 1
+      duration: 0.0120942
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RotationControllerTest][suite]
+    - id: 1013
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputRightisGreater_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputRightisGreater_Test(0.1f)]
+      name: MouseInputRightisGreater_Test(0.1f)
+      fullName: RotationControllerTest.MouseInputRightisGreater_Test(0.1f)
+      resultStatus: 1
+      duration: 0.0003338
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputRightisGreater_Test][suite]
+    - id: 1014
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputRightisGreater_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputRightisGreater_Test(0.75639f)]
+      name: MouseInputRightisGreater_Test(0.75639f)
+      fullName: RotationControllerTest.MouseInputRightisGreater_Test(0.75639f)
+      resultStatus: 1
+      duration: 0.0002151
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputRightisGreater_Test][suite]
+    - id: 1015
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputRightisGreater_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputRightisGreater_Test(1.0f)]
+      name: MouseInputRightisGreater_Test(1.0f)
+      fullName: RotationControllerTest.MouseInputRightisGreater_Test(1.0f)
+      resultStatus: 1
+      duration: 0.0002049
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputRightisGreater_Test][suite]
+    - id: 1016
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputRightisGreater_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputRightisGreater_Test(0.5f)]
+      name: MouseInputRightisGreater_Test(0.5f)
+      fullName: RotationControllerTest.MouseInputRightisGreater_Test(0.5f)
+      resultStatus: 1
+      duration: 0.0002071
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputRightisGreater_Test][suite]
+    - id: 1007
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputUPisLess_Test][suite]
+      name: MouseInputUPisLess_Test
+      fullName: RotationControllerTest.MouseInputUPisLess_Test
+      resultStatus: 1
+      duration: 0.0112177
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RotationControllerTest][suite]
+    - id: 1003
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputUPisLess_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputUPisLess_Test(0.1f)]
+      name: MouseInputUPisLess_Test(0.1f)
+      fullName: RotationControllerTest.MouseInputUPisLess_Test(0.1f)
+      resultStatus: 1
+      duration: 0.0003457
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputUPisLess_Test][suite]
+    - id: 1004
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputUPisLess_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputUPisLess_Test(0.75639f)]
+      name: MouseInputUPisLess_Test(0.75639f)
+      fullName: RotationControllerTest.MouseInputUPisLess_Test(0.75639f)
+      resultStatus: 1
+      duration: 0.0002187
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputUPisLess_Test][suite]
+    - id: 1005
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputUPisLess_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputUPisLess_Test(1.0f)]
+      name: MouseInputUPisLess_Test(1.0f)
+      fullName: RotationControllerTest.MouseInputUPisLess_Test(1.0f)
+      resultStatus: 1
+      duration: 0.0002091
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputUPisLess_Test][suite]
+    - id: 1006
+      uniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/MouseInputUPisLess_Test/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputUPisLess_Test(0.5f)]
+      name: MouseInputUPisLess_Test(0.5f)
+      fullName: RotationControllerTest.MouseInputUPisLess_Test(0.5f)
+      resultStatus: 1
+      duration: 0.0002066
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Assembly-CSharp-Editor.dll/RotationControllerTest/[Assembly-CSharp-Editor][RotationControllerTest.MouseInputUPisLess_Test][suite]
+    m_ResultText: RelevantVerticesHasCorrectNumAfterUpdate_Test("Prefabs/Mock_simple",4)
+      (0,000s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: bfc85ae0
-      m_LastClickedID: -530921281
-      m_ExpandedIDs: a3d4138c707ffc9ecbf570c3734991c7e4b4e5e05b0205e29f8c79f78d729f0a34d6281b24e32e204755f323036213369fcff33ebaec4348b3e2354f07495e581a4e5359d2fa6f59a00d2a5a14b4636effffff7f
+      m_SelectedIDs: 3befeff1
+      m_LastClickedID: -235933893
+      m_ExpandedIDs: 8035f988a3d4138c707ffc9e04dd84c2cbf570c3734991c7e4b4e5e05b0205e29f8c79f72371f30712a7ee098d729f0ae3d6231390d09e1634d6281b24e32e204755f323036213367a363a389fcff33ebaec4348b3e2354f1a4e5359d2fa6f59a00d2a5ae022435c14b4636effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2736,95 +3526,6 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &19
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: 257045534191678443, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: -2224
-    y: 72.66667
-    width: 1199
-    height: 972
-  m_ViewDataDictionary: {fileID: 0}
-  m_SerializedViewsNames: []
-  m_SerializedViewsValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1798.5, y: 1012}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -599.5
-    m_HBaseRangeMax: 599.5
-    m_VBaseRangeMin: -337.33334
-    m_VBaseRangeMax: 337.33334
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 1199
-      height: 951
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 599.5, y: 475.5}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -599.5
-      y: -475.5
-      width: 1199
-      height: 951
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1798.5, y: 1458}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 00000000000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2872,10 +3573,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -2224
+    x: -1950.6666
     y: 72.66667
-    width: 1199
-    height: 972
+    width: 943
+    height: 845
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 2a4099751352f0447a31ce7ceda00ada
@@ -2887,9 +3588,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -14.094719, y: -45.98271, z: -4.161708}
+    m_Target: {x: -1.5151467, y: -0.008494964, z: 27.565662}
     speed: 2
-    m_Value: {x: -14.094719, y: -45.98271, z: -4.161708}
+    m_Value: {x: -1.5151467, y: -0.008494964, z: 27.565662}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2935,13 +3636,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+    m_Target: {x: 0.15707703, y: -0.6286758, z: 0.13162792, w: 0.7501868}
     speed: 2
-    m_Value: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+    m_Value: {x: 0.15707603, y: -0.6286718, z: 0.13162708, w: 0.75018203}
   m_Size:
-    m_Target: 89.17722
+    m_Target: 18.598846
     speed: 2
-    m_Value: 89.17722
+    m_Value: 18.598846
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -2987,9 +3688,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -554
+    x: -458
     y: 72.66667
-    width: 553
+    width: 457
     height: 799
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -3115,10 +3816,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1022.6666
+    x: -1006
     y: 72.66667
-    width: 467
-    height: 972
+    width: 546
+    height: 845
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -3133,20 +3834,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Editor/Tests
+    - Assets/Resources/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Editor/Tests
+  - Assets/Resources/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f2330000
-    m_LastClickedID: 13298
-    m_ExpandedIDs: 00000000e2330000e4330000e6330000e833000000ca9a3b
+    m_SelectedIDs: f4330000
+    m_LastClickedID: 13300
+    m_ExpandedIDs: 00000000e4330000e6330000e8330000ea33000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3174,7 +3875,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e2330000e4330000e6330000e8330000
+    m_ExpandedIDs: 00000000e4330000e6330000e8330000ea330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3205,18 +3906,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 48220000d0210000aa22000012230000ce21000064c9ffffb6220000d2210000d6210000868efdfff0040000d4210000dc210000a42b0000622200000a2200002828000012220000305000008422000016220000c032faff5c5bf7ffea2a00001e2c000020ca000016300000262d00004e630000d6620000d262000066620000342d0300bc350000fa3d0000ae410000244500006e4100008a320000643700007837000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: ManualTestScene
-      m_OriginalName: ManualTestScene
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 13676
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -3229,7 +3930,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 110
+  m_DirectoriesAreaWidth: 156
 --- !u!114 &26
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -3253,15 +3954,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2560
     y: 72.66667
-    width: 335
-    height: 972
+    width: 608
+    height: 845
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f4390000
-      m_LastClickedID: 14836
-      m_ExpandedIDs: 84b2ffff14b6ffffc8b7ffff76bbffffa0bfffff6cc3ffff32c7ffff9ccaffff88ceffff28d6ffff40d6ffff88d9ffff72dcffff5cdfffffe4dfffff8ce1ffffc0e4fffffae7ffff34ebffffd0eeffffe4eeffffdef1ffffd4f4ffff36f8ffff72fbffff
+      m_SelectedIDs: 843c0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: cee7feffceeefeff48f6feff96fefeffde04ffffb40effff9816ffffc81fffff3627ffffaa2effff1836ffff7836ffffae36ffff0837ffff763effffe445ffffd44dffff6655ffff565dffffe864ffff7a6cffff0c74ffffa47bffff627cfffff27cffff827dffff1485ffff2285ffff848affff889bffff6c9effff42a0ffff72a0ffff24a2ffff30a4ffff92a4fffff4a4ffff56a5ffffa6abfffff6b1ffffbeb2ffff20b3ffff82b3ffffd2b9ffff9ebaffffd6baffff38bbffff70bbffffcabcffff1ac3ffff6ac9ffff32caffff6acaffffa2caffffdacaffff12cbffff4acbffff9ad1ffff3cd2ffff74d2ffffacd2ffffe4d2ffff1cd3ffff54d3ffff7ee3ffff86e4ffffd4e4ffff44eaffffb4efffff24f5ffff66f5ffffd8faffff72fbffff743b0000003c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3307,9 +4008,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: -2560
-    y: 1066
-    width: 2005
-    height: 294
+    y: 938.6667
+    width: 2101
+    height: 421
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &28
 MonoBehaviour:
@@ -3332,9 +4033,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -554
+    x: -458
     y: 892.6667
-    width: 553
+    width: 457
     height: 467
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0

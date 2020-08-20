@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
 
-public class DocMovementTest
+public class MoveControllerTest
 {
     public Transform Mock;
     public MoveController Controller;
@@ -13,14 +11,20 @@ public class DocMovementTest
     public void SetUp()
     {
         Mock = GameObject.Instantiate(new GameObject()).transform;
+        Mock.position = Vector3.zero;
+        Mock.rotation = Quaternion.identity;
+
+
+        CharacterController c = Mock.gameObject.AddComponent<CharacterController>();
+      
         Controller = new MoveController(Mock);
     }
 
     [Test]
-    public void DocMovementIsExistent_Test()
+    public void PlayerMovementIsExistent_Test()
     {
         GameObject go = GameObject.Instantiate(new GameObject());
-        DocMovement dm = go.AddComponent<DocMovement>();
+        PlayerMovement dm = go.AddComponent<PlayerMovement>();
 
         Assert.IsNotNull(dm);
     }
@@ -30,7 +34,7 @@ public class DocMovementTest
     [TestCase(0.75639f)]
     [TestCase(1f)]
     [TestCase(0.5f)]
-    public void MoveInputUPisGreater_Test(float value)
+    public void MovesAlongPositiveZforInputUP_Test(float value)
     {
         Vector3 before = Mock.position;
 
@@ -39,11 +43,13 @@ public class DocMovementTest
         Vector3 after = Mock.position;
 
         Assert.Greater(after.z, before.z);
+        Assert.AreEqual(before.x, after.x, 0.01f);
+        Assert.AreEqual(before.y, after.y, 0.01f);
     }
 
     [Test]
     [TestCase(0f)]
-    public void MoveInputUPisEqual_Test(float value)
+    public void MovesNotForInputUPisZero_Test(float value)
     {
         Vector3 before = Mock.position;
 
@@ -52,6 +58,8 @@ public class DocMovementTest
         Vector3 after = Mock.position;
 
         Assert.AreEqual(after.z, before.z);
+        Assert.AreEqual(before.x, after.x, 0.01f);
+        Assert.AreEqual(before.y, after.y, 0.01f);
     }
 
     [Test]
@@ -59,7 +67,7 @@ public class DocMovementTest
     [TestCase(-0.75639f)]
     [TestCase(-1f)]
     [TestCase(-0.5f)]
-    public void MoveInputDOWNisLess_Test(float value)
+    public void MovesAlongNegativeZforInputDOWN_Test(float value)
     {
         Vector3 before = Mock.position;
 
@@ -68,11 +76,13 @@ public class DocMovementTest
         Vector3 after = Mock.position;
 
         Assert.Less(after.z, before.z);
+        Assert.AreEqual(before.x, after.x, 0.01f);
+        Assert.AreEqual(before.y, after.y, 0.01f);
     }
 
     [Test]
     [TestCase(0)]
-    public void MoveInputDOWNisEqual_Test(float value)
+    public void MovesNotforInputDOWNisZero_Test(float value)
     {
         Vector3 before = Mock.position;
 
@@ -81,6 +91,8 @@ public class DocMovementTest
         Vector3 after = Mock.position;
 
         Assert.AreEqual(after.z, before.z);
+        Assert.AreEqual(before.x, after.x, 0.01f);
+        Assert.AreEqual(before.y, after.y, 0.01f);
     }
 
     [Test]
@@ -88,7 +100,7 @@ public class DocMovementTest
     [TestCase(0.75639f)]
     [TestCase(1f)]
     [TestCase(0.5f)]
-    public void MoveInputRIGHTisGreater_Test(float value)
+    public void MovesAlongPositiveXforInputRIGHT_Test(float value)
     {
         Vector3 before = Mock.position;
 
@@ -97,11 +109,13 @@ public class DocMovementTest
         Vector3 after = Mock.position;
 
         Assert.Greater(after.x, before.x);
+        Assert.AreEqual(before.z, after.z, 0.01f);
+        Assert.AreEqual(before.y, after.y, 0.01f);
     }
 
     [Test]
     [TestCase(0)]
-    public void MoveInputRIGHTisEqual_Test(float value)
+    public void MovesNotforInputRIGHTisZero_Test(float value)
     {
         Vector3 before = Mock.position;
 
@@ -110,6 +124,8 @@ public class DocMovementTest
         Vector3 after = Mock.position;
 
         Assert.AreEqual(after.x, before.x);
+        Assert.AreEqual(before.z, after.z, 0.01f);
+        Assert.AreEqual(before.y, after.y, 0.01f);
     }
 
     [Test]
@@ -117,7 +133,7 @@ public class DocMovementTest
     [TestCase(-0.75639f)]
     [TestCase(-1f)]
     [TestCase(-0.5f)]
-    public void MoveInputLEFTisLess_Test(float value)
+    public void MovesAlongNegativeXforInputLEFT_Test(float value)
     {
         Vector3 before = Mock.position;
 
@@ -126,11 +142,13 @@ public class DocMovementTest
         Vector3 after = Mock.position;
 
         Assert.Less(after.x, before.x);
+        Assert.AreEqual(before.z, after.z, 0.01f);
+        Assert.AreEqual(before.y, after.y, 0.01f);
     }
 
     [Test]
     [TestCase(0)]
-    public void MoveInputLEFTisEqual_Test(float value)
+    public void MovesNotforInputLEFTisZero_Test(float value)
     {
         Vector3 before = Mock.position;
 
@@ -139,5 +157,7 @@ public class DocMovementTest
         Vector3 after = Mock.position;
 
         Assert.AreEqual(after.x, before.x);
+        Assert.AreEqual(before.z, after.z, 0.01f);
+        Assert.AreEqual(before.y, after.y, 0.01f);
     }
 }

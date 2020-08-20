@@ -5,21 +5,22 @@ using UnityEngine;
 
 public class MoveController
 {
-    private Transform movedTransform;
-    private float moveSpeed = 1f;
+    private Transform playerTransform;
+    private CharacterController CharacterController;
+    private float moveSpeed = 10f;
 
     public MoveController(Transform movedTransform)
     {
-        this.movedTransform = movedTransform;
+        this.playerTransform = movedTransform;
+        CharacterController = this.playerTransform.GetComponent<CharacterController>();
     }
 
     public void Move(float x, float z, float time)
     {
-        //Maybe change to: Vector3.Right * x + Vector.Forward * z
-        //then the rotation will be irreleveant to the movement
-        Vector3 move = movedTransform.right * x + movedTransform.forward * z;
-        move *= time * moveSpeed;
+        Vector3 moveValue = playerTransform.right * x + playerTransform.forward * z;
+        moveValue *= time * moveSpeed;
 
-        movedTransform.Translate(move);
+        CharacterController.Move(moveValue);
+
     }
 }
