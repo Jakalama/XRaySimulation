@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mock_simple
       objectReference: {fileID: 0}
+    - target: {fileID: 5978215505522693647, guid: 1e1637c8125e95e408180ee539e05f7f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6637185101747359191, guid: 1e1637c8125e95e408180ee539e05f7f,
         type: 3}
       propertyPath: m_IsActive
