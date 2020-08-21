@@ -32,7 +32,6 @@ public class FirstPersonCamera : ICameraController
         
         playerTransform.rotation = Quaternion.Euler(0f, yRotation, 0f);
         //playerTransform.Rotate(Vector3.up, mouseX, Space.World);
-        Debug.Log(yRotation + " " + playerTransform.rotation.y);
     }
 
     public void SetXRotation(float value)

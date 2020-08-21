@@ -172,4 +172,10 @@ public class FirstPersonCameraTest
         // value * 250, since the rotationspeed is set to 250
         Assert.AreEqual(value * 250f, after);
     }
+
+    [TearDown]
+    public void Teardown()
+    {
+        GameObject.DestroyImmediate(Mock.gameObject);
+    }
 }
