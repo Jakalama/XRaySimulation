@@ -14,6 +14,14 @@ public class RayReciever : MonoBehaviour
 
     private void Update()
     {
+        GetAndApplyDose();
+    }
+
+    private void GetAndApplyDose()
+    {
+        if (RayTracer.Instance == null)
+            return;
+
         controller.UpdateRelevantVertices();
 
         float[] distances = RayTracer.Instance.GetDistances(controller.GetRelevantVerticePositions());

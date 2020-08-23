@@ -7,7 +7,7 @@ public class RayTracer : MonoBehaviour
 {
     public static RayTracer Instance;
 
-    private void Start()
+    private void Awake()
     {
         Instance = this;
     }
@@ -21,7 +21,6 @@ public class RayTracer : MonoBehaviour
         {
             if (hit.transform.tag == "Doc")
                 return true;
-
         }
 
         return false;

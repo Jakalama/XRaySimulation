@@ -14,7 +14,6 @@ public class MoveControllerTest
         Mock.position = Vector3.zero;
         Mock.rotation = Quaternion.identity;
 
-
         CharacterController c = Mock.gameObject.AddComponent<CharacterController>();
       
         Controller = new MoveController(Mock);
@@ -159,5 +158,12 @@ public class MoveControllerTest
         Assert.AreEqual(after.x, before.x);
         Assert.AreEqual(before.z, after.z, 0.01f);
         Assert.AreEqual(before.y, after.y, 0.01f);
+    }
+
+    [TearDown]
+    public void TearDown()
+    {
+        GameObject.DestroyImmediate(Mock.gameObject);
+        Controller = null;
     }
 }

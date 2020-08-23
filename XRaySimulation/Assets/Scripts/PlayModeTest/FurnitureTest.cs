@@ -12,15 +12,20 @@ public class FurnitureTest
     [SetUp]
     public void Setup()
     {
-        testObj = GameObject.Instantiate(new GameObject());
-        furniture = testObj.AddComponent<Furniture>();
+        testObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Table"));
+        furniture = testObj.GetComponent<Furniture>();
+    }
+
+    [Test]
+    public void FurnitureIsExistent_Test()
+    {
+        Assert.IsNotNull(furniture);
     }
 
     [Test]
     public void FurnitureHasSphereCollider_Test()
     {
         Assert.IsNotNull(testObj.GetComponent<SphereCollider>());
-        // Use the Assert class to test conditions
     }
 
     [Test]
@@ -29,21 +34,21 @@ public class FurnitureTest
         Assert.IsTrue(testObj.GetComponent<SphereCollider>().isTrigger);
     }
 
-
-
+    // Don't know why this test is failing
+    // A manual test shows that this tested beahviour is working!
+    // Maybe there is an issue with collisions in play test mode.
     [UnityTest]
     public IEnumerator FurnitureTriggerGetsTriggerdThroughPlayer_Test()
     {
-        GameObject playerObj = GameObject.Instantiate(new GameObject());
-        playerObj.AddComponent<BoxCollider>();
-        playerObj.transform.position = new Vector3(100f, 0f, 0f);
+        testObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Table"));
+        furniture = testObj.GetComponent<Furniture>();
 
-        yield return new WaitForEndOfFrame(); //
+        GameObject playerObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Player_Mock"));
+        playerObj.transform.position = new Vector3(2f, 0f, 0f);
 
-        playerObj.transform.position = testObj.transform.position;
+        yield return new WaitForFixedUpdate();
 
-        yield return new WaitForEndOfFrame(); //
-
+        Assert.IsNotNull(playerObj.GetComponent<BoxCollider>());
         Assert.IsTrue(furniture.isTriggerd);
     }
 }

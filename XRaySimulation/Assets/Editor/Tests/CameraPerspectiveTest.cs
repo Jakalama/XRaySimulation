@@ -42,7 +42,7 @@ public class CameraPerspectiveTest
     {
         PlayerCamera pr = mockObj.GetComponent<PlayerCamera>();
 
-        // set the CameraController field of PlayerCamera, since it is set in the Start-Method
+        // set the private CameraController field of PlayerCamera, since it is set in the Start-Method
         System.Reflection.FieldInfo info = pr.GetType().GetField("CameraController", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         info.SetValue(pr, new FirstPersonCamera(pr.transform, 0f));
 

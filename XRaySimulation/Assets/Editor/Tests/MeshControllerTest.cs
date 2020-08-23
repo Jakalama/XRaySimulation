@@ -6,6 +6,7 @@ using System.Linq;
 
 public class MeshControllerTest
 {
+    private GameObject docMeshObj;
     private MeshController controller;
 
     [SetUp]
@@ -13,16 +14,10 @@ public class MeshControllerTest
     {
         MeshContainer container = null;
         GameObject docMeshPref = Resources.Load<GameObject>("Prefabs/Mock_simple");
-        GameObject docMeshObj = GameObject.Instantiate(docMeshPref);
+        docMeshObj = GameObject.Instantiate(docMeshPref);
         container = docMeshObj.GetComponent<MeshContainer>();
 
         controller = new MeshController(container);
-    }
-
-    [TearDown]
-    public void TearDown()
-    {
-
     }
 
     [Test]
@@ -106,6 +101,12 @@ public class MeshControllerTest
         float avg = (0f + 2f + 10f) / 3f;
 
         Assert.AreEqual(avg, controller.AverageDose);
+    }
+
+    [TearDown]
+    public void TearDown()
+    {
+        GameObject.DestroyImmediate(docMeshObj);
     }
 
     private MeshContainer GetMeshContainer(string mockName)

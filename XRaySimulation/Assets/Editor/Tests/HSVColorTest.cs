@@ -38,14 +38,14 @@ public class HSVColorTest
     //}
 
     [Test]
-    public void HSVConstructorRGBColor()
+    public void HSVConstructorWithRGBColor_Test()
     {
         float r = 1f;
         float g = 0.4f;
         float b = 0.2f;
         Color rgbColor = new Color(r, g, b);
 
-        HSVColor hsbColor = new HSVColor(rgbColor);
+        HSVColor hsvColor = new HSVColor(rgbColor);
 
         float h = 1f;
         float s = 1f;
@@ -54,9 +54,9 @@ public class HSVColorTest
 
         Color.RGBToHSV(rgbColor, out h, out s, out v);
 
-        Assert.AreEqual(h, hsbColor.h);
-        Assert.AreEqual(s, hsbColor.s);
-        Assert.AreEqual(v, hsbColor.v);
-        Assert.AreEqual(a, hsbColor.a);
+        Assert.AreEqual(h, hsvColor.h);
+        Assert.AreEqual(s, hsvColor.s);
+        Assert.AreEqual(v, hsvColor.v);
+        Assert.AreEqual(a, hsvColor.a);
     }
 }
