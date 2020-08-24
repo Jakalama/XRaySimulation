@@ -5,7 +5,7 @@ using UnityEngine;
 
 public static class FurnitureTriggerInfo
 {
-    public static FurnitureType Type;
+    public static FurnitureType Type = FurnitureType.None;
 
     public static void SetActiveFurniture(FurnitureType type, FurnitureInfo info)
     {
@@ -14,9 +14,15 @@ public static class FurnitureTriggerInfo
         SetUI(info);
     }
 
+    public static void DeactivateFurniture()
+    {
+        Type = FurnitureType.None;
+        GameObject.Find("GUI").transform.Find("FurnitureInfo").gameObject.SetActive(false);
+    }
+
     private static void SetUI(FurnitureInfo info)
     {
-        GameObject infoGameObject = GameObject.Find("GUI/FurnitureInfo");
+        GameObject infoGameObject = GameObject.Find("GUI").transform.Find("FurnitureInfo").gameObject;
 
         if (Type != FurnitureType.None)
         {
@@ -42,15 +48,16 @@ public static class FurnitureTriggerInfo
 
         if (keys.Length > 2)
             Debug.LogWarning("The GUI can only handle two different keys!");
-
-        int iterationSteps = (keys.Length > 2) ? 2 : keys.Length;
         
-        for (int i = 0; i < iterationSteps; i++)
+        for (int i = 0; i < 2; i++)
         {
             Transform keyTransform = keysObject.transform.GetChild(i);
             TextMeshProUGUI keyText = keyTransform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
 
-            keyText.text = keys[i].ToString();
+            if (keys.Length > i)
+                keyText.text = keys[i].ToString();
+            else
+                keyText.text = "";
         }
     }
 }

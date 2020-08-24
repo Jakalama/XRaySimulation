@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using TMPro;
 using UnityEngine;
+using UnityEngine.TestTools;
 
 public class FurnitureTriggerInfoTest
 {
@@ -32,13 +33,35 @@ public class FurnitureTriggerInfoTest
         Assert.AreEqual(expected, FurnitureTriggerInfo.Type);
     }
 
+    [Test]
+    public void TypeIsNoneAfterDeactivateIsCalled_Test()
+    {
+        FurnitureTriggerInfo.Type = FurnitureType.CArm;
+
+        FurnitureTriggerInfo.DeactivateFurniture();
+
+        Assert.AreEqual(FurnitureType.None, FurnitureTriggerInfo.Type);
+    }
+
+    [Test]
     public void FurnitureInfoUIIsActiveWhenFurnitureIsTriggerd_Test()
     {
-        FurnitureTriggerInfo.SetActiveFurniture(FurnitureType.CArm, new FurnitureInfo());
+        FurnitureInfo info = new FurnitureInfo("example", "example", new KeyCode[] { });
+
+        FurnitureTriggerInfo.SetActiveFurniture(FurnitureType.CArm, info);
 
         Assert.IsTrue(GameObject.Find("GUI/FurnitureInfo").activeSelf);
     }
 
+    [Test]
+    public void FurnitureInfoIsNotActiveAterFurnitureIsDeactivated_Test()
+    {
+        FurnitureTriggerInfo.DeactivateFurniture();
+
+        Assert.IsFalse(GameObject.Find("GUI").transform.Find("FurnitureInfo").gameObject.activeSelf);
+    }
+
+    [Test]
     [TestCase(FurnitureType.CArm)]
     public void LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test(FurnitureType type)
     {
@@ -50,6 +73,7 @@ public class FurnitureTriggerInfoTest
         Assert.AreEqual(expected, GameObject.Find("GUI/FurnitureInfo/Name").GetComponent<TextMeshProUGUI>().text);
     }
 
+    [Test]
     [TestCase(FurnitureType.CArm)]
     public void LoadsCorrectFurnitureDescriptionIntoUIWhenIsTriggerd_Test(FurnitureType type)
     {
@@ -61,6 +85,7 @@ public class FurnitureTriggerInfoTest
         Assert.AreEqual(expected, GameObject.Find("GUI/FurnitureInfo/Description").GetComponent<TextMeshProUGUI>().text);
     }
 
+    [Test]
     [TestCase(FurnitureType.CArm, new KeyCode[] { KeyCode.A, KeyCode.F })]
     public void LoadsCorrectFurnitureKeyCodesIntoUIWhenIsTriggerd_Test(FurnitureType type, KeyCode[] keys)
     {
@@ -71,6 +96,38 @@ public class FurnitureTriggerInfoTest
 
         Assert.AreEqual(keys[0].ToString(), GameObject.Find("GUI/FurnitureInfo/Keys/1/KeyName").GetComponent<TextMeshProUGUI>().text);
         Assert.AreEqual(keys[1].ToString(), GameObject.Find("GUI/FurnitureInfo/Keys/2/KeyName").GetComponent<TextMeshProUGUI>().text);
+    }
+
+    [Test]
+    public void LoadsCorrectTextIntoKeysWhenOnlyOneKeyIsGiven_Test()
+    {
+        string name = FurnitureType.CArm.ToString();
+        FurnitureInfo info = new FurnitureInfo(name, name, new KeyCode[] { KeyCode.A });
+
+        FurnitureTriggerInfo.SetActiveFurniture(FurnitureType.CArm, info);
+
+        Assert.AreEqual(KeyCode.A.ToString(), GameObject.Find("GUI/FurnitureInfo/Keys/1/KeyName").GetComponent<TextMeshProUGUI>().text);
+        Assert.AreEqual("", GameObject.Find("GUI/FurnitureInfo/Keys/2/KeyName").GetComponent<TextMeshProUGUI>().text);
+    }
+
+    [Test]
+    public void LoadsCorrectTextIntoKeysWhenNoKeyIsGiven_Test()
+    {
+        string name = FurnitureType.CArm.ToString();
+        FurnitureInfo info = new FurnitureInfo(name, name, new KeyCode[] {  });
+
+        FurnitureTriggerInfo.SetActiveFurniture(FurnitureType.CArm, info);
+
+        Assert.AreEqual("", GameObject.Find("GUI/FurnitureInfo/Keys/1/KeyName").GetComponent<TextMeshProUGUI>().text);
+        Assert.AreEqual("", GameObject.Find("GUI/FurnitureInfo/Keys/2/KeyName").GetComponent<TextMeshProUGUI>().text);
+    }
+
+    [Test]
+    public void ThrowsWarinignMessageWhenKeyCodesHasMoreThanTwoValues_Test()
+    {
+        FurnitureTriggerInfo.SetActiveFurniture(FurnitureType.CArm, new FurnitureInfo("example", "example", new KeyCode[] { KeyCode.A, KeyCode.B, KeyCode.C }));
+
+        LogAssert.Expect(LogType.Warning, "The GUI can only handle two different keys!");
     }
 
     [TearDown]

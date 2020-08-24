@@ -17,7 +17,6 @@ public static class DoseCalculator
 
         float sourceEnergy = sourceVoltage * electronCharge;
         float intensity = sourceEnergy / (4f * (float)Math.PI * distance * distance);
-
         intensity /= 1e-20f;
 
         //Debug.Log(distance + ", " + intensity);

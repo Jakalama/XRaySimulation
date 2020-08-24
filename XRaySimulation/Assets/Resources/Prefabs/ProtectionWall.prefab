@@ -249,6 +249,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 4
+  Info:
+    Name: Protection Wall
+    Description: 
+    KeyCodes: 66000000
   KeyCodes: 66000000
   isTriggerd: 0
 --- !u!1 &4400453302951059102

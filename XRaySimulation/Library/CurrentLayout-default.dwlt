@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 11}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 421}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -66,8 +66,8 @@ MonoBehaviour:
     y: 0
     width: 821
     height: 1031
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 21}
@@ -93,8 +93,8 @@ MonoBehaviour:
     y: 820
     width: 379
     height: 488
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 26}
   m_Panes:
   - {fileID: 26}
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 177
+  controlID: 172
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -200,10 +200,10 @@ MonoBehaviour:
     y: 0
     width: 2181
     height: 1031
-  m_MinSize: {x: 435, y: 271}
-  m_MaxSize: {x: 18005, y: 10021}
+  m_MinSize: {x: 433, y: 271}
+  m_MaxSize: {x: 18003, y: 10021}
   vertical: 0
-  controlID: 126
+  controlID: 89
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,10 +224,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1308
-  m_MinSize: {x: 711, y: 392}
-  m_MaxSize: {x: 22006, y: 14042}
+  m_MinSize: {x: 709, y: 371}
+  m_MaxSize: {x: 22004, y: 14021}
   vertical: 1
-  controlID: 175
+  controlID: 170
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -247,8 +247,8 @@ MonoBehaviour:
     y: 0
     width: 379
     height: 820
-  m_MinSize: {x: 276, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -343,10 +343,10 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1308
-  m_MinSize: {x: 711, y: 392}
-  m_MaxSize: {x: 22006, y: 14042}
+  m_MinSize: {x: 709, y: 371}
+  m_MaxSize: {x: 22004, y: 14021}
   vertical: 0
-  controlID: 176
+  controlID: 171
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,10 +368,10 @@ MonoBehaviour:
     y: 0
     width: 2181
     height: 1308
-  m_MinSize: {x: 435, y: 392}
-  m_MaxSize: {x: 18005, y: 14042}
+  m_MinSize: {x: 433, y: 371}
+  m_MaxSize: {x: 18003, y: 14021}
   vertical: 1
-  controlID: 125
+  controlID: 88
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -391,8 +391,8 @@ MonoBehaviour:
     y: 1031
     width: 2181
     height: 277
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 25}
   m_Panes:
   - {fileID: 25}
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 257045534191678443, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -504,7 +504,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Profiler
-    m_Image: {fileID: 248956144125838126, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -3113586994723608586, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1061,7 +1061,107 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    m_ResultText: FurnitureTriggerGetsTriggerdThroughPlayer_Test (0,022s)
+    - id: 1208
+      uniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/PlayModeTest.dll][suite]"
+      name: PlayModeTest.dll
+      fullName: "D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/PlayModeTest.dll"
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1202
+      parentUniqueId: '[XRaySimulation][suite]'
+    - id: 1203
+      uniqueId: PlayModeTest.dll/[PlayModeTest][FurnitureTest][suite]
+      name: FurnitureTest
+      fullName: FurnitureTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1208
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/PlayModeTest.dll][suite]"
+    - id: 1206
+      uniqueId: PlayModeTest.dll/FurnitureTest/[PlayModeTest][FurnitureTest.FurnitureColliderIsTrigger_Test]
+      name: FurnitureColliderIsTrigger_Test
+      fullName: FurnitureTest.FurnitureColliderIsTrigger_Test
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1203
+      parentUniqueId: PlayModeTest.dll/[PlayModeTest][FurnitureTest][suite]
+    - id: 1205
+      uniqueId: PlayModeTest.dll/FurnitureTest/[PlayModeTest][FurnitureTest.FurnitureHasSphereCollider_Test]
+      name: FurnitureHasSphereCollider_Test
+      fullName: FurnitureTest.FurnitureHasSphereCollider_Test
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1203
+      parentUniqueId: PlayModeTest.dll/[PlayModeTest][FurnitureTest][suite]
+    - id: 1204
+      uniqueId: PlayModeTest.dll/FurnitureTest/[PlayModeTest][FurnitureTest.FurnitureIsExistent_Test]
+      name: FurnitureIsExistent_Test
+      fullName: FurnitureTest.FurnitureIsExistent_Test
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1203
+      parentUniqueId: PlayModeTest.dll/[PlayModeTest][FurnitureTest][suite]
+    - id: 1207
+      uniqueId: PlayModeTest.dll/FurnitureTest/[PlayModeTest][FurnitureTest.FurnitureTriggerGetsTriggerdThroughPlayer_Test]
+      name: FurnitureTriggerGetsTriggerdThroughPlayer_Test
+      fullName: FurnitureTest.FurnitureTriggerGetsTriggerdThroughPlayer_Test
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1203
+      parentUniqueId: PlayModeTest.dll/[PlayModeTest][FurnitureTest][suite]
+    m_ResultText: FurnitureTriggerGetsTriggerdThroughPlayer_Test (0,000s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -1100,9 +1200,9 @@ MonoBehaviour:
       uniqueId: '[XRaySimulation][suite]'
       name: XRaySimulation
       fullName: XRaySimulation
-      resultStatus: 2
-      duration: 1.0024388
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1613877
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1112,32 +1212,3329 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    m_ResultText: "LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test(CArm,\"BliBlaBlub,
-      ich bin der Butzelmann!\") (0,002s)\n---\nSystem.NullReferenceException : Object
-      reference not set to an instance of an object\n---\nat FurnitureTriggerInfo.SetUI
-      () [0x0001c] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\FurnitureTriggerTest.cs:63
-      \r\n  at FurnitureTriggerInfo.SetActiveFurniture (FurnitureType type) [0x00007]
-      in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\FurnitureTriggerTest.cs:54
-      \r\n  at FurnitureTriggerInfoTest.LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test
-      (FurnitureType type, System.String expected) [0x00001] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\FurnitureTriggerTest.cs:39
-      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0"
-    m_ResultStacktrace: "  at FurnitureTriggerInfo.SetUI () [0x0001c] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\FurnitureTriggerTest.cs:63
-      \r\n  at FurnitureTriggerInfo.SetActiveFurniture (FurnitureType type) [0x00007]
-      in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\FurnitureTriggerTest.cs:54
-      \r\n  at FurnitureTriggerInfoTest.LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test
-      (FurnitureType type, System.String expected) [0x00001] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\FurnitureTriggerTest.cs:39
-      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    - id: 1199
+      uniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+      name: Assembly-CSharp-Editor.dll
+      fullName: "D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll"
+      resultStatus: 1
+      duration: 0.1253356
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[XRaySimulation][suite]'
+    - id: 1001
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][CameraPerspectiveTest][suite]
+      name: CameraPerspectiveTest
+      fullName: CameraPerspectiveTest
+      resultStatus: 1
+      duration: 0.0458483
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1002
+      uniqueId: Assembly-CSharp-Editor.dll/CameraPerspectiveTest/[Assembly-CSharp-Editor][CameraPerspectiveTest.FPVisExistent_Test]
+      name: FPVisExistent_Test
+      fullName: CameraPerspectiveTest.FPVisExistent_Test
+      resultStatus: 1
+      duration: 0.0238139
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][CameraPerspectiveTest][suite]
+    - id: 1004
+      uniqueId: Assembly-CSharp-Editor.dll/CameraPerspectiveTest/[Assembly-CSharp-Editor][CameraPerspectiveTest.PlayerCameraScriptIsExistent_Test]
+      name: PlayerCameraScriptIsExistent_Test
+      fullName: CameraPerspectiveTest.PlayerCameraScriptIsExistent_Test
+      resultStatus: 1
+      duration: 0.0006727
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][CameraPerspectiveTest][suite]
+    - id: 1003
+      uniqueId: Assembly-CSharp-Editor.dll/CameraPerspectiveTest/[Assembly-CSharp-Editor][CameraPerspectiveTest.TPVisExistent_Test]
+      name: TPVisExistent_Test
+      fullName: CameraPerspectiveTest.TPVisExistent_Test
+      resultStatus: 1
+      duration: 0.0003638
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][CameraPerspectiveTest][suite]
+    - id: 1005
+      uniqueId: Assembly-CSharp-Editor.dll/CameraPerspectiveTest/[Assembly-CSharp-Editor][CameraPerspectiveTest.WhenFPVisActiveInputSetsTPVActive_Test]
+      name: WhenFPVisActiveInputSetsTPVActive_Test
+      fullName: CameraPerspectiveTest.WhenFPVisActiveInputSetsTPVActive_Test
+      resultStatus: 1
+      duration: 0.0013971
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][CameraPerspectiveTest][suite]
+    - id: 1006
+      uniqueId: Assembly-CSharp-Editor.dll/CameraPerspectiveTest/[Assembly-CSharp-Editor][CameraPerspectiveTest.WhenTPVisActiveInputSetsFPVActive_Test]
+      name: WhenTPVisActiveInputSetsFPVActive_Test
+      fullName: CameraPerspectiveTest.WhenTPVisActiveInputSetsFPVActive_Test
+      resultStatus: 1
+      duration: 0.0005695
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][CameraPerspectiveTest][suite]
+    - id: 1007
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ColorCalculatorTest][suite]
+      name: ColorCalculatorTest
+      fullName: ColorCalculatorTest
+      resultStatus: 1
+      duration: 0.0444862
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1011
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor_Test][suite]
+      name: ReturnsExpectedColor_Test
+      fullName: ColorCalculatorTest.ReturnsExpectedColor_Test
+      resultStatus: 1
+      duration: 0.0142944
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1007
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ColorCalculatorTest][suite]
+    - id: 1008
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/ReturnsExpectedColor_Test/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor_Test(0.0f,1.0f,1.0f,0.0f)]
+      name: ReturnsExpectedColor_Test(0.0f,1.0f,1.0f,0.0f)
+      fullName: ColorCalculatorTest.ReturnsExpectedColor_Test(0.0f,1.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0056091
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor_Test][suite]
+    - id: 1009
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/ReturnsExpectedColor_Test/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor_Test(10.0f,0.8313726f,1.0f,0.0f)]
+      name: ReturnsExpectedColor_Test(10.0f,0.8313726f,1.0f,0.0f)
+      fullName: ColorCalculatorTest.ReturnsExpectedColor_Test(10.0f,0.8313726f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0002236
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor_Test][suite]
+    - id: 1010
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/ReturnsExpectedColor_Test/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor_Test(200.0f,0.3333333f,0.0f,1.0f)]
+      name: ReturnsExpectedColor_Test(200.0f,0.3333333f,0.0f,1.0f)
+      fullName: ColorCalculatorTest.ReturnsExpectedColor_Test(200.0f,0.3333333f,0.0f,1.0f)
+      resultStatus: 1
+      duration: 0.0001313
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColor_Test][suite]
+    - id: 1014
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColors_Test][suite]
+      name: ReturnsExpectedColors_Test
+      fullName: ColorCalculatorTest.ReturnsExpectedColors_Test
+      resultStatus: 1
+      duration: 0.0107487
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1007
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ColorCalculatorTest][suite]
+    - id: 1012
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/ReturnsExpectedColors_Test/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[])]
+      name: ReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[])
+      fullName: ColorCalculatorTest.ReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[])
+      resultStatus: 1
+      duration: 0.0009881
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColors_Test][suite]
+    - id: 1013
+      uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/ReturnsExpectedColors_Test/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[])]2
+      name: ReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[])
+      fullName: ColorCalculatorTest.ReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[]
+        GeneratedTestCase2)
+      resultStatus: 1
+      duration: 0.0001628
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1014
+      parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.ReturnsExpectedColors_Test][suite]
+    - id: 1015
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoseCalculatorTest][suite]
+      name: DoseCalculatorTest
+      fullName: DoseCalculatorTest
+      resultStatus: 1
+      duration: 0.034925
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1024
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test][suite]
+      name: CalculateDose_Test
+      fullName: DoseCalculatorTest.CalculateDose_Test
+      resultStatus: 1
+      duration: 0.0121454
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoseCalculatorTest][suite]
+    - id: 1016
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDose_Test/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test(1,152.98f)]
+      name: CalculateDose_Test(1,152.98f)
+      fullName: DoseCalculatorTest.CalculateDose_Test(1,152.98f)
+      resultStatus: 1
+      duration: 0.0016179
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test][suite]
+    - id: 1017
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDose_Test/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test(2.0f,38.245f)]
+      name: CalculateDose_Test(2.0f,38.245f)
+      fullName: DoseCalculatorTest.CalculateDose_Test(2.0f,38.245f)
+      resultStatus: 1
+      duration: 0.0001525
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test][suite]
+    - id: 1018
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDose_Test/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test(2.1f,34.689f)]
+      name: CalculateDose_Test(2.1f,34.689f)
+      fullName: DoseCalculatorTest.CalculateDose_Test(2.1f,34.689f)
+      resultStatus: 1
+      duration: 0.0001219
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test][suite]
+    - id: 1019
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDose_Test/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test(0.0f,float.PositiveInfinity)]
+      name: CalculateDose_Test(0.0f,float.PositiveInfinity)
+      fullName: DoseCalculatorTest.CalculateDose_Test(0.0f,float.PositiveInfinity)
+      resultStatus: 1
+      duration: 0.0001285
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test][suite]
+    - id: 1020
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDose_Test/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test(150.0f,0.007f)]
+      name: CalculateDose_Test(150.0f,0.007f)
+      fullName: DoseCalculatorTest.CalculateDose_Test(150.0f,0.007f)
+      resultStatus: 1
+      duration: 0.0001181
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test][suite]
+    - id: 1021
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDose_Test/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test(float.NaN,0.0f)]
+      name: CalculateDose_Test(float.NaN,0.0f)
+      fullName: DoseCalculatorTest.CalculateDose_Test(float.NaN,0.0f)
+      resultStatus: 1
+      duration: 0.000125
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test][suite]
+    - id: 1022
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDose_Test/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test(-1.0f,152.98f)]
+      name: CalculateDose_Test(-1.0f,152.98f)
+      fullName: DoseCalculatorTest.CalculateDose_Test(-1.0f,152.98f)
+      resultStatus: 1
+      duration: 0.0001207
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test][suite]
+    - id: 1023
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDose_Test/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test(-150.0f,0.007f)]
+      name: CalculateDose_Test(-150.0f,0.007f)
+      fullName: DoseCalculatorTest.CalculateDose_Test(-150.0f,0.007f)
+      resultStatus: 1
+      duration: 0.000118
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDose_Test][suite]
+    - id: 1027
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoses_Test][suite]
+      name: CalculateDoses_Test
+      fullName: DoseCalculatorTest.CalculateDoses_Test
+      resultStatus: 1
+      duration: 0.0107612
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoseCalculatorTest][suite]
+    - id: 1025
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoses_Test/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoses_Test(System.Single[],System.Single[])]
+      name: CalculateDoses_Test(System.Single[],System.Single[])
+      fullName: DoseCalculatorTest.CalculateDoses_Test(System.Single[],System.Single[])
+      resultStatus: 1
+      duration: 0.0005637
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1027
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoses_Test][suite]
+    - id: 1026
+      uniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/CalculateDoses_Test/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoses_Test(System.Single[],System.Single[])]2
+      name: CalculateDoses_Test(System.Single[],System.Single[])
+      fullName: DoseCalculatorTest.CalculateDoses_Test(System.Single[],System.Single[]
+        GeneratedTestCase2)
+      resultStatus: 1
+      duration: 0.0001545
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1027
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoseCalculatorTest/[Assembly-CSharp-Editor][DoseCalculatorTest.CalculateDoses_Test][suite]
+    - id: 1028
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
+      name: FirstPersonCameraTest
+      fullName: FirstPersonCameraTest
+      resultStatus: 1
+      duration: 0.1421081
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1065
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
+      name: ClampDownRotationFormLessMinus90ToMinus90_Test
+      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test
+      resultStatus: 1
+      duration: 0.0125439
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
+    - id: 1062
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormLessMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.1f)]
+      name: ClampDownRotationFormLessMinus90ToMinus90_Test(0.1f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.1f)
+      resultStatus: 1
+      duration: 0.0045988
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1065
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
+    - id: 1063
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormLessMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(1.0f)]
+      name: ClampDownRotationFormLessMinus90ToMinus90_Test(1.0f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(1.0f)
+      resultStatus: 1
+      duration: 0.0005009
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1065
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
+    - id: 1064
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormLessMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.0f)]
+      name: ClampDownRotationFormLessMinus90ToMinus90_Test(0.0f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.0f)
+      resultStatus: 1
+      duration: 0.0003074
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1065
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
+    - id: 1061
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
+      name: ClampDownRotationFormMinus90ToMinus90_Test
+      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test
+      resultStatus: 1
+      duration: 0.0112012
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
+    - id: 1058
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(0.1f)]
+      name: ClampDownRotationFormMinus90ToMinus90_Test(0.1f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(0.1f)
+      resultStatus: 1
+      duration: 0.0006236
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1061
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
+    - id: 1059
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(1.0f)]
+      name: ClampDownRotationFormMinus90ToMinus90_Test(1.0f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(1.0f)
+      resultStatus: 1
+      duration: 0.0003052
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1061
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
+    - id: 1060
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(0.0f)]
+      name: ClampDownRotationFormMinus90ToMinus90_Test(0.0f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(0.0f)
+      resultStatus: 1
+      duration: 0.000489
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1061
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
+    - id: 1053
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test][suite]
+      name: ClampUpRotationForm90To90_Test
+      fullName: FirstPersonCameraTest.ClampUpRotationForm90To90_Test
+      resultStatus: 1
+      duration: 0.0113789
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
+    - id: 1050
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationForm90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test(-0.1f)]
+      name: ClampUpRotationForm90To90_Test(-0.1f)
+      fullName: FirstPersonCameraTest.ClampUpRotationForm90To90_Test(-0.1f)
+      resultStatus: 1
+      duration: 0.0006507
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1053
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test][suite]
+    - id: 1051
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationForm90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test(-1.0f)]
+      name: ClampUpRotationForm90To90_Test(-1.0f)
+      fullName: FirstPersonCameraTest.ClampUpRotationForm90To90_Test(-1.0f)
+      resultStatus: 1
+      duration: 0.0003857
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1053
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test][suite]
+    - id: 1052
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationForm90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test(0.0f)]
+      name: ClampUpRotationForm90To90_Test(0.0f)
+      fullName: FirstPersonCameraTest.ClampUpRotationForm90To90_Test(0.0f)
+      resultStatus: 1
+      duration: 0.000385
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1053
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test][suite]
+    - id: 1057
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test][suite]
+      name: ClampUpRotationFormLess90To90_Test
+      fullName: FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test
+      resultStatus: 1
+      duration: 0.01252
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
+    - id: 1054
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationFormLess90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(-0.1f)]
+      name: ClampUpRotationFormLess90To90_Test(-0.1f)
+      fullName: FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(-0.1f)
+      resultStatus: 1
+      duration: 0.0007043
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1057
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test][suite]
+    - id: 1055
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationFormLess90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(-1.0f)]
+      name: ClampUpRotationFormLess90To90_Test(-1.0f)
+      fullName: FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(-1.0f)
+      resultStatus: 1
+      duration: 0.0003609
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1057
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test][suite]
+    - id: 1056
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationFormLess90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(0.0f)]
+      name: ClampUpRotationFormLess90To90_Test(0.0f)
+      fullName: FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(0.0f)
+      resultStatus: 1
+      duration: 0.0003224
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1057
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test][suite]
+    - id: 1039
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputDownisGreater_Test][suite]
+      name: MouseInputDownisGreater_Test
+      fullName: FirstPersonCameraTest.MouseInputDownisGreater_Test
+      resultStatus: 1
+      duration: 0.0120671
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
+    - id: 1035
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputDownisGreater_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputDownisGreater_Test(-0.1f)]
+      name: MouseInputDownisGreater_Test(-0.1f)
+      fullName: FirstPersonCameraTest.MouseInputDownisGreater_Test(-0.1f)
+      resultStatus: 1
+      duration: 0.0009224
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputDownisGreater_Test][suite]
+    - id: 1036
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputDownisGreater_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputDownisGreater_Test(-0.75639f)]
+      name: MouseInputDownisGreater_Test(-0.75639f)
+      fullName: FirstPersonCameraTest.MouseInputDownisGreater_Test(-0.75639f)
+      resultStatus: 1
+      duration: 0.0003469
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputDownisGreater_Test][suite]
+    - id: 1037
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputDownisGreater_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputDownisGreater_Test(-1.0f)]
+      name: MouseInputDownisGreater_Test(-1.0f)
+      fullName: FirstPersonCameraTest.MouseInputDownisGreater_Test(-1.0f)
+      resultStatus: 1
+      duration: 0.0003114
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputDownisGreater_Test][suite]
+    - id: 1038
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputDownisGreater_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputDownisGreater_Test(-0.5f)]
+      name: MouseInputDownisGreater_Test(-0.5f)
+      fullName: FirstPersonCameraTest.MouseInputDownisGreater_Test(-0.5f)
+      resultStatus: 1
+      duration: 0.0003024
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1039
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputDownisGreater_Test][suite]
+    - id: 1049
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputLeftisLess_Test][suite]
+      name: MouseInputLeftisLess_Test
+      fullName: FirstPersonCameraTest.MouseInputLeftisLess_Test
+      resultStatus: 1
+      duration: 0.0132583
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
+    - id: 1045
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputLeftisLess_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputLeftisLess_Test(-0.1f)]
+      name: MouseInputLeftisLess_Test(-0.1f)
+      fullName: FirstPersonCameraTest.MouseInputLeftisLess_Test(-0.1f)
+      resultStatus: 1
+      duration: 0.0008224
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputLeftisLess_Test][suite]
+    - id: 1046
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputLeftisLess_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputLeftisLess_Test(-0.75639f)]
+      name: MouseInputLeftisLess_Test(-0.75639f)
+      fullName: FirstPersonCameraTest.MouseInputLeftisLess_Test(-0.75639f)
+      resultStatus: 1
+      duration: 0.0003232
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputLeftisLess_Test][suite]
+    - id: 1047
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputLeftisLess_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputLeftisLess_Test(-1.0f)]
+      name: MouseInputLeftisLess_Test(-1.0f)
+      fullName: FirstPersonCameraTest.MouseInputLeftisLess_Test(-1.0f)
+      resultStatus: 1
+      duration: 0.0003087
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputLeftisLess_Test][suite]
+    - id: 1048
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputLeftisLess_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputLeftisLess_Test(-0.5f)]
+      name: MouseInputLeftisLess_Test(-0.5f)
+      fullName: FirstPersonCameraTest.MouseInputLeftisLess_Test(-0.5f)
+      resultStatus: 1
+      duration: 0.0003051
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1049
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputLeftisLess_Test][suite]
+    - id: 1044
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputRightisGreater_Test][suite]
+      name: MouseInputRightisGreater_Test
+      fullName: FirstPersonCameraTest.MouseInputRightisGreater_Test
+      resultStatus: 1
+      duration: 0.012261
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
+    - id: 1040
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputRightisGreater_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputRightisGreater_Test(0.1f)]
+      name: MouseInputRightisGreater_Test(0.1f)
+      fullName: FirstPersonCameraTest.MouseInputRightisGreater_Test(0.1f)
+      resultStatus: 1
+      duration: 0.0006602
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1044
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputRightisGreater_Test][suite]
+    - id: 1041
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputRightisGreater_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputRightisGreater_Test(0.75639f)]
+      name: MouseInputRightisGreater_Test(0.75639f)
+      fullName: FirstPersonCameraTest.MouseInputRightisGreater_Test(0.75639f)
+      resultStatus: 1
+      duration: 0.0003134
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1044
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputRightisGreater_Test][suite]
+    - id: 1042
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputRightisGreater_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputRightisGreater_Test(1.0f)]
+      name: MouseInputRightisGreater_Test(1.0f)
+      fullName: FirstPersonCameraTest.MouseInputRightisGreater_Test(1.0f)
+      resultStatus: 1
+      duration: 0.0002886
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1044
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputRightisGreater_Test][suite]
+    - id: 1043
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputRightisGreater_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputRightisGreater_Test(0.5f)]
+      name: MouseInputRightisGreater_Test(0.5f)
+      fullName: FirstPersonCameraTest.MouseInputRightisGreater_Test(0.5f)
+      resultStatus: 1
+      duration: 0.000289
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1044
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputRightisGreater_Test][suite]
+    - id: 1034
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputUPisLess_Test][suite]
+      name: MouseInputUPisLess_Test
+      fullName: FirstPersonCameraTest.MouseInputUPisLess_Test
+      resultStatus: 1
+      duration: 0.0130906
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
+    - id: 1030
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputUPisLess_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputUPisLess_Test(0.1f)]
+      name: MouseInputUPisLess_Test(0.1f)
+      fullName: FirstPersonCameraTest.MouseInputUPisLess_Test(0.1f)
+      resultStatus: 1
+      duration: 0.000743
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1034
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputUPisLess_Test][suite]
+    - id: 1031
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputUPisLess_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputUPisLess_Test(0.75639f)]
+      name: MouseInputUPisLess_Test(0.75639f)
+      fullName: FirstPersonCameraTest.MouseInputUPisLess_Test(0.75639f)
+      resultStatus: 1
+      duration: 0.0003283
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1034
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputUPisLess_Test][suite]
+    - id: 1032
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputUPisLess_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputUPisLess_Test(1.0f)]
+      name: MouseInputUPisLess_Test(1.0f)
+      fullName: FirstPersonCameraTest.MouseInputUPisLess_Test(1.0f)
+      resultStatus: 1
+      duration: 0.0002904
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1034
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputUPisLess_Test][suite]
+    - id: 1033
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/MouseInputUPisLess_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputUPisLess_Test(0.5f)]
+      name: MouseInputUPisLess_Test(0.5f)
+      fullName: FirstPersonCameraTest.MouseInputUPisLess_Test(0.5f)
+      resultStatus: 1
+      duration: 0.0003036
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1034
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputUPisLess_Test][suite]
+    - id: 1029
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.PlayerCameraIsExistent_Test]
+      name: PlayerCameraIsExistent_Test
+      fullName: FirstPersonCameraTest.PlayerCameraIsExistent_Test
+      resultStatus: 1
+      duration: 0.0004399
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1028
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
+    - id: 1071
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ReturnsCorrectYRotation_Test][suite]
+      name: ReturnsCorrectYRotation_Test
+      fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test
+      resultStatus: 1
+      duration: 0.0127827
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
+    - id: 1066
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ReturnsCorrectYRotation_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ReturnsCorrectYRotation_Test(0.0f)]
+      name: ReturnsCorrectYRotation_Test(0.0f)
+      fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test(0.0f)
+      resultStatus: 1
+      duration: 0.0007036
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ReturnsCorrectYRotation_Test][suite]
+    - id: 1067
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ReturnsCorrectYRotation_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ReturnsCorrectYRotation_Test(10.0f)]
+      name: ReturnsCorrectYRotation_Test(10.0f)
+      fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test(10.0f)
+      resultStatus: 1
+      duration: 0.0003215
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ReturnsCorrectYRotation_Test][suite]
+    - id: 1068
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ReturnsCorrectYRotation_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ReturnsCorrectYRotation_Test(-130.0f)]
+      name: ReturnsCorrectYRotation_Test(-130.0f)
+      fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test(-130.0f)
+      resultStatus: 1
+      duration: 0.000307
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ReturnsCorrectYRotation_Test][suite]
+    - id: 1069
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ReturnsCorrectYRotation_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ReturnsCorrectYRotation_Test(1.0f)]
+      name: ReturnsCorrectYRotation_Test(1.0f)
+      fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test(1.0f)
+      resultStatus: 1
+      duration: 0.0003014
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ReturnsCorrectYRotation_Test][suite]
+    - id: 1070
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ReturnsCorrectYRotation_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ReturnsCorrectYRotation_Test(-0.001f)]
+      name: ReturnsCorrectYRotation_Test(-0.001f)
+      fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test(-0.001f)
+      resultStatus: 1
+      duration: 0.0002873
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ReturnsCorrectYRotation_Test][suite]
+    - id: 1072
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureControllerFactoryTest][suite]
+      name: FurnitureControllerFactoryTest
+      fullName: FurnitureControllerFactoryTest
+      resultStatus: 1
+      duration: 0.0231591
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1073
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureControllerFactoryTest/[Assembly-CSharp-Editor][FurnitureControllerFactoryTest.FactoryReturnIsNotNull_Test]
+      name: FactoryReturnIsNotNull_Test
+      fullName: FurnitureControllerFactoryTest.FactoryReturnIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0004383
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1072
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureControllerFactoryTest][suite]
+    - id: 1076
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureControllerFactoryTest/[Assembly-CSharp-Editor][FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test][suite]
+      name: ReturnedControllerIsOfCorrectType_Test
+      fullName: FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test
+      resultStatus: 1
+      duration: 0.0102289
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1072
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureControllerFactoryTest][suite]
+    - id: 1074
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureControllerFactoryTest/ReturnedControllerIsOfCorrectType_Test/[Assembly-CSharp-Editor][FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test(PatientTableController,PatientTable)]
+      name: ReturnedControllerIsOfCorrectType_Test(PatientTableController,PatientTable)
+      fullName: FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test(PatientTableController,PatientTable)
+      resultStatus: 1
+      duration: 0.0005138
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1076
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureControllerFactoryTest/[Assembly-CSharp-Editor][FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test][suite]
+    - id: 1075
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureControllerFactoryTest/ReturnedControllerIsOfCorrectType_Test/[Assembly-CSharp-Editor][FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test(MoveableController,ProtectionWall)]
+      name: ReturnedControllerIsOfCorrectType_Test(MoveableController,ProtectionWall)
+      fullName: FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test(MoveableController,ProtectionWall)
+      resultStatus: 1
+      duration: 0.000193
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1076
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureControllerFactoryTest/[Assembly-CSharp-Editor][FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test][suite]
+    - id: 1097
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureInfoTest][suite]
+      name: FurnitureInfoTest
+      fullName: FurnitureInfoTest
+      resultStatus: 1
+      duration: 0.0359227
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1101
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureInfoTest/[Assembly-CSharp-Editor][FurnitureInfoTest.ConstructorDescription_Test][suite]
+      name: ConstructorDescription_Test
+      fullName: FurnitureInfoTest.ConstructorDescription_Test
+      resultStatus: 1
+      duration: 0.0065184
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1097
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureInfoTest][suite]
+    - id: 1100
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureInfoTest/ConstructorDescription_Test/[Assembly-CSharp-Editor][FurnitureInfoTest.ConstructorDescription_Test("Table","You
+        are able to move it around!",UnityEngine.KeyCode[])]
+      name: ConstructorDescription_Test("Table","You are able to move it around!",UnityEngine.KeyCode[])
+      fullName: FurnitureInfoTest.ConstructorDescription_Test("Table","You are able
+        to move it around!",UnityEngine.KeyCode[])
+      resultStatus: 1
+      duration: 0.0004501
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1101
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureInfoTest/[Assembly-CSharp-Editor][FurnitureInfoTest.ConstructorDescription_Test][suite]
+    - id: 1103
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureInfoTest/[Assembly-CSharp-Editor][FurnitureInfoTest.ConstructorKeyCodes_Test][suite]
+      name: ConstructorKeyCodes_Test
+      fullName: FurnitureInfoTest.ConstructorKeyCodes_Test
+      resultStatus: 1
+      duration: 0.0093393
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1097
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureInfoTest][suite]
+    - id: 1102
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureInfoTest/ConstructorKeyCodes_Test/[Assembly-CSharp-Editor][FurnitureInfoTest.ConstructorKeyCodes_Test("Table","You
+        are able to move it around!",UnityEngine.KeyCode[])]
+      name: ConstructorKeyCodes_Test("Table","You are able to move it around!",UnityEngine.KeyCode[])
+      fullName: FurnitureInfoTest.ConstructorKeyCodes_Test("Table","You are able
+        to move it around!",UnityEngine.KeyCode[])
+      resultStatus: 1
+      duration: 0.0003216
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1103
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureInfoTest/[Assembly-CSharp-Editor][FurnitureInfoTest.ConstructorKeyCodes_Test][suite]
+    - id: 1099
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureInfoTest/[Assembly-CSharp-Editor][FurnitureInfoTest.ConstructorName_Test][suite]
+      name: ConstructorName_Test
+      fullName: FurnitureInfoTest.ConstructorName_Test
+      resultStatus: 1
+      duration: 0.0082666
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1097
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureInfoTest][suite]
+    - id: 1098
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureInfoTest/ConstructorName_Test/[Assembly-CSharp-Editor][FurnitureInfoTest.ConstructorName_Test("Table","You
+        are able to move it around!",UnityEngine.KeyCode[])]
+      name: ConstructorName_Test("Table","You are able to move it around!",UnityEngine.KeyCode[])
+      fullName: FurnitureInfoTest.ConstructorName_Test("Table","You are able to move
+        it around!",UnityEngine.KeyCode[])
+      resultStatus: 1
+      duration: 0.0003693
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1099
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureInfoTest/[Assembly-CSharp-Editor][FurnitureInfoTest.ConstructorName_Test][suite]
+    - id: 1104
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureInfoTest/[Assembly-CSharp-Editor][FurnitureInfoTest.IsSerializeable_Test]
+      name: IsSerializeable_Test
+      fullName: FurnitureInfoTest.IsSerializeable_Test
+      resultStatus: 1
+      duration: 0.0002884
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1097
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureInfoTest][suite]
+    - id: 1105
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest][suite]
+      name: FurnitureTriggerInfoTest
+      fullName: FurnitureTriggerInfoTest
+      resultStatus: 1
+      duration: 0.1125042
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1113
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test][suite]
+      name: HoldsCorrectTypeOfFurniture_Test
+      fullName: FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test
+      resultStatus: 1
+      duration: 0.0657785
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1105
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest][suite]
+    - id: 1106
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/HoldsCorrectTypeOfFurniture_Test/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(CArm)]
+      name: HoldsCorrectTypeOfFurniture_Test(CArm)
+      fullName: FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(CArm)
+      resultStatus: 1
+      duration: 0.0469275
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1113
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test][suite]
+    - id: 1107
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/HoldsCorrectTypeOfFurniture_Test/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(Closet)]
+      name: HoldsCorrectTypeOfFurniture_Test(Closet)
+      fullName: FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(Closet)
+      resultStatus: 1
+      duration: 0.0017767
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1113
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test][suite]
+    - id: 1108
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/HoldsCorrectTypeOfFurniture_Test/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(Door)]
+      name: HoldsCorrectTypeOfFurniture_Test(Door)
+      fullName: FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(Door)
+      resultStatus: 1
+      duration: 0.0012815
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1113
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test][suite]
+    - id: 1109
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/HoldsCorrectTypeOfFurniture_Test/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(PatientTable)]
+      name: HoldsCorrectTypeOfFurniture_Test(PatientTable)
+      fullName: FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(PatientTable)
+      resultStatus: 1
+      duration: 0.0012863
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1113
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test][suite]
+    - id: 1110
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/HoldsCorrectTypeOfFurniture_Test/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(ProtectionWall)]
+      name: HoldsCorrectTypeOfFurniture_Test(ProtectionWall)
+      fullName: FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(ProtectionWall)
+      resultStatus: 1
+      duration: 0.0012209
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1113
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test][suite]
+    - id: 1111
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/HoldsCorrectTypeOfFurniture_Test/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(Table)]
+      name: HoldsCorrectTypeOfFurniture_Test(Table)
+      fullName: FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(Table)
+      resultStatus: 1
+      duration: 0.00125
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1113
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test][suite]
+    - id: 1112
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/HoldsCorrectTypeOfFurniture_Test/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(None)]
+      name: HoldsCorrectTypeOfFurniture_Test(None)
+      fullName: FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test(None)
+      resultStatus: 1
+      duration: 0.0012643
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1113
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.HoldsCorrectTypeOfFurniture_Test][suite]
+    - id: 1117
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.LoadsCorrectFurnitureDescriptionIntoUIWhenIsTriggerd_Test][suite]
+      name: LoadsCorrectFurnitureDescriptionIntoUIWhenIsTriggerd_Test
+      fullName: FurnitureTriggerInfoTest.LoadsCorrectFurnitureDescriptionIntoUIWhenIsTriggerd_Test
+      resultStatus: 1
+      duration: 0.0118774
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1105
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest][suite]
+    - id: 1116
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/LoadsCorrectFurnitureDescriptionIntoUIWhenIsTriggerd_Test/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.LoadsCorrectFurnitureDescriptionIntoUIWhenIsTriggerd_Test(CArm)]
+      name: LoadsCorrectFurnitureDescriptionIntoUIWhenIsTriggerd_Test(CArm)
+      fullName: FurnitureTriggerInfoTest.LoadsCorrectFurnitureDescriptionIntoUIWhenIsTriggerd_Test(CArm)
+      resultStatus: 1
+      duration: 0.0016144
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1117
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.LoadsCorrectFurnitureDescriptionIntoUIWhenIsTriggerd_Test][suite]
+    - id: 1119
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.LoadsCorrectFurnitureKeyCodesIntoUIWhenIsTriggerd_Test][suite]
+      name: LoadsCorrectFurnitureKeyCodesIntoUIWhenIsTriggerd_Test
+      fullName: FurnitureTriggerInfoTest.LoadsCorrectFurnitureKeyCodesIntoUIWhenIsTriggerd_Test
+      resultStatus: 1
+      duration: 0.011624
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1105
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest][suite]
+    - id: 1118
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/LoadsCorrectFurnitureKeyCodesIntoUIWhenIsTriggerd_Test/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.LoadsCorrectFurnitureKeyCodesIntoUIWhenIsTriggerd_Test(CArm,UnityEngine.KeyCode[])]
+      name: LoadsCorrectFurnitureKeyCodesIntoUIWhenIsTriggerd_Test(CArm,UnityEngine.KeyCode[])
+      fullName: FurnitureTriggerInfoTest.LoadsCorrectFurnitureKeyCodesIntoUIWhenIsTriggerd_Test(CArm,UnityEngine.KeyCode[])
+      resultStatus: 1
+      duration: 0.0018212
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1119
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.LoadsCorrectFurnitureKeyCodesIntoUIWhenIsTriggerd_Test][suite]
+    - id: 1120
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test][suite]
+      name: LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test
+      fullName: FurnitureTriggerInfoTest.LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test
+      resultStatus: 1
+      duration: 0.0095256
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1105
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest][suite]
+    - id: 1114
+      uniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test(CArm)]
+      name: LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test(CArm)
+      fullName: FurnitureTriggerInfoTest.LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test(CArm)
+      resultStatus: 1
+      duration: 0.0015889
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1115
+      parentUniqueId: Assembly-CSharp-Editor.dll/FurnitureTriggerInfoTest/[Assembly-CSharp-Editor][FurnitureTriggerInfoTest.LoadsCorrectFurnitureNameIntoUIWhenIsTriggerd_Test][suite]
+    - id: 1121
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSVColorTest][suite]
+      name: HSVColorTest
+      fullName: HSVColorTest
+      resultStatus: 1
+      duration: 0.0096166
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1122
+      uniqueId: Assembly-CSharp-Editor.dll/HSVColorTest/[Assembly-CSharp-Editor][HSVColorTest.HSVConstructorWithRGBColor_Test]
+      name: HSVConstructorWithRGBColor_Test
+      fullName: HSVColorTest.HSVConstructorWithRGBColor_Test
+      resultStatus: 1
+      duration: 0.000402
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1121
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][HSVColorTest][suite]
+    - id: 1123
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshContainerTest][suite]
+      name: MeshContainerTest
+      fullName: MeshContainerTest
+      resultStatus: 1
+      duration: 0.0839123
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1126
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshContainerInstanceExists_Test][suite]
+      name: MeshContainerInstanceExists_Test
+      fullName: MeshContainerTest.MeshContainerInstanceExists_Test
+      resultStatus: 1
+      duration: 0.0082776
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1123
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshContainerTest][suite]
+    - id: 1124
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshContainerInstanceExists_Test/[Assembly-CSharp-Editor][MeshContainerTest.MeshContainerInstanceExists_Test("Prefabs/Doc")]
+      name: MeshContainerInstanceExists_Test("Prefabs/Doc")
+      fullName: MeshContainerTest.MeshContainerInstanceExists_Test("Prefabs/Doc")
+      resultStatus: 1
+      duration: 0.0010662
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1126
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshContainerInstanceExists_Test][suite]
+    - id: 1125
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshContainerInstanceExists_Test/[Assembly-CSharp-Editor][MeshContainerTest.MeshContainerInstanceExists_Test("Prefabs/Mock_complex")]
+      name: MeshContainerInstanceExists_Test("Prefabs/Mock_complex")
+      fullName: MeshContainerTest.MeshContainerInstanceExists_Test("Prefabs/Mock_complex")
+      resultStatus: 1
+      duration: 0.0010044
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1126
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshContainerInstanceExists_Test][suite]
+    - id: 1138
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshHasCorrectNumOfNormals_Test][suite]
+      name: MeshHasCorrectNumOfNormals_Test
+      fullName: MeshContainerTest.MeshHasCorrectNumOfNormals_Test
+      resultStatus: 1
+      duration: 0.0117553
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1123
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshContainerTest][suite]
+    - id: 1136
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshHasCorrectNumOfNormals_Test/[Assembly-CSharp-Editor][MeshContainerTest.MeshHasCorrectNumOfNormals_Test("Prefabs/Doc",24)]
+      name: MeshHasCorrectNumOfNormals_Test("Prefabs/Doc",24)
+      fullName: MeshContainerTest.MeshHasCorrectNumOfNormals_Test("Prefabs/Doc",24)
+      resultStatus: 1
+      duration: 0.0016213
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1138
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshHasCorrectNumOfNormals_Test][suite]
+    - id: 1137
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshHasCorrectNumOfNormals_Test/[Assembly-CSharp-Editor][MeshContainerTest.MeshHasCorrectNumOfNormals_Test("Prefabs/Mock_complex",54)]
+      name: MeshHasCorrectNumOfNormals_Test("Prefabs/Mock_complex",54)
+      fullName: MeshContainerTest.MeshHasCorrectNumOfNormals_Test("Prefabs/Mock_complex",54)
+      resultStatus: 1
+      duration: 0.0002479
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1138
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshHasCorrectNumOfNormals_Test][suite]
+    - id: 1132
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshHasCorrectNumOfVertices_Test][suite]
+      name: MeshHasCorrectNumOfVertices_Test
+      fullName: MeshContainerTest.MeshHasCorrectNumOfVertices_Test
+      resultStatus: 1
+      duration: 0.0095807
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1123
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshContainerTest][suite]
+    - id: 1130
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshHasCorrectNumOfVertices_Test/[Assembly-CSharp-Editor][MeshContainerTest.MeshHasCorrectNumOfVertices_Test("Prefabs/Doc",24)]
+      name: MeshHasCorrectNumOfVertices_Test("Prefabs/Doc",24)
+      fullName: MeshContainerTest.MeshHasCorrectNumOfVertices_Test("Prefabs/Doc",24)
+      resultStatus: 1
+      duration: 0.0005821
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshHasCorrectNumOfVertices_Test][suite]
+    - id: 1131
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshHasCorrectNumOfVertices_Test/[Assembly-CSharp-Editor][MeshContainerTest.MeshHasCorrectNumOfVertices_Test("Prefabs/Mock_complex",54)]
+      name: MeshHasCorrectNumOfVertices_Test("Prefabs/Mock_complex",54)
+      fullName: MeshContainerTest.MeshHasCorrectNumOfVertices_Test("Prefabs/Mock_complex",54)
+      resultStatus: 1
+      duration: 0.0002455
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshHasCorrectNumOfVertices_Test][suite]
+    - id: 1143
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsAreCorrect][suite]
+      name: MeshNormalsAreCorrect
+      fullName: MeshContainerTest.MeshNormalsAreCorrect
+      resultStatus: 1
+      duration: 0.0120698
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1123
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshContainerTest][suite]
+    - id: 1139
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshNormalsAreCorrect/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",0,0.0f,1.0f,0.0f)]
+      name: MeshNormalsAreCorrect("Prefabs/Doc",0,0.0f,1.0f,0.0f)
+      fullName: MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",0,0.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0010833
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1143
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsAreCorrect][suite]
+    - id: 1140
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshNormalsAreCorrect/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",1,0.0f,1.0f,0.0f)]
+      name: MeshNormalsAreCorrect("Prefabs/Doc",1,0.0f,1.0f,0.0f)
+      fullName: MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",1,0.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0002461
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1143
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsAreCorrect][suite]
+    - id: 1141
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshNormalsAreCorrect/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",2,0.0f,1.0f,0.0f)]
+      name: MeshNormalsAreCorrect("Prefabs/Doc",2,0.0f,1.0f,0.0f)
+      fullName: MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",2,0.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0002258
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1143
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsAreCorrect][suite]
+    - id: 1142
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshNormalsAreCorrect/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",3,0.0f,1.0f,0.0f)]
+      name: MeshNormalsAreCorrect("Prefabs/Doc",3,0.0f,1.0f,0.0f)
+      fullName: MeshContainerTest.MeshNormalsAreCorrect("Prefabs/Doc",3,0.0f,1.0f,0.0f)
+      resultStatus: 1
+      duration: 0.0002266
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1143
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsAreCorrect][suite]
+    - id: 1135
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsIsNotNull_Test][suite]
+      name: MeshNormalsIsNotNull_Test
+      fullName: MeshContainerTest.MeshNormalsIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0103819
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1123
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshContainerTest][suite]
+    - id: 1133
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshNormalsIsNotNull_Test/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsIsNotNull_Test("Prefabs/Doc")]
+      name: MeshNormalsIsNotNull_Test("Prefabs/Doc")
+      fullName: MeshContainerTest.MeshNormalsIsNotNull_Test("Prefabs/Doc")
+      resultStatus: 1
+      duration: 0.000446
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsIsNotNull_Test][suite]
+    - id: 1134
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshNormalsIsNotNull_Test/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsIsNotNull_Test("Prefabs/Mock_complex")]
+      name: MeshNormalsIsNotNull_Test("Prefabs/Mock_complex")
+      fullName: MeshContainerTest.MeshNormalsIsNotNull_Test("Prefabs/Mock_complex")
+      resultStatus: 1
+      duration: 0.000226
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1135
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshNormalsIsNotNull_Test][suite]
+    - id: 1129
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshVerticesIsNotNull_Test][suite]
+      name: MeshVerticesIsNotNull_Test
+      fullName: MeshContainerTest.MeshVerticesIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0110547
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1123
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshContainerTest][suite]
+    - id: 1127
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshVerticesIsNotNull_Test/[Assembly-CSharp-Editor][MeshContainerTest.MeshVerticesIsNotNull_Test("Prefabs/Doc")]
+      name: MeshVerticesIsNotNull_Test("Prefabs/Doc")
+      fullName: MeshContainerTest.MeshVerticesIsNotNull_Test("Prefabs/Doc")
+      resultStatus: 1
+      duration: 0.0004563
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1129
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshVerticesIsNotNull_Test][suite]
+    - id: 1128
+      uniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/MeshVerticesIsNotNull_Test/[Assembly-CSharp-Editor][MeshContainerTest.MeshVerticesIsNotNull_Test("Prefabs/Mock_complex")]
+      name: MeshVerticesIsNotNull_Test("Prefabs/Mock_complex")
+      fullName: MeshContainerTest.MeshVerticesIsNotNull_Test("Prefabs/Mock_complex")
+      resultStatus: 1
+      duration: 0.0002223
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1129
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshContainerTest/[Assembly-CSharp-Editor][MeshContainerTest.MeshVerticesIsNotNull_Test][suite]
+    - id: 1144
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshControllerTest][suite]
+      name: MeshControllerTest
+      fullName: MeshControllerTest
+      resultStatus: 1
+      duration: 0.0287216
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1154
+      uniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/[Assembly-CSharp-Editor][MeshControllerTest.AverageDose_Test]
+      name: AverageDose_Test
+      fullName: MeshControllerTest.AverageDose_Test
+      resultStatus: 1
+      duration: 0.0014831
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1144
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshControllerTest][suite]
+    - id: 1145
+      uniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/[Assembly-CSharp-Editor][MeshControllerTest.MeshContainerIsNotNull_Test]
+      name: MeshContainerIsNotNull_Test
+      fullName: MeshControllerTest.MeshContainerIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0003268
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1144
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshControllerTest][suite]
+    - id: 1152
+      uniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/[Assembly-CSharp-Editor][MeshControllerTest.RelevantVertexPositions_Test]
+      name: RelevantVertexPositions_Test
+      fullName: MeshControllerTest.RelevantVertexPositions_Test
+      resultStatus: 1
+      duration: 0.000332
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1144
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshControllerTest][suite]
+    - id: 1147
+      uniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/[Assembly-CSharp-Editor][MeshControllerTest.RelevantVerticesExists_Test]
+      name: RelevantVerticesExists_Test
+      fullName: MeshControllerTest.RelevantVerticesExists_Test
+      resultStatus: 1
+      duration: 0.0002854
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1144
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshControllerTest][suite]
+    - id: 1151
+      uniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/[Assembly-CSharp-Editor][MeshControllerTest.RelevantVerticesHasCorrectNumAfterUpdate_Test][suite]
+      name: RelevantVerticesHasCorrectNumAfterUpdate_Test
+      fullName: MeshControllerTest.RelevantVerticesHasCorrectNumAfterUpdate_Test
+      resultStatus: 1
+      duration: 0.0107951
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1144
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshControllerTest][suite]
+    - id: 1149
+      uniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/RelevantVerticesHasCorrectNumAfterUpdate_Test/[Assembly-CSharp-Editor][MeshControllerTest.RelevantVerticesHasCorrectNumAfterUpdate_Test("Prefabs/Mock_simple",4)]
+      name: RelevantVerticesHasCorrectNumAfterUpdate_Test("Prefabs/Mock_simple",4)
+      fullName: MeshControllerTest.RelevantVerticesHasCorrectNumAfterUpdate_Test("Prefabs/Mock_simple",4)
+      resultStatus: 1
+      duration: 0.0009188
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1151
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/[Assembly-CSharp-Editor][MeshControllerTest.RelevantVerticesHasCorrectNumAfterUpdate_Test][suite]
+    - id: 1150
+      uniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/RelevantVerticesHasCorrectNumAfterUpdate_Test/[Assembly-CSharp-Editor][MeshControllerTest.RelevantVerticesHasCorrectNumAfterUpdate_Test("Prefabs/Mock_complex",16)]
+      name: RelevantVerticesHasCorrectNumAfterUpdate_Test("Prefabs/Mock_complex",16)
+      fullName: MeshControllerTest.RelevantVerticesHasCorrectNumAfterUpdate_Test("Prefabs/Mock_complex",16)
+      resultStatus: 1
+      duration: 0.0003156
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1151
+      parentUniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/[Assembly-CSharp-Editor][MeshControllerTest.RelevantVerticesHasCorrectNumAfterUpdate_Test][suite]
+    - id: 1148
+      uniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/[Assembly-CSharp-Editor][MeshControllerTest.RelevantVerticesIsNotNullAfterUpdate_Test]
+      name: RelevantVerticesIsNotNullAfterUpdate_Test
+      fullName: MeshControllerTest.RelevantVerticesIsNotNullAfterUpdate_Test
+      resultStatus: 1
+      duration: 0.0003036
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1144
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshControllerTest][suite]
+    - id: 1153
+      uniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/[Assembly-CSharp-Editor][MeshControllerTest.StoreDoses_Test]
+      name: StoreDoses_Test
+      fullName: MeshControllerTest.StoreDoses_Test
+      resultStatus: 1
+      duration: 0.0012797
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1144
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshControllerTest][suite]
+    - id: 1146
+      uniqueId: Assembly-CSharp-Editor.dll/MeshControllerTest/[Assembly-CSharp-Editor][MeshControllerTest.VerticeDataExists_Test]
+      name: VerticeDataExists_Test
+      fullName: MeshControllerTest.VerticeDataExists_Test
+      resultStatus: 1
+      duration: 0.0003596
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1144
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MeshControllerTest][suite]
+    - id: 1155
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+      name: MoveControllerTest
+      fullName: MoveControllerTest
+      resultStatus: 1
+      duration: 0.1112296
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1182
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test][suite]
+      name: MovesAlongNegativeXforInputLEFT_Test
+      fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test
+      resultStatus: 1
+      duration: 0.0080069
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1155
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1178
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeXforInputLEFT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.1f)]
+      name: MovesAlongNegativeXforInputLEFT_Test(-0.1f)
+      fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.1f)
+      resultStatus: 1
+      duration: 0.00043
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1182
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test][suite]
+    - id: 1179
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeXforInputLEFT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.75639f)]
+      name: MovesAlongNegativeXforInputLEFT_Test(-0.75639f)
+      fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.75639f)
+      resultStatus: 1
+      duration: 0.0002591
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1182
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test][suite]
+    - id: 1180
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeXforInputLEFT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-1.0f)]
+      name: MovesAlongNegativeXforInputLEFT_Test(-1.0f)
+      fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-1.0f)
+      resultStatus: 1
+      duration: 0.0002567
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1182
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test][suite]
+    - id: 1181
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeXforInputLEFT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.5f)]
+      name: MovesAlongNegativeXforInputLEFT_Test(-0.5f)
+      fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.5f)
+      resultStatus: 1
+      duration: 0.0002556
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1182
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test][suite]
+    - id: 1168
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test][suite]
+      name: MovesAlongNegativeZforInputDOWN_Test
+      fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test
+      resultStatus: 1
+      duration: 0.0262956
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1155
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1164
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeZforInputDOWN_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.1f)]
+      name: MovesAlongNegativeZforInputDOWN_Test(-0.1f)
+      fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.1f)
+      resultStatus: 1
+      duration: 0.0004602
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1168
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test][suite]
+    - id: 1165
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeZforInputDOWN_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.75639f)]
+      name: MovesAlongNegativeZforInputDOWN_Test(-0.75639f)
+      fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.75639f)
+      resultStatus: 1
+      duration: 0.0002612
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1168
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test][suite]
+    - id: 1166
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeZforInputDOWN_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-1.0f)]
+      name: MovesAlongNegativeZforInputDOWN_Test(-1.0f)
+      fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-1.0f)
+      resultStatus: 1
+      duration: 0.0002536
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1168
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test][suite]
+    - id: 1167
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongNegativeZforInputDOWN_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.5f)]
+      name: MovesAlongNegativeZforInputDOWN_Test(-0.5f)
+      fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.5f)
+      resultStatus: 1
+      duration: 0.0002575
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1168
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test][suite]
+    - id: 1175
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test][suite]
+      name: MovesAlongPositiveXforInputRIGHT_Test
+      fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test
+      resultStatus: 1
+      duration: 0.0124534
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1155
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1171
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveXforInputRIGHT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.1f)]
+      name: MovesAlongPositiveXforInputRIGHT_Test(0.1f)
+      fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.1f)
+      resultStatus: 1
+      duration: 0.000509
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1175
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test][suite]
+    - id: 1172
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveXforInputRIGHT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.75639f)]
+      name: MovesAlongPositiveXforInputRIGHT_Test(0.75639f)
+      fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.75639f)
+      resultStatus: 1
+      duration: 0.0002631
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1175
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test][suite]
+    - id: 1173
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveXforInputRIGHT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(1.0f)]
+      name: MovesAlongPositiveXforInputRIGHT_Test(1.0f)
+      fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(1.0f)
+      resultStatus: 1
+      duration: 0.0002408
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1175
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test][suite]
+    - id: 1174
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveXforInputRIGHT_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.5f)]
+      name: MovesAlongPositiveXforInputRIGHT_Test(0.5f)
+      fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.5f)
+      resultStatus: 1
+      duration: 0.0002541
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1175
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test][suite]
+    - id: 1161
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test][suite]
+      name: MovesAlongPositiveZforInputUP_Test
+      fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test
+      resultStatus: 1
+      duration: 0.0113052
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1155
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1157
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveZforInputUP_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.1f)]
+      name: MovesAlongPositiveZforInputUP_Test(0.1f)
+      fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.1f)
+      resultStatus: 1
+      duration: 0.0004046
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1161
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test][suite]
+    - id: 1158
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveZforInputUP_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.75639f)]
+      name: MovesAlongPositiveZforInputUP_Test(0.75639f)
+      fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.75639f)
+      resultStatus: 1
+      duration: 0.0002609
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1161
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test][suite]
+    - id: 1159
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveZforInputUP_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test(1.0f)]
+      name: MovesAlongPositiveZforInputUP_Test(1.0f)
+      fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(1.0f)
+      resultStatus: 1
+      duration: 0.000304
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1161
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test][suite]
+    - id: 1160
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesAlongPositiveZforInputUP_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.5f)]
+      name: MovesAlongPositiveZforInputUP_Test(0.5f)
+      fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.5f)
+      resultStatus: 1
+      duration: 0.0003723
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1161
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesAlongPositiveZforInputUP_Test][suite]
+    - id: 1170
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputDOWNisZero_Test][suite]
+      name: MovesNotforInputDOWNisZero_Test
+      fullName: MoveControllerTest.MovesNotforInputDOWNisZero_Test
+      resultStatus: 1
+      duration: 0.0089563
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1155
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1169
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesNotforInputDOWNisZero_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputDOWNisZero_Test(0)]
+      name: MovesNotforInputDOWNisZero_Test(0)
+      fullName: MoveControllerTest.MovesNotforInputDOWNisZero_Test(0)
+      resultStatus: 1
+      duration: 0.0004289
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1170
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputDOWNisZero_Test][suite]
+    - id: 1184
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputLEFTisZero_Test][suite]
+      name: MovesNotforInputLEFTisZero_Test
+      fullName: MoveControllerTest.MovesNotforInputLEFTisZero_Test
+      resultStatus: 1
+      duration: 0.0085927
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1155
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1183
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesNotforInputLEFTisZero_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputLEFTisZero_Test(0)]
+      name: MovesNotforInputLEFTisZero_Test(0)
+      fullName: MoveControllerTest.MovesNotforInputLEFTisZero_Test(0)
+      resultStatus: 1
+      duration: 0.0004116
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1184
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputLEFTisZero_Test][suite]
+    - id: 1177
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputRIGHTisZero_Test][suite]
+      name: MovesNotforInputRIGHTisZero_Test
+      fullName: MoveControllerTest.MovesNotforInputRIGHTisZero_Test
+      resultStatus: 1
+      duration: 0.0097811
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1155
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1176
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesNotforInputRIGHTisZero_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputRIGHTisZero_Test(0)]
+      name: MovesNotforInputRIGHTisZero_Test(0)
+      fullName: MoveControllerTest.MovesNotforInputRIGHTisZero_Test(0)
+      resultStatus: 1
+      duration: 0.0004141
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1177
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotforInputRIGHTisZero_Test][suite]
+    - id: 1163
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotForInputUPisZero_Test][suite]
+      name: MovesNotForInputUPisZero_Test
+      fullName: MoveControllerTest.MovesNotForInputUPisZero_Test
+      resultStatus: 1
+      duration: 0.0094703
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1155
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1162
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/MovesNotForInputUPisZero_Test/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotForInputUPisZero_Test(0.0f)]
+      name: MovesNotForInputUPisZero_Test(0.0f)
+      fullName: MoveControllerTest.MovesNotForInputUPisZero_Test(0.0f)
+      resultStatus: 1
+      duration: 0.000408
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1163
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.MovesNotForInputUPisZero_Test][suite]
+    - id: 1156
+      uniqueId: Assembly-CSharp-Editor.dll/MoveControllerTest/[Assembly-CSharp-Editor][MoveControllerTest.PlayerMovementIsExistent_Test]
+      name: PlayerMovementIsExistent_Test
+      fullName: MoveControllerTest.PlayerMovementIsExistent_Test
+      resultStatus: 1
+      duration: 0.0006636
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1155
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveControllerTest][suite]
+    - id: 1077
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PatientTableTest][suite]
+      name: PatientTableTest
+      fullName: PatientTableTest
+      resultStatus: 1
+      duration: 0.060707
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1081
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.ArrowDownMovesTableDownWhenTableIsTriggerd_Test][suite]
+      name: ArrowDownMovesTableDownWhenTableIsTriggerd_Test
+      fullName: PatientTableTest.ArrowDownMovesTableDownWhenTableIsTriggerd_Test
+      resultStatus: 1
+      duration: 0.0075012
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1077
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PatientTableTest][suite]
+    - id: 1080
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/ArrowDownMovesTableDownWhenTableIsTriggerd_Test/[Assembly-CSharp-Editor][PatientTableTest.ArrowDownMovesTableDownWhenTableIsTriggerd_Test(False,True)]
+      name: ArrowDownMovesTableDownWhenTableIsTriggerd_Test(False,True)
+      fullName: PatientTableTest.ArrowDownMovesTableDownWhenTableIsTriggerd_Test(False,True)
+      resultStatus: 1
+      duration: 0.0019342
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1081
+      parentUniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.ArrowDownMovesTableDownWhenTableIsTriggerd_Test][suite]
+    - id: 1083
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test][suite]
+      name: ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test
+      fullName: PatientTableTest.ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test
+      resultStatus: 1
+      duration: 0.0100927
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1077
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PatientTableTest][suite]
+    - id: 1082
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test/[Assembly-CSharp-Editor][PatientTableTest.ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test(True,True)]
+      name: ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test(True,True)
+      fullName: PatientTableTest.ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test(True,True)
+      resultStatus: 1
+      duration: 0.0006385
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1083
+      parentUniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test][suite]
+    - id: 1079
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.ArrowUpMovesTableUpWhenTableIsTriggerd_Test][suite]
+      name: ArrowUpMovesTableUpWhenTableIsTriggerd_Test
+      fullName: PatientTableTest.ArrowUpMovesTableUpWhenTableIsTriggerd_Test
+      resultStatus: 1
+      duration: 0.0085349
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1077
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PatientTableTest][suite]
+    - id: 1078
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/ArrowUpMovesTableUpWhenTableIsTriggerd_Test/[Assembly-CSharp-Editor][PatientTableTest.ArrowUpMovesTableUpWhenTableIsTriggerd_Test(True,False)]
+      name: ArrowUpMovesTableUpWhenTableIsTriggerd_Test(True,False)
+      fullName: PatientTableTest.ArrowUpMovesTableUpWhenTableIsTriggerd_Test(True,False)
+      resultStatus: 1
+      duration: 0.0005681
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1079
+      parentUniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.ArrowUpMovesTableUpWhenTableIsTriggerd_Test][suite]
+    - id: 1090
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test][suite]
+      name: TheTableDontMoveWhenThereAreNotEnoughInstructions_Test
+      fullName: PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test
+      resultStatus: 1
+      duration: 0.0113089
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1077
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PatientTableTest][suite]
+    - id: 1087
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/TheTableDontMoveWhenThereAreNotEnoughInstructions_Test/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[])]
+      name: TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[])
+      fullName: PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[])
+      resultStatus: 1
+      duration: 0.0005772
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test][suite]
+    - id: 1088
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/TheTableDontMoveWhenThereAreNotEnoughInstructions_Test/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[])]2
+      name: TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[])
+      fullName: PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[]
+        GeneratedTestCase2)
+      resultStatus: 1
+      duration: 0.0004127
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test][suite]
+    - id: 1089
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/TheTableDontMoveWhenThereAreNotEnoughInstructions_Test/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[])]3
+      name: TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[])
+      fullName: PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[]
+        GeneratedTestCase3)
+      resultStatus: 1
+      duration: 0.0002952
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1090
+      parentUniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test][suite]
+    - id: 1086
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreTooManyInstructions_Test][suite]
+      name: TheTableDontMoveWhenThereAreTooManyInstructions_Test
+      fullName: PatientTableTest.TheTableDontMoveWhenThereAreTooManyInstructions_Test
+      resultStatus: 1
+      duration: 0.0098126
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1077
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PatientTableTest][suite]
+    - id: 1084
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/TheTableDontMoveWhenThereAreTooManyInstructions_Test/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreTooManyInstructions_Test(System.Boolean[])]
+      name: TheTableDontMoveWhenThereAreTooManyInstructions_Test(System.Boolean[])
+      fullName: PatientTableTest.TheTableDontMoveWhenThereAreTooManyInstructions_Test(System.Boolean[])
+      resultStatus: 1
+      duration: 0.0005803
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1086
+      parentUniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreTooManyInstructions_Test][suite]
+    - id: 1085
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/TheTableDontMoveWhenThereAreTooManyInstructions_Test/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreTooManyInstructions_Test(System.Boolean[])]2
+      name: TheTableDontMoveWhenThereAreTooManyInstructions_Test(System.Boolean[])
+      fullName: PatientTableTest.TheTableDontMoveWhenThereAreTooManyInstructions_Test(System.Boolean[]
+        GeneratedTestCase2)
+      resultStatus: 1
+      duration: 0.0002574
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1086
+      parentUniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreTooManyInstructions_Test][suite]
+    - id: 1091
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ProtectionWallTest][suite]
+      name: ProtectionWallTest
+      fullName: ProtectionWallTest
+      resultStatus: 1
+      duration: 0.0129255
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1092
+      uniqueId: Assembly-CSharp-Editor.dll/ProtectionWallTest/[Assembly-CSharp-Editor][ProtectionWallTest.FirstPressFWillLockTheWallToThePlayerMovementWhenIsTriggered_Test]
+      name: FirstPressFWillLockTheWallToThePlayerMovementWhenIsTriggered_Test
+      fullName: ProtectionWallTest.FirstPressFWillLockTheWallToThePlayerMovementWhenIsTriggered_Test
+      resultStatus: 1
+      duration: 0.001865
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1091
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ProtectionWallTest][suite]
+    - id: 1093
+      uniqueId: Assembly-CSharp-Editor.dll/ProtectionWallTest/[Assembly-CSharp-Editor][ProtectionWallTest.SecondPressFWillReleaseTheWallFromThePlayerMovementWhenIsTriggerd_Test]
+      name: SecondPressFWillReleaseTheWallFromThePlayerMovementWhenIsTriggerd_Test
+      fullName: ProtectionWallTest.SecondPressFWillReleaseTheWallFromThePlayerMovementWhenIsTriggerd_Test
+      resultStatus: 1
+      duration: 0.0006569
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1091
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ProtectionWallTest][suite]
+    - id: 1185
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
+      name: RayTracerTest
+      fullName: RayTracerTest
+      resultStatus: 1
+      duration: 0.055261
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1186
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHits_Test]
+      name: CreateRayHits_Test
+      fullName: RayTracerTest.CreateRayHits_Test
+      resultStatus: 1
+      duration: 0.0012323
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1185
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
+    - id: 1189
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsDoc_Test][suite]
+      name: CreateRayHitsDoc_Test
+      fullName: RayTracerTest.CreateRayHitsDoc_Test
+      resultStatus: 1
+      duration: 0.0105156
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1185
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
+    - id: 1187
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/CreateRayHitsDoc_Test/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsDoc_Test("Mock_simple")]
+      name: CreateRayHitsDoc_Test("Mock_simple")
+      fullName: RayTracerTest.CreateRayHitsDoc_Test("Mock_simple")
+      resultStatus: 1
+      duration: 0.0013445
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1189
+      parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsDoc_Test][suite]
+    - id: 1188
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/CreateRayHitsDoc_Test/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsDoc_Test("Mock_complex")]
+      name: CreateRayHitsDoc_Test("Mock_complex")
+      fullName: RayTracerTest.CreateRayHitsDoc_Test("Mock_complex")
+      resultStatus: 1
+      duration: 0.0002278
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1189
+      parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsDoc_Test][suite]
+    - id: 1192
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsOther_Test][suite]
+      name: CreateRayHitsOther_Test
+      fullName: RayTracerTest.CreateRayHitsOther_Test
+      resultStatus: 1
+      duration: 0.0104418
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1185
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
+    - id: 1190
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/CreateRayHitsOther_Test/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsOther_Test("Mock_simple")]
+      name: CreateRayHitsOther_Test("Mock_simple")
+      fullName: RayTracerTest.CreateRayHitsOther_Test("Mock_simple")
+      resultStatus: 1
+      duration: 0.0004972
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1192
+      parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsOther_Test][suite]
+    - id: 1191
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/CreateRayHitsOther_Test/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsOther_Test("Mock_complex")]
+      name: CreateRayHitsOther_Test("Mock_complex")
+      fullName: RayTracerTest.CreateRayHitsOther_Test("Mock_complex")
+      resultStatus: 1
+      duration: 0.0002333
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1192
+      parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRayHitsOther_Test][suite]
+    - id: 1195
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRaySourceToDoc_Test][suite]
+      name: CreateRaySourceToDoc_Test
+      fullName: RayTracerTest.CreateRaySourceToDoc_Test
+      resultStatus: 1
+      duration: 0.0098268
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1185
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
+    - id: 1193
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/CreateRaySourceToDoc_Test/[Assembly-CSharp-Editor][RayTracerTest.CreateRaySourceToDoc_Test("Mock_simple")]
+      name: CreateRaySourceToDoc_Test("Mock_simple")
+      fullName: RayTracerTest.CreateRaySourceToDoc_Test("Mock_simple")
+      resultStatus: 1
+      duration: 0.0005049
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1195
+      parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRaySourceToDoc_Test][suite]
+    - id: 1194
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/CreateRaySourceToDoc_Test/[Assembly-CSharp-Editor][RayTracerTest.CreateRaySourceToDoc_Test("Mock_complex")]
+      name: CreateRaySourceToDoc_Test("Mock_complex")
+      fullName: RayTracerTest.CreateRaySourceToDoc_Test("Mock_complex")
+      resultStatus: 1
+      duration: 0.0002596
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1195
+      parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.CreateRaySourceToDoc_Test][suite]
+    - id: 1198
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.GetDistances_Test][suite]
+      name: GetDistances_Test
+      fullName: RayTracerTest.GetDistances_Test
+      resultStatus: 1
+      duration: 0.0096959
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1185
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][RayTracerTest][suite]
+    - id: 1196
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/GetDistances_Test/[Assembly-CSharp-Editor][RayTracerTest.GetDistances_Test("Mock_simple")]
+      name: GetDistances_Test("Mock_simple")
+      fullName: RayTracerTest.GetDistances_Test("Mock_simple")
+      resultStatus: 1
+      duration: 0.0008048
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1198
+      parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.GetDistances_Test][suite]
+    - id: 1197
+      uniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/GetDistances_Test/[Assembly-CSharp-Editor][RayTracerTest.GetDistances_Test("Mock_complex")]
+      name: GetDistances_Test("Mock_complex")
+      fullName: RayTracerTest.GetDistances_Test("Mock_complex")
+      resultStatus: 1
+      duration: 0.0002194
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1198
+      parentUniqueId: Assembly-CSharp-Editor.dll/RayTracerTest/[Assembly-CSharp-Editor][RayTracerTest.GetDistances_Test][suite]
+    - id: 1094
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][TableTest][suite]
+      name: TableTest
+      fullName: TableTest
+      resultStatus: 1
+      duration: 0.011857
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1199
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1095
+      uniqueId: Assembly-CSharp-Editor.dll/TableTest/[Assembly-CSharp-Editor][TableTest.FirstPressFWillLockTheTableToThePlayerMovementWhenIsTriggered_Test]
+      name: FirstPressFWillLockTheTableToThePlayerMovementWhenIsTriggered_Test
+      fullName: TableTest.FirstPressFWillLockTheTableToThePlayerMovementWhenIsTriggered_Test
+      resultStatus: 1
+      duration: 0.0014479
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1094
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][TableTest][suite]
+    - id: 1096
+      uniqueId: Assembly-CSharp-Editor.dll/TableTest/[Assembly-CSharp-Editor][TableTest.SecondPressFWillReleaseTheTableFromThePlayerMovementWhenIsTriggerd_Test]
+      name: SecondPressFWillReleaseTheTableFromThePlayerMovementWhenIsTriggerd_Test
+      fullName: TableTest.SecondPressFWillReleaseTheTableFromThePlayerMovementWhenIsTriggerd_Test
+      resultStatus: 1
+      duration: 0.0005723
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1094
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][TableTest][suite]
+    m_ResultText: MoveControllerTest (0,111s)
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e70d77a9
-      m_LastClickedID: -1451815449
-      m_ExpandedIDs: 8035f988a3d4138cbfa93c8d707ffc9e04dd84c2cbf570c3734991c7c5a133e15b0205e29f8c79f7ad3927f92371f30712a7ee098d729f0ae3d6231390d09e1634d6281b24e32e204755f3238351802423ebc724036213367a363a389fcff33ebaec4348b3e2354f1a4e5359d2fa6f59a00d2a5ae022435c14b4636e4e183573ffffff7f
+      m_SelectedIDs: 849da44c
+      m_LastClickedID: 1285856644
+      m_ExpandedIDs: 8035f988a3d4138c707ffc9e16aa90a804dd84c2cbf570c3734991c7c5a133e15b0205e29f8c79f72371f30712a7ee098d729f0ae3d6231390d09e1634d6281b24e32e204755f32383518024036213367a363a389fcff33ebaec4348b3e2354f1a4e5359d2fa6f59a00d2a5ae022435c14b4636e4e183573ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1205,7 +4602,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -131512000283675692, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1275,7 +4672,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.08416361, y: -0.9054169, z: 0.357333, w: 0.21323209}
     speed: 2
-    m_Value: {x: -0.08416285, y: 0.9054087, z: -0.35732976, w: -0.21323015}
+    m_Value: {x: 0.08416285, y: -0.9054087, z: 0.35732976, w: 0.21323015}
   m_Size:
     m_Target: 26.235409
     speed: 2
@@ -1320,7 +4717,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 8356117983803934776, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1358,7 +4755,7 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -2032128904892744680, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1381,20 +4778,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Resources/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/TextMesh Pro
+  - Assets/Resources/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ee340000
-    m_LastClickedID: 13550
-    m_ExpandedIDs: 00000000ee340000f0340000f2340000f434000000ca9a3b
+    m_SelectedIDs: e2340000
+    m_LastClickedID: 13538
+    m_ExpandedIDs: 00000000c8340000ca340000cc340000ce340000e234000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1422,7 +4819,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ee340000f0340000f2340000f4340000
+    m_ExpandedIDs: 00000000c8340000ca340000cc340000ce340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1453,18 +4850,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 48220000d0210000aa22000012230000ce21000064c9ffffb6220000d2210000d6210000868efdfff0040000d4210000dc210000a42b0000622200000a2200002828000012220000305000008422000016220000c032faff5c5bf7ffea2a00001e2c000020ca000016300000262d00004e630000d6620000d262000066620000342d0300bc350000fa3d0000ae410000244500006e4100008a320000643700007837000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: GUI
+      m_OriginalName: GUI
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 13240
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 7}
     m_CreateAssetUtility:
@@ -1494,7 +4891,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -9000905672528348964, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1507,9 +4904,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 96360000
+      m_SelectedIDs: 7c340000
       m_LastClickedID: 0
-      m_ExpandedIDs: 56fbffff
+      m_ExpandedIDs: d8d0feff7ce2feffeaf4fefffa06ffffaa1dffff702effff8e3fffff5050ffff645effffb46bffffdc7cfffffe8dffffc49effff22a0ffff46a0ffff8cadffff56bbffff90c9ffff54cbffff5ecbffffa4d8ffff7ee7ffffb8e9ffff64eaffff48f8ffff56fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1549,7 +4946,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -3303252850963283158, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1575,7 +4972,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 8356117983803934776, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:

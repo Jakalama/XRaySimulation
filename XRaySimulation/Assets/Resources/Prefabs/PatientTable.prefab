@@ -153,6 +153,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 1
+  Info:
+    Name: Patient Table
+    Description: 
+    KeyCodes: 1801000019010000
   KeyCodes: 1101000012010000
   isTriggerd: 0
 --- !u!1 &8832655501463593132

@@ -9,7 +9,6 @@ public class Furniture : MonoBehaviour
 {
     [SerializeField] public FurnitureType Type;
     [SerializeField] public FurnitureInfo Info;
-    [SerializeField] public KeyCode[] KeyCodes;
     [HideInInspector] public bool isTriggerd;
 
     private SphereCollider trigger;
@@ -37,9 +36,9 @@ public class Furniture : MonoBehaviour
 
     private void GetInstructions()
     {
-        instructions = new bool[KeyCodes.Length];
+        instructions = new bool[Info.KeyCodes.Length];
 
-        for (int i = 0; i < KeyCodes.Length; i++)
+        for (int i = 0; i < Info.KeyCodes.Length; i++)
         {
             instructions[i] = GetInstructionBasedOnType(i);
         }
@@ -48,18 +47,36 @@ public class Furniture : MonoBehaviour
     private bool GetInstructionBasedOnType(int index)
     {
         if (Type == FurnitureType.PatientTable)
-            return Input.GetKey(KeyCodes[index]);
+            return Input.GetKey(Info.KeyCodes[index]);
         else
-            return Input.GetKeyDown(KeyCodes[index]);
+            return Input.GetKeyDown(Info.KeyCodes[index]);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        isTriggerd = true;
+        Activate();
     }
 
     private void OnTriggerExit(Collider other)
     {
-        isTriggerd = false;
+        Deactivate();
+    }
+
+    private void Activate()
+    {
+        if (FurnitureTriggerInfo.Type == FurnitureType.None)
+        {
+            isTriggerd = true;
+            FurnitureTriggerInfo.SetActiveFurniture(Type, Info);
+        }
+    }
+
+    private void Deactivate()
+    {
+        if (isTriggerd)
+        {
+            isTriggerd = false;
+            FurnitureTriggerInfo.DeactivateFurniture();
+        }
     }
 }
