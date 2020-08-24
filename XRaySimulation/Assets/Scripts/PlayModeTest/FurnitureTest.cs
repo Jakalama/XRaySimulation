@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using UnityEngine.UI;
 
 public class FurnitureTest
 {
@@ -34,9 +35,9 @@ public class FurnitureTest
         Assert.IsTrue(testObj.GetComponent<SphereCollider>().isTrigger);
     }
 
-    // Don't know why this test is failing
-    // A manual test shows that this tested beahviour is working!
-    // Maybe there is an issue with collisions in play test mode.
+    // Don't know why this test is failing with other Prefabs than the Player_Mock
+    // A manual test shows that this tested beahviour is working fine!
+    // Maybe there is an issue with trigger collisions in play test mode.
     [UnityTest]
     public IEnumerator FurnitureTriggerGetsTriggerdThroughPlayer_Test()
     {

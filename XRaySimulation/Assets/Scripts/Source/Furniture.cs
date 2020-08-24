@@ -8,6 +8,7 @@ using UnityEngine.TestTools;
 public class Furniture : MonoBehaviour
 {
     [SerializeField] public FurnitureType Type;
+    [SerializeField] public FurnitureInfo Info;
     [SerializeField] public KeyCode[] KeyCodes;
     [HideInInspector] public bool isTriggerd;
 

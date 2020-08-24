@@ -559,5 +559,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 0
+  Info:
+    Name: Table
+    Description: 
+    KeyCodes: 66000000
   KeyCodes: 66000000
   isTriggerd: 0
