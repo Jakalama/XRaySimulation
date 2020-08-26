@@ -5,24 +5,26 @@ using UnityEngine;
 
 public class MeshController
 {
-    public MeshContainer MeshContainer;
-
     public VertexData[] VerticeData;
     public List<int> RelevantVertices;
 
+    private MeshContainer meshContainer;
+    private Transform meshTransform;
+
     public float AverageDose { get { return CalculateAverageDose(); } private set { } }
 
-    public MeshController(MeshContainer container)
+    public MeshController(MeshContainer container, Transform transform)
     {
-        MeshContainer = container;
+        this.meshContainer = container;
+        this.meshTransform = transform;
 
-        VerticeData = SetVerticeData();
-        RelevantVertices = new List<int>();
+        this.VerticeData = SetVerticeData();
+        this.RelevantVertices = new List<int>();
     }
 
     private VertexData[] SetVerticeData()
     {
-        Vector3[] vertices = MeshContainer.GetVertices();
+        Vector3[] vertices = meshContainer.GetVertices();
         VertexData[] data = new VertexData[vertices.Length];
 
         for (int i = 0; i < vertices.Length; i++)
@@ -33,25 +35,32 @@ public class MeshController
         return data;
     }
 
-    public void UpdateRelevantVertices()
+    public void UpdateVertices(Vector3 raySource)
     {
         RelevantVertices.Clear();
 
-        Vector3[] normals = MeshContainer.GetNormals();
-        Vector3[] vertices = MeshContainer.GetVertices();
+        Vector3[] normals = meshContainer.GetNormals();
+        Vector3[] vertices = meshContainer.GetVertices();
 
         for (int i = 0; i < normals.Length; i++)
         {
-            if (IsNormalRelevant(normals[i], vertices[i]))
+            VerticeData[i].Position = vertices[i];
+
+            if (IsNormalRelevant(normals[i], VerticeData[i].Position, raySource))
                 RelevantVertices.Add(i);
         }
     }
 
-    private bool IsNormalRelevant(Vector3 normal, Vector3 pointPlane)
+    private bool IsNormalRelevant(Vector3 normal, Vector3 pointPlane, Vector3 raySource)
     {
-        float dot = Vector3.Dot(new Vector3(5, 0, 0), normal);
+        // calculates the angle between the normals and the ray-source
+        float angle = Vector3.Dot(normal, raySource - pointPlane);
 
-        if (dot < 0)
+        // draw orientations of normals and distance vector of vertice and source
+        //Debug.DrawRay(pointPlane, normal, Color.red, 0.1f);
+        //Debug.DrawRay(pointPlane, new Vector3(0, 0, 0) - pointPlane, Color.blue, .1f);
+
+        if (angle >= 0)
             return true;
 
         return false;
@@ -64,10 +73,24 @@ public class MeshController
 
         for (int i = 0; i < num; i++)
         {
-            positions[i] = VerticeData[RelevantVertices[i]].Position + MeshContainer.transform.position;
+            positions[i] = GetRelevantVertexPosition(i);
         }
 
         return positions;
+    }
+
+    private Vector3 GetRelevantVertexPosition(int index)
+    {
+        return VerticeData[RelevantVertices[index]].Position;
+    }
+
+    public void SortOutUnhittedVertices(RayTracer tracer)
+    {
+        for (int i = 0; i < RelevantVertices.Count; i++)
+        {
+            if (!tracer.CreateRay(GetRelevantVertexPosition(i)))
+                RelevantVertices.Remove(RelevantVertices[i]);
+        }
     }
 
     public void StoreDoses(float[] doses)

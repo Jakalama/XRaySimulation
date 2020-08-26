@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6027224254276118539}
   - component: {fileID: 43217326152406258}
   - component: {fileID: -226490656339921502}
-  - component: {fileID: -3121120915033685814}
   m_Layer: 0
   m_Name: Mock_complex
   m_TagString: Untagged
@@ -95,16 +94,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2534964839176971238, guid: 8b35445c9621f8645aa6070d518c2be2, type: 3}
---- !u!114 &-3121120915033685814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1775931049799770158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed772d8611e164f4ca793a09671cb751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RelevantVertices: 

@@ -9,51 +9,133 @@ public class MeshControllerTest
     private GameObject docMeshObj;
     private MeshController controller;
 
-    [SetUp]
-    public void SetUp()
+    // Can't use normal Setup, because one test use different mocks.
+    // The default SetUp-Method can't have parameters.
+    public void SetUp(string mockName = "Mock_simple")
     {
-        MeshContainer container = null;
-        GameObject docMeshPref = Resources.Load<GameObject>("Prefabs/Mock_simple");
+        GameObject docMeshPref = Resources.Load<GameObject>("Prefabs/" + mockName);
         docMeshObj = GameObject.Instantiate(docMeshPref);
-        container = docMeshObj.GetComponent<MeshContainer>();
 
-        controller = new MeshController(container);
+        MeshContainer container = new MeshContainer(docMeshPref.transform);
+        controller = new MeshController(container, docMeshPref.transform);
     }
 
     [Test]
     public void MeshContainerIsNotNull_Test()
     {
-        Assert.IsNotNull(controller.MeshContainer);
+        SetUp();
+
+        System.Reflection.FieldInfo info = controller.GetType().GetField("meshContainer", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        MeshContainer mc = (MeshContainer) info.GetValue(controller);
+
+        Assert.IsNotNull(mc);
+    }
+
+    [Test]
+    public void MeshTransformIsNotNull_Test()
+    {
+        SetUp();
+
+        System.Reflection.FieldInfo info = controller.GetType().GetField("meshTransform", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        Transform transform = (Transform) info.GetValue(controller);
+
+        Assert.IsNotNull(transform);
     }
 
     [Test]
     public void VerticeDataExists_Test()
     {
+        SetUp();
+
         Assert.IsNotNull(controller.VerticeData);
     }
 
     [Test]
     public void RelevantVerticesExists_Test()
     {
+        SetUp();
+
         Assert.IsNotNull(controller.RelevantVertices);
     }
 
     [Test]
     public void RelevantVerticesIsNotNullAfterUpdate_Test()
     {
-        controller.UpdateRelevantVertices();
+        SetUp();
+
+        controller.UpdateVertices(new Vector3());
 
         Assert.IsNotNull(controller.RelevantVertices);
     }
 
     [Test]
-    [TestCase("Prefabs/Mock_simple", 4)]
-    [TestCase("Prefabs/Mock_complex", 16)]
-    public void RelevantVerticesHasCorrectNumAfterUpdate_Test(string mockName, int expected)
+    [TestCase("Mock_simple", 4)]
+    [TestCase("Mock_complex", 16)]
+    public void RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnXAxis_Test(string mockName, int expected)
     {
-        MeshContainer conatiner = GetMeshContainer(mockName);
-        controller.MeshContainer = conatiner;
-        controller.UpdateRelevantVertices();
+        SetUp(mockName);
+
+        controller.UpdateVertices(new Vector3(5f, 0f, 0f));
+
+        Assert.AreEqual(expected, controller.RelevantVertices.Count);
+    }
+
+    [Test]
+    [TestCase("Mock_simple", 4)]
+    [TestCase("Mock_complex", 9)]
+    public void RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnYAxis_Test(string mockName, int expected)
+    {
+        SetUp(mockName);
+
+        controller.UpdateVertices(new Vector3(0f, 5f, 0f));
+
+        Assert.AreEqual(expected, controller.RelevantVertices.Count);
+    }
+
+    [Test]
+    [TestCase("Mock_simple", 4)]
+    [TestCase("Mock_complex", 20)]
+    public void RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnZAxis_Test(string mockName, int expected)
+    {
+        SetUp(mockName);
+
+        controller.UpdateVertices(new Vector3(0f, 0f, 5f));
+
+        Assert.AreEqual(expected, controller.RelevantVertices.Count);
+    }
+
+    [Test]
+    [TestCase("Mock_simple", 4)]
+    [TestCase("Mock_complex", 16)]
+    public void RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeXAxis_Test(string mockName, int expected)
+    {
+        SetUp(mockName);
+
+        controller.UpdateVertices(new Vector3(-5f, 0f, 0f));
+
+        Assert.AreEqual(expected, controller.RelevantVertices.Count);
+    }
+
+    [Test]
+    [TestCase("Mock_simple", 4)]
+    [TestCase("Mock_complex", 9)]
+    public void RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnnegativeYAxis_Test(string mockName, int expected)
+    {
+        SetUp(mockName);
+
+        controller.UpdateVertices(new Vector3(0f, -5f, 0f));
+
+        Assert.AreEqual(expected, controller.RelevantVertices.Count);
+    }
+
+    [Test]
+    [TestCase("Mock_simple", 4)]
+    [TestCase("Mock_complex", 16)]
+    public void RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeZAxis_Test(string mockName, int expected)
+    {
+        SetUp(mockName);
+
+        controller.UpdateVertices(new Vector3(0f, 0f, -5f));
 
         Assert.AreEqual(expected, controller.RelevantVertices.Count);
     }
@@ -61,6 +143,8 @@ public class MeshControllerTest
     [Test]
     public void RelevantVertexPositions_Test()
     {
+        SetUp();
+
         //ToDo:
         Assert.True(true);
     }
@@ -68,7 +152,8 @@ public class MeshControllerTest
     [Test]
     public void StoreDoses_Test()
     {
-        //ToDo: Should be TestCase
+        SetUp();
+
         controller.VerticeData = new VertexData[3]
         {
             new VertexData(new Vector3(10f, 10f, 10f), 0f ),
@@ -91,6 +176,8 @@ public class MeshControllerTest
     [Test]
     public void AverageDose_Test()
     {
+        SetUp();
+
         controller.VerticeData = new VertexData[3]
         {
             new VertexData(new Vector3(10f, 10f, 10f), 0f ),
@@ -107,15 +194,6 @@ public class MeshControllerTest
     public void TearDown()
     {
         GameObject.DestroyImmediate(docMeshObj);
-    }
-
-    private MeshContainer GetMeshContainer(string mockName)
-    {
-        MeshContainer dm = null;
-        GameObject docMeshPref = Resources.Load<GameObject>(mockName);
-        GameObject docMeshObj = GameObject.Instantiate(docMeshPref);
-        dm = docMeshObj.GetComponent<MeshContainer>();
-
-        return dm;
+        controller = null;
     }
 }

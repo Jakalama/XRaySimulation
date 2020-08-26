@@ -1,34 +1,41 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class RayTracer : MonoBehaviour
+public class RayTracer
 {
-    public static RayTracer Instance;
+    private Transform source;
 
-    private void Awake()
+    public RayTracer(Transform transform)
     {
-        Instance = this;
+        this.source = transform;
     }
 
-    public bool CreateRay(Vector3 origin, Vector3 destination)
+    public bool CreateRay(Vector3 destination)
     {
+        return CreateRay(source.position, destination);
+    }
+
+    private bool CreateRay(Vector3 start, Vector3 end)
+    {
+        Vector3 direction = end - start;
+
         RaycastHit hit;
-        Ray ray = new Ray(origin, destination.normalized);
-        
+        Ray ray = new Ray(start, direction.normalized);
+
         if (Physics.Raycast(ray, out hit))
         {
             if (hit.transform.tag == "Doc")
+            {
+                Debug.DrawLine(start, hit.point, Color.green, 0.1f);
                 return true;
+            }
+
+            Debug.DrawLine(start, hit.point, Color.red, 0.1f);
         }
 
-        return false;
-    }
+        Debug.DrawLine(start, end, Color.black, 0.1f);
 
-    public bool CreateRaySourceToDoc(Vector3 destination)
-    {
-        return true;
+        return false;
     }
 
     public float[] GetDistances(Vector3[] positions)
@@ -38,9 +45,14 @@ public class RayTracer : MonoBehaviour
 
         for (int i = 0; i < num; i++)
         {
-            distances[i] = (float)Math.Round(Vector3.Distance(Vector3.zero, positions[i]), 3);
+            distances[i] = GetDistance(positions[i]);
         }
 
         return distances;
+    }
+
+    private float GetDistance(Vector3 position)
+    {
+        return (float)Math.Round(Vector3.Distance(source.position, position), 3);
     }
 }

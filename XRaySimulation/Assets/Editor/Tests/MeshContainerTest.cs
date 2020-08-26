@@ -6,30 +6,25 @@ using System.Linq;
 
 public class MeshContainerTest
 {
-    private void SetMeshContainer(string name)
-    {
-        MeshContainer dm = null;
-        GameObject docMeshPref = Resources.Load<GameObject>(name);
-        GameObject docMeshObj = GameObject.Instantiate(docMeshPref);
-        dm = docMeshObj.GetComponent<MeshContainer>();
-        MeshContainer.Instance = dm;
-    }
+    private MeshContainer container;
+    private GameObject meshObj;
 
-    [SetUp]
-    public void BeforeEveryTest()
+    [Test]
+    [TestCase("Prefabs/Doc")]
+    [TestCase("Prefabs/Mock_complex")]
+    public void MeshContainerExists_Test(string mockName)
     {
-
+        SetMeshGameObjectAndContainer(mockName);
+        Assert.IsNotNull(container);
     }
 
     [Test]
     [TestCase("Prefabs/Doc")]
     [TestCase("Prefabs/Mock_complex")]
-    public void MeshContainerInstanceExists_Test(string mockName)
+    public void MeshGameObjectHasMeshFilterComponent_Test(string mockName)
     {
-        SetMeshContainer(mockName);
-        MeshContainer dm = MeshContainer.Instance;
-
-        Assert.IsNotNull(dm);
+        SetMeshGameObjectAndContainer(mockName);
+        Assert.IsNotNull(meshObj.GetComponent<MeshFilter>());
     }
 
     [Test]
@@ -37,21 +32,17 @@ public class MeshContainerTest
     [TestCase("Prefabs/Mock_complex")]
     public void MeshVerticesIsNotNull_Test(string mockName)
     {
-        SetMeshContainer(mockName);
-        MeshContainer dm = MeshContainer.Instance;
-        Vector3[] vertices = dm.GetVertices();
-
-        Assert.IsNotNull(vertices);
+        SetMeshGameObjectAndContainer(mockName);
+        Assert.IsNotNull(container.GetVertices());
     }
 
     [Test]
     [TestCase("Prefabs/Doc", 24)]
     [TestCase("Prefabs/Mock_complex", 54)]
-    public void MeshHasCorrectNumOfVertices_Test(string mockName, int expected)
+    public void MeshHasCorrentNumberOfVertices_Test(string mockName, int expected)
     {
-        SetMeshContainer(mockName);
-        MeshContainer dm = MeshContainer.Instance;
-        Vector3[] vertices = dm.GetVertices();
+        SetMeshGameObjectAndContainer(mockName);
+        Vector3[] vertices = container.GetVertices();
 
         Assert.AreEqual(expected, vertices.Length);
     }
@@ -61,21 +52,17 @@ public class MeshContainerTest
     [TestCase("Prefabs/Mock_complex")]
     public void MeshNormalsIsNotNull_Test(string mockName)
     {
-        SetMeshContainer(mockName);
-        MeshContainer dm = MeshContainer.Instance;
-        Vector3[] normals = dm.GetNormals();
-
-        Assert.IsNotNull(normals);
+        SetMeshGameObjectAndContainer(mockName);
+        Assert.IsNotNull(container.GetNormals());
     }
 
     [Test]
     [TestCase("Prefabs/Doc", 24)]
     [TestCase("Prefabs/Mock_complex", 54)]
-    public void MeshHasCorrectNumOfNormals_Test(string mockName, int expected)
+    public void MeshHasCorrectNumberOfNormals_Test(string mockName, int expected)
     {
-        SetMeshContainer(mockName);
-        MeshContainer dm = MeshContainer.Instance;
-        Vector3[] normals = dm.GetNormals();
+        SetMeshGameObjectAndContainer(mockName);
+        Vector3[] normals = container.GetNormals();
 
         Assert.AreEqual(expected, normals.Length);
     }
@@ -85,16 +72,40 @@ public class MeshContainerTest
     [TestCase("Prefabs/Doc", 1, 0f, 1f, 0f)]
     [TestCase("Prefabs/Doc", 2, 0f, 1f, 0f)]
     [TestCase("Prefabs/Doc", 3, 0f, 1f, 0f)]
-    //[TestCase("Prefabs/Mock_complex", 0, -0.9f, 0f, 0.3f)]
-    //[TestCase("Prefabs/Mock_complex", 1, -0.9f, 0f, 0.3f)]
-    //[TestCase("Prefabs/Mock_complex", 2, -0.9f, 0f, 0.3f)]
-    //[TestCase("Prefabs/Mock_complex", 3, -0.9f, 0f, 0.3f)]
-    public void MeshNormalsAreCorrect(string mockName, int index, float x, float y, float z)
+    public void MeshNormalsAreCorrect_Test(string mockName, int index, float x, float y, float z)
     {
-        SetMeshContainer(mockName);
-        MeshContainer dm = MeshContainer.Instance;
-        Vector3 normal = dm.GetNormals()[index];
+        SetMeshGameObjectAndContainer(mockName);
+        Vector3 expected = new Vector3(x, y, z);
+        Vector3 normal = container.GetNormals()[index];
 
-        Assert.AreEqual(new Vector3((float) x, (float) y, (float) z), normal);
+        Assert.AreEqual(expected.x, normal.x, delta: 0.001f);
+        Assert.AreEqual(expected.y, normal.y, delta: 0.001f);
+        Assert.AreEqual(expected.z, normal.z, delta: 0.001f);
     }
+
+    [Test]
+    [TestCase("Prefabs/Doc", 0, -0.0087f, 0.4999f, 0.866f)]
+    [TestCase("Prefabs/Doc", 1, -0.0087f, 0.4999f, 0.866f)]
+    [TestCase("Prefabs/Doc", 2, -0.0087f, 0.4999f, 0.866f)]
+    [TestCase("Prefabs/Doc", 3, -0.0087f, 0.4999f, 0.866f)]
+    public void MeshNormalsAreCorrectAfterRotation_Test(string mockName, int index, float x, float y, float z)
+    {
+        SetMeshGameObjectAndContainer(mockName);
+        meshObj.transform.Rotate(new Vector3(60f, -1f, 45.7f));
+
+        Vector3 expected = new Vector3(x, y, z);
+        Vector3 normal = container.GetNormals()[index];
+
+        Assert.AreEqual(expected.x, normal.x, delta: 0.001f);
+        Assert.AreEqual(expected.y, normal.y, delta: 0.001f);
+        Assert.AreEqual(expected.z, normal.z, delta: 0.001f);
+    }
+
+    private void SetMeshGameObjectAndContainer(string prefabName)
+    {
+        GameObject docMeshPref = Resources.Load<GameObject>(prefabName);
+        meshObj = GameObject.Instantiate(docMeshPref);
+        container = new MeshContainer(meshObj.transform);
+    }
+    
 }

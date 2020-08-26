@@ -2,34 +2,37 @@
 using System.Linq;
 using UnityEngine;
 
+[RequireComponent(typeof(MeshFilter))]
 public class RayReciever : MonoBehaviour
 {
-    [SerializeField] public MeshContainer container;
-    private MeshController controller; 
+    private MeshContainer container;
+    private MeshController controller;
 
     private void Start()
     {
-        controller = new MeshController(container);
+        container = new MeshContainer(this.transform);
+        controller = new MeshController(container, this.transform);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         GetAndApplyDose();
     }
 
     private void GetAndApplyDose()
     {
-        if (RayTracer.Instance == null)
+        if (RaySource.Instance == null)
             return;
 
-        controller.UpdateRelevantVertices();
+        controller.UpdateVertices(RaySource.Instance.transform.position);
+        controller.SortOutUnhittedVertices(RaySource.Instance.rayTracer);
 
-        float[] distances = RayTracer.Instance.GetDistances(controller.GetRelevantVerticePositions());
+        float[] distances = RaySource.Instance.rayTracer.GetDistances(controller.GetRelevantVerticePositions());
         float[] addedDoses = DoseCalculator.Calculate(distances);
 
         controller.StoreDoses(addedDoses);
-        float[] accumulatedDoses = controller.VerticeData.Select(x => x.Dose).ToArray();
 
+        float[] accumulatedDoses = controller.VerticeData.Select(x => x.Dose).ToArray();
         Color32[] colors = ColorCalculator.Calculate(accumulatedDoses);
 
         container.ApplyColors(colors);

@@ -3,33 +3,41 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[RequireComponent(typeof(MeshFilter))]
-public class MeshContainer : MonoBehaviour
+public class MeshContainer
 {
-    //ToDo: Remove for mulitple meshes support
-    public static MeshContainer Instance;
+    private Transform meshTransform;
+    private MeshFilter meshFilter;
 
-    private void Start()
+    public MeshContainer(Transform transform)
     {
-        Instance = this;
+        this.meshTransform = transform;
+
+        this.meshFilter = meshTransform.GetComponent<MeshFilter>();
     }
 
     public Vector3[] GetVertices()
     {
-        MeshFilter mf = this.transform.GetComponent<MeshFilter>();
-        Vector3[] vertices = mf.sharedMesh.vertices;
+        Vector3[] vertices = meshFilter.sharedMesh.vertices;
+
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            // rotate each vertex around pivot poitn of the transform
+            Vector3 rotatedVec = meshTransform.rotation * vertices[i];
+
+            vertices[i] = meshTransform.position + rotatedVec;
+        }
 
         return vertices;
     }
 
     public Vector3[] GetNormals()
     {
-        MeshFilter mf = this.transform.GetComponent<MeshFilter>();
-        Vector3[] normals = mf.sharedMesh.normals;
+        Vector3[] normals = meshFilter.sharedMesh.normals;
 
         for (int i = 0; i < normals.Length; i++)
         {
-            normals[i] = (Quaternion.Euler(0f, 90f, 0f) * this.transform.rotation) * normals[i];
+            // rotate each normals acording to the transform rotation
+            normals[i] = meshTransform.rotation * normals[i];
         }
 
         return normals;
@@ -37,8 +45,6 @@ public class MeshContainer : MonoBehaviour
 
     public void ApplyColors(Color32[] newColors)
     {
-        MeshFilter mf = this.transform.GetComponent<MeshFilter>();
-
-        mf.sharedMesh.colors32 = newColors;
+        meshFilter.sharedMesh.colors32 = newColors;
     }
 }

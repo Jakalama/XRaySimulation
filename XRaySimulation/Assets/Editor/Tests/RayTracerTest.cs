@@ -1,110 +1,32 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
-using UnityEditor.SceneManagement;
 
 public class RayTracerTest
 {
-    private RayTracer rayTracer;
-    private Vector3 origin = new Vector3(0f, 0f, 0f);
-    private Vector3 destination = new Vector3(3f, 0f, 0f);
+    private RayTracer tracer;
+    private Transform source;
 
-    [OneTimeSetUp]
-    public void OnceBeforeTests()
-    {
-        LoadTestScene();
-
-        GameObject rayTracerPref = Resources.Load<GameObject>("Prefabs/XRaySource");
-        GameObject rayTracerObj = GameObject.Instantiate(rayTracerPref);
-        rayTracer = rayTracerObj.GetComponent<RayTracer>();
-        RayTracer.Instance = rayTracer;
-    }
-
-    public IEnumerator LoadTestScene()
-    {
-        yield return UnloadCurrentScene();
-
-        yield return new WaitForSeconds(1f);
-
-        EditorSceneManager.OpenScene("Assets/Scenes/TestScene.unity");
-    }
-
-    public IEnumerator UnloadCurrentScene()
-    {
-
-        AsyncOperation unloadOperation = EditorSceneManager.UnloadSceneAsync(EditorSceneManager.GetActiveScene());
-
-        while (!unloadOperation.isDone)
-            yield return null;
-    }
+    private readonly Vector3 MOCK_PLACE = Vector3.right * 3f;
 
     [SetUp]
-    public void BeforeVeryTest()
+    public void Setup()
     {
-
+        source = GameObject.Instantiate(new GameObject("Source")).transform;
+        tracer = new RayTracer(source.transform);
     }
 
     [Test]
-    public void CreateRayHits_Test()
+    public void RayTracerIsNotNull_Test()
     {
-        RayTracer rt = RayTracer.Instance;
-        bool hitted = rt.CreateRay(origin, destination);
-
-        Assert.IsFalse(hitted);
+        Assert.IsNotNull(tracer);
     }
 
     [Test]
-    [TestCase("Mock_simple")]
-    [TestCase("Mock_complex")]
-    public void CreateRayHitsDoc_Test(string mockName)
+    public void GetDistances_Test()
     {
-        GameObject mock = CreateMock("Doc", "Mock_simple");
-        RayTracer rt = RayTracer.Instance;
-
-        bool hitted = rt.CreateRay(origin, destination);
-
-        Assert.IsTrue(hitted);
-        GameObject.DestroyImmediate(mock);
-    }
-
-    [Test]
-    [TestCase("Mock_simple")]
-    [TestCase("Mock_complex")]
-    public void CreateRayHitsOther_Test(string mockName)
-    {
-        GameObject mock = CreateMock("Other", mockName);
-
-        RayTracer rt = RayTracer.Instance;
-        bool hitted = rt.CreateRay(origin, destination);
-
-        Assert.IsFalse(hitted);
-        GameObject.DestroyImmediate(mock);
-    }
-
-    [Test]
-    [TestCase("Mock_simple")]
-    [TestCase("Mock_complex")]
-    public void CreateRaySourceToDoc_Test(string mockName)
-    {
-        GameObject mock = CreateMock("Doc", mockName);
-
-        RayTracer rt = RayTracer.Instance;
-        MeshContainer dm = MeshContainer.Instance;
-
-        bool result = rt.CreateRaySourceToDoc(MeshContainer.Instance.GetVertices()[0]);
-
-        Assert.IsTrue(result);
-    }
-
-    [Test]
-    [TestCase("Mock_simple")]
-    [TestCase("Mock_complex")]
-    public void GetDistances_Test(string mockName)
-    {
-        GameObject mock = CreateMock("Doc", mockName);
-        RayTracer rt = RayTracer.Instance;
-
         Vector3[] positions = new Vector3[]
         {
             new Vector3(0f, 0f, 0f),
@@ -124,19 +46,61 @@ public class RayTracerTest
             0f, 1f, 1f, 1f, 1f, 1f, 1f, 2f, 1.732f, 100f
         };
 
-        float[] distances = rt.GetDistances(positions);
+        float[] distances = tracer.GetDistances(positions);
 
         Assert.AreEqual(expected, distances);
     }
 
-    private GameObject CreateMock(string name, string mock)
+    [Test]
+    public void CreateRayReturnsFalseWhenNoHitDetected_Test()
     {
-        GameObject obj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/" + mock), destination, Quaternion.identity);
-        obj.transform.tag = name;
-        obj.tag = name;
+        bool hitted = tracer.CreateRay(MOCK_PLACE);
 
-        return obj;
+        Assert.IsFalse(hitted);
+    }
+
+    [Test]
+    [TestCase("Mock_simple")]
+    [TestCase("Mock_complex")]
+    public void CreateRayReturnsTrueIfDocHitDetected_Test(string mockName)
+    {
+        GameObject mock = CreateMock(mockName, "Doc");
+
+        bool hitted = tracer.CreateRay(MOCK_PLACE);
+
+        Assert.IsTrue(hitted);
+
+        GameObject.DestroyImmediate(mock);
+    }
+
+    [Test]
+    [TestCase("Mock_simple")]
+    [TestCase("Mock_complex")]
+    public void CreateRayReturnsFalseIfOtherHitDetected_Test(string mockName)
+    {
+        GameObject mock = CreateMock(mockName, "Other");
+
+        bool hitted = tracer.CreateRay(MOCK_PLACE);
+
+        Assert.IsFalse(hitted);
+
+        GameObject.DestroyImmediate(mock);
+    }
+
+    [TearDown]
+    public void Teardown()
+    {
+        GameObject.DestroyImmediate(source.gameObject);
+        tracer = null;
+    }
+
+    private GameObject CreateMock(string prefabName, string tag)
+    {
+        GameObject prefab = Resources.Load<GameObject>("Prefabs/" + prefabName);
+        GameObject mock = GameObject.Instantiate(prefab, MOCK_PLACE, Quaternion.identity);
+        mock.name = tag;
+        mock.tag = tag;
+
+        return mock;
     }
 }
-
-
