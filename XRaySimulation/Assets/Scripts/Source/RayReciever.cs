@@ -25,9 +25,9 @@ public class RayReciever : MonoBehaviour
             return;
 
         controller.UpdateVertices(RaySource.Instance.transform.position);
-        controller.SortOutUnhittedVertices(RaySource.Instance.rayTracer);
+        controller.SortOutUnhittedVertices(RaySource.Instance.RayTracer);
 
-        float[] distances = RaySource.Instance.rayTracer.GetDistances(controller.GetRelevantVerticePositions());
+        float[] distances = RaySource.Instance.RayTracer.GetDistances(controller.GetRelevantVerticePositions());
         float[] addedDoses = DoseCalculator.Calculate(distances);
 
         controller.StoreDoses(addedDoses);

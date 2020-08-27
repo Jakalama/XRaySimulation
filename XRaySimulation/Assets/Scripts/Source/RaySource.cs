@@ -5,14 +5,14 @@ using UnityEngine.Video;
 
 public class RaySource : MonoBehaviour
 {
-    public static RaySource Instance;
-
-    public RayTracer rayTracer;
+    [HideInInspector] public static RaySource Instance;
+    [HideInInspector] public RayTracer RayTracer;
+    public float BaseEnergy = 120;
 
     private void Start()
     {
         Instance = this;
 
-        this.rayTracer = new RayTracer(this.transform);
+        this.RayTracer = new RayTracer(this.transform);
     }
 }

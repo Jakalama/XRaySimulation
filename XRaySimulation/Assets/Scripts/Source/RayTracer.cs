@@ -17,6 +17,8 @@ public class RayTracer
 
     private bool CreateRay(Vector3 start, Vector3 end)
     {
+        bool hittedDoc = false;
+
         Vector3 direction = end - start;
 
         RaycastHit hit;
@@ -26,16 +28,15 @@ public class RayTracer
         {
             if (hit.transform.tag == "Doc")
             {
-                Debug.DrawLine(start, hit.point, Color.green, 0.1f);
-                return true;
+                hittedDoc = true;
             }
-
-            Debug.DrawLine(start, hit.point, Color.red, 0.1f);
         }
 
-        Debug.DrawLine(start, end, Color.black, 0.1f);
+#if UNITY_EDITOR
+        DrawDebugRay(start, hit.point, hittedDoc);
+#endif
 
-        return false;
+        return hittedDoc;
     }
 
     public float[] GetDistances(Vector3[] positions)
@@ -54,5 +55,13 @@ public class RayTracer
     private float GetDistance(Vector3 position)
     {
         return (float)Math.Round(Vector3.Distance(source.position, position), 3);
+    }
+
+    private void DrawDebugRay(Vector3 start, Vector3 end, bool hit)
+    {
+        if (hit)
+            Debug.DrawLine(start, end, Color.green, 0.1f);
+        else
+            Debug.DrawLine(start, end, Color.red, 0.1f);
     }
 }

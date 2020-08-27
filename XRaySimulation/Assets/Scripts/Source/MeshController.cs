@@ -56,9 +56,10 @@ public class MeshController
         // calculates the angle between the normals and the ray-source
         float angle = Vector3.Dot(normal, raySource - pointPlane);
 
-        // draw orientations of normals and distance vector of vertice and source
-        //Debug.DrawRay(pointPlane, normal, Color.red, 0.1f);
-        //Debug.DrawRay(pointPlane, new Vector3(0, 0, 0) - pointPlane, Color.blue, .1f);
+#if UNITY_EDITOR
+        // draw normals of the vertices
+        Debug.DrawRay(pointPlane, normal, Color.red, 0.1f);
+#endif
 
         if (angle >= 0)
             return true;
@@ -86,7 +87,7 @@ public class MeshController
 
     public void SortOutUnhittedVertices(RayTracer tracer)
     {
-        for (int i = 0; i < RelevantVertices.Count; i++)
+        for (int i = RelevantVertices.Count - 1; i >= 0; i--)
         {
             if (!tracer.CreateRay(GetRelevantVertexPosition(i)))
                 RelevantVertices.Remove(RelevantVertices[i]);
