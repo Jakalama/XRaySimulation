@@ -5,37 +5,35 @@ using UnityEngine;
 
 public static class DoseCalculator
 {
-    private static float sourceVoltage = 120f;
-    private static float electronCharge = 1.602e-19f;
+    private const float WEIGHT = 75f;
 
-    public static float Calculate(float distance)
+    public static float Calculate(float distance, float watt, float time)
     {
         if (Double.IsNaN(distance))
             return 0f;
 
-        distance = Math.Abs(distance);
+        distance = Mathf.Abs(distance);
 
-        float sourcePower = sourceVoltage * electronCharge;
-        float intensity = sourcePower / (4f * (float)Math.PI * distance * distance);
-        intensity /= 1e-20f;
+        float sourceEnergy = watt * time;
+        float energyDose = sourceEnergy / WEIGHT;
+        energyDose = energyDose / (distance * distance);
 
-        //Debug.Log(distance + ", " + intensity);
+        energyDose = (float) Math.Round(energyDose, 3);
 
-        intensity = (float)Math.Round(intensity, 3);
-
-        return intensity;
+        return energyDose;
     }
 
-    public static float[] Calculate(float[] distances)
+    public static float[] Calculate(float[] distances, float sourceEnegery, float time)
     {
         int num = distances.Length;
         float[] doses = new float[num];
 
         for (int i = 0; i < num; i++)
         {
-            doses[i] = Calculate(distances[i]);
+            doses[i] = Calculate(distances[i], sourceEnegery, time);
         }
 
         return doses;
     }
 }
+

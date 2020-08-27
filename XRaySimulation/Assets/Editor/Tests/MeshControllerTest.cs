@@ -43,7 +43,7 @@ public class MeshControllerTest
     }
 
     [Test]
-    public void VerticeDataExists_Test()
+    public void VerticeDataIsNotNull_Test()
     {
         SetUp();
 
@@ -51,7 +51,7 @@ public class MeshControllerTest
     }
 
     [Test]
-    public void RelevantVerticesExists_Test()
+    public void RelevantVerticesIsNotNull_Test()
     {
         SetUp();
 
@@ -141,12 +141,39 @@ public class MeshControllerTest
     }
 
     [Test]
-    public void RelevantVertexPositions_Test()
+    public void RelevantVertexPositionsReturnsCorrectNumberOfPositions_Test()
     {
         SetUp();
 
-        //ToDo:
-        Assert.True(true);
+        controller.RelevantVertices = new List<int> { 0, 1, 2 };
+        controller.VerticeData = new VertexData[]
+        {
+            new VertexData(new Vector3(1f, 0f, 0f), 0f),
+            new VertexData(new Vector3(0f, 1f, 0f), 0f),
+            new VertexData(new Vector3(0f, 0f, 1f), 0f),
+        };
+
+        Assert.AreEqual(3, controller.GetRelevantVerticePositions().Length);
+    }
+
+    [Test]
+    public void RelevantVertexPositionsReturnsCorrectPositions_Test()
+    {
+        SetUp();
+
+        VertexData[] expected = new VertexData[]
+        {
+            new VertexData(new Vector3(1f, 0f, 0f), 0f),
+            new VertexData(new Vector3(0f, 1f, 0f), 0f),
+            new VertexData(new Vector3(0f, 0f, 1f), 0f),
+        };
+
+        controller.RelevantVertices = new List<int> { 0, 1, 2 };
+        controller.VerticeData = expected;
+
+        Assert.AreEqual(expected[0].Position, controller.GetRelevantVerticePositions()[0]);
+        Assert.AreEqual(expected[1].Position, controller.GetRelevantVerticePositions()[1]);
+        Assert.AreEqual(expected[2].Position, controller.GetRelevantVerticePositions()[2]);
     }
 
     [Test]

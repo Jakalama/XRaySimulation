@@ -50,7 +50,7 @@ public class MeshController
                 RelevantVertices.Add(i);
         }
     }
-
+    
     private bool IsNormalRelevant(Vector3 normal, Vector3 pointPlane, Vector3 raySource)
     {
         // calculates the angle between the normals and the ray-source
