@@ -8,6 +8,8 @@ public class FirstPersonCameraTest
     public Transform CameraTransform;
     public FirstPersonCamera Controller;
 
+    private const float SPEED = 250f;
+
     [SetUp]
     public void SetUp()
     {
@@ -15,6 +17,9 @@ public class FirstPersonCameraTest
         CameraTransform = Mock.Find("FPV");
 
         Controller = new FirstPersonCamera(Mock, 0f);
+
+        System.Reflection.FieldInfo info = Controller.GetType().GetField("SPEED", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        info.SetValue(Controller, SPEED);
     }
 
     [Test]
@@ -30,7 +35,7 @@ public class FirstPersonCameraTest
     [TestCase(0.75639f)]
     [TestCase(1f)]
     [TestCase(0.5f)]
-    public void MouseInputUPisLess_Test(float value)
+    public void MouseInputUPRotatesCameraUp_Test(float value)
     {
         Vector3 before = CameraTransform.rotation.eulerAngles;
         Controller.Rotate(0f, value, 1f);
@@ -49,7 +54,7 @@ public class FirstPersonCameraTest
     [TestCase(-0.75639f)]
     [TestCase(-1f)]
     [TestCase(-0.5f)]
-    public void MouseInputDownisGreater_Test(float value)
+    public void MouseInputDOWNRotatesCameraDown_Test(float value)
     {
         Vector3 before = CameraTransform.rotation.eulerAngles;
         Controller.Rotate(0f, value, 1f);
@@ -63,7 +68,7 @@ public class FirstPersonCameraTest
     [TestCase(0.75639f)]
     [TestCase(1f)]
     [TestCase(0.5f)]
-    public void MouseInputRightisGreater_Test(float value)
+    public void MouseInputRIGHTRotatesPlayerRight_Test(float value)
     {
         Vector3 before = Mock.rotation.eulerAngles;
         Controller.Rotate(value, 0f, 1f);
@@ -77,7 +82,7 @@ public class FirstPersonCameraTest
     [TestCase(-0.75639f)]
     [TestCase(-1f)]
     [TestCase(-0.5f)]
-    public void MouseInputLeftisLess_Test(float value)
+    public void MouseInputLEFTRotatesPlayerLeft_Test(float value)
     {
         Vector3 before = Mock.rotation.eulerAngles;
         Controller.Rotate(value, 0f, 1f);

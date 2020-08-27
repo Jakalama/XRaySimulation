@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using NUnit.Framework;
+using NUnit.Framework.Constraints;
 using UnityEngine;
 
 public class DoseCalculatorTest
@@ -29,5 +30,15 @@ public class DoseCalculatorTest
         float[] doses = DoseCalculator.Calculate(distances, 100f, 1f);
 
         Assert.AreEqual(expected, doses);
+    }
+
+    [Test]
+    [TestCase(new float[] { 1f, 2f, 3f, 4f, 5f, 6f, 7f, 8f, 9f, 10f}, 5.5f)]
+    [TestCase(new float[] { 1f, 2f, 1f, 1f, 1.5f, 2f}, 1.417f)]
+    public void GetAVGDose_Test(float[] doses, float expected)
+    {
+        float actual = DoseCalculator.GetAVGDose(doses);
+
+        Assert.AreEqual(expected, actual);
     }
 }

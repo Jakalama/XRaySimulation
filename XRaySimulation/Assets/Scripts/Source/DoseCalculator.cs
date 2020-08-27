@@ -35,5 +35,20 @@ public static class DoseCalculator
 
         return doses;
     }
+
+    public static float GetAVGDose(float[] doses)
+    {
+        float average = 0f;
+
+        for (int i = 0; i < doses.Length; i++)
+        {
+            average += doses[i];
+        }
+
+        average = (float) average / (float) doses.Length;
+        average = (float)Math.Round(average, 3);
+
+        return average;
+    }
 }
 

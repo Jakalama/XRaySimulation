@@ -10,8 +10,8 @@ public class FirstPersonCamera : ICameraController
     private float xRotation;
     private float yRotation;
 
-    private const float SPEED = 250f;
-    private const float MAX_X_ROT = 90f;
+    private readonly float SPEED = 250f;
+    private readonly float MAX_X_ROT = 90f;
 
     public FirstPersonCamera(Transform rotatedTransform, float yStartRotation)
     {
@@ -22,16 +22,14 @@ public class FirstPersonCamera : ICameraController
         this.yRotation = yStartRotation;
     }
 
-    public void Rotate(float x, float y, float time)
+    public void Rotate(float x, float y, float time, bool shift = false)
     {
         yRotation += x * time * SPEED;
         xRotation -= y * time * SPEED;
 
         SetXRotation(xRotation);
 
-        
         playerTransform.rotation = Quaternion.Euler(0f, yRotation, 0f);
-        //playerTransform.Rotate(Vector3.up, mouseX, Space.World);
     }
 
     public void SetXRotation(float value)

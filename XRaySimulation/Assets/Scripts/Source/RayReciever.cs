@@ -33,8 +33,10 @@ public class RayReciever : MonoBehaviour
         controller.StoreDoses(addedDoses);
 
         float[] accumulatedDoses = controller.VerticeData.Select(x => x.Dose).ToArray();
+        float avgDose = DoseCalculator.GetAVGDose(accumulatedDoses);
         Color32[] colors = ColorCalculator.Calculate(accumulatedDoses);
 
         container.ApplyColors(colors);
+        DoseInfo.Instance.Controller.SetAVGDose(avgDose);
     }
 }

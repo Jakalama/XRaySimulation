@@ -18,7 +18,7 @@ public class PlayerCamera : MonoBehaviour
         float x = Input.GetAxis("Mouse X");
         float y = Input.GetAxis("Mouse Y");
 
-        CameraController.Rotate(x, y, Time.fixedDeltaTime);
+        CameraController.Rotate(x, y, Time.fixedDeltaTime, Input.GetKey(KeyCode.LeftShift));
     }
 
     private void Update()

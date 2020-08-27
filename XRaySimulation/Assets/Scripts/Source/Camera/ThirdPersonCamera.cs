@@ -7,49 +7,47 @@ public class ThirdPersonCamera : ICameraController
 {
     private Transform playerTransform;
     private Transform tpvTransform;
-    private Transform cameraTransform;
 
     private float xRotation;
     private float yRotation;
 
-    private const float SPEED = 250f;
-    private const float MAX_X_ROT = 60f;
-    private const float MIN_X_ROT = -60f;
+    private readonly float SPEED = 250f;
+    private readonly float MAX_X_ROT = 60f;
+    private readonly float MIN_X_ROT = -60f;
 
     public ThirdPersonCamera(Transform rotatedTransform, float yStartRotation)
     {
         this.playerTransform = rotatedTransform;
         this.tpvTransform = playerTransform.Find("TPV");
-        this.cameraTransform = tpvTransform.Find("Camera");
 
         this.xRotation = 0f;
         this.yRotation = yStartRotation;
     }
 
-    public void Rotate(float x, float y, float time) 
+    public void Rotate(float x, float y, float time, bool shift = false) 
     {
         yRotation += x * time * SPEED;
         xRotation -= y * time * SPEED;
 
-        cameraTransform.LookAt(tpvTransform);
+        //cameraTransform.LookAt(tpvTransform);
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (shift)
         {
-            SetXRotation(xRotation, yRotation);
+            SetXRotation();
         }
         else 
         {
-            SetXRotation(-xRotation, yRotation);
+            SetXRotation();
 
             playerTransform.rotation = Quaternion.Euler(0f, yRotation, 0f);
         }
     }
 
-    public void SetXRotation(float valueX, float valueY)
+    public void SetXRotation()
     {
         xRotation = Mathf.Clamp(xRotation, MIN_X_ROT, MAX_X_ROT);
 
-        tpvTransform.rotation = Quaternion.Euler(xRotation, valueY, 0f);
+        tpvTransform.rotation = Quaternion.Euler(xRotation, yRotation, 0f);
     }
 
     public float GetYRotation()
