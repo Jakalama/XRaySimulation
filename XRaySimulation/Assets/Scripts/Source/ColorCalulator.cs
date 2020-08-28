@@ -15,7 +15,7 @@ public static class ColorCalculator
         float newH = (dose / maxDose) * stepSize + baseH;
         newH = Mathf.Clamp(newH, 0f, 1f);
 
-        HSVColor hsvColor = startColor.Set(newH);
+        HSVColor hsvColor = startColor.GetNew(newH);
 
         return (Color32)hsvColor.ToRGB();
     }

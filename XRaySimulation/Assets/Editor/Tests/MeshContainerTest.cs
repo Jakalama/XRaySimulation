@@ -246,4 +246,10 @@ public class MeshContainerTest
         Assert.AreEqual(expected.y, vertex.y, delta: 0.001f);
         Assert.AreEqual(expected.z, vertex.z, delta: 0.001f);
     }
+
+    [TearDown]
+    public void TearDown()
+    {
+        GameObject.DestroyImmediate(meshObj);
+    }
 }

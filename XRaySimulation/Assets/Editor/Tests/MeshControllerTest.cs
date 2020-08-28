@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
 using System.Linq;
+using NSubstitute;
+using System.Linq.Expressions;
 
 public class MeshControllerTest
 {
@@ -20,13 +21,18 @@ public class MeshControllerTest
         controller = new MeshController(container, docMeshPref.transform);
     }
 
+    private T GetPrivateField<T>(string fieldName)
+    {
+        System.Reflection.FieldInfo info = controller.GetType().GetField(fieldName, System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        return (T) info.GetValue(controller);
+    }
+
     [Test]
     public void MeshContainerIsNotNull_Test()
     {
         SetUp();
 
-        System.Reflection.FieldInfo info = controller.GetType().GetField("meshContainer", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-        MeshContainer mc = (MeshContainer) info.GetValue(controller);
+        MeshContainer mc = GetPrivateField<MeshContainer>("meshContainer");
 
         Assert.IsNotNull(mc);
     }
@@ -36,8 +42,7 @@ public class MeshControllerTest
     {
         SetUp();
 
-        System.Reflection.FieldInfo info = controller.GetType().GetField("meshTransform", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-        Transform transform = (Transform) info.GetValue(controller);
+        Transform transform = GetPrivateField<Transform>("meshTransform");
 
         Assert.IsNotNull(transform);
     }
@@ -141,7 +146,7 @@ public class MeshControllerTest
     }
 
     [Test]
-    public void RelevantVertexPositionsReturnsCorrectNumberOfPositions_Test()
+    public void GetRelevantVerticePositionsReturnsCorrectNumberOfPositions_Test()
     {
         SetUp();
 
@@ -157,7 +162,7 @@ public class MeshControllerTest
     }
 
     [Test]
-    public void RelevantVertexPositionsReturnsCorrectPositions_Test()
+    public void GetRelevantVerticePositionsReturnsCorrectPositions_Test()
     {
         SetUp();
 
@@ -174,6 +179,46 @@ public class MeshControllerTest
         Assert.AreEqual(expected[0].Position, controller.GetRelevantVerticePositions()[0]);
         Assert.AreEqual(expected[1].Position, controller.GetRelevantVerticePositions()[1]);
         Assert.AreEqual(expected[2].Position, controller.GetRelevantVerticePositions()[2]);
+    }
+
+    [Test]
+    public void SortOutUnhittedVerticesForAllVerticesHitted_Test()
+    {
+        SetUp();
+
+        controller.RelevantVertices = new List<int>() { 0, 1, 2 };
+        int expected = 3;
+
+        Debug.Log(controller.RelevantVertices.Count);
+
+        IRayTracer rt = Substitute.For<IRayTracer>();
+        rt.CreateRay(controller.GetRelevantVerticePositions()[0]).Returns(true);
+        rt.CreateRay(controller.GetRelevantVerticePositions()[1]).Returns(true);
+        rt.CreateRay(controller.GetRelevantVerticePositions()[2]).Returns(true);
+
+        controller.SortOutUnhittedVertices(rt);
+
+        Debug.Log(controller.RelevantVertices.Count);
+
+        Assert.AreEqual(expected, controller.RelevantVertices.Count);
+    }
+
+    [Test]
+    public void SortOutUnhittedVerticesForZeroVerticesHitted_Test()
+    {
+        SetUp();
+
+        controller.RelevantVertices = new List<int>() { 0, 1, 2 };
+        int expected = 0;
+
+        IRayTracer rt = Substitute.For<IRayTracer>();
+        rt.CreateRay(controller.GetRelevantVerticePositions()[0]).Returns(false);
+        rt.CreateRay(controller.GetRelevantVerticePositions()[1]).Returns(false);
+        rt.CreateRay(controller.GetRelevantVerticePositions()[2]).Returns(false);
+
+        controller.SortOutUnhittedVertices(rt);
+
+        Assert.AreEqual(expected, controller.RelevantVertices.Count);
     }
 
     [Test]

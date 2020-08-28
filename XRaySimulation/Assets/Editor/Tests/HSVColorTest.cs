@@ -5,38 +5,6 @@ using NUnit.Framework;
 
 public class HSVColorTest
 {
-    
-    //[Test]
-    //public void HSVConstructurHSVA()
-    //{
-    //    float h = 0.5f;
-    //    float s = 0.5f;
-    //    float v = 1f;
-    //    float a = 1f;
-
-    //    HSVColor hsvColor = new HSVColor(h, s, v, a);
-
-    //    Assert.AreEqual(h, hsvColor.h);
-    //    Assert.AreEqual(s, hsvColor.s);
-    //    Assert.AreEqual(v, hsvColor.v);
-    //    Assert.AreEqual(a, hsvColor.a);
-    //}
-
-    //[Test]
-    //public void HSVConstructurHSV()
-    //{
-    //    float h = 0.5f;
-    //    float s = 0.5f;
-    //    float v = 1f;
-
-    //    HSVColor hsvColor = new HSVColor(h, s, v);
-
-    //    Assert.AreEqual(h, hsvColor.h);
-    //    Assert.AreEqual(s, hsvColor.s);
-    //    Assert.AreEqual(v, hsvColor.v);
-    //    Assert.AreEqual(1f, hsvColor.a);
-    //}
-
     [Test]
     public void HSVConstructorWithRGBColor_Test()
     {
@@ -50,13 +18,72 @@ public class HSVColorTest
         float h = 1f;
         float s = 1f;
         float v = 1f;
-        float a = 1f;
 
         Color.RGBToHSV(rgbColor, out h, out s, out v);
 
         Assert.AreEqual(h, hsvColor.h);
         Assert.AreEqual(s, hsvColor.s);
         Assert.AreEqual(v, hsvColor.v);
-        Assert.AreEqual(a, hsvColor.a);
+    }
+
+    [Test]
+    [TestCase(0f)]
+    [TestCase(0.1f)]
+    [TestCase(0.5f)]
+    [TestCase(0.9f)] //No need to test other values, because Unity's h values are only defined from [0, 1)
+    public void GetNew_Test(float value)
+    {
+        float expected = value;
+
+        HSVColor hsvColor = new HSVColor(Color.blue);
+
+        hsvColor = hsvColor.GetNew(value);
+
+        Assert.AreEqual(value, (float) Math.Round(hsvColor.h, 1));
+    }
+
+    private readonly Color[] colors = new Color[]
+    {
+        Color.red,
+        Color.blue,
+        Color.yellow,
+        Color.green
+    };
+
+    [Test]
+    public void ToRGB_Test()
+    {
+        Color expected = Color.white;
+        Color rgbColor = Color.black;
+
+        for (int i = 0; i < colors.Length; i++)
+        {
+            expected = colors[i];
+            rgbColor = new HSVColor(colors[i]).ToRGB();
+        }
+
+        Assert.AreEqual(expected, rgbColor);
+    }
+
+    private readonly Color[] hueShiftedColors = new Color[]
+    {
+        new Color(),
+    };
+
+    [Test]
+    [TestCase(0f, 1f, 0f, 0f)]
+    [TestCase(1f, 1f, 0f, 0f)]
+    [TestCase(0.5f, 0f, 1f, 1f)]
+    [TestCase(0.25f, 0.5f, 1f, 0f)]
+    [TestCase(0.666666667f, 0f, 0f, 1f)]
+    [TestCase(0.333333334f, 0f, 1f, 0f)]
+    public void ToRGBAfterGetNew_Test(float h, float r, float g, float b)
+    {
+        Color expected = new Color(r, g, b);
+
+        HSVColor hsvColor = new HSVColor(Color.red);
+        hsvColor = hsvColor.GetNew(h);
+
+        Assert.AreEqual(expected, hsvColor.ToRGB());
     }
 }

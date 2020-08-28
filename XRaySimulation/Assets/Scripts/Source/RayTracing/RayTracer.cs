@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class RayTracer
+public class RayTracer : IRayTracer
 {
     private Transform source;
 

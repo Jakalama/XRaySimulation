@@ -16,8 +16,7 @@ public class ProtectionWallTest
         testObj.name = "ProtectionWall";
 
         furniture = testObj.GetComponent<Furniture>();
-        controller = new MoveableController();
-        controller.SetTransform(testObj.transform);
+        controller = new MoveableController(testObj.transform);
     }
 
     [Test]
@@ -50,8 +49,6 @@ public class ProtectionWallTest
 
         GameObject.DestroyImmediate(playerObj);
     }
-
-    // there should be a test to test if the wall can released standing in other objects
 
     [TearDown]
     public void Teardown()

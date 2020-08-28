@@ -10,7 +10,7 @@ public class PlayerCamera : MonoBehaviour
     {
         CameraController = new FirstPersonCamera(this.transform, 0f);
 
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void LateUpdate()

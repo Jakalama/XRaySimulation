@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 
-public class TableTest
+public class MoveableControllerTest
 {
     private GameObject testObj;
     private Furniture furniture;
@@ -16,8 +16,7 @@ public class TableTest
         testObj.name = "Table";
 
         furniture = testObj.GetComponent<Furniture>();
-        controller = new MoveableController();
-        controller.SetTransform(testObj.transform);
+        controller = new MoveableController(testObj.transform);
     }
 
     [Test]
@@ -50,8 +49,6 @@ public class TableTest
 
         GameObject.DestroyImmediate(playerObj);
     }
-
-    // there should be a test to test if the table can released standing in another object
 
     [TearDown]
     public void Teardown()

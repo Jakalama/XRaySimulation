@@ -4,27 +4,27 @@ using UnityEngine;
 
 public static class FurnitureControllerFactory
 {
-    public static FurnitureController Create(FurnitureType type)
+    public static FurnitureController Create(FurnitureType type, Transform transform)
     {
         switch (type)
         {
             case FurnitureType.None:
-                return new FurnitureController();
+                return new FurnitureController(transform);
             case FurnitureType.CArm:
-                return new FurnitureController();
+                return new FurnitureController(transform);
             case FurnitureType.Closet:
-                return new FurnitureController();
+                return new FurnitureController(transform);
             case FurnitureType.Door:
-                return new FurnitureController();
+                return new FurnitureController(transform);
             case FurnitureType.PatientTable:
-                return new PatientTableController();
+                return new PatientTableController(transform);
             case FurnitureType.ProtectionWall:
-                return new MoveableController();
+                return new MoveableController(transform);
             case FurnitureType.Table:
-                return new MoveableController();
+                return new MoveableController(transform);
         }
 
-        return new FurnitureController();
+        return new FurnitureController(transform);
      }
 }
 

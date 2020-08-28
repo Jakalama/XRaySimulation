@@ -11,7 +11,6 @@ public class MeshContainer
     public MeshContainer(Transform transform)
     {
         this.meshTransform = transform;
-
         this.meshFilter = meshTransform.GetComponent<MeshFilter>();
     }
 

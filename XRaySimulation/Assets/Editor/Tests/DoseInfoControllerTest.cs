@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class DoseInfoControllerTest
 {
     private Transform doseInfoTransform;
-    private DoseInfo doseInfo;
     private DoseInfoController controller;
     private Transform meshCameraTransform;
 
@@ -19,16 +18,8 @@ public class DoseInfoControllerTest
         GameObject prefab = Resources.Load<GameObject>("Prefabs/UI/DoseInfo");
         doseInfoTransform = GameObject.Instantiate(prefab).transform;
 
-        doseInfo = doseInfoTransform.gameObject.GetComponent<DoseInfo>();
-
         meshCameraTransform = GameObject.Instantiate(new GameObject("MeshCamera")).transform;
         controller = new DoseInfoController(doseInfoTransform, meshCameraTransform);
-    }
-
-    [Test]
-    public void DoseInfoIsNotNull_Test()
-    {
-        Assert.IsNotNull(doseInfo);
     }
 
     [Test]
@@ -53,6 +44,42 @@ public class DoseInfoControllerTest
         Transform transform = (Transform)info.GetValue(controller);
 
         Assert.AreEqual(doseInfoTransform, transform);
+    }
+
+    [Test]
+    public void MeshCameraTransformIsNotNull_Test()
+    {
+        System.Reflection.FieldInfo info = controller.GetType().GetField("meshCameraTransform", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        Transform transform = (Transform)info.GetValue(controller);
+
+        Assert.IsNotNull(transform);
+    }
+
+    [Test]
+    public void MeshCameraTransformIsCorrectTransform_Test()
+    {
+        System.Reflection.FieldInfo info = controller.GetType().GetField("meshCameraTransform", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        Transform transform = (Transform)info.GetValue(controller);
+
+        Assert.AreEqual(meshCameraTransform, transform);
+    }
+
+    [Test]
+    public void TextMeshIsNotNull_Test()
+    {
+        System.Reflection.FieldInfo info = controller.GetType().GetField("textMesh", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        TextMeshProUGUI textMesh = (TextMeshProUGUI) info.GetValue(controller);
+
+        Assert.IsNotNull(textMesh);
+    }
+
+    [Test]
+    public void CameraControllerIsNotNull_Test()
+    {
+        System.Reflection.FieldInfo info = controller.GetType().GetField("cameraController", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        MeshCamera camera = (MeshCamera)info.GetValue(controller);
+
+        Assert.IsNotNull(camera);
     }
 
     [Test]

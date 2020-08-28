@@ -6,6 +6,30 @@ using UnityEngine;
 public class FurnitureInfoTest
 {
     [Test]
+    public void EmptyConstructorName_Test()
+    {
+        FurnitureInfo info = new FurnitureInfo();
+
+        Assert.IsNotNull(info.Name);
+    }
+
+    [Test]
+    public void EmptyConstructorDescription_Test()
+    {
+        FurnitureInfo info = new FurnitureInfo();
+
+        Assert.IsNotNull(info.Description);
+    }
+
+    [Test]
+    public void EmptyConstructorKeyCodes_Test()
+    {
+        FurnitureInfo info = new FurnitureInfo();
+
+        Assert.IsNotNull(info.KeyCodes);
+    }
+
+    [Test]
     [TestCase("Table", "You are able to move it around!", new KeyCode[] {KeyCode.F})]
     public void ConstructorName_Test(string expected, string description, KeyCode[] keys)
     {

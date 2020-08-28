@@ -9,6 +9,8 @@ public class FurnitureTest
 {
     private GameObject testObj;
     private Furniture furniture;
+    private FurnitureController controller;
+    private GameObject playerObj;
     private GameObject gui;
 
     private const float RADIUS = 2f;
@@ -16,10 +18,17 @@ public class FurnitureTest
     [SetUp]
     public void Setup()
     {
+        //Furniture
         testObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Table"));
         furniture = testObj.GetComponent<Furniture>();
+        controller = furniture.Controller;
         testObj.GetComponent<SphereCollider>().radius = RADIUS;
 
+        //Player
+        playerObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Player_Mock"));
+        playerObj.name = "Player";
+
+        //GUI
         gui = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/UI/GUI"));
         gui.name = "GUI";
     }
@@ -42,20 +51,17 @@ public class FurnitureTest
         Assert.IsTrue(testObj.GetComponent<SphereCollider>().isTrigger);
     }
 
-    // Don't know why this test is failing with other Prefabs than the Player_Mock
-    // A manual test shows that this tested beahviour is working fine!
     [UnityTest]
     public IEnumerator FurnitureGetsTriggerdThroughPlayer_Test()
     {
-        // Instantiate a player
-        GameObject playerObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Player_Mock"));
+        // move player
         playerObj.transform.position = new Vector3(RADIUS - RADIUS / 2f, 0f, 0f);
 
         // Wait till unity calculated the physics once
         yield return new WaitForFixedUpdate();
 
         Assert.IsNotNull(playerObj.GetComponent<BoxCollider>());
-        Assert.IsTrue(furniture.isTriggerd);
+        Assert.IsTrue(controller.isTriggerd);
 
         GameObject.Destroy(playerObj);
     }
@@ -63,15 +69,14 @@ public class FurnitureTest
     [UnityTest]
     public IEnumerator FurnitureGetsTriggerdThroughPlayerWhenPlayerIsAtTriggerSphereEdge_Test()
     {
-        // Instantiate a player
-        GameObject playerObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Player_Mock"));
+        // move player
         playerObj.transform.position = new Vector3(RADIUS, 0f, 0f);
 
         // Wait till unity calculated the physics once
         yield return new WaitForFixedUpdate();
 
         Assert.IsNotNull(playerObj.GetComponent<BoxCollider>());
-        Assert.IsTrue(furniture.isTriggerd);
+        Assert.IsTrue(controller.isTriggerd);
 
         GameObject.Destroy(playerObj);
     }
@@ -79,8 +84,9 @@ public class FurnitureTest
     [UnityTest]
     public IEnumerator JustOneFurnitureGetsTriggeredThroughPlayer_Test()
     {
-        // Instantiate a player
-        GameObject playerObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Player_Mock"));
+        yield return new WaitForEndOfFrame();
+
+        // move player
         playerObj.transform.position = new Vector3(RADIUS, 0f, 0f);
 
         // Wait till unity calculated the physics once
@@ -89,23 +95,27 @@ public class FurnitureTest
         // Instantiate a second table, in a distance near the player, so it can get triggerd
         GameObject secondTable = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Table"));
         Furniture secondFurniture = secondTable.GetComponent<Furniture>();
+        FurnitureController secondController = secondFurniture.Controller;
         secondTable.transform.position = new Vector3(2f * RADIUS, 0f, 0f);
 
         // Wait till unity calculated the physics once
         yield return new WaitForFixedUpdate();
 
         Assert.IsNotNull(playerObj.GetComponent<BoxCollider>());
-        Assert.IsTrue(furniture.isTriggerd);
-        Assert.IsFalse(secondFurniture.isTriggerd);
+        Assert.IsTrue(controller.isTriggerd);
+        Assert.IsFalse(secondController.isTriggerd);
+
+        GameObject.Destroy(secondTable);
 
         GameObject.Destroy(playerObj);
-        GameObject.Destroy(secondTable);
     }
 
     [TearDown]
     public void Teardown()
     {
         GameObject.Destroy(testObj);
+
         FurnitureTriggerInfo.DeactivateFurniture();
+        GameObject.Destroy(gui);
     }
 }

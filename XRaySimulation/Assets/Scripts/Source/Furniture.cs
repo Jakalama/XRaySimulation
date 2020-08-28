@@ -9,10 +9,10 @@ public class Furniture : MonoBehaviour
 {
     [SerializeField] public FurnitureType Type;
     [SerializeField] public FurnitureInfo Info;
-    [HideInInspector] public bool isTriggerd;
+
+    [HideInInspector] public FurnitureController Controller;
 
     private SphereCollider trigger;
-    private FurnitureController Controller;
 
     private bool[] instructions;
 
@@ -21,13 +21,12 @@ public class Furniture : MonoBehaviour
         trigger = this.gameObject.GetComponent<SphereCollider>();
         trigger.isTrigger = true;
 
-        this.Controller = FurnitureControllerFactory.Create(Type);
-        this.Controller.SetTransform(this.transform);
+        this.Controller = FurnitureControllerFactory.Create(Type, this.transform);
     }
 
     private void Update()
     {
-        if (isTriggerd)
+        if (Controller.isTriggerd)
         {
             GetInstructions();
             Controller.Interact(instructions, Time.deltaTime);
@@ -44,6 +43,10 @@ public class Furniture : MonoBehaviour
         }
     }
 
+    // there should be a better way
+    // is needed because GetKey will fire each frame
+    // this leads to interaction with the furniture each frame
+    // resulting in activating/deactivating it multiple times in a single press
     private bool GetInstructionBasedOnType(int index)
     {
         if (Type == FurnitureType.PatientTable)
@@ -54,29 +57,11 @@ public class Furniture : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Activate();
+        Controller.Activate(Type, Info);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Deactivate();
-    }
-
-    private void Activate()
-    {
-        if (FurnitureTriggerInfo.Type == FurnitureType.None)
-        {
-            isTriggerd = true;
-            FurnitureTriggerInfo.SetActiveFurniture(Type, Info);
-        }
-    }
-
-    private void Deactivate()
-    {
-        if (isTriggerd)
-        {
-            isTriggerd = false;
-            FurnitureTriggerInfo.DeactivateFurniture();
-        }
+        Controller.Deactivate();
     }
 }

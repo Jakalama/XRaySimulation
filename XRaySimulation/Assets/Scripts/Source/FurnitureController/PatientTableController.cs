@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PatientTableController : FurnitureController
 {
-    public PatientTableController()
+    public PatientTableController(Transform controlledTransform) : base(controlledTransform)
     {
         
     }

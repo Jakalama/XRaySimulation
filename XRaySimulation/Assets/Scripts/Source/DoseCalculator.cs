@@ -18,7 +18,7 @@ public static class DoseCalculator
         float energyDose = sourceEnergy / WEIGHT;
         energyDose = energyDose / (distance * distance);
 
-        energyDose = (float) Math.Round(energyDose, 3);
+        //energyDose = (float) Math.Round(energyDose, 3);
 
         return energyDose;
     }

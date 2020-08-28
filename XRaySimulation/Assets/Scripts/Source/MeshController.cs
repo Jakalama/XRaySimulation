@@ -85,7 +85,7 @@ public class MeshController
         return VerticeData[RelevantVertices[index]].Position;
     }
 
-    public void SortOutUnhittedVertices(RayTracer tracer)
+    public void SortOutUnhittedVertices(IRayTracer tracer)
     {
         for (int i = RelevantVertices.Count - 1; i >= 0; i--)
         {

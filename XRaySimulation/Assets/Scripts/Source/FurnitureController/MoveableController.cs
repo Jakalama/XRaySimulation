@@ -6,7 +6,7 @@ public class MoveableController : FurnitureController
 {
     private bool isMoved;
 
-    public MoveableController()
+    public MoveableController(Transform conntrolledTransform) : base(conntrolledTransform)
     {
         isMoved = false;
     }
