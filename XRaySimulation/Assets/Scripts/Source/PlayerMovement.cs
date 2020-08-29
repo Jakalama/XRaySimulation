@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -15,8 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float x = Input.GetAxis("Horizontal Movement");
-        float z = Input.GetAxis("Vertical Movement");
+        float x = UnityInput.Instance.GetAxis("Horizontal Movement");
+        float z = UnityInput.Instance.GetAxis("Vertical Movement");
 
         MoveController.Move(x, z, Time.fixedDeltaTime);
     }

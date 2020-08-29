@@ -15,15 +15,15 @@ public class PlayerCamera : MonoBehaviour
 
     private void LateUpdate()
     {
-        float x = Input.GetAxis("Mouse X");
-        float y = Input.GetAxis("Mouse Y");
+        float x = UnityInput.Instance.GetAxis("Mouse X");
+        float y = UnityInput.Instance.GetAxis("Mouse Y");
 
-        CameraController.Rotate(x, y, Time.deltaTime, Input.GetKey(KeyCode.LeftShift));
+        CameraController.Rotate(x, y, Time.deltaTime, UnityInput.Instance.GetKey(KeyCode.LeftShift));
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (UnityInput.Instance.GetKeyDown(KeyCode.Tab))
             ChangeCamera();
     }
 

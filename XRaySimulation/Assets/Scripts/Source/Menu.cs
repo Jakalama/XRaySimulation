@@ -18,7 +18,7 @@ public class Menu : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (UnityInput.Instance.GetKeyDown(KeyCode.P))
             Pause();
     }
 

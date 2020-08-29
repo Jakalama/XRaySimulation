@@ -26,13 +26,13 @@ public class DoseInfo : MonoBehaviour
         float x = 0f;
         float y = 0f;
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (UnityInput.Instance.GetKey(KeyCode.UpArrow))
             y += 1;
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (UnityInput.Instance.GetKey(KeyCode.DownArrow))
             y -= 1;
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (UnityInput.Instance.GetKey(KeyCode.RightArrow))
             x += 1;
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (UnityInput.Instance.GetKey(KeyCode.LeftArrow))
             x -= 1;
 
         Controller.Rotate(x, y, Time.deltaTime);

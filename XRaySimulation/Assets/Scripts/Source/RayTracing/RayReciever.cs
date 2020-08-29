@@ -26,12 +26,11 @@ public class RayReciever : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (UnityInput.Instance.GetKeyDown(KeyCode.Space))
         {
             isActive = !isActive;
             DoseInfo.Instance.Controller.SetSourceActiveText(isActive);
         }
-            
     }
 
     private void GetAndApplyDose()
@@ -48,8 +47,6 @@ public class RayReciever : MonoBehaviour
         controller.StoreDoses(addedDoses);
 
         float[] accumulatedDoses = controller.VerticeData.Select(x => x.Dose).ToArray();
-
-        Debug.Log(accumulatedDoses.Length);
 
         float avgDose = DoseCalculator.GetAVGDose(accumulatedDoses);
         Color32[] colors = ColorCalculator.Calculate(accumulatedDoses);

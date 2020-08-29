@@ -7,7 +7,8 @@ public class RaySource : MonoBehaviour
 {
     [HideInInspector] public static RaySource Instance;
     [HideInInspector] public RayTracer RayTracer;
-    public float BaseEnergy = 120;
+
+    [SerializeField] public float BaseEnergy = 120;
 
     private void Start()
     {

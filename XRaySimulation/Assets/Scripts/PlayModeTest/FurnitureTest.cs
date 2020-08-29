@@ -1,9 +1,7 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using UnityEngine.UI;
 
 public class FurnitureTest
 {
@@ -19,17 +17,20 @@ public class FurnitureTest
     public void Setup()
     {
         //Furniture
-        testObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Table"));
+        GameObject prefab = Resources.Load<GameObject>("Prefabs/Table");
+        testObj = GameObject.Instantiate(prefab);
         furniture = testObj.GetComponent<Furniture>();
         controller = furniture.Controller;
         testObj.GetComponent<SphereCollider>().radius = RADIUS;
 
         //Player
-        playerObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Player_Mock"));
+        prefab = Resources.Load<GameObject>("Prefabs/Player_Mock");
+        playerObj = GameObject.Instantiate(prefab);
         playerObj.name = "Player";
 
         //GUI
-        gui = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/UI/GUI"));
+        prefab = Resources.Load<GameObject>("Prefabs/UI/GUI");
+        gui = GameObject.Instantiate(prefab);
         gui.name = "GUI";
     }
 

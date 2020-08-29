@@ -50,9 +50,9 @@ public class Furniture : MonoBehaviour
     private bool GetInstructionBasedOnType(int index)
     {
         if (Type == FurnitureType.PatientTable)
-            return Input.GetKey(Info.KeyCodes[index]);
+            return UnityInput.Instance.GetKey(Info.KeyCodes[index]);
         else
-            return Input.GetKeyDown(Info.KeyCodes[index]);
+            return UnityInput.Instance.GetKeyDown(Info.KeyCodes[index]);
     }
 
     private void OnTriggerEnter(Collider other)
