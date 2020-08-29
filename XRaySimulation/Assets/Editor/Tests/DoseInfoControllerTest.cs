@@ -22,6 +22,12 @@ public class DoseInfoControllerTest
         controller = new DoseInfoController(doseInfoTransform, meshCameraTransform);
     }
 
+    private T GetPrivateField<T>(string fieldName)
+    {
+        System.Reflection.FieldInfo info = controller.GetType().GetField(fieldName, System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        return (T)info.GetValue(controller);
+    }
+
     [Test]
     public void ControllerIsNotNull_Test()
     {
@@ -31,8 +37,7 @@ public class DoseInfoControllerTest
     [Test]
     public void DoseInfoTransformIsNotNull_Test()
     {
-        System.Reflection.FieldInfo info = controller.GetType().GetField("infoTransform", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-        Transform transform = (Transform) info.GetValue(controller);
+        Transform transform = GetPrivateField<Transform>("infoTransform");
 
         Assert.IsNotNull(transform);
     }
@@ -40,8 +45,7 @@ public class DoseInfoControllerTest
     [Test]
     public void DoseInfoTransformIsCorrectTransform_Test()
     {
-        System.Reflection.FieldInfo info = controller.GetType().GetField("infoTransform", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-        Transform transform = (Transform)info.GetValue(controller);
+        Transform transform = GetPrivateField<Transform>("infoTransform");
 
         Assert.AreEqual(doseInfoTransform, transform);
     }
@@ -49,8 +53,7 @@ public class DoseInfoControllerTest
     [Test]
     public void MeshCameraTransformIsNotNull_Test()
     {
-        System.Reflection.FieldInfo info = controller.GetType().GetField("meshCameraTransform", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-        Transform transform = (Transform)info.GetValue(controller);
+        Transform transform = GetPrivateField<Transform>("meshCameraTransform");
 
         Assert.IsNotNull(transform);
     }
@@ -58,17 +61,23 @@ public class DoseInfoControllerTest
     [Test]
     public void MeshCameraTransformIsCorrectTransform_Test()
     {
-        System.Reflection.FieldInfo info = controller.GetType().GetField("meshCameraTransform", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-        Transform transform = (Transform)info.GetValue(controller);
+        Transform transform = GetPrivateField<Transform>("meshCameraTransform");
 
         Assert.AreEqual(meshCameraTransform, transform);
     }
 
     [Test]
-    public void TextMeshIsNotNull_Test()
+    public void AVGTextMeshIsNotNull_Test()
     {
-        System.Reflection.FieldInfo info = controller.GetType().GetField("textMesh", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-        TextMeshProUGUI textMesh = (TextMeshProUGUI) info.GetValue(controller);
+        TextMeshProUGUI textMesh = GetPrivateField<TextMeshProUGUI>("avgTextMesh");
+
+        Assert.IsNotNull(textMesh);
+    }
+
+    [Test]
+    public void SourceActiveTextMeshIsNotNull_Test()
+    {
+        TextMeshProUGUI textMesh = GetPrivateField<TextMeshProUGUI>("activeTextMesh");
 
         Assert.IsNotNull(textMesh);
     }
@@ -76,8 +85,7 @@ public class DoseInfoControllerTest
     [Test]
     public void CameraControllerIsNotNull_Test()
     {
-        System.Reflection.FieldInfo info = controller.GetType().GetField("cameraController", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-        MeshCamera camera = (MeshCamera)info.GetValue(controller);
+        MeshCamera camera = GetPrivateField<MeshCamera>("cameraController");
 
         Assert.IsNotNull(camera);
     }

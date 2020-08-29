@@ -24,13 +24,11 @@ public class Menu : MonoBehaviour
 
     public void StartButton()
     {
-        Debug.Log("Start");
+        Pause();
     }
 
     public void ExitButton()
     {
-        Debug.Log("Exit");
-
         Application.Quit();
     }
 
