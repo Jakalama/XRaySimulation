@@ -25,6 +25,9 @@ public class MeshContainer
         {
             // rotate each vertex around pivot poitn of the transform
             Vector3 rotatedVec = meshTransform.rotation * vertices[i];
+            rotatedVec.x = meshTransform.localScale.x * rotatedVec.x;
+            rotatedVec.y = meshTransform.localScale.y * rotatedVec.y;
+            rotatedVec.z = meshTransform.localScale.z * rotatedVec.z;
 
             vertices[i] = meshTransform.position + rotatedVec;
         }

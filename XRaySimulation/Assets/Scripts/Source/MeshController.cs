@@ -91,7 +91,7 @@ public class MeshController
 
 #if UNITY_EDITOR
         // draw normals of the vertices
-        Debug.DrawRay(origin, normal, Color.red, 0.1f);
+        //Debug.DrawRay(origin, normal, Color.red, 0.1f);
 #endif
 
         if (angle >= 0)

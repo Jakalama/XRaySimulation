@@ -157,8 +157,6 @@ MonoBehaviour:
     Name: Patient Table
     Description: 
     KeyCodes: 1801000019010000
-  KeyCodes: 1101000012010000
-  isTriggerd: 0
 --- !u!1 &8832655501463593132
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +185,7 @@ Transform:
   m_GameObject: {fileID: 8832655501463593132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
-  m_LocalScale: {x: 4.5, y: 0.2, z: 1.75}
+  m_LocalScale: {x: 4.5, y: 0.1, z: 1.75}
   m_Children: []
   m_Father: {fileID: 6081775231275926981}
   m_RootOrder: 0

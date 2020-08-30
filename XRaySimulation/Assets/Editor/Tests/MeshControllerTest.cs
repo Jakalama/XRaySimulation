@@ -99,7 +99,7 @@ public class MeshControllerTest
 
     [Test]
     [TestCase("Mock_simple", 4)]
-    [TestCase("Mock_complex", 20)]
+    [TestCase("Mock_complex", 12)]
     public void RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnZAxis_Test(string mockName, int expected)
     {
         SetUp(mockName);
