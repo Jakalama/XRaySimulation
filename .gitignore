@@ -48,6 +48,7 @@ ExportedObj/
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
+*.unity.meta
 
 # Unity3D generated file on crash reports
 sysinfo.txt
@@ -58,4 +59,3 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-
