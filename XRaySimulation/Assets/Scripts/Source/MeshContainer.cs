@@ -56,4 +56,19 @@ public class MeshContainer
     {
         meshFilter.sharedMesh.colors32 = newColors;
     }
+
+    /// <summary>
+    /// Applies a given color to each vertice of the mesh.
+    /// </summary>
+    public void ApplyColor(Color newColor)
+    {
+        Color32[] newColors = new Color32[meshFilter.sharedMesh.colors32.Length];
+
+        for (int i = 0; i < newColors.Length; i++)
+        {
+            newColors[i] = (Color32)newColor;
+        }
+
+        ApplyColors(newColors);
+    }
 }

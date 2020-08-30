@@ -24,6 +24,9 @@ public class MeshController
         LinkVerticesWithSamePosition();
     }
 
+    /// <summary>
+    /// Initializes the VerticeData array.
+    /// </summary>
     private VertexData[] SetVerticeData()
     {
         Vector3[] vertices = meshContainer.GetVertices();
@@ -78,14 +81,17 @@ public class MeshController
         }
     }
 
-    private bool IsNormalRelevant(Vector3 normal, Vector3 pointPlane, Vector3 raySource)
+    /// <summary>
+    /// Returns true if the given normal points towards the raySource parameter.
+    /// </summary>
+    private bool IsNormalRelevant(Vector3 normal, Vector3 origin, Vector3 raySource)
     {
         // calculates the angle between the normals and the ray-source
-        float angle = Vector3.Dot(normal, raySource - pointPlane);
+        float angle = Vector3.Dot(normal, raySource - origin);
 
 #if UNITY_EDITOR
         // draw normals of the vertices
-        Debug.DrawRay(pointPlane, normal, Color.red, 0.1f);
+        Debug.DrawRay(origin, normal, Color.red, 0.1f);
 #endif
 
         if (angle >= 0)
@@ -110,6 +116,9 @@ public class MeshController
         return positions;
     }
 
+    /// <summary>
+    /// Returns the position of the relevant vertex with given index.
+    /// </summary>
     private Vector3 GetRelevantVertexPosition(int index)
     {
         return VerticeData[RelevantVertices[index]].Position;
@@ -130,7 +139,7 @@ public class MeshController
 
     /// <summary>
     /// Stores the doses into the mesh.
-    /// Doses array should by as there are relevant vertices!
+    /// Doses array should be as long as there are relevant vertices!
     /// </summary>
     public void StoreDoses(float[] doses)
     {
@@ -140,6 +149,11 @@ public class MeshController
         }
     }
 
+    /// <summary>
+    /// Stores the dose of relevant vertex with given index.
+    /// Additionally stores the dose foreach vertice which is located
+    /// at the same position as the relevant vertex.
+    /// </summary>
     private void StoreDose(int index, float dose)
     {
         int vertexIndex = RelevantVertices[index];
@@ -154,6 +168,10 @@ public class MeshController
         }
     }
 
+    /// <summary>
+    /// Stores the dose for vertex with given index.
+    /// If this vertex hasn't got already the new dose.
+    /// </summary>
     private void StoreDoseForCorrespondingVertices(int index, float dose)
     {
         if (!VerticeData[index].isDirty)
@@ -163,6 +181,9 @@ public class MeshController
         }
     }
 
+    /// <summary>
+    /// Returns the average dose of all mesh vertices.
+    /// </summary>
     private float CalculateAverageDose()
     {
         float sum = 0f;

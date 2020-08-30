@@ -7,6 +7,10 @@ public static class FurnitureTriggerInfo
 {
     public static FurnitureType Type = FurnitureType.None;
 
+    /// <summary>
+    /// Activates the furniture info window.
+    /// Sets the ifno content to the content of the given info object.
+    /// </summary>
     public static void SetActiveFurniture(FurnitureType type, FurnitureInfo info)
     {
         Type = type;
@@ -14,12 +18,19 @@ public static class FurnitureTriggerInfo
         SetUI(info);
     }
 
+    /// <summary>
+    /// Deactivates the furniture info window.
+    /// </summary>
     public static void DeactivateFurniture()
     {
         Type = FurnitureType.None;
         GameObject.Find("GUI").transform.Find("FurnitureInfo").gameObject.SetActive(false);
     }
 
+    /// <summary>
+    /// Sets the content of the info window to the correct infos of the FurnitureInfo object.
+    /// Hides the windwo if the current funiture type is NONE.
+    /// </summary>
     private static void SetUI(FurnitureInfo info)
     {
         GameObject infoGameObject = GameObject.Find("GUI").transform.Find("FurnitureInfo").gameObject;
@@ -42,6 +53,10 @@ public static class FurnitureTriggerInfo
         }
     }
 
+    /// <summary>
+    /// Sets the key interaction texts to the names of the given keys.
+    /// There should be maximum two KeyCodes.
+    /// </summary>
     private static void SetKeys(KeyCode[] keys)
     {
         GameObject keysObject = GameObject.Find("GUI/FurnitureInfo/Keys");

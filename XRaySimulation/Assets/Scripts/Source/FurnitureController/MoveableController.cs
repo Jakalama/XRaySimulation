@@ -20,6 +20,10 @@ public class MoveableController : FurnitureController
             MoveInsidePlayer();
     }
 
+    /// <summary>
+    /// Sets the transform parent to the interacting player.
+    /// Allows movement of the furniture.
+    /// </summary>
     private void MoveInsidePlayer()
     {
         GameObject player = GameObject.Find("Player");

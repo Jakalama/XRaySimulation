@@ -4,6 +4,9 @@ using UnityEngine;
 
 public static class FurnitureControllerFactory
 {
+    /// <summary>
+    /// Returns an instance of a FurnitureController according to the correct type.
+    /// </summary>
     public static FurnitureController Create(FurnitureType type, Transform transform)
     {
         switch (type)

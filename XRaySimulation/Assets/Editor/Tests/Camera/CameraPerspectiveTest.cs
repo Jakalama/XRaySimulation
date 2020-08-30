@@ -46,7 +46,7 @@ public class CameraPerspectiveTest
         System.Reflection.FieldInfo info = pr.GetType().GetField("CameraController", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         info.SetValue(pr, new FirstPersonCamera(pr.transform, 0f));
 
-        pr.ChangeCamera();
+        pr.SwitchCamera();
 
         bool FPV_isActive = mockObj.transform.Find("FPV").gameObject.activeSelf;
         bool TPV_isActive = mockObj.transform.Find("TPV").gameObject.activeSelf;
@@ -66,7 +66,7 @@ public class CameraPerspectiveTest
         System.Reflection.FieldInfo info = pr.GetType().GetField("CameraController", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         info.SetValue(pr, new ThirdPersonCamera(pr.transform, 0f));
 
-        pr.ChangeCamera();
+        pr.SwitchCamera();
 
         bool FPV_isActive = mockObj.transform.Find("FPV").gameObject.activeSelf;
         bool TPV_isActive = mockObj.transform.Find("TPV").gameObject.activeSelf;

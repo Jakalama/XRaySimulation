@@ -7,6 +7,10 @@ public static class DoseCalculator
 {
     private const float WEIGHT = 75f;
 
+    /// <summary>
+    /// Calculates an energydose. According to the given distance, the watt of the source
+    /// and the gibe time period.
+    /// </summary>
     public static float Calculate(float distance, float watt, float time)
     {
         if (Double.IsNaN(distance))
@@ -23,19 +27,27 @@ public static class DoseCalculator
         return energyDose;
     }
 
-    public static float[] Calculate(float[] distances, float sourceEnegery, float time)
+    /// <summary>
+    /// Calculates energydoses. According to the given distances, the watt of the source
+    /// and the gibe time period.
+    /// </summary>
+    public static float[] Calculate(float[] distances, float watt, float time)
     {
         int num = distances.Length;
         float[] doses = new float[num];
 
         for (int i = 0; i < num; i++)
         {
-            doses[i] = Calculate(distances[i], sourceEnegery, time);
+            doses[i] = Calculate(distances[i], watt, time);
         }
 
         return doses;
     }
 
+    /// <summary>
+    /// Returns the average dose of the given doses.
+    /// Rounded to 3 decimal places.
+    /// </summary>
     public static float GetAVGDose(float[] doses)
     {
         float average = 0f;

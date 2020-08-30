@@ -38,6 +38,10 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
+    /// <summary>
+    /// Toggles the pause mode, when pause mode is not active yet.
+    /// Otherwise detoggle it.
+    /// </summary>
     private void Pause()
     {
         if (isPaused)

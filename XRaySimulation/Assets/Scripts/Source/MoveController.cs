@@ -15,6 +15,9 @@ public class MoveController
         characterController = this.playerTransform.GetComponent<CharacterController>();
     }
 
+    /// <summary>
+    /// Moved the the player in direction of the absolute move-input deltas.
+    /// </summary>
     public void Move(float x, float z, float time)
     {
         Vector3 moveValue = playerTransform.right * x + playerTransform.forward * z;

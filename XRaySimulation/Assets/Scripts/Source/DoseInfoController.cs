@@ -26,11 +26,18 @@ public class DoseInfoController
         this.cameraController = new MeshCamera(this.meshCameraTransform, 0f);
     }
 
+    /// <summary>
+    /// Sets the "AVGDose" text of the DoseInfo window to the argument.
+    /// </summary>
     public void SetAVGDose(float dose)
     {
         avgTextMesh.text = dose + UNIT;
     }
 
+    /// <summary>
+    /// Sets the "Active" text of the DoseInfo window.
+    /// When active "active" is shown, otherwise "inactive".
+    /// </summary>
     public void SetSourceActiveText(bool isActive)
     {
         if (isActive)
@@ -39,6 +46,9 @@ public class DoseInfoController
             activeTextMesh.text = INACTIVE;
     }
 
+    /// <summary>
+    /// Rotates the MeshCamera according to the given inputs.
+    /// </summary>
     public void Rotate(float x, float y, float time)
     {
         cameraController.Rotate(x, y, time);

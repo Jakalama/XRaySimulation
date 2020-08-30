@@ -13,11 +13,18 @@ public class FurnitureController
         this.controlledTransform = controlledTransform;
     }
 
+    /// <summary>
+    /// Performs interaction with the furniture object.
+    /// </summary>
     public virtual void Interact(bool[] instructions, float time)
     {
 
     }
 
+    /// <summary>
+    /// Activate the furnitrue.
+    /// Sets the furniture info window.
+    /// </summary>
     public void Activate(FurnitureType type, FurnitureInfo info)
     {
         if (FurnitureTriggerInfo.Type == FurnitureType.None)
@@ -27,6 +34,10 @@ public class FurnitureController
         }
     }
 
+    /// <summary>
+    /// Dectivate the furnitrue.
+    /// Disables the furniture info window.
+    /// </summary>
     public void Deactivate()
     {
         if (isTriggerd)

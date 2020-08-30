@@ -10,6 +10,11 @@ public class PatientTableController : FurnitureController
         
     }
 
+    /// <summary>
+    /// Moves the table up, or down accoring to the given input instructions.
+    /// </summary>
+    /// <param name="instructions"></param>
+    /// <param name="time"></param>
     override public void Interact(bool[] instructions, float time)
     {
         if (instructions.Length < 2 || instructions.Length > 3)

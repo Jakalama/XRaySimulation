@@ -21,6 +21,9 @@ public class DoseInfo : MonoBehaviour
         RotateMeshCamera();    
     }
 
+    /// <summary>
+    /// Rotates the MeshCamera according to the pressed keys this frame.
+    /// </summary>
     private void RotateMeshCamera()
     {
         float x = 0f;

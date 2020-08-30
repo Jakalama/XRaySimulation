@@ -9,8 +9,6 @@ public class PlayerCamera : MonoBehaviour
     public void Start()
     {
         CameraController = new FirstPersonCamera(this.transform, 0f);
-
-        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void LateUpdate()
@@ -24,10 +22,13 @@ public class PlayerCamera : MonoBehaviour
     private void Update()
     {
         if (UnityInput.Instance.GetKeyDown(KeyCode.Tab))
-            ChangeCamera();
+            SwitchCamera();
     }
 
-    public void ChangeCamera()
+    /// <summary>
+    /// Switches the camera between the first-person-view camera and the third-person-view one.
+    /// </summary>
+    public void SwitchCamera()
     {
         Transform fpv = this.transform.Find("FPV");
         Transform tpv = this.transform.Find("TPV");
