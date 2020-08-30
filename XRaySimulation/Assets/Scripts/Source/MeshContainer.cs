@@ -14,6 +14,9 @@ public class MeshContainer
         this.meshFilter = meshTransform.GetComponent<MeshFilter>();
     }
 
+    /// <summary>
+    /// Returns the world space positions of the mesh vertices.
+    /// </summary>
     public Vector3[] GetVertices()
     {
         Vector3[] vertices = meshFilter.sharedMesh.vertices;
@@ -29,6 +32,9 @@ public class MeshContainer
         return vertices;
     }
 
+    /// <summary>
+    /// Returns the world space rotated mesh normals.
+    /// </summary>
     public Vector3[] GetNormals()
     {
         Vector3[] normals = meshFilter.sharedMesh.normals;
@@ -42,6 +48,10 @@ public class MeshContainer
         return normals;
     }
 
+    /// <summary>
+    /// Sets the colors of the merh vertices.
+    /// newColors should be as long as there are vertices in the mesh.
+    /// </summary>
     public void ApplyColors(Color32[] newColors)
     {
         meshFilter.sharedMesh.colors32 = newColors;

@@ -26,6 +26,7 @@ public class RayReciever : MonoBehaviour
 
     private void Update()
     {
+
         if (UnityInput.Instance.GetKeyDown(KeyCode.Space))
         {
             isActive = !isActive;

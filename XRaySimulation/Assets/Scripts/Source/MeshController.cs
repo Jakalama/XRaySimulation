@@ -20,6 +20,8 @@ public class MeshController
 
         this.VerticeData = SetVerticeData();
         this.RelevantVertices = new List<int>();
+
+        LinkVerticesWithSamePosition();
     }
 
     private VertexData[] SetVerticeData()
@@ -35,6 +37,30 @@ public class MeshController
         return data;
     }
 
+    /// <summary>
+    /// Adds all vertices with the same position into the array
+    /// of corresponding vertices. Including itself.
+    /// </summary>
+    private void LinkVerticesWithSamePosition()
+    {
+        for (int i = 0; i < VerticeData.Length; i++)
+        {
+            List<int> verticeIndices = new List<int>();
+
+            for (int j = 0; j < VerticeData.Length; j++)
+            {
+                if (VerticeData[i].Position == VerticeData[j].Position)
+                    verticeIndices.Add(j);
+            }
+
+            VerticeData[i].VerticeWithSamePos = verticeIndices.ToArray();
+        }
+    }
+
+    /// <summary>
+    /// Should be called on each transform position/rotation update.
+    /// Updates the normals, positions and the isDirty flag.
+    /// </summary>
     public void UpdateVertices(Vector3 raySource)
     {
         RelevantVertices.Clear();
@@ -45,12 +71,13 @@ public class MeshController
         for (int i = 0; i < normals.Length; i++)
         {
             VerticeData[i].Position = vertices[i];
+            VerticeData[i].isDirty = false;
 
             if (IsNormalRelevant(normals[i], VerticeData[i].Position, raySource))
                 RelevantVertices.Add(i);
         }
     }
-    
+
     private bool IsNormalRelevant(Vector3 normal, Vector3 pointPlane, Vector3 raySource)
     {
         // calculates the angle between the normals and the ray-source
@@ -67,6 +94,9 @@ public class MeshController
         return false;
     }
 
+    /// <summary>
+    /// Returns the positions of all relevant vertices.
+    /// </summary>
     public Vector3[] GetRelevantVerticePositions()
     {
         int num = RelevantVertices.Count;
@@ -85,6 +115,10 @@ public class MeshController
         return VerticeData[RelevantVertices[index]].Position;
     }
 
+    /// <summary>
+    /// Sorts out all vertices form the relevantVertices list which 
+    /// aren't hit directly by a ray from the IRayTracer.
+    /// </summary>
     public void SortOutUnhittedVertices(IRayTracer tracer)
     {
         for (int i = RelevantVertices.Count - 1; i >= 0; i--)
@@ -94,6 +128,10 @@ public class MeshController
         }
     }
 
+    /// <summary>
+    /// Stores the doses into the mesh.
+    /// Doses array should by as there are relevant vertices!
+    /// </summary>
     public void StoreDoses(float[] doses)
     {
         for (int i = 0; i < doses.Length; i++)
@@ -104,7 +142,25 @@ public class MeshController
 
     private void StoreDose(int index, float dose)
     {
-        VerticeData[RelevantVertices[index]].Dose += dose;
+        int vertexIndex = RelevantVertices[index];
+        VertexData currentData = VerticeData[vertexIndex];
+        int[] correspondingVertices = currentData.VerticeWithSamePos;
+
+        // store dose for all corresponding vertices
+        // including the current one
+        for (int i = 0; i < correspondingVertices.Length; i++)
+        {
+            StoreDoseForCorrespondingVertices(correspondingVertices[i], dose);
+        }
+    }
+
+    private void StoreDoseForCorrespondingVertices(int index, float dose)
+    {
+        if (!VerticeData[index].isDirty)
+        {
+            VerticeData[index].Dose += dose;
+            VerticeData[index].isDirty = true;
+        }
     }
 
     private float CalculateAverageDose()

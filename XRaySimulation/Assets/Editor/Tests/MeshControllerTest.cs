@@ -222,7 +222,7 @@ public class MeshControllerTest
     }
 
     [Test]
-    public void StoreDoses_Test()
+    public void StoreDosesForNoCorrespondingVertices_Test()
     {
         SetUp();
 
@@ -238,11 +238,48 @@ public class MeshControllerTest
             0, 1, 2
         };
 
+        System.Reflection.MethodInfo info = controller.GetType().GetMethod("LinkVerticesWithSamePosition", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        info.Invoke(controller, null);
+
         float[] doses = new float[] { 3f, 2f, 1.256987f };
+        float[] expected = new float[] { 3f, 4f, 11.256987f };
 
         controller.StoreDoses(doses);
 
-        Assert.AreEqual(new float[] { 3f, 4f, 11.256987f }, controller.VerticeData.Select(x => x.Dose).ToArray());
+        float[] actual = controller.VerticeData.Select(x => x.Dose).ToArray();
+
+        Assert.AreEqual(expected, actual);
+    }
+
+    [Test]
+    public void StoreDosesForCorrespondingVertices_Test()
+    {
+        SetUp();
+
+        controller.VerticeData = new VertexData[4]
+        {
+            new VertexData(new Vector3(1f, 10f, 10f), 0f ),
+            new VertexData(new Vector3(1f, 10f, 10f), 0f ),
+            new VertexData(new Vector3(8f, 1f, 1f), 2f ),
+            new VertexData(new Vector3(8f, 1f, 1f), 2f )
+        };
+
+        controller.RelevantVertices = new List<int>()
+        {
+            0, 2
+        };
+
+        System.Reflection.MethodInfo info = controller.GetType().GetMethod("LinkVerticesWithSamePosition", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        info.Invoke(controller, null);
+
+        float[] doses = new float[] { 3f, 2f };
+        float[] expected = new float[] { 3f, 3f, 4f, 4f};
+
+        controller.StoreDoses(doses);
+
+        float[] actual = controller.VerticeData.Select(x => x.Dose).ToArray();
+
+        Assert.AreEqual(expected, actual);
     }
 
     [Test]

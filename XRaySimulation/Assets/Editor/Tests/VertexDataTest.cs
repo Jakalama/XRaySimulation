@@ -40,6 +40,12 @@ public class VertexDataTest
     }
 
     [Test]
+    public void ConstructorVerticeWithSamePos_Test()
+    {
+        Assert.IsNotNull(data.VerticeWithSamePos);
+    }
+
+    [Test]
     public void PositionIsCorrect_Test()
     {
         Vector3 expected = new Vector3(1f, 2f, 3f);
@@ -57,5 +63,17 @@ public class VertexDataTest
         data = new VertexData(new Vector3(), expected);
 
         Assert.AreEqual(expected, data.Dose);
+    }
+
+    [Test]
+    public void IsDirtyCorrect_Test()
+    {
+        Assert.IsFalse(data.isDirty);
+    }
+
+    [Test]
+    public void VerticeWithSamePosIsCorrect_Test()
+    {
+        Assert.AreEqual(0, data.VerticeWithSamePos.Length);
     }
 }
