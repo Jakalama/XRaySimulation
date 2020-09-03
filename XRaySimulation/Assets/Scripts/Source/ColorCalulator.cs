@@ -6,23 +6,7 @@ public static class ColorCalculator
 {
     public static Color BASE_COLOR = new Color(1f, 1f, 0f);
     private static readonly HSVColor startColor = new HSVColor(BASE_COLOR);
-    private static float maxDose = 200000f;
-
-    /// <summary>
-    /// Calculates a Color32 based on the given dose.
-    /// </summary>
-    public static Color32 Calculate(float dose)
-    {
-        float baseH = startColor.h;
-
-        float stepSize = maxDose / 360f;
-        float newH = (dose / maxDose) * stepSize + baseH;
-        newH = Mathf.Clamp(newH, 0f, 1f);
-
-        HSVColor hsvColor = startColor.GetNew(newH);
-
-        return (Color32)hsvColor.ToRGB();
-    }
+    private static float maxDose = 50f;
 
     /// <summary>
     /// Calculates a Color32 array based on the given doses.
@@ -38,5 +22,25 @@ public static class ColorCalculator
         }
 
         return colors;
+    }
+
+    /// <summary>
+    /// Calculates a Color32 based on the given dose.
+    /// </summary>
+    private static Color32 Calculate(float dose)
+    {
+        float baseH = startColor.h;
+
+        // since HSV Colors have a h value range from 0 to 360
+        // and yellow is at 60
+        float stepSize = 300f / maxDose;
+        float newH = baseH + stepSize * dose / 360f;
+
+        // since unity h values only range from 0 to 1
+        newH = Mathf.Clamp01(newH);
+
+        HSVColor hsvColor = startColor.GetNew(newH);
+
+        return (Color32)hsvColor.ToRGB();
     }
 }

@@ -15,7 +15,7 @@ public class RayReciever : MonoBehaviour
         isActive = false;
 
         container = new MeshContainer(this.transform);
-        controller = new MeshController(container, this.transform);
+        controller = new MeshController(container);
 
         container.ApplyColor(ColorCalculator.BASE_COLOR);
     }
@@ -32,6 +32,16 @@ public class RayReciever : MonoBehaviour
         {
             isActive = !isActive;
             DoseInfo.Instance.Controller.SetSourceActiveText(isActive);
+        }
+
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            float[] accumulatedDoses = controller.VerticeData.Select(x => x.Dose).ToArray();
+
+            for (int i = 0; i < accumulatedDoses.Length; i++)
+            {
+                Debug.Log(accumulatedDoses[i]);
+            }
         }
     }
 

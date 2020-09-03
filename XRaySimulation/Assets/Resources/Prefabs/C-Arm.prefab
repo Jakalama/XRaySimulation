@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 05664415919368e409a629a3de1ee72a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -152,7 +152,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 87fdd68fe03a2624ebe7f9d2eb2126c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -245,7 +245,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 87fdd68fe03a2624ebe7f9d2eb2126c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -342,10 +342,9 @@ MonoBehaviour:
   Type: 0
   Info:
     Name: C-Arm
-    Description: 
-    KeyCodes: 6d000000
-  KeyCodes: 
-  isTriggerd: 0
+    Description: The C-arm is a medical imaging device. It is the actual source of
+      X-ray radiation. You can turn it on an off with the space key.
+    KeyCodes: 20000000
 --- !u!1 &8967360953669516994
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +404,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ca8fb6de72759d24ca76635b209b8bab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -516,6 +515,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 90cd4d79386e5a84bb1ee345d844efe5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6089ae4d757fe02468f098c247b67f6a, type: 2}
     - target: {fileID: -927199367670048503, guid: 90cd4d79386e5a84bb1ee345d844efe5,
         type: 3}
       propertyPath: m_Name

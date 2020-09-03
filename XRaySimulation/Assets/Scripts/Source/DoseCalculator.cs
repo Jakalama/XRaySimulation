@@ -11,7 +11,7 @@ public static class DoseCalculator
     /// Calculates an energydose. According to the given distance, the watt of the source
     /// and the gibe time period.
     /// </summary>
-    public static float Calculate(float distance, float watt, float time)
+    private static float Calculate(float distance, float watt, float time)
     {
         if (Double.IsNaN(distance))
             return 0f;

@@ -21,6 +21,24 @@ public class PatientTableTest
     }
 
     [Test]
+    public void TestObjectIsNotNull_Test()
+    {
+        Assert.IsNotNull(testObj);
+    }
+
+    [Test]
+    public void FurnitrueIsNotNull_Test()
+    {
+        Assert.IsNotNull(furniture);
+    }
+
+    [Test]
+    public void ControllerIsNotNull_Test()
+    {
+        Assert.IsNotNull(controller);
+    }
+
+    [Test]
     [TestCase(true, false)]
     public void ArrowUpMovesTableUpWhenTableIsTriggerd_Test(bool up, bool down)
     {

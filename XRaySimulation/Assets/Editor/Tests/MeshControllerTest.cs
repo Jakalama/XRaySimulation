@@ -18,7 +18,7 @@ public class MeshControllerTest
         docMeshObj = GameObject.Instantiate(docMeshPref);
 
         MeshContainer container = new MeshContainer(docMeshPref.transform);
-        controller = new MeshController(container, docMeshPref.transform);
+        controller = new MeshController(container);
     }
 
     private T GetPrivateField<T>(string fieldName)
@@ -35,16 +35,6 @@ public class MeshControllerTest
         MeshContainer mc = GetPrivateField<MeshContainer>("meshContainer");
 
         Assert.IsNotNull(mc);
-    }
-
-    [Test]
-    public void MeshTransformIsNotNull_Test()
-    {
-        SetUp();
-
-        Transform transform = GetPrivateField<Transform>("meshTransform");
-
-        Assert.IsNotNull(transform);
     }
 
     [Test]

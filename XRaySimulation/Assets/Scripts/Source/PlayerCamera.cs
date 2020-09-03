@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    private ICameraController CameraController;
+    private ICameraController cameraController;
 
-    public void Start()
+    private void Start()
     {
-        CameraController = new FirstPersonCamera(this.transform, 0f);
+        cameraController = new FirstPersonCamera(this.transform, 0f);
     }
 
     private void LateUpdate()
@@ -16,7 +16,7 @@ public class PlayerCamera : MonoBehaviour
         float x = UnityInput.Instance.GetAxis("Mouse X");
         float y = UnityInput.Instance.GetAxis("Mouse Y");
 
-        CameraController.Rotate(x, y, Time.deltaTime, UnityInput.Instance.GetKey(KeyCode.LeftShift));
+        cameraController.Rotate(x, y, Time.deltaTime, UnityInput.Instance.GetKey(KeyCode.LeftShift));
     }
 
     private void Update()
@@ -38,14 +38,14 @@ public class PlayerCamera : MonoBehaviour
             fpv.gameObject.SetActive(false);
             tpv.gameObject.SetActive(true);
 
-            CameraController = new ThirdPersonCamera(this.transform, CameraController.GetYRotation());
+            cameraController = new ThirdPersonCamera(this.transform, cameraController.GetYRotation());
         }
         else
         {
             fpv.gameObject.SetActive(true);
             tpv.gameObject.SetActive(false);
 
-            CameraController = new FirstPersonCamera(this.transform, CameraController.GetYRotation());
+            cameraController = new FirstPersonCamera(this.transform, cameraController.GetYRotation());
         }
     }
 }

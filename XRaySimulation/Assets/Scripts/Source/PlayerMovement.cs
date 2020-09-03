@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private MoveController MoveController;
+    private MoveController moveController;
 
     private void Start()
     {
-        MoveController = new MoveController(this.transform);
+        moveController = new MoveController(this.transform);
     }
 
     private void FixedUpdate()
@@ -15,6 +15,6 @@ public class PlayerMovement : MonoBehaviour
         float x = UnityInput.Instance.GetAxis("Horizontal Movement");
         float z = UnityInput.Instance.GetAxis("Vertical Movement");
 
-        MoveController.Move(x, z, Time.fixedDeltaTime);
+        moveController.Move(x, z, Time.fixedDeltaTime);
     }
 }

@@ -18,7 +18,7 @@ public static class FurnitureControllerFactory
             case FurnitureType.Closet:
                 return new FurnitureController(transform);
             case FurnitureType.Door:
-                return new FurnitureController(transform);
+                return new DoorController(transform);
             case FurnitureType.PatientTable:
                 return new PatientTableController(transform);
             case FurnitureType.ProtectionWall:

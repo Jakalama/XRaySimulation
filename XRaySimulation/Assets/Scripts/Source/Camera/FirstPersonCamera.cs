@@ -11,7 +11,7 @@ public class FirstPersonCamera : ICameraController
     private float yRotation;
 
     private readonly float SPEED = 250f;
-    private readonly float MAX_X_ROT = 90f;
+    private readonly float MAX_X_ROT = 60f;
 
     public FirstPersonCamera(Transform rotatedTransform, float yStartRotation)
     {

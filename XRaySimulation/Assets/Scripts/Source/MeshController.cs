@@ -9,14 +9,12 @@ public class MeshController
     public List<int> RelevantVertices;
 
     private MeshContainer meshContainer;
-    private Transform meshTransform;
 
     public float AverageDose { get { return CalculateAverageDose(); } private set { } }
 
-    public MeshController(MeshContainer container, Transform transform)
+    public MeshController(MeshContainer container)
     {
         this.meshContainer = container;
-        this.meshTransform = transform;
 
         this.VerticeData = SetVerticeData();
         this.RelevantVertices = new List<int>();

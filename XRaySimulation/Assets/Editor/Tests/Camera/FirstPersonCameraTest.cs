@@ -100,13 +100,15 @@ public class FirstPersonCameraTest
     [TestCase(-0.1f)]
     [TestCase(-1f)]
     [TestCase(0f)]
-    public void ClampUpRotationForm90To90_Test(float value)
+    public void ClampUpRotationForm60To60_Test(float value)
     {
-        Controller.SetXRotation(90f);
+        Controller.SetXRotation(60f);
 
         Vector3 before = CameraTransform.localEulerAngles;
         Controller.Rotate(0f, value, 1f);
         Vector3 after = CameraTransform.localEulerAngles;
+
+        after.x = (float)Math.Round(after.x, 10);
 
         Assert.AreEqual(after.x, before.x);
     }
@@ -115,29 +117,33 @@ public class FirstPersonCameraTest
     [TestCase(-0.1f)]
     [TestCase(-1f)]
     [TestCase(0f)]
-    public void ClampUpRotationFormLess90To90_Test(float value)
+    public void ClampUpRotationFormLess60To60_Test(float value)
     {
-        Controller.SetXRotation(89f);
+        Controller.SetXRotation(59f);
 
         Vector3 before = CameraTransform.localEulerAngles;
         Controller.Rotate(0f, value, 1f);
         Vector3 after = CameraTransform.localEulerAngles;
 
-        Assert.GreaterOrEqual(after.x, 89f);
-        Assert.LessOrEqual(after.x, 90f);
+        after.x = (float) Math.Round(after.x, 3);
+
+        Assert.GreaterOrEqual(after.x, 59f);
+        Assert.LessOrEqual(after.x, 60f);
     }
 
     [Test]
     [TestCase(0.1f)]
     [TestCase(1f)]
     [TestCase(0f)]
-    public void ClampDownRotationFormMinus90ToMinus90_Test(float value)
+    public void ClampDownRotationFormMinus60ToMinus60_Test(float value)
     {
-        Controller.SetXRotation(-90f);
+        Controller.SetXRotation(-60f);
 
         Vector3 before = CameraTransform.localEulerAngles;
         Controller.Rotate(0f, value, 1f);
         Vector3 after = CameraTransform.localEulerAngles;
+
+        after.x = (float)Math.Round(after.x, 10);
 
         Assert.AreEqual(after.x, before.x);
     }
@@ -146,9 +152,9 @@ public class FirstPersonCameraTest
     [TestCase(0.1f)]
     [TestCase(1f)]
     [TestCase(0f)]
-    public void ClampDownRotationFormLessMinus90ToMinus90_Test(float value)
+    public void ClampDownRotationFormLessMinus60ToMinus60_Test(float value)
     {
-        Controller.SetXRotation(-89f);
+        Controller.SetXRotation(-59f);
 
         Vector3 before = CameraTransform.localEulerAngles;
         Controller.Rotate(0f, value, 1f);
@@ -159,8 +165,8 @@ public class FirstPersonCameraTest
         // Which means a rotation is always greater than 0, or 0.
         float afterX = after.x - 360f;
 
-        Assert.LessOrEqual(afterX, -89f);
-        Assert.GreaterOrEqual(afterX, -90f);
+        Assert.LessOrEqual(afterX, -59f);
+        Assert.GreaterOrEqual(afterX, -60f);
     }
 
     [Test]

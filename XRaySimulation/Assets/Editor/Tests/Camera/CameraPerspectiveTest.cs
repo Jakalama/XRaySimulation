@@ -43,7 +43,7 @@ public class CameraPerspectiveTest
         PlayerCamera pr = mockObj.GetComponent<PlayerCamera>();
 
         // set the private CameraController field of PlayerCamera, since it is set in the Start-Method
-        System.Reflection.FieldInfo info = pr.GetType().GetField("CameraController", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        System.Reflection.FieldInfo info = pr.GetType().GetField("cameraController", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         info.SetValue(pr, new FirstPersonCamera(pr.transform, 0f));
 
         pr.SwitchCamera();
@@ -63,7 +63,7 @@ public class CameraPerspectiveTest
         mockObj.transform.Find("TPV").gameObject.SetActive(true);
 
         // set the CameraController field of PlayerCamera, since it is set in the Start-Method
-        System.Reflection.FieldInfo info = pr.GetType().GetField("CameraController", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        System.Reflection.FieldInfo info = pr.GetType().GetField("cameraController", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         info.SetValue(pr, new ThirdPersonCamera(pr.transform, 0f));
 
         pr.SwitchCamera();

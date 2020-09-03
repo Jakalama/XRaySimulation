@@ -7,7 +7,7 @@ public class DoseInfo : MonoBehaviour
     public static DoseInfo Instance;
     public DoseInfoController Controller;
 
-    public void Start()
+    private void Start()
     {
         Instance = this;
 
@@ -16,7 +16,7 @@ public class DoseInfo : MonoBehaviour
         Controller = new DoseInfoController(this.transform, meshCameraTransform);
     }
 
-    public void Update()
+    private void Update()
     {
         RotateMeshCamera();    
     }

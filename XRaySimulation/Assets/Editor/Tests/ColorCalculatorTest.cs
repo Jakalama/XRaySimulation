@@ -5,17 +5,6 @@ using UnityEngine;
 
 public class ColorCalculatorTest
 {
-    [Test]
-    [TestCase(0f, 1f, 1f, 0f)]
-    [TestCase(10f, 212f / 255f, 1f, 0f)]
-    [TestCase(200f, 85f / 255f, 0f, 1f)]
-    public void CalculateReturnsExpectedColor_Test(float dose, float r, float g, float b)
-    {
-        Color32 rgbColor = new Color(r, g, b);
-        Color32 color = ColorCalculator.Calculate(dose);
-
-        Assert.AreEqual(rgbColor, color);
-    }
 
     [Test]
     [TestCase(new float[] { }, new float[] { }, new float[] { }, new float[] { })]

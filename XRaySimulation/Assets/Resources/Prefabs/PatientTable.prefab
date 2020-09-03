@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 05664415919368e409a629a3de1ee72a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -155,7 +155,8 @@ MonoBehaviour:
   Type: 1
   Info:
     Name: Patient Table
-    Description: 
+    Description: The patient lies on the patient table during the examination. The
+      table can be raised and lowered with page UP and page DOWN.
     KeyCodes: 1801000019010000
 --- !u!1 &8832655501463593132
 GameObject:
@@ -216,7 +217,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 87fdd68fe03a2624ebe7f9d2eb2126c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
