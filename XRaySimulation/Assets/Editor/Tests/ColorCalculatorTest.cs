@@ -8,7 +8,7 @@ public class ColorCalculatorTest
 
     [Test]
     [TestCase(new float[] { }, new float[] { }, new float[] { }, new float[] { })]
-    [TestCase(new float[] { 0f, 10f, 200f }, new float[] { 1f, 212f / 255f, 85f / 255f}, new float[] { 1f, 1f, 0f }, new float[] { 0f, 0f, 1f })]
+    [TestCase(new float[] { 0f, 10f, 200f }, new float[] { 1f, 0f, 1f}, new float[] { 1f, 1f, 0f }, new float[] { 0f, 0f, 0f })]
     public void CalculateReturnsExpectedColors_Test(float[] doses, float[] r, float[] g, float [] b)
     {
         Color32[] rgbColors = GetColors(r, g, b);

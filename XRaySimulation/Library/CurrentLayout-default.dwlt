@@ -20,62 +20,11 @@ MonoBehaviour:
     height: 1357.3334
   m_ShowMode: 4
   m_Title: 
-  m_RootView: {fileID: 13}
+  m_RootView: {fileID: 11}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 524
-    width: 498
-    height: 426
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 20}
-  m_Panes:
-  - {fileID: 20}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 9}
-  - {fileID: 2}
-  m_Position:
-    serializedVersion: 2
-    x: 1725
-    y: 0
-    width: 498
-    height: 950
-  m_MinSize: {x: 232, y: 542}
-  m_MaxSize: {x: 10002, y: 20042}
-  vertical: 1
-  controlID: 15874
---- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,7 +47,7 @@ MonoBehaviour:
   m_MaxSize: {x: 0, y: 0}
   vertical: 0
   controlID: 15738
---- !u!114 &5
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,25 +57,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 216
+    x: 400
     y: 0
-    width: 1509
+    width: 1325
     height: 950
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 22}
   m_Panes:
-  - {fileID: 25}
-  - {fileID: 21}
-  - {fileID: 19}
-  m_Selected: 2
-  m_LastSelected: 0
---- !u!114 &6
+  - {fileID: 22}
+  - {fileID: 18}
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 2
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,12 +96,12 @@ MonoBehaviour:
     height: 488
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 30}
+  m_ActualView: {fileID: 27}
   m_Panes:
-  - {fileID: 30}
+  - {fileID: 27}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &7
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,8 +114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 12}
-  - {fileID: 6}
+  - {fileID: 10}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 2223
@@ -176,8 +125,8 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 176
---- !u!114 &8
+  controlID: 189
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,17 +143,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 216
+    width: 400
     height: 950
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 28}
+  m_ActualView: {fileID: 25}
   m_Panes:
-  - {fileID: 28}
-  - {fileID: 23}
+  - {fileID: 25}
+  - {fileID: 20}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &9
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,18 +168,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
+    x: 1725
     y: 0
     width: 498
-    height: 524
+    height: 950
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 27}
+  m_ActualView: {fileID: 24}
   m_Panes:
-  - {fileID: 27}
+  - {fileID: 24}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &10
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -243,20 +192,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 8}
-  - {fileID: 5}
+  - {fileID: 6}
   - {fileID: 3}
+  - {fileID: 7}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 2223
     height: 950
-  m_MinSize: {x: 535, y: 542}
-  m_MaxSize: {x: 18005, y: 20042}
+  m_MinSize: {x: 535, y: 271}
+  m_MaxSize: {x: 18005, y: 10021}
   vertical: 0
-  controlID: 40
---- !u!114 &11
+  controlID: 75
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -269,18 +218,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 16}
+  - {fileID: 14}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
     width: 2560
     height: 1308
-  m_MinSize: {x: 811, y: 663}
-  m_MaxSize: {x: 22006, y: 24063}
+  m_MinSize: {x: 811, y: 392}
+  m_MaxSize: {x: 22006, y: 14042}
   vertical: 1
-  controlID: 174
---- !u!114 &12
+  controlID: 72
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -301,13 +250,13 @@ MonoBehaviour:
     height: 820
   m_MinSize: {x: 276, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 26}
+  m_ActualView: {fileID: 23}
   m_Panes:
-  - {fileID: 26}
-  - {fileID: 24}
+  - {fileID: 23}
+  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &13
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -320,9 +269,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 14}
-  - {fileID: 11}
-  - {fileID: 15}
+  - {fileID: 12}
+  - {fileID: 9}
+  - {fileID: 13}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -331,7 +280,7 @@ MonoBehaviour:
     height: 1358
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
---- !u!114 &14
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -353,7 +302,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &15
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -374,7 +323,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &16
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -387,19 +336,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 17}
-  - {fileID: 7}
+  - {fileID: 15}
+  - {fileID: 5}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 2560
     height: 1308
-  m_MinSize: {x: 811, y: 663}
-  m_MaxSize: {x: 22006, y: 24063}
+  m_MinSize: {x: 811, y: 392}
+  m_MaxSize: {x: 22006, y: 14042}
   vertical: 0
-  controlID: 175
---- !u!114 &17
+  controlID: 73
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -412,19 +361,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 18}
+  - {fileID: 8}
+  - {fileID: 16}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 2223
     height: 1308
-  m_MinSize: {x: 535, y: 663}
-  m_MaxSize: {x: 18005, y: 24063}
+  m_MinSize: {x: 535, y: 392}
+  m_MaxSize: {x: 18005, y: 14042}
   vertical: 1
-  controlID: 39
---- !u!114 &18
+  controlID: 74
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -445,13 +394,13 @@ MonoBehaviour:
     height: 358
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 29}
+  m_ActualView: {fileID: 26}
   m_Panes:
-  - {fileID: 29}
-  - {fileID: 22}
+  - {fileID: 26}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &19
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -467,14 +416,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: 257045534191678443, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -2344
+    x: -2160
     y: 72.66667
-    width: 1507
+    width: 1323
     height: 929
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewsNames: []
@@ -483,7 +432,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 2260.5, y: 1272}
+  m_TargetSize: {x: 1984.5, y: 1362}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -491,16 +440,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -753.5
-    m_HBaseRangeMax: 753.5
-    m_VBaseRangeMin: -424
-    m_VBaseRangeMax: 424
+    m_HBaseRangeMin: -661.5
+    m_HBaseRangeMax: 661.5
+    m_VBaseRangeMin: -464.5
+    m_VBaseRangeMax: 464.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -509,7 +458,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -517,166 +466,30 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
-      width: 1507
-      height: 908
+      y: 0
+      width: 1323
+      height: 929
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 753.5, y: 454}
+    m_Translation: {x: 661.5, y: 464.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -753.5
-      y: -454
-      width: 1507
-      height: 908
+      x: -661.5
+      y: -464.5
+      width: 1323
+      height: 929
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 2260.5, y: 1393.5}
+  m_LastWindowPixelSize: {x: 1323, y: 929}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &20
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_TitleContent:
-    m_Text: Project
-    m_Image: {fileID: -2032128904892744680, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: -834.6666
-    y: 596.6667
-    width: 496
-    height: 405
-  m_ViewDataDictionary: {fileID: 0}
-  m_SearchFilter:
-    m_NameFilter: 
-    m_ClassNames: []
-    m_AssetLabels: []
-    m_AssetBundleNames: []
-    m_VersionControlStates: []
-    m_SoftLockControlStates: []
-    m_ReferencingInstanceIDs: 
-    m_SceneHandles: 
-    m_ShowAllHits: 0
-    m_SkipHidden: 0
-    m_SearchArea: 1
-    m_Folders:
-    - Assets/Resources/Prefabs
-  m_ViewMode: 1
-  m_StartGridSize: 16
-  m_LastFolders:
-  - Assets/Resources/Prefabs
-  m_LastFoldersGridSize: 16
-  m_LastProjectPath: "D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation"
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 80340000
-    m_LastClickedID: 13440
-    m_ExpandedIDs: 00000000783400007a34000000ca9a3b
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 2}
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-    m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 16
-  m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 110
---- !u!114 &21
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -692,7 +505,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Project Settings
-    m_Image: {fileID: -6304849327172165113, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 8487775502441791945, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -706,7 +519,7 @@ MonoBehaviour:
   m_PosRight: {x: 0, y: 0}
   m_Scope: 1
   m_SplitterFlex: 0.2
---- !u!114 &22
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -722,7 +535,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Profiler
-    m_Image: {fileID: -3113586994723608586, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 248956144125838126, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1234,7 +1047,7 @@ MonoBehaviour:
         asm: UnityEditor}
       data:
         m_PaneScroll: {x: 0, y: 0}
---- !u!114 &23
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1254,14 +1067,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -2552.6667
-    y: 80
-    width: 1590
-    height: 918
+    x: -2560
+    y: 72.66667
+    width: 679
+    height: 929
   m_ViewDataDictionary: {fileID: 0}
   m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 23}
+    m_Window: {fileID: 20}
     newResultList:
     - id: 1250
       uniqueId: '[XRaySimulation][suite]'
@@ -1614,15 +1427,15 @@ MonoBehaviour:
       availableCategories:
       - Uncategorized
   m_EditModeTestListGUI:
-    m_Window: {fileID: 23}
+    m_Window: {fileID: 20}
     newResultList:
     - id: 1000
       uniqueId: '[XRaySimulation][suite]'
       name: XRaySimulation
       fullName: XRaySimulation
-      resultStatus: 1
-      duration: 0.3574646
-      messages: 
+      resultStatus: 2
+      duration: 0.1330702
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1636,9 +1449,9 @@ MonoBehaviour:
       uniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
       name: Assembly-CSharp-Editor.dll
       fullName: "D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll"
-      resultStatus: 1
-      duration: 0.3081758
-      messages: 
+      resultStatus: 2
+      duration: 0.0819903
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1653,7 +1466,7 @@ MonoBehaviour:
       name: CameraPerspectiveTest
       fullName: CameraPerspectiveTest
       resultStatus: 1
-      duration: 0.0466903
+      duration: 0.0106595
       messages: 
       output: 
       stacktrace: 
@@ -1669,7 +1482,7 @@ MonoBehaviour:
       name: FPVisExistent_Test
       fullName: CameraPerspectiveTest.FPVisExistent_Test
       resultStatus: 1
-      duration: 0.0249665
+      duration: 0.0011516
       messages: 
       output: 
       stacktrace: 
@@ -1686,7 +1499,7 @@ MonoBehaviour:
       name: PlayerCameraScriptIsExistent_Test
       fullName: CameraPerspectiveTest.PlayerCameraScriptIsExistent_Test
       resultStatus: 1
-      duration: 0.0005373
+      duration: 0.000369
       messages: 
       output: 
       stacktrace: 
@@ -1703,7 +1516,7 @@ MonoBehaviour:
       name: TPVisExistent_Test
       fullName: CameraPerspectiveTest.TPVisExistent_Test
       resultStatus: 1
-      duration: 0.0003452
+      duration: 0.000352
       messages: 
       output: 
       stacktrace: 
@@ -1720,7 +1533,7 @@ MonoBehaviour:
       name: WhenFPVisActiveInputSetsTPVActive_Test
       fullName: CameraPerspectiveTest.WhenFPVisActiveInputSetsTPVActive_Test
       resultStatus: 1
-      duration: 0.0010846
+      duration: 0.0010895
       messages: 
       output: 
       stacktrace: 
@@ -1737,7 +1550,7 @@ MonoBehaviour:
       name: WhenTPVisActiveInputSetsFPVActive_Test
       fullName: CameraPerspectiveTest.WhenTPVisActiveInputSetsFPVActive_Test
       resultStatus: 1
-      duration: 0.0005083
+      duration: 0.0005494
       messages: 
       output: 
       stacktrace: 
@@ -1753,9 +1566,9 @@ MonoBehaviour:
       uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][ColorCalculatorTest][suite]
       name: ColorCalculatorTest
       fullName: ColorCalculatorTest
-      resultStatus: 1
-      duration: 0.0383906
-      messages: 
+      resultStatus: 2
+      duration: 0.0490058
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1769,9 +1582,9 @@ MonoBehaviour:
       uniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.CalculateReturnsExpectedColors_Test][suite]
       name: CalculateReturnsExpectedColors_Test
       fullName: ColorCalculatorTest.CalculateReturnsExpectedColors_Test
-      resultStatus: 1
-      duration: 0.0154697
-      messages: 
+      resultStatus: 2
+      duration: 0.0291385
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1786,7 +1599,7 @@ MonoBehaviour:
       name: CalculateReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[])
       fullName: ColorCalculatorTest.CalculateReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[])
       resultStatus: 1
-      duration: 0.00419
+      duration: 0.001939
       messages: 
       output: 
       stacktrace: 
@@ -1803,8 +1616,45 @@ MonoBehaviour:
       name: CalculateReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[])
       fullName: ColorCalculatorTest.CalculateReturnsExpectedColors_Test(System.Single[],System.Single[],System.Single[],System.Single[]
         GeneratedTestCase2)
+      resultStatus: 2
+      duration: 0.0127432
+      messages: "  Expected and actual are both <UnityEngine.Color32[3]>\r\n  Values
+        differ at index [1]\r\n  Expected: RGBA(212, 255, 0, 255)\r\n  But was: 
+        RGBA(0, 255, 0, 255)\r\n"
+      output: 
+      stacktrace: "at ColorCalculatorTest.CalculateReturnsExpectedColors_Test (System.Single[]
+        doses, System.Single[] r, System.Single[] g, System.Single[] b) [0x00013]
+        in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\ColorCalculatorTest.cs:18\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1480
+      parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.CalculateReturnsExpectedColors_Test][suite]
+    - id: 1132
+      uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoorControllerTest][suite]
+      name: DoorControllerTest
+      fullName: DoorControllerTest
+      resultStatus: 2
+      duration: 0.0744567
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1406
+      parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1135
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.ControllerIsNotNull_Test]
+      name: ControllerIsNotNull_Test
+      fullName: DoorControllerTest.ControllerIsNotNull_Test
       resultStatus: 1
-      duration: 0.0017669
+      duration: 0.0130476
       messages: 
       output: 
       stacktrace: 
@@ -1814,14 +1664,220 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1480
-      parentUniqueId: Assembly-CSharp-Editor.dll/ColorCalculatorTest/[Assembly-CSharp-Editor][ColorCalculatorTest.CalculateReturnsExpectedColors_Test][suite]
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoorControllerTest][suite]
+    - id: 1142
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.FirstPressOfFWillOpenDoor_Test]
+      name: FirstPressOfFWillOpenDoor_Test
+      fullName: DoorControllerTest.FirstPressOfFWillOpenDoor_Test
+      resultStatus: 1
+      duration: 0.0038415
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoorControllerTest][suite]
+    - id: 1142
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.FirstPressOfFWillSetIsOpenToTrue_Test]
+      name: FirstPressOfFWillSetIsOpenToTrue_Test
+      fullName: DoorControllerTest.FirstPressOfFWillSetIsOpenToTrue_Test
+      resultStatus: 1
+      duration: 0.0006533
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoorControllerTest][suite]
+    - id: 1134
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.FurnitrueIsNotNull_Test]
+      name: FurnitrueIsNotNull_Test
+      fullName: DoorControllerTest.FurnitrueIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0004379
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoorControllerTest][suite]
+    - id: 1136
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.LeftDoorIsNotNull_Test]
+      name: LeftDoorIsNotNull_Test
+      fullName: DoorControllerTest.LeftDoorIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0003898
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoorControllerTest][suite]
+    - id: 1141
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test][suite]
+      name: NothingWillHappenWhenWronAmountOfInstructionsGiven_Test
+      fullName: DoorControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test
+      resultStatus: 1
+      duration: 0.0220887
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoorControllerTest][suite]
+    - id: 1138
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/NothingWillHappenWhenWronAmountOfInstructionsGiven_Test/[Assembly-CSharp-Editor][DoorControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])]
+      name: NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])
+      fullName: DoorControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])
+      resultStatus: 1
+      duration: 0.0009535
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1141
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test][suite]
+    - id: 1139
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/NothingWillHappenWhenWronAmountOfInstructionsGiven_Test/[Assembly-CSharp-Editor][DoorControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])]2
+      name: NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])
+      fullName: DoorControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[]
+        GeneratedTestCase2)
+      resultStatus: 1
+      duration: 0.0003635
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1141
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test][suite]
+    - id: 1140
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/NothingWillHappenWhenWronAmountOfInstructionsGiven_Test/[Assembly-CSharp-Editor][DoorControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])]3
+      name: NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])
+      fullName: DoorControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[]
+        GeneratedTestCase3)
+      resultStatus: 1
+      duration: 0.0003546
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1141
+      parentUniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test][suite]
+    - id: 1137
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.RightDoorIsNotNull_Test]
+      name: RightDoorIsNotNull_Test
+      fullName: DoorControllerTest.RightDoorIsNotNull_Test
+      resultStatus: 1
+      duration: 0.000539
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoorControllerTest][suite]
+    - id: 1145
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.SecondPressOfFWillCloseDoor_Test]
+      name: SecondPressOfFWillCloseDoor_Test
+      fullName: DoorControllerTest.SecondPressOfFWillCloseDoor_Test
+      resultStatus: 2
+      duration: 0.0089548
+      messages: "  Expected: -2.0f\r\n  But was:  -0.5f\r\n"
+      output: 
+      stacktrace: "at DoorControllerTest.SecondPressOfFWillCloseDoor_Test () [0x0006d]
+        in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\Furniture\\DoorControllerTest.cs:130\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoorControllerTest][suite]
+    - id: 1143
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.SecondPressOfFWillSetIsOpenFalse_Test]
+      name: SecondPressOfFWillSetIsOpenFalse_Test
+      fullName: DoorControllerTest.SecondPressOfFWillSetIsOpenFalse_Test
+      resultStatus: 1
+      duration: 0.0004473
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoorControllerTest][suite]
+    - id: 1133
+      uniqueId: Assembly-CSharp-Editor.dll/DoorControllerTest/[Assembly-CSharp-Editor][DoorControllerTest.TestObjectIsNotNull_Test]
+      name: TestObjectIsNotNull_Test
+      fullName: DoorControllerTest.TestObjectIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0003801
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1132
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoorControllerTest][suite]
     - id: 1481
       uniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][DoseCalculatorTest][suite]
       name: DoseCalculatorTest
       fullName: DoseCalculatorTest
       resultStatus: 1
-      duration: 0.0284006
+      duration: 0.0298469
       messages: 
       output: 
       stacktrace: 
@@ -1837,7 +1893,7 @@ MonoBehaviour:
       name: CalculateReturnsCorrectDoses_Test
       fullName: DoseCalculatorTest.CalculateReturnsCorrectDoses_Test
       resultStatus: 1
-      duration: 0.0086646
+      duration: 0.0085429
       messages: 
       output: 
       stacktrace: 
@@ -1853,7 +1909,7 @@ MonoBehaviour:
       name: CalculateReturnsCorrectDoses_Test(System.Single[],System.Single[])
       fullName: DoseCalculatorTest.CalculateReturnsCorrectDoses_Test(System.Single[],System.Single[])
       resultStatus: 1
-      duration: 0.0007442
+      duration: 0.0005576
       messages: 
       output: 
       stacktrace: 
@@ -1871,7 +1927,7 @@ MonoBehaviour:
       fullName: DoseCalculatorTest.CalculateReturnsCorrectDoses_Test(System.Single[],System.Single[]
         GeneratedTestCase2)
       resultStatus: 1
-      duration: 0.0011005
+      duration: 0.0002204
       messages: 
       output: 
       stacktrace: 
@@ -1888,7 +1944,7 @@ MonoBehaviour:
       name: GetAVGDoseReturnsCorrectDose_Test
       fullName: DoseCalculatorTest.GetAVGDoseReturnsCorrectDose_Test
       resultStatus: 1
-      duration: 0.0095335
+      duration: 0.0108417
       messages: 
       output: 
       stacktrace: 
@@ -1904,7 +1960,7 @@ MonoBehaviour:
       name: GetAVGDoseReturnsCorrectDose_Test(System.Single[],5.5f)
       fullName: DoseCalculatorTest.GetAVGDoseReturnsCorrectDose_Test(System.Single[],5.5f)
       resultStatus: 1
-      duration: 0.0005004
+      duration: 0.0004754
       messages: 
       output: 
       stacktrace: 
@@ -1921,7 +1977,7 @@ MonoBehaviour:
       name: GetAVGDoseReturnsCorrectDose_Test(System.Single[],1.417f)
       fullName: DoseCalculatorTest.GetAVGDoseReturnsCorrectDose_Test(System.Single[],1.417f)
       resultStatus: 1
-      duration: 0.0001312
+      duration: 0.0001341
       messages: 
       output: 
       stacktrace: 
@@ -1938,7 +1994,7 @@ MonoBehaviour:
       name: DoseInfoControllerTest
       fullName: DoseInfoControllerTest
       resultStatus: 1
-      duration: 0.0756825
+      duration: 0.0914714
       messages: 
       output: 
       stacktrace: 
@@ -1954,7 +2010,7 @@ MonoBehaviour:
       name: ArrowDOWNRotatesMeshCameraDown_Test
       fullName: DoseInfoControllerTest.ArrowDOWNRotatesMeshCameraDown_Test
       resultStatus: 1
-      duration: 0.0428863
+      duration: 0.0569258
       messages: 
       output: 
       stacktrace: 
@@ -1971,7 +2027,7 @@ MonoBehaviour:
       name: ArrowLEFTRotatesMeshCameraLeft_Test
       fullName: DoseInfoControllerTest.ArrowLEFTRotatesMeshCameraLeft_Test
       resultStatus: 1
-      duration: 0.0011658
+      duration: 0.0009805
       messages: 
       output: 
       stacktrace: 
@@ -1988,7 +2044,7 @@ MonoBehaviour:
       name: ArrowRIGHTRotatesMeshCameraRight_Test
       fullName: DoseInfoControllerTest.ArrowRIGHTRotatesMeshCameraRight_Test
       resultStatus: 1
-      duration: 0.0010447
+      duration: 0.0010399
       messages: 
       output: 
       stacktrace: 
@@ -2005,7 +2061,7 @@ MonoBehaviour:
       name: ArrowUPRotatesMeshCameraUp_Test
       fullName: DoseInfoControllerTest.ArrowUPRotatesMeshCameraUp_Test
       resultStatus: 1
-      duration: 0.0010107
+      duration: 0.0010357
       messages: 
       output: 
       stacktrace: 
@@ -2022,7 +2078,7 @@ MonoBehaviour:
       name: AVGTextMeshIsNotNull_Test
       fullName: DoseInfoControllerTest.AVGTextMeshIsNotNull_Test
       resultStatus: 1
-      duration: 0.0009866
+      duration: 0.0010025
       messages: 
       output: 
       stacktrace: 
@@ -2039,7 +2095,7 @@ MonoBehaviour:
       name: CameraControllerIsNotNull_Test
       fullName: DoseInfoControllerTest.CameraControllerIsNotNull_Test
       resultStatus: 1
-      duration: 0.0008593
+      duration: 0.0074435
       messages: 
       output: 
       stacktrace: 
@@ -2056,7 +2112,7 @@ MonoBehaviour:
       name: ControllerIsNotNull_Test
       fullName: DoseInfoControllerTest.ControllerIsNotNull_Test
       resultStatus: 1
-      duration: 0.000829
+      duration: 0.0008199
       messages: 
       output: 
       stacktrace: 
@@ -2073,7 +2129,7 @@ MonoBehaviour:
       name: DoseInfoTransformIsCorrectTransform_Test
       fullName: DoseInfoControllerTest.DoseInfoTransformIsCorrectTransform_Test
       resultStatus: 1
-      duration: 0.0009
+      duration: 0.0008233
       messages: 
       output: 
       stacktrace: 
@@ -2090,7 +2146,7 @@ MonoBehaviour:
       name: DoseInfoTransformIsNotNull_Test
       fullName: DoseInfoControllerTest.DoseInfoTransformIsNotNull_Test
       resultStatus: 1
-      duration: 0.0008595
+      duration: 0.0008088
       messages: 
       output: 
       stacktrace: 
@@ -2107,7 +2163,7 @@ MonoBehaviour:
       name: MeshCameraTransformIsCorrectTransform_Test
       fullName: DoseInfoControllerTest.MeshCameraTransformIsCorrectTransform_Test
       resultStatus: 1
-      duration: 0.0056491
+      duration: 0.0008116
       messages: 
       output: 
       stacktrace: 
@@ -2124,7 +2180,7 @@ MonoBehaviour:
       name: MeshCameraTransformIsNotNull_Test
       fullName: DoseInfoControllerTest.MeshCameraTransformIsNotNull_Test
       resultStatus: 1
-      duration: 0.0009271
+      duration: 0.0012125
       messages: 
       output: 
       stacktrace: 
@@ -2141,7 +2197,7 @@ MonoBehaviour:
       name: SetAVGDose_Test
       fullName: DoseInfoControllerTest.SetAVGDose_Test
       resultStatus: 1
-      duration: 0.0011813
+      duration: 0.0011232
       messages: 
       output: 
       stacktrace: 
@@ -2158,7 +2214,7 @@ MonoBehaviour:
       name: SourceActiveTextMeshIsNotNull_Test
       fullName: DoseInfoControllerTest.SourceActiveTextMeshIsNotNull_Test
       resultStatus: 1
-      duration: 0.0008154
+      duration: 0.0008143
       messages: 
       output: 
       stacktrace: 
@@ -2175,7 +2231,7 @@ MonoBehaviour:
       name: FirstPersonCameraTest
       fullName: FirstPersonCameraTest
       resultStatus: 1
-      duration: 0.1387138
+      duration: 0.1519689
       messages: 
       output: 
       stacktrace: 
@@ -2186,12 +2242,12 @@ MonoBehaviour:
       categories: []
       parentId: 1719
       parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
-    - id: 1410
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
-      name: ClampDownRotationFormLessMinus90ToMinus90_Test
-      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test
+    - id: 1044
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus60ToMinus60_Test][suite]
+      name: ClampDownRotationFormLessMinus60ToMinus60_Test
+      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus60ToMinus60_Test
       resultStatus: 1
-      duration: 0.0146802
+      duration: 0.0108349
       messages: 
       output: 
       stacktrace: 
@@ -2200,14 +2256,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1373
+      parentId: 1007
       parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
-    - id: 1407
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormLessMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.1f)]
-      name: ClampDownRotationFormLessMinus90ToMinus90_Test(0.1f)
-      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.1f)
+    - id: 1041
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormLessMinus60ToMinus60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus60ToMinus60_Test(0.1f)]
+      name: ClampDownRotationFormLessMinus60ToMinus60_Test(0.1f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus60ToMinus60_Test(0.1f)
       resultStatus: 1
-      duration: 0.0041739
+      duration: 0.0004941
       messages: 
       output: 
       stacktrace: 
@@ -2217,14 +2273,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1410
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
-    - id: 1408
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormLessMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(1.0f)]
-      name: ClampDownRotationFormLessMinus90ToMinus90_Test(1.0f)
-      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(1.0f)
+      parentId: 1044
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus60ToMinus60_Test][suite]
+    - id: 1042
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormLessMinus60ToMinus60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus60ToMinus60_Test(1.0f)]
+      name: ClampDownRotationFormLessMinus60ToMinus60_Test(1.0f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus60ToMinus60_Test(1.0f)
       resultStatus: 1
-      duration: 0.0003131
+      duration: 0.0003503
       messages: 
       output: 
       stacktrace: 
@@ -2234,14 +2290,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1410
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
-    - id: 1409
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormLessMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.0f)]
-      name: ClampDownRotationFormLessMinus90ToMinus90_Test(0.0f)
-      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test(0.0f)
+      parentId: 1044
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus60ToMinus60_Test][suite]
+    - id: 1043
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormLessMinus60ToMinus60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus60ToMinus60_Test(0.0f)]
+      name: ClampDownRotationFormLessMinus60ToMinus60_Test(0.0f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormLessMinus60ToMinus60_Test(0.0f)
       resultStatus: 1
-      duration: 0.0002941
+      duration: 0.0003023
       messages: 
       output: 
       stacktrace: 
@@ -2251,14 +2307,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1410
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus90ToMinus90_Test][suite]
-    - id: 1406
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
-      name: ClampDownRotationFormMinus90ToMinus90_Test
-      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test
+      parentId: 1044
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormLessMinus60ToMinus60_Test][suite]
+    - id: 1040
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus60ToMinus60_Test][suite]
+      name: ClampDownRotationFormMinus60ToMinus60_Test
+      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus60ToMinus60_Test
       resultStatus: 1
-      duration: 0.0134104
+      duration: 0.0106788
       messages: 
       output: 
       stacktrace: 
@@ -2267,14 +2323,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1373
+      parentId: 1007
       parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
-    - id: 1403
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(0.1f)]
-      name: ClampDownRotationFormMinus90ToMinus90_Test(0.1f)
-      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(0.1f)
+    - id: 1037
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormMinus60ToMinus60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus60ToMinus60_Test(0.1f)]
+      name: ClampDownRotationFormMinus60ToMinus60_Test(0.1f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus60ToMinus60_Test(0.1f)
       resultStatus: 1
-      duration: 0.0006641
+      duration: 0.0004677
       messages: 
       output: 
       stacktrace: 
@@ -2284,14 +2340,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1406
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
-    - id: 1404
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(1.0f)]
-      name: ClampDownRotationFormMinus90ToMinus90_Test(1.0f)
-      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(1.0f)
+      parentId: 1040
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus60ToMinus60_Test][suite]
+    - id: 1038
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormMinus60ToMinus60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus60ToMinus60_Test(1.0f)]
+      name: ClampDownRotationFormMinus60ToMinus60_Test(1.0f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus60ToMinus60_Test(1.0f)
       resultStatus: 1
-      duration: 0.0003471
+      duration: 0.0003129
       messages: 
       output: 
       stacktrace: 
@@ -2301,14 +2357,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1406
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
-    - id: 1405
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormMinus90ToMinus90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(0.0f)]
-      name: ClampDownRotationFormMinus90ToMinus90_Test(0.0f)
-      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test(0.0f)
+      parentId: 1040
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus60ToMinus60_Test][suite]
+    - id: 1039
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampDownRotationFormMinus60ToMinus60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus60ToMinus60_Test(0.0f)]
+      name: ClampDownRotationFormMinus60ToMinus60_Test(0.0f)
+      fullName: FirstPersonCameraTest.ClampDownRotationFormMinus60ToMinus60_Test(0.0f)
       resultStatus: 1
-      duration: 0.0002898
+      duration: 0.0003067
       messages: 
       output: 
       stacktrace: 
@@ -2318,14 +2374,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1406
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus90ToMinus90_Test][suite]
-    - id: 1398
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test][suite]
-      name: ClampUpRotationForm90To90_Test
-      fullName: FirstPersonCameraTest.ClampUpRotationForm90To90_Test
+      parentId: 1040
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampDownRotationFormMinus60ToMinus60_Test][suite]
+    - id: 1032
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm60To60_Test][suite]
+      name: ClampUpRotationForm60To60_Test
+      fullName: FirstPersonCameraTest.ClampUpRotationForm60To60_Test
       resultStatus: 1
-      duration: 0.0105059
+      duration: 0.0117101
       messages: 
       output: 
       stacktrace: 
@@ -2334,14 +2390,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1373
+      parentId: 1007
       parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
-    - id: 1395
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationForm90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test(-0.1f)]
-      name: ClampUpRotationForm90To90_Test(-0.1f)
-      fullName: FirstPersonCameraTest.ClampUpRotationForm90To90_Test(-0.1f)
+    - id: 1029
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationForm60To60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm60To60_Test(-0.1f)]
+      name: ClampUpRotationForm60To60_Test(-0.1f)
+      fullName: FirstPersonCameraTest.ClampUpRotationForm60To60_Test(-0.1f)
       resultStatus: 1
-      duration: 0.0006141
+      duration: 0.0005003
       messages: 
       output: 
       stacktrace: 
@@ -2351,14 +2407,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1398
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test][suite]
-    - id: 1396
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationForm90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test(-1.0f)]
-      name: ClampUpRotationForm90To90_Test(-1.0f)
-      fullName: FirstPersonCameraTest.ClampUpRotationForm90To90_Test(-1.0f)
+      parentId: 1032
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm60To60_Test][suite]
+    - id: 1030
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationForm60To60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm60To60_Test(-1.0f)]
+      name: ClampUpRotationForm60To60_Test(-1.0f)
+      fullName: FirstPersonCameraTest.ClampUpRotationForm60To60_Test(-1.0f)
       resultStatus: 1
-      duration: 0.0003167
+      duration: 0.0003316
       messages: 
       output: 
       stacktrace: 
@@ -2368,14 +2424,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1398
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test][suite]
-    - id: 1397
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationForm90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test(0.0f)]
-      name: ClampUpRotationForm90To90_Test(0.0f)
-      fullName: FirstPersonCameraTest.ClampUpRotationForm90To90_Test(0.0f)
+      parentId: 1032
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm60To60_Test][suite]
+    - id: 1031
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationForm60To60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm60To60_Test(0.0f)]
+      name: ClampUpRotationForm60To60_Test(0.0f)
+      fullName: FirstPersonCameraTest.ClampUpRotationForm60To60_Test(0.0f)
       resultStatus: 1
-      duration: 0.0002904
+      duration: 0.0003507
       messages: 
       output: 
       stacktrace: 
@@ -2385,14 +2441,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1398
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm90To90_Test][suite]
-    - id: 1402
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test][suite]
-      name: ClampUpRotationFormLess90To90_Test
-      fullName: FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test
+      parentId: 1032
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationForm60To60_Test][suite]
+    - id: 1036
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess60To60_Test][suite]
+      name: ClampUpRotationFormLess60To60_Test
+      fullName: FirstPersonCameraTest.ClampUpRotationFormLess60To60_Test
       resultStatus: 1
-      duration: 0.0109823
+      duration: 0.0166615
       messages: 
       output: 
       stacktrace: 
@@ -2401,14 +2457,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1373
+      parentId: 1007
       parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][FirstPersonCameraTest][suite]
-    - id: 1399
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationFormLess90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(-0.1f)]
-      name: ClampUpRotationFormLess90To90_Test(-0.1f)
-      fullName: FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(-0.1f)
+    - id: 1033
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationFormLess60To60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess60To60_Test(-0.1f)]
+      name: ClampUpRotationFormLess60To60_Test(-0.1f)
+      fullName: FirstPersonCameraTest.ClampUpRotationFormLess60To60_Test(-0.1f)
       resultStatus: 1
-      duration: 0.0006619
+      duration: 0.0008892
       messages: 
       output: 
       stacktrace: 
@@ -2418,14 +2474,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1402
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test][suite]
-    - id: 1400
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationFormLess90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(-1.0f)]
-      name: ClampUpRotationFormLess90To90_Test(-1.0f)
-      fullName: FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(-1.0f)
+      parentId: 1036
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess60To60_Test][suite]
+    - id: 1034
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationFormLess60To60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess60To60_Test(-1.0f)]
+      name: ClampUpRotationFormLess60To60_Test(-1.0f)
+      fullName: FirstPersonCameraTest.ClampUpRotationFormLess60To60_Test(-1.0f)
       resultStatus: 1
-      duration: 0.0003567
+      duration: 0.0005185
       messages: 
       output: 
       stacktrace: 
@@ -2435,14 +2491,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1402
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test][suite]
-    - id: 1401
-      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationFormLess90To90_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(0.0f)]
-      name: ClampUpRotationFormLess90To90_Test(0.0f)
-      fullName: FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test(0.0f)
+      parentId: 1036
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess60To60_Test][suite]
+    - id: 1035
+      uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/ClampUpRotationFormLess60To60_Test/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess60To60_Test(0.0f)]
+      name: ClampUpRotationFormLess60To60_Test(0.0f)
+      fullName: FirstPersonCameraTest.ClampUpRotationFormLess60To60_Test(0.0f)
       resultStatus: 1
-      duration: 0.0003078
+      duration: 0.0003466
       messages: 
       output: 
       stacktrace: 
@@ -2452,14 +2508,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1402
-      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess90To90_Test][suite]
+      parentId: 1036
+      parentUniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.ClampUpRotationFormLess60To60_Test][suite]
     - id: 1384
       uniqueId: Assembly-CSharp-Editor.dll/FirstPersonCameraTest/[Assembly-CSharp-Editor][FirstPersonCameraTest.MouseInputDOWNRotatesCameraDown_Test][suite]
       name: MouseInputDOWNRotatesCameraDown_Test
       fullName: FirstPersonCameraTest.MouseInputDOWNRotatesCameraDown_Test
       resultStatus: 1
-      duration: 0.0115072
+      duration: 0.0183897
       messages: 
       output: 
       stacktrace: 
@@ -2475,7 +2531,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraDown_Test(-0.1f)
       fullName: FirstPersonCameraTest.MouseInputDOWNRotatesCameraDown_Test(-0.1f)
       resultStatus: 1
-      duration: 0.0007516
+      duration: 0.0005681
       messages: 
       output: 
       stacktrace: 
@@ -2492,7 +2548,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraDown_Test(-0.75639f)
       fullName: FirstPersonCameraTest.MouseInputDOWNRotatesCameraDown_Test(-0.75639f)
       resultStatus: 1
-      duration: 0.0003004
+      duration: 0.000331
       messages: 
       output: 
       stacktrace: 
@@ -2509,7 +2565,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraDown_Test(-1.0f)
       fullName: FirstPersonCameraTest.MouseInputDOWNRotatesCameraDown_Test(-1.0f)
       resultStatus: 1
-      duration: 0.0002886
+      duration: 0.0003981
       messages: 
       output: 
       stacktrace: 
@@ -2526,7 +2582,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraDown_Test(-0.5f)
       fullName: FirstPersonCameraTest.MouseInputDOWNRotatesCameraDown_Test(-0.5f)
       resultStatus: 1
-      duration: 0.0002874
+      duration: 0.0004042
       messages: 
       output: 
       stacktrace: 
@@ -2543,7 +2599,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test
       fullName: FirstPersonCameraTest.MouseInputLEFTRotatesPlayerLeft_Test
       resultStatus: 1
-      duration: 0.0118386
+      duration: 0.0180756
       messages: 
       output: 
       stacktrace: 
@@ -2559,7 +2615,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-0.1f)
       fullName: FirstPersonCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-0.1f)
       resultStatus: 1
-      duration: 0.0008056
+      duration: 0.0009965
       messages: 
       output: 
       stacktrace: 
@@ -2576,7 +2632,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-0.75639f)
       fullName: FirstPersonCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-0.75639f)
       resultStatus: 1
-      duration: 0.0002963
+      duration: 0.000366
       messages: 
       output: 
       stacktrace: 
@@ -2593,7 +2649,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-1.0f)
       fullName: FirstPersonCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-1.0f)
       resultStatus: 1
-      duration: 0.0002828
+      duration: 0.0003516
       messages: 
       output: 
       stacktrace: 
@@ -2610,7 +2666,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-0.5f)
       fullName: FirstPersonCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-0.5f)
       resultStatus: 1
-      duration: 0.0002814
+      duration: 0.0003479
       messages: 
       output: 
       stacktrace: 
@@ -2627,7 +2683,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesPlayerRight_Test
       fullName: FirstPersonCameraTest.MouseInputRIGHTRotatesPlayerRight_Test
       resultStatus: 1
-      duration: 0.0118904
+      duration: 0.0118454
       messages: 
       output: 
       stacktrace: 
@@ -2643,7 +2699,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesPlayerRight_Test(0.1f)
       fullName: FirstPersonCameraTest.MouseInputRIGHTRotatesPlayerRight_Test(0.1f)
       resultStatus: 1
-      duration: 0.0005967
+      duration: 0.0004773
       messages: 
       output: 
       stacktrace: 
@@ -2660,7 +2716,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesPlayerRight_Test(0.75639f)
       fullName: FirstPersonCameraTest.MouseInputRIGHTRotatesPlayerRight_Test(0.75639f)
       resultStatus: 1
-      duration: 0.0003041
+      duration: 0.0003146
       messages: 
       output: 
       stacktrace: 
@@ -2677,7 +2733,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesPlayerRight_Test(1.0f)
       fullName: FirstPersonCameraTest.MouseInputRIGHTRotatesPlayerRight_Test(1.0f)
       resultStatus: 1
-      duration: 0.0002911
+      duration: 0.000305
       messages: 
       output: 
       stacktrace: 
@@ -2694,7 +2750,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesPlayerRight_Test(0.5f)
       fullName: FirstPersonCameraTest.MouseInputRIGHTRotatesPlayerRight_Test(0.5f)
       resultStatus: 1
-      duration: 0.0002927
+      duration: 0.0003053
       messages: 
       output: 
       stacktrace: 
@@ -2711,7 +2767,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraUp_Test
       fullName: FirstPersonCameraTest.MouseInputUPRotatesCameraUp_Test
       resultStatus: 1
-      duration: 0.0130051
+      duration: 0.0120751
       messages: 
       output: 
       stacktrace: 
@@ -2727,7 +2783,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraUp_Test(0.1f)
       fullName: FirstPersonCameraTest.MouseInputUPRotatesCameraUp_Test(0.1f)
       resultStatus: 1
-      duration: 0.0007413
+      duration: 0.0004949
       messages: 
       output: 
       stacktrace: 
@@ -2744,7 +2800,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraUp_Test(0.75639f)
       fullName: FirstPersonCameraTest.MouseInputUPRotatesCameraUp_Test(0.75639f)
       resultStatus: 1
-      duration: 0.0003042
+      duration: 0.000305
       messages: 
       output: 
       stacktrace: 
@@ -2761,7 +2817,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraUp_Test(1.0f)
       fullName: FirstPersonCameraTest.MouseInputUPRotatesCameraUp_Test(1.0f)
       resultStatus: 1
-      duration: 0.0002905
+      duration: 0.0002923
       messages: 
       output: 
       stacktrace: 
@@ -2778,7 +2834,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraUp_Test(0.5f)
       fullName: FirstPersonCameraTest.MouseInputUPRotatesCameraUp_Test(0.5f)
       resultStatus: 1
-      duration: 0.0002922
+      duration: 0.0002976
       messages: 
       output: 
       stacktrace: 
@@ -2795,7 +2851,7 @@ MonoBehaviour:
       name: PlayerCameraIsExistent_Test
       fullName: FirstPersonCameraTest.PlayerCameraIsExistent_Test
       resultStatus: 1
-      duration: 0.0003792
+      duration: 0.0003038
       messages: 
       output: 
       stacktrace: 
@@ -2812,7 +2868,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test
       fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test
       resultStatus: 1
-      duration: 0.013086
+      duration: 0.0121865
       messages: 
       output: 
       stacktrace: 
@@ -2828,7 +2884,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(0.0f)
       fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test(0.0f)
       resultStatus: 1
-      duration: 0.0006224
+      duration: 0.0004588
       messages: 
       output: 
       stacktrace: 
@@ -2845,7 +2901,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(10.0f)
       fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test(10.0f)
       resultStatus: 1
-      duration: 0.000302
+      duration: 0.0003105
       messages: 
       output: 
       stacktrace: 
@@ -2862,7 +2918,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(-130.0f)
       fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test(-130.0f)
       resultStatus: 1
-      duration: 0.0002965
+      duration: 0.0003051
       messages: 
       output: 
       stacktrace: 
@@ -2879,7 +2935,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(1.0f)
       fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test(1.0f)
       resultStatus: 1
-      duration: 0.0002969
+      duration: 0.0002984
       messages: 
       output: 
       stacktrace: 
@@ -2896,7 +2952,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(-0.001f)
       fullName: FirstPersonCameraTest.ReturnsCorrectYRotation_Test(-0.001f)
       resultStatus: 1
-      duration: 0.0002966
+      duration: 0.0002983
       messages: 
       output: 
       stacktrace: 
@@ -2913,7 +2969,7 @@ MonoBehaviour:
       name: FurnitureControllerFactoryTest
       fullName: FurnitureControllerFactoryTest
       resultStatus: 1
-      duration: 0.022484
+      duration: 0.0218338
       messages: 
       output: 
       stacktrace: 
@@ -2929,7 +2985,7 @@ MonoBehaviour:
       name: FactoryReturnIsNotNull_Test
       fullName: FurnitureControllerFactoryTest.FactoryReturnIsNotNull_Test
       resultStatus: 1
-      duration: 0.0008601
+      duration: 0.0005167
       messages: 
       output: 
       stacktrace: 
@@ -2946,7 +3002,7 @@ MonoBehaviour:
       name: ReturnedControllerIsOfCorrectType_Test
       fullName: FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test
       resultStatus: 1
-      duration: 0.0104822
+      duration: 0.0098748
       messages: 
       output: 
       stacktrace: 
@@ -2962,7 +3018,7 @@ MonoBehaviour:
       name: ReturnedControllerIsOfCorrectType_Test(PatientTableController,PatientTable)
       fullName: FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test(PatientTableController,PatientTable)
       resultStatus: 1
-      duration: 0.0004689
+      duration: 0.0004604
       messages: 
       output: 
       stacktrace: 
@@ -2979,7 +3035,7 @@ MonoBehaviour:
       name: ReturnedControllerIsOfCorrectType_Test(MoveableController,ProtectionWall)
       fullName: FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test(MoveableController,ProtectionWall)
       resultStatus: 1
-      duration: 0.000183
+      duration: 0.0001871
       messages: 
       output: 
       stacktrace: 
@@ -2996,7 +3052,7 @@ MonoBehaviour:
       name: ReturnedControllerIsOfCorrectType_Test(MoveableController,Table)
       fullName: FurnitureControllerFactoryTest.ReturnedControllerIsOfCorrectType_Test(MoveableController,Table)
       resultStatus: 1
-      duration: 0.0001326
+      duration: 0.0001391
       messages: 
       output: 
       stacktrace: 
@@ -3013,7 +3069,7 @@ MonoBehaviour:
       name: FurnitureInfoTest
       fullName: FurnitureInfoTest
       resultStatus: 1
-      duration: 0.0387647
+      duration: 0.0375495
       messages: 
       output: 
       stacktrace: 
@@ -3029,7 +3085,7 @@ MonoBehaviour:
       name: ConstructorDescription_Test
       fullName: FurnitureInfoTest.ConstructorDescription_Test
       resultStatus: 1
-      duration: 0.0068592
+      duration: 0.0068597
       messages: 
       output: 
       stacktrace: 
@@ -3047,7 +3103,7 @@ MonoBehaviour:
       fullName: FurnitureInfoTest.ConstructorDescription_Test("Table","You are able
         to move it around!",UnityEngine.KeyCode[])
       resultStatus: 1
-      duration: 0.0004261
+      duration: 0.00047
       messages: 
       output: 
       stacktrace: 
@@ -3064,7 +3120,7 @@ MonoBehaviour:
       name: ConstructorKeyCodes_Test
       fullName: FurnitureInfoTest.ConstructorKeyCodes_Test
       resultStatus: 1
-      duration: 0.008544
+      duration: 0.0082469
       messages: 
       output: 
       stacktrace: 
@@ -3082,7 +3138,7 @@ MonoBehaviour:
       fullName: FurnitureInfoTest.ConstructorKeyCodes_Test("Table","You are able
         to move it around!",UnityEngine.KeyCode[])
       resultStatus: 1
-      duration: 0.0003139
+      duration: 0.000305
       messages: 
       output: 
       stacktrace: 
@@ -3099,7 +3155,7 @@ MonoBehaviour:
       name: ConstructorName_Test
       fullName: FurnitureInfoTest.ConstructorName_Test
       resultStatus: 1
-      duration: 0.0086886
+      duration: 0.0084333
       messages: 
       output: 
       stacktrace: 
@@ -3117,7 +3173,7 @@ MonoBehaviour:
       fullName: FurnitureInfoTest.ConstructorName_Test("Table","You are able to move
         it around!",UnityEngine.KeyCode[])
       resultStatus: 1
-      duration: 0.0003189
+      duration: 0.0003255
       messages: 
       output: 
       stacktrace: 
@@ -3134,7 +3190,7 @@ MonoBehaviour:
       name: EmptyConstructorDescription_Test
       fullName: FurnitureInfoTest.EmptyConstructorDescription_Test
       resultStatus: 1
-      duration: 0.0002459
+      duration: 0.0002015
       messages: 
       output: 
       stacktrace: 
@@ -3151,7 +3207,7 @@ MonoBehaviour:
       name: EmptyConstructorKeyCodes_Test
       fullName: FurnitureInfoTest.EmptyConstructorKeyCodes_Test
       resultStatus: 1
-      duration: 0.0001713
+      duration: 0.0001688
       messages: 
       output: 
       stacktrace: 
@@ -3168,7 +3224,7 @@ MonoBehaviour:
       name: EmptyConstructorName_Test
       fullName: FurnitureInfoTest.EmptyConstructorName_Test
       resultStatus: 1
-      duration: 0.000167
+      duration: 0.0001654
       messages: 
       output: 
       stacktrace: 
@@ -3185,7 +3241,7 @@ MonoBehaviour:
       name: IsSerializeable_Test
       fullName: FurnitureInfoTest.IsSerializeable_Test
       resultStatus: 1
-      duration: 0.0005046
+      duration: 0.0002418
       messages: 
       output: 
       stacktrace: 
@@ -3202,7 +3258,7 @@ MonoBehaviour:
       name: FurnitureTriggerInfoTest
       fullName: FurnitureTriggerInfoTest
       resultStatus: 1
-      duration: 0.1234928
+      duration: 0.1362349
       messages: 
       output: 
       stacktrace: 
@@ -3218,7 +3274,7 @@ MonoBehaviour:
       name: DeactivateFunitureSetsTypeToNone_Test
       fullName: FurnitureTriggerInfoTest.DeactivateFunitureSetsTypeToNone_Test
       resultStatus: 1
-      duration: 0.0064991
+      duration: 0.0066125
       messages: 
       output: 
       stacktrace: 
@@ -3235,7 +3291,7 @@ MonoBehaviour:
       name: DeactivateFurnitureDeactivatesFurnitureInfoUI_Test
       fullName: FurnitureTriggerInfoTest.DeactivateFurnitureDeactivatesFurnitureInfoUI_Test
       resultStatus: 1
-      duration: 0.001668
+      duration: 0.0014041
       messages: 
       output: 
       stacktrace: 
@@ -3252,7 +3308,7 @@ MonoBehaviour:
       name: SetActiveFurnitureActivatesFurnitureInfoUI_Test
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureActivatesFurnitureInfoUI_Test
       resultStatus: 1
-      duration: 0.0016383
+      duration: 0.0016569
       messages: 
       output: 
       stacktrace: 
@@ -3269,7 +3325,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectFurnitureDescriptionIntoUI_Test
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectFurnitureDescriptionIntoUI_Test
       resultStatus: 1
-      duration: 0.0106611
+      duration: 0.0101939
       messages: 
       output: 
       stacktrace: 
@@ -3285,7 +3341,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectFurnitureDescriptionIntoUI_Test(CArm)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectFurnitureDescriptionIntoUI_Test(CArm)
       resultStatus: 1
-      duration: 0.0020502
+      duration: 0.0018499
       messages: 
       output: 
       stacktrace: 
@@ -3302,7 +3358,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectFurnitureNameIntoUI_Test
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectFurnitureNameIntoUI_Test
       resultStatus: 1
-      duration: 0.0101256
+      duration: 0.0099303
       messages: 
       output: 
       stacktrace: 
@@ -3318,7 +3374,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectFurnitureNameIntoUI_Test(CArm)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectFurnitureNameIntoUI_Test(CArm)
       resultStatus: 1
-      duration: 0.0018918
+      duration: 0.0018048
       messages: 
       output: 
       stacktrace: 
@@ -3335,7 +3391,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForOneKey_Test
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForOneKey_Test
       resultStatus: 1
-      duration: 0.0174448
+      duration: 0.0194026
       messages: 
       output: 
       stacktrace: 
@@ -3351,7 +3407,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForOneKey_Test(CArm,A)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForOneKey_Test(CArm,A)
       resultStatus: 1
-      duration: 0.0068847
+      duration: 0.0019131
       messages: 
       output: 
       stacktrace: 
@@ -3368,7 +3424,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForOneKey_Test(Table,DownArrow)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForOneKey_Test(Table,DownArrow)
       resultStatus: 1
-      duration: 0.0014197
+      duration: 0.0085792
       messages: 
       output: 
       stacktrace: 
@@ -3385,7 +3441,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForTwoKeys_Test
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForTwoKeys_Test
       resultStatus: 1
-      duration: 0.0132048
+      duration: 0.0167044
       messages: 
       output: 
       stacktrace: 
@@ -3401,7 +3457,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForTwoKeys_Test(CArm,UnityEngine.KeyCode[])
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForTwoKeys_Test(CArm,UnityEngine.KeyCode[])
       resultStatus: 1
-      duration: 0.001815
+      duration: 0.0023286
       messages: 
       output: 
       stacktrace: 
@@ -3419,7 +3475,7 @@ MonoBehaviour:
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForTwoKeys_Test(CArm,UnityEngine.KeyCode[]
         GeneratedTestCase2)
       resultStatus: 1
-      duration: 0.0014095
+      duration: 0.0023855
       messages: 
       output: 
       stacktrace: 
@@ -3436,7 +3492,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForZeroKeys_Test
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForZeroKeys_Test
       resultStatus: 1
-      duration: 0.012031
+      duration: 0.0185506
       messages: 
       output: 
       stacktrace: 
@@ -3452,7 +3508,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForZeroKeys_Test(CArm)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForZeroKeys_Test(CArm)
       resultStatus: 1
-      duration: 0.0017316
+      duration: 0.0028718
       messages: 
       output: 
       stacktrace: 
@@ -3469,7 +3525,7 @@ MonoBehaviour:
       name: SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForZeroKeys_Test(Table)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureLoadsCorrectKeyCodesIntoUIForZeroKeys_Test(Table)
       resultStatus: 1
-      duration: 0.0012767
+      duration: 0.0016973
       messages: 
       output: 
       stacktrace: 
@@ -3486,7 +3542,7 @@ MonoBehaviour:
       name: SetActiveFurnitureSetsCorrectFurnitureType_Test
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureSetsCorrectFurnitureType_Test
       resultStatus: 1
-      duration: 0.0228572
+      duration: 0.0258243
       messages: 
       output: 
       stacktrace: 
@@ -3502,7 +3558,7 @@ MonoBehaviour:
       name: SetActiveFurnitureSetsCorrectFurnitureType_Test(CArm)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureSetsCorrectFurnitureType_Test(CArm)
       resultStatus: 1
-      duration: 0.0016802
+      duration: 0.0017999
       messages: 
       output: 
       stacktrace: 
@@ -3519,7 +3575,7 @@ MonoBehaviour:
       name: SetActiveFurnitureSetsCorrectFurnitureType_Test(Closet)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureSetsCorrectFurnitureType_Test(Closet)
       resultStatus: 1
-      duration: 0.0012854
+      duration: 0.0013267
       messages: 
       output: 
       stacktrace: 
@@ -3536,7 +3592,7 @@ MonoBehaviour:
       name: SetActiveFurnitureSetsCorrectFurnitureType_Test(Door)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureSetsCorrectFurnitureType_Test(Door)
       resultStatus: 1
-      duration: 0.0012769
+      duration: 0.0013056
       messages: 
       output: 
       stacktrace: 
@@ -3553,7 +3609,7 @@ MonoBehaviour:
       name: SetActiveFurnitureSetsCorrectFurnitureType_Test(PatientTable)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureSetsCorrectFurnitureType_Test(PatientTable)
       resultStatus: 1
-      duration: 0.001308
+      duration: 0.0013016
       messages: 
       output: 
       stacktrace: 
@@ -3570,7 +3626,7 @@ MonoBehaviour:
       name: SetActiveFurnitureSetsCorrectFurnitureType_Test(ProtectionWall)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureSetsCorrectFurnitureType_Test(ProtectionWall)
       resultStatus: 1
-      duration: 0.0014911
+      duration: 0.0013191
       messages: 
       output: 
       stacktrace: 
@@ -3587,7 +3643,7 @@ MonoBehaviour:
       name: SetActiveFurnitureSetsCorrectFurnitureType_Test(Table)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureSetsCorrectFurnitureType_Test(Table)
       resultStatus: 1
-      duration: 0.0014783
+      duration: 0.0013237
       messages: 
       output: 
       stacktrace: 
@@ -3604,7 +3660,7 @@ MonoBehaviour:
       name: SetActiveFurnitureSetsCorrectFurnitureType_Test(None)
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureSetsCorrectFurnitureType_Test(None)
       resultStatus: 1
-      duration: 0.0014222
+      duration: 0.0015094
       messages: 
       output: 
       stacktrace: 
@@ -3621,7 +3677,7 @@ MonoBehaviour:
       name: SetActiveFurnitureThrowsWarningMessageWhenFurnitureInfoHasMoreThanTwoKeyCodes_Test
       fullName: FurnitureTriggerInfoTest.SetActiveFurnitureThrowsWarningMessageWhenFurnitureInfoHasMoreThanTwoKeyCodes_Test
       resultStatus: 1
-      duration: 0.0066597
+      duration: 0.0055203
       messages: 
       output: 'The GUI can only handle two different keys!
 
@@ -3640,7 +3696,7 @@ MonoBehaviour:
       name: HSVColorTest
       fullName: HSVColorTest
       resultStatus: 1
-      duration: 0.0375105
+      duration: 0.0408392
       messages: 
       output: 
       stacktrace: 
@@ -3656,7 +3712,7 @@ MonoBehaviour:
       name: GetNew_Test
       fullName: HSVColorTest.GetNew_Test
       resultStatus: 1
-      duration: 0.0102613
+      duration: 0.0103278
       messages: 
       output: 
       stacktrace: 
@@ -3672,7 +3728,7 @@ MonoBehaviour:
       name: GetNew_Test(0.0f)
       fullName: HSVColorTest.GetNew_Test(0.0f)
       resultStatus: 1
-      duration: 0.000387
+      duration: 0.0003751
       messages: 
       output: 
       stacktrace: 
@@ -3689,7 +3745,7 @@ MonoBehaviour:
       name: GetNew_Test(0.1f)
       fullName: HSVColorTest.GetNew_Test(0.1f)
       resultStatus: 1
-      duration: 0.0001302
+      duration: 0.0001333
       messages: 
       output: 
       stacktrace: 
@@ -3706,7 +3762,7 @@ MonoBehaviour:
       name: GetNew_Test(0.5f)
       fullName: HSVColorTest.GetNew_Test(0.5f)
       resultStatus: 1
-      duration: 0.0001282
+      duration: 0.0001196
       messages: 
       output: 
       stacktrace: 
@@ -3723,7 +3779,7 @@ MonoBehaviour:
       name: GetNew_Test(0.9f)
       fullName: HSVColorTest.GetNew_Test(0.9f)
       resultStatus: 1
-      duration: 0.0001115
+      duration: 0.0001186
       messages: 
       output: 
       stacktrace: 
@@ -3740,7 +3796,7 @@ MonoBehaviour:
       name: HSVConstructorWithRGBColor_Test
       fullName: HSVColorTest.HSVConstructorWithRGBColor_Test
       resultStatus: 1
-      duration: 0.000283
+      duration: 0.0002523
       messages: 
       output: 
       stacktrace: 
@@ -3757,7 +3813,7 @@ MonoBehaviour:
       name: ToRGB_Test
       fullName: HSVColorTest.ToRGB_Test
       resultStatus: 1
-      duration: 0.0008047
+      duration: 0.0007716
       messages: 
       output: 
       stacktrace: 
@@ -3774,7 +3830,7 @@ MonoBehaviour:
       name: ToRGBAfterGetNew_Test
       fullName: HSVColorTest.ToRGBAfterGetNew_Test
       resultStatus: 1
-      duration: 0.012052
+      duration: 0.0161698
       messages: 
       output: 
       stacktrace: 
@@ -3790,7 +3846,7 @@ MonoBehaviour:
       name: ToRGBAfterGetNew_Test(0.0f,1.0f,0.0f,0.0f)
       fullName: HSVColorTest.ToRGBAfterGetNew_Test(0.0f,1.0f,0.0f,0.0f)
       resultStatus: 1
-      duration: 0.0004666
+      duration: 0.0005078
       messages: 
       output: 
       stacktrace: 
@@ -3807,7 +3863,7 @@ MonoBehaviour:
       name: ToRGBAfterGetNew_Test(1.0f,1.0f,0.0f,0.0f)
       fullName: HSVColorTest.ToRGBAfterGetNew_Test(1.0f,1.0f,0.0f,0.0f)
       resultStatus: 1
-      duration: 0.0001453
+      duration: 0.0001623
       messages: 
       output: 
       stacktrace: 
@@ -3824,7 +3880,7 @@ MonoBehaviour:
       name: ToRGBAfterGetNew_Test(0.5f,0.0f,1.0f,1.0f)
       fullName: HSVColorTest.ToRGBAfterGetNew_Test(0.5f,0.0f,1.0f,1.0f)
       resultStatus: 1
-      duration: 0.0001309
+      duration: 0.0001419
       messages: 
       output: 
       stacktrace: 
@@ -3841,7 +3897,7 @@ MonoBehaviour:
       name: ToRGBAfterGetNew_Test(0.25f,0.5f,1.0f,0.0f)
       fullName: HSVColorTest.ToRGBAfterGetNew_Test(0.25f,0.5f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0001258
+      duration: 0.0001273
       messages: 
       output: 
       stacktrace: 
@@ -3858,7 +3914,7 @@ MonoBehaviour:
       name: ToRGBAfterGetNew_Test(0.6666667f,0.0f,0.0f,1.0f)
       fullName: HSVColorTest.ToRGBAfterGetNew_Test(0.6666667f,0.0f,0.0f,1.0f)
       resultStatus: 1
-      duration: 0.0001313
+      duration: 0.0001268
       messages: 
       output: 
       stacktrace: 
@@ -3875,7 +3931,7 @@ MonoBehaviour:
       name: ToRGBAfterGetNew_Test(0.3333333f,0.0f,1.0f,0.0f)
       fullName: HSVColorTest.ToRGBAfterGetNew_Test(0.3333333f,0.0f,1.0f,0.0f)
       resultStatus: 1
-      duration: 0.0001273
+      duration: 0.0001284
       messages: 
       output: 
       stacktrace: 
@@ -3892,7 +3948,7 @@ MonoBehaviour:
       name: InputWrapperTest
       fullName: InputWrapperTest
       resultStatus: 1
-      duration: 0.2562814
+      duration: 0.2406407
       messages: 
       output: 
       stacktrace: 
@@ -3908,7 +3964,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test
       resultStatus: 1
-      duration: 0.177122
+      duration: 0.1477442
       messages: 
       output: 
       stacktrace: 
@@ -3924,7 +3980,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test(0.0f)
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test(0.0f)
       resultStatus: 1
-      duration: 0.1653674
+      duration: 0.1358656
       messages: 
       output: 
       stacktrace: 
@@ -3941,7 +3997,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test(1.0f)
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test(1.0f)
       resultStatus: 1
-      duration: 0.0011439
+      duration: 0.0013735
       messages: 
       output: 
       stacktrace: 
@@ -3958,7 +4014,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test(0.5f)
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test(0.5f)
       resultStatus: 1
-      duration: 0.0003383
+      duration: 0.0004274
       messages: 
       output: 
       stacktrace: 
@@ -3975,7 +4031,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test(-1.0f)
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test(-1.0f)
       resultStatus: 1
-      duration: 0.0002789
+      duration: 0.0006658
       messages: 
       output: 
       stacktrace: 
@@ -3992,7 +4048,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test(-0.5f)
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test(-0.5f)
       resultStatus: 1
-      duration: 0.0002732
+      duration: 0.0004245
       messages: 
       output: 
       stacktrace: 
@@ -4009,7 +4065,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test GeneratedTestCase2
       resultStatus: 1
-      duration: 0.0169007
+      duration: 0.0199101
       messages: 
       output: 
       stacktrace: 
@@ -4026,7 +4082,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test(0.0f,"Mouse X")
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test(0.0f,"Mouse X")
       resultStatus: 1
-      duration: 0.0007112
+      duration: 0.0008432
       messages: 
       output: 
       stacktrace: 
@@ -4044,7 +4100,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test(1.0f,"Mouse X")
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test(1.0f,"Mouse X")
       resultStatus: 1
-      duration: 0.0002844
+      duration: 0.0003826
       messages: 
       output: 
       stacktrace: 
@@ -4062,7 +4118,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test(0.5f,"Mouse Y")
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test(0.5f,"Mouse Y")
       resultStatus: 1
-      duration: 0.0002711
+      duration: 0.000278
       messages: 
       output: 
       stacktrace: 
@@ -4080,7 +4136,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test(-1.0f,"Mouse Y")
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test(-1.0f,"Mouse Y")
       resultStatus: 1
-      duration: 0.000287
+      duration: 0.0002595
       messages: 
       output: 
       stacktrace: 
@@ -4098,7 +4154,7 @@ MonoBehaviour:
       name: GetAxisReturnsExpectedValue_Test(-0.5f,"Mouse X")
       fullName: InputWrapperTest.GetAxisReturnsExpectedValue_Test(-0.5f,"Mouse X")
       resultStatus: 1
-      duration: 0.0002594
+      duration: 0.0004225
       messages: 
       output: 
       stacktrace: 
@@ -4115,7 +4171,7 @@ MonoBehaviour:
       name: GetKeyDownReturnsExpectedForKey_Test
       fullName: InputWrapperTest.GetKeyDownReturnsExpectedForKey_Test
       resultStatus: 1
-      duration: 0.0120816
+      duration: 0.0134434
       messages: 
       output: 
       stacktrace: 
@@ -4131,7 +4187,7 @@ MonoBehaviour:
       name: GetKeyDownReturnsExpectedForKey_Test(True,A)
       fullName: InputWrapperTest.GetKeyDownReturnsExpectedForKey_Test(True,A)
       resultStatus: 1
-      duration: 0.0012618
+      duration: 0.0011589
       messages: 
       output: 
       stacktrace: 
@@ -4148,7 +4204,7 @@ MonoBehaviour:
       name: GetKeyDownReturnsExpectedForKey_Test(False,A)
       fullName: InputWrapperTest.GetKeyDownReturnsExpectedForKey_Test(False,A)
       resultStatus: 1
-      duration: 0.000277
+      duration: 0.0002968
       messages: 
       output: 
       stacktrace: 
@@ -4165,7 +4221,7 @@ MonoBehaviour:
       name: GetKeyDownReturnsExpectedForKey_Test(True,Space)
       fullName: InputWrapperTest.GetKeyDownReturnsExpectedForKey_Test(True,Space)
       resultStatus: 1
-      duration: 0.0002604
+      duration: 0.0002733
       messages: 
       output: 
       stacktrace: 
@@ -4182,7 +4238,7 @@ MonoBehaviour:
       name: GetKeyDownReturnsExpectedForKey_Test(False,Space)
       fullName: InputWrapperTest.GetKeyDownReturnsExpectedForKey_Test(False,Space)
       resultStatus: 1
-      duration: 0.0002553
+      duration: 0.0002731
       messages: 
       output: 
       stacktrace: 
@@ -4199,7 +4255,7 @@ MonoBehaviour:
       name: GetKeyDownReturnsExpectedValue_Test
       fullName: InputWrapperTest.GetKeyDownReturnsExpectedValue_Test
       resultStatus: 1
-      duration: 0.0093824
+      duration: 0.0099978
       messages: 
       output: 
       stacktrace: 
@@ -4215,7 +4271,7 @@ MonoBehaviour:
       name: GetKeyDownReturnsExpectedValue_Test(True)
       fullName: InputWrapperTest.GetKeyDownReturnsExpectedValue_Test(True)
       resultStatus: 1
-      duration: 0.0006602
+      duration: 0.00066
       messages: 
       output: 
       stacktrace: 
@@ -4232,7 +4288,7 @@ MonoBehaviour:
       name: GetKeyDownReturnsExpectedValue_Test(False)
       fullName: InputWrapperTest.GetKeyDownReturnsExpectedValue_Test(False)
       resultStatus: 1
-      duration: 0.000273
+      duration: 0.0002863
       messages: 
       output: 
       stacktrace: 
@@ -4249,7 +4305,7 @@ MonoBehaviour:
       name: GetKeyReturnsExpectedForKey_Test
       fullName: InputWrapperTest.GetKeyReturnsExpectedForKey_Test
       resultStatus: 1
-      duration: 0.0111363
+      duration: 0.0204882
       messages: 
       output: 
       stacktrace: 
@@ -4265,7 +4321,7 @@ MonoBehaviour:
       name: GetKeyReturnsExpectedForKey_Test(True,A)
       fullName: InputWrapperTest.GetKeyReturnsExpectedForKey_Test(True,A)
       resultStatus: 1
-      duration: 0.0005898
+      duration: 0.0096505
       messages: 
       output: 
       stacktrace: 
@@ -4282,7 +4338,7 @@ MonoBehaviour:
       name: GetKeyReturnsExpectedForKey_Test(False,A)
       fullName: InputWrapperTest.GetKeyReturnsExpectedForKey_Test(False,A)
       resultStatus: 1
-      duration: 0.0002686
+      duration: 0.0003539
       messages: 
       output: 
       stacktrace: 
@@ -4299,7 +4355,7 @@ MonoBehaviour:
       name: GetKeyReturnsExpectedForKey_Test(True,Space)
       fullName: InputWrapperTest.GetKeyReturnsExpectedForKey_Test(True,Space)
       resultStatus: 1
-      duration: 0.0002544
+      duration: 0.0002653
       messages: 
       output: 
       stacktrace: 
@@ -4316,7 +4372,7 @@ MonoBehaviour:
       name: GetKeyReturnsExpectedForKey_Test(False,Space)
       fullName: InputWrapperTest.GetKeyReturnsExpectedForKey_Test(False,Space)
       resultStatus: 1
-      duration: 0.0002547
+      duration: 0.0002582
       messages: 
       output: 
       stacktrace: 
@@ -4333,7 +4389,7 @@ MonoBehaviour:
       name: GetKeyReturnsExpectedValue_Test
       fullName: InputWrapperTest.GetKeyReturnsExpectedValue_Test
       resultStatus: 1
-      duration: 0.010666
+      duration: 0.0102787
       messages: 
       output: 
       stacktrace: 
@@ -4349,7 +4405,7 @@ MonoBehaviour:
       name: GetKeyReturnsExpectedValue_Test(True)
       fullName: InputWrapperTest.GetKeyReturnsExpectedValue_Test(True)
       resultStatus: 1
-      duration: 0.0007053
+      duration: 0.0005809
       messages: 
       output: 
       stacktrace: 
@@ -4366,7 +4422,7 @@ MonoBehaviour:
       name: GetKeyReturnsExpectedValue_Test(False)
       fullName: InputWrapperTest.GetKeyReturnsExpectedValue_Test(False)
       resultStatus: 1
-      duration: 0.0002705
+      duration: 0.0002827
       messages: 
       output: 
       stacktrace: 
@@ -4383,7 +4439,7 @@ MonoBehaviour:
       name: MeshCameraTest
       fullName: MeshCameraTest
       resultStatus: 1
-      duration: 0.0768913
+      duration: 0.078053
       messages: 
       output: 
       stacktrace: 
@@ -4399,7 +4455,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraUp_Test
       fullName: MeshCameraTest.MouseInputDOWNRotatesCameraUp_Test
       resultStatus: 1
-      duration: 0.0096613
+      duration: 0.0096733
       messages: 
       output: 
       stacktrace: 
@@ -4415,7 +4471,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraUp_Test(-0.1f)
       fullName: MeshCameraTest.MouseInputDOWNRotatesCameraUp_Test(-0.1f)
       resultStatus: 1
-      duration: 0.0009819
+      duration: 0.0007663
       messages: 
       output: 
       stacktrace: 
@@ -4432,7 +4488,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraUp_Test(-0.75639f)
       fullName: MeshCameraTest.MouseInputDOWNRotatesCameraUp_Test(-0.75639f)
       resultStatus: 1
-      duration: 0.0003647
+      duration: 0.000362
       messages: 
       output: 
       stacktrace: 
@@ -4449,7 +4505,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraUp_Test(-1.0f)
       fullName: MeshCameraTest.MouseInputDOWNRotatesCameraUp_Test(-1.0f)
       resultStatus: 1
-      duration: 0.0002903
+      duration: 0.0002942
       messages: 
       output: 
       stacktrace: 
@@ -4466,7 +4522,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraUp_Test(-0.5f)
       fullName: MeshCameraTest.MouseInputDOWNRotatesCameraUp_Test(-0.5f)
       resultStatus: 1
-      duration: 0.0002876
+      duration: 0.0002854
       messages: 
       output: 
       stacktrace: 
@@ -4483,7 +4539,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test
       fullName: MeshCameraTest.MouseInputLEFTRotatesPlayerLeft_Test
       resultStatus: 1
-      duration: 0.0115993
+      duration: 0.0127067
       messages: 
       output: 
       stacktrace: 
@@ -4499,7 +4555,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-0.1f)
       fullName: MeshCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-0.1f)
       resultStatus: 1
-      duration: 0.000637
+      duration: 0.0006274
       messages: 
       output: 
       stacktrace: 
@@ -4516,7 +4572,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-0.75639f)
       fullName: MeshCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-0.75639f)
       resultStatus: 1
-      duration: 0.000298
+      duration: 0.0003103
       messages: 
       output: 
       stacktrace: 
@@ -4533,7 +4589,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-1.0f)
       fullName: MeshCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-1.0f)
       resultStatus: 1
-      duration: 0.0002842
+      duration: 0.0002907
       messages: 
       output: 
       stacktrace: 
@@ -4550,7 +4606,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-0.5f)
       fullName: MeshCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-0.5f)
       resultStatus: 1
-      duration: 0.0003156
+      duration: 0.0003442
       messages: 
       output: 
       stacktrace: 
@@ -4567,7 +4623,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesCameraRight_Test
       fullName: MeshCameraTest.MouseInputRIGHTRotatesCameraRight_Test
       resultStatus: 1
-      duration: 0.0116636
+      duration: 0.0128225
       messages: 
       output: 
       stacktrace: 
@@ -4583,7 +4639,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesCameraRight_Test(0.1f)
       fullName: MeshCameraTest.MouseInputRIGHTRotatesCameraRight_Test(0.1f)
       resultStatus: 1
-      duration: 0.0006289
+      duration: 0.0006309
       messages: 
       output: 
       stacktrace: 
@@ -4600,7 +4656,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesCameraRight_Test(0.75639f)
       fullName: MeshCameraTest.MouseInputRIGHTRotatesCameraRight_Test(0.75639f)
       resultStatus: 1
-      duration: 0.0003143
+      duration: 0.0003142
       messages: 
       output: 
       stacktrace: 
@@ -4617,7 +4673,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesCameraRight_Test(1.0f)
       fullName: MeshCameraTest.MouseInputRIGHTRotatesCameraRight_Test(1.0f)
       resultStatus: 1
-      duration: 0.0003002
+      duration: 0.0002997
       messages: 
       output: 
       stacktrace: 
@@ -4634,7 +4690,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesCameraRight_Test(0.5f)
       fullName: MeshCameraTest.MouseInputRIGHTRotatesCameraRight_Test(0.5f)
       resultStatus: 1
-      duration: 0.0003005
+      duration: 0.0002995
       messages: 
       output: 
       stacktrace: 
@@ -4651,7 +4707,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraDown_Test
       fullName: MeshCameraTest.MouseInputUPRotatesCameraDown_Test
       resultStatus: 1
-      duration: 0.011742
+      duration: 0.0113075
       messages: 
       output: 
       stacktrace: 
@@ -4667,7 +4723,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraDown_Test(0.1f)
       fullName: MeshCameraTest.MouseInputUPRotatesCameraDown_Test(0.1f)
       resultStatus: 1
-      duration: 0.0006547
+      duration: 0.0006339
       messages: 
       output: 
       stacktrace: 
@@ -4684,7 +4740,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraDown_Test(0.75639f)
       fullName: MeshCameraTest.MouseInputUPRotatesCameraDown_Test(0.75639f)
       resultStatus: 1
-      duration: 0.0003154
+      duration: 0.0003061
       messages: 
       output: 
       stacktrace: 
@@ -4701,7 +4757,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraDown_Test(1.0f)
       fullName: MeshCameraTest.MouseInputUPRotatesCameraDown_Test(1.0f)
       resultStatus: 1
-      duration: 0.0002922
+      duration: 0.0002893
       messages: 
       output: 
       stacktrace: 
@@ -4718,7 +4774,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraDown_Test(0.5f)
       fullName: MeshCameraTest.MouseInputUPRotatesCameraDown_Test(0.5f)
       resultStatus: 1
-      duration: 0.0002889
+      duration: 0.0002953
       messages: 
       output: 
       stacktrace: 
@@ -4735,7 +4791,7 @@ MonoBehaviour:
       name: PlayerCameraIsExistent_Test
       fullName: MeshCameraTest.PlayerCameraIsExistent_Test
       resultStatus: 1
-      duration: 0.0004217
+      duration: 0.000373
       messages: 
       output: 
       stacktrace: 
@@ -4752,7 +4808,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test
       fullName: MeshCameraTest.ReturnsCorrectYRotation_Test
       resultStatus: 1
-      duration: 0.0136456
+      duration: 0.0133627
       messages: 
       output: 
       stacktrace: 
@@ -4768,7 +4824,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(0.0f)
       fullName: MeshCameraTest.ReturnsCorrectYRotation_Test(0.0f)
       resultStatus: 1
-      duration: 0.0006512
+      duration: 0.0006039
       messages: 
       output: 
       stacktrace: 
@@ -4785,7 +4841,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(10.0f)
       fullName: MeshCameraTest.ReturnsCorrectYRotation_Test(10.0f)
       resultStatus: 1
-      duration: 0.0003204
+      duration: 0.0003077
       messages: 
       output: 
       stacktrace: 
@@ -4802,7 +4858,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(-130.0f)
       fullName: MeshCameraTest.ReturnsCorrectYRotation_Test(-130.0f)
       resultStatus: 1
-      duration: 0.0002907
+      duration: 0.0002989
       messages: 
       output: 
       stacktrace: 
@@ -4819,7 +4875,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(1.0f)
       fullName: MeshCameraTest.ReturnsCorrectYRotation_Test(1.0f)
       resultStatus: 1
-      duration: 0.000293
+      duration: 0.0003009
       messages: 
       output: 
       stacktrace: 
@@ -4836,7 +4892,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(-0.001f)
       fullName: MeshCameraTest.ReturnsCorrectYRotation_Test(-0.001f)
       resultStatus: 1
-      duration: 0.0002825
+      duration: 0.0002991
       messages: 
       output: 
       stacktrace: 
@@ -4853,7 +4909,7 @@ MonoBehaviour:
       name: MeshContainerTest
       fullName: MeshContainerTest
       resultStatus: 1
-      duration: 0.2003375
+      duration: 0.2038214
       messages: 
       output: 
       stacktrace: 
@@ -4869,7 +4925,7 @@ MonoBehaviour:
       name: GameObjectHasMeshFilterComponent_Test
       fullName: MeshContainerTest.GameObjectHasMeshFilterComponent_Test
       resultStatus: 1
-      duration: 0.0151045
+      duration: 0.011537
       messages: 
       output: 
       stacktrace: 
@@ -4885,7 +4941,7 @@ MonoBehaviour:
       name: GameObjectHasMeshFilterComponent_Test("Prefabs/Mock_simple")
       fullName: MeshContainerTest.GameObjectHasMeshFilterComponent_Test("Prefabs/Mock_simple")
       resultStatus: 1
-      duration: 0.0011514
+      duration: 0.0010465
       messages: 
       output: 
       stacktrace: 
@@ -4902,7 +4958,7 @@ MonoBehaviour:
       name: GameObjectHasMeshFilterComponent_Test("Prefabs/Mock_complex")
       fullName: MeshContainerTest.GameObjectHasMeshFilterComponent_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.0045443
+      duration: 0.0010123
       messages: 
       output: 
       stacktrace: 
@@ -4919,7 +4975,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormals_Test
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormals_Test
       resultStatus: 1
-      duration: 0.0150133
+      duration: 0.0155977
       messages: 
       output: 
       stacktrace: 
@@ -4935,7 +4991,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",0)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",0)
       resultStatus: 1
-      duration: 0.0017219
+      duration: 0.0017494
       messages: 
       output: 
       stacktrace: 
@@ -4952,7 +5008,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",4)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",4)
       resultStatus: 1
-      duration: 0.0002154
+      duration: 0.0002138
       messages: 
       output: 
       stacktrace: 
@@ -4969,7 +5025,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",8)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",8)
       resultStatus: 1
-      duration: 0.0001953
+      duration: 0.0001966
       messages: 
       output: 
       stacktrace: 
@@ -4986,7 +5042,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",12)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",12)
       resultStatus: 1
-      duration: 0.000199
+      duration: 0.000192
       messages: 
       output: 
       stacktrace: 
@@ -5003,7 +5059,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",16)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",16)
       resultStatus: 1
-      duration: 0.0001988
+      duration: 0.0001923
       messages: 
       output: 
       stacktrace: 
@@ -5020,7 +5076,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",20)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormals_Test("Prefabs/Mock_simple",20)
       resultStatus: 1
-      duration: 0.0001944
+      duration: 0.0001962
       messages: 
       output: 
       stacktrace: 
@@ -5037,7 +5093,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormalsAfterRotation_Test
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormalsAfterRotation_Test
       resultStatus: 1
-      duration: 0.0145724
+      duration: 0.0243135
       messages: 
       output: 
       stacktrace: 
@@ -5053,7 +5109,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",0)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",0)
       resultStatus: 1
-      duration: 0.0008976
+      duration: 0.0011707
       messages: 
       output: 
       stacktrace: 
@@ -5070,7 +5126,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",4)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",4)
       resultStatus: 1
-      duration: 0.0002142
+      duration: 0.0003509
       messages: 
       output: 
       stacktrace: 
@@ -5087,7 +5143,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",8)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",8)
       resultStatus: 1
-      duration: 0.0001962
+      duration: 0.0005213
       messages: 
       output: 
       stacktrace: 
@@ -5104,7 +5160,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",12)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",12)
       resultStatus: 1
-      duration: 0.0001959
+      duration: 0.0005095
       messages: 
       output: 
       stacktrace: 
@@ -5121,7 +5177,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",16)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",16)
       resultStatus: 1
-      duration: 0.0001991
+      duration: 0.0005602
       messages: 
       output: 
       stacktrace: 
@@ -5138,7 +5194,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",20)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNormalsAfterRotation_Test("Prefabs/Mock_simple",20)
       resultStatus: 1
-      duration: 0.0001921
+      duration: 0.0002227
       messages: 
       output: 
       stacktrace: 
@@ -5155,7 +5211,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNumberOfNormals_Test
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNumberOfNormals_Test
       resultStatus: 1
-      duration: 0.0105201
+      duration: 0.0150643
       messages: 
       output: 
       stacktrace: 
@@ -5171,7 +5227,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNumberOfNormals_Test("Prefabs/Mock_simple",24)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNumberOfNormals_Test("Prefabs/Mock_simple",24)
       resultStatus: 1
-      duration: 0.0007788
+      duration: 0.0011444
       messages: 
       output: 
       stacktrace: 
@@ -5188,7 +5244,7 @@ MonoBehaviour:
       name: GetNormalsReturnsCorrectNumberOfNormals_Test("Prefabs/Mock_complex",54)
       fullName: MeshContainerTest.GetNormalsReturnsCorrectNumberOfNormals_Test("Prefabs/Mock_complex",54)
       resultStatus: 1
-      duration: 0.0002094
+      duration: 0.0003869
       messages: 
       output: 
       stacktrace: 
@@ -5205,7 +5261,7 @@ MonoBehaviour:
       name: GetNormalsReturnsNotNull_Test
       fullName: MeshContainerTest.GetNormalsReturnsNotNull_Test
       resultStatus: 1
-      duration: 0.0100827
+      duration: 0.0109292
       messages: 
       output: 
       stacktrace: 
@@ -5221,7 +5277,7 @@ MonoBehaviour:
       name: GetNormalsReturnsNotNull_Test("Prefabs/Mock_simple")
       fullName: MeshContainerTest.GetNormalsReturnsNotNull_Test("Prefabs/Mock_simple")
       resultStatus: 1
-      duration: 0.0004533
+      duration: 0.0004472
       messages: 
       output: 
       stacktrace: 
@@ -5238,7 +5294,7 @@ MonoBehaviour:
       name: GetNormalsReturnsNotNull_Test("Prefabs/Mock_complex")
       fullName: MeshContainerTest.GetNormalsReturnsNotNull_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.000221
+      duration: 0.0002192
       messages: 
       output: 
       stacktrace: 
@@ -5255,7 +5311,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVertices_Test
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVertices_Test
       resultStatus: 1
-      duration: 0.0171356
+      duration: 0.0157733
       messages: 
       output: 
       stacktrace: 
@@ -5271,7 +5327,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",0)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",0)
       resultStatus: 1
-      duration: 0.0008707
+      duration: 0.0008239
       messages: 
       output: 
       stacktrace: 
@@ -5288,7 +5344,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",1)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",1)
       resultStatus: 1
-      duration: 0.000324
+      duration: 0.0002122
       messages: 
       output: 
       stacktrace: 
@@ -5305,7 +5361,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",2)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",2)
       resultStatus: 1
-      duration: 0.0002512
+      duration: 0.0002042
       messages: 
       output: 
       stacktrace: 
@@ -5322,7 +5378,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",3)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",3)
       resultStatus: 1
-      duration: 0.0002167
+      duration: 0.0001989
       messages: 
       output: 
       stacktrace: 
@@ -5339,7 +5395,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",4)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",4)
       resultStatus: 1
-      duration: 0.0002342
+      duration: 0.0002073
       messages: 
       output: 
       stacktrace: 
@@ -5356,7 +5412,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",5)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",5)
       resultStatus: 1
-      duration: 0.0002052
+      duration: 0.0002116
       messages: 
       output: 
       stacktrace: 
@@ -5373,7 +5429,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",6)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",6)
       resultStatus: 1
-      duration: 0.0001942
+      duration: 0.000201
       messages: 
       output: 
       stacktrace: 
@@ -5390,7 +5446,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",7)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVertices_Test("Prefabs/Mock_simple",7)
       resultStatus: 1
-      duration: 0.0002013
+      duration: 0.0001969
       messages: 
       output: 
       stacktrace: 
@@ -5407,7 +5463,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterRotation_Test
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterRotation_Test
       resultStatus: 1
-      duration: 0.0171167
+      duration: 0.0161861
       messages: 
       output: 
       stacktrace: 
@@ -5423,7 +5479,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",0)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",0)
       resultStatus: 1
-      duration: 0.0006062
+      duration: 0.000562
       messages: 
       output: 
       stacktrace: 
@@ -5440,7 +5496,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",1)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",1)
       resultStatus: 1
-      duration: 0.0002111
+      duration: 0.0002431
       messages: 
       output: 
       stacktrace: 
@@ -5457,7 +5513,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",2)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",2)
       resultStatus: 1
-      duration: 0.0002007
+      duration: 0.0002021
       messages: 
       output: 
       stacktrace: 
@@ -5474,7 +5530,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",3)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",3)
       resultStatus: 1
-      duration: 0.0002003
+      duration: 0.0002014
       messages: 
       output: 
       stacktrace: 
@@ -5491,7 +5547,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",4)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",4)
       resultStatus: 1
-      duration: 0.0001927
+      duration: 0.0001996
       messages: 
       output: 
       stacktrace: 
@@ -5508,7 +5564,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",5)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",5)
       resultStatus: 1
-      duration: 0.0001944
+      duration: 0.0002036
       messages: 
       output: 
       stacktrace: 
@@ -5525,7 +5581,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",6)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",6)
       resultStatus: 1
-      duration: 0.0001927
+      duration: 0.0001994
       messages: 
       output: 
       stacktrace: 
@@ -5542,7 +5598,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",7)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterRotation_Test("Prefabs/Mock_simple",7)
       resultStatus: 1
-      duration: 0.0001941
+      duration: 0.0001989
       messages: 
       output: 
       stacktrace: 
@@ -5559,7 +5615,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterTranslation_Test
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterTranslation_Test
       resultStatus: 1
-      duration: 0.0164797
+      duration: 0.0165897
       messages: 
       output: 
       stacktrace: 
@@ -5575,7 +5631,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",0)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",0)
       resultStatus: 1
-      duration: 0.0005713
+      duration: 0.0005423
       messages: 
       output: 
       stacktrace: 
@@ -5592,7 +5648,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",1)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",1)
       resultStatus: 1
-      duration: 0.00023
+      duration: 0.0002115
       messages: 
       output: 
       stacktrace: 
@@ -5609,7 +5665,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",2)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",2)
       resultStatus: 1
-      duration: 0.0002066
+      duration: 0.0001988
       messages: 
       output: 
       stacktrace: 
@@ -5626,7 +5682,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",3)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",3)
       resultStatus: 1
-      duration: 0.0002065
+      duration: 0.0001983
       messages: 
       output: 
       stacktrace: 
@@ -5643,7 +5699,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",4)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",4)
       resultStatus: 1
-      duration: 0.0002022
+      duration: 0.0001968
       messages: 
       output: 
       stacktrace: 
@@ -5660,7 +5716,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",5)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",5)
       resultStatus: 1
-      duration: 0.0001971
+      duration: 0.0001973
       messages: 
       output: 
       stacktrace: 
@@ -5677,7 +5733,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",6)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",6)
       resultStatus: 1
-      duration: 0.0001959
+      duration: 0.0001952
       messages: 
       output: 
       stacktrace: 
@@ -5694,7 +5750,7 @@ MonoBehaviour:
       name: GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",7)
       fullName: MeshContainerTest.GetVerticesRetrunsCorrectVerticesAfterTranslation_Test("Prefabs/Mock_simple",7)
       resultStatus: 1
-      duration: 0.0002002
+      duration: 0.000227
       messages: 
       output: 
       stacktrace: 
@@ -5711,7 +5767,7 @@ MonoBehaviour:
       name: GetVerticesReturnsCorrectNumberOfVertices_Test
       fullName: MeshContainerTest.GetVerticesReturnsCorrectNumberOfVertices_Test
       resultStatus: 1
-      duration: 0.0097374
+      duration: 0.0107494
       messages: 
       output: 
       stacktrace: 
@@ -5727,7 +5783,7 @@ MonoBehaviour:
       name: GetVerticesReturnsCorrectNumberOfVertices_Test("Prefabs/Mock_simple",24)
       fullName: MeshContainerTest.GetVerticesReturnsCorrectNumberOfVertices_Test("Prefabs/Mock_simple",24)
       resultStatus: 1
-      duration: 0.0004581
+      duration: 0.0005198
       messages: 
       output: 
       stacktrace: 
@@ -5744,7 +5800,7 @@ MonoBehaviour:
       name: GetVerticesReturnsCorrectNumberOfVertices_Test("Prefabs/Mock_complex",54)
       fullName: MeshContainerTest.GetVerticesReturnsCorrectNumberOfVertices_Test("Prefabs/Mock_complex",54)
       resultStatus: 1
-      duration: 0.0002237
+      duration: 0.0002256
       messages: 
       output: 
       stacktrace: 
@@ -5761,7 +5817,7 @@ MonoBehaviour:
       name: GetVerticesReturnsNotNull_Test
       fullName: MeshContainerTest.GetVerticesReturnsNotNull_Test
       resultStatus: 1
-      duration: 0.0112371
+      duration: 0.010984
       messages: 
       output: 
       stacktrace: 
@@ -5777,7 +5833,7 @@ MonoBehaviour:
       name: GetVerticesReturnsNotNull_Test("Prefabs/Mock_simple")
       fullName: MeshContainerTest.GetVerticesReturnsNotNull_Test("Prefabs/Mock_simple")
       resultStatus: 1
-      duration: 0.0004862
+      duration: 0.0004497
       messages: 
       output: 
       stacktrace: 
@@ -5794,7 +5850,7 @@ MonoBehaviour:
       name: GetVerticesReturnsNotNull_Test("Prefabs/Mock_complex")
       fullName: MeshContainerTest.GetVerticesReturnsNotNull_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.0002188
+      duration: 0.0002241
       messages: 
       output: 
       stacktrace: 
@@ -5811,7 +5867,7 @@ MonoBehaviour:
       name: MeshContainerExists_Test
       fullName: MeshContainerTest.MeshContainerExists_Test
       resultStatus: 1
-      duration: 0.0157129
+      duration: 0.0095429
       messages: 
       output: 
       stacktrace: 
@@ -5827,7 +5883,7 @@ MonoBehaviour:
       name: MeshContainerExists_Test("Prefabs/Mock_simple")
       fullName: MeshContainerTest.MeshContainerExists_Test("Prefabs/Mock_simple")
       resultStatus: 1
-      duration: 0.0004107
+      duration: 0.0003878
       messages: 
       output: 
       stacktrace: 
@@ -5844,7 +5900,7 @@ MonoBehaviour:
       name: MeshContainerExists_Test("Prefabs/Mock_complex")
       fullName: MeshContainerTest.MeshContainerExists_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.0002009
+      duration: 0.0001989
       messages: 
       output: 
       stacktrace: 
@@ -5861,7 +5917,7 @@ MonoBehaviour:
       name: MeshTransformIsNotNull_Test
       fullName: MeshContainerTest.MeshTransformIsNotNull_Test
       resultStatus: 1
-      duration: 0.0105589
+      duration: 0.0098209
       messages: 
       output: 
       stacktrace: 
@@ -5877,7 +5933,7 @@ MonoBehaviour:
       name: MeshTransformIsNotNull_Test("Prefabs/Mock_simple")
       fullName: MeshContainerTest.MeshTransformIsNotNull_Test("Prefabs/Mock_simple")
       resultStatus: 1
-      duration: 0.0005017
+      duration: 0.0004605
       messages: 
       output: 
       stacktrace: 
@@ -5894,7 +5950,7 @@ MonoBehaviour:
       name: MeshTransformIsNotNull_Test("Prefabs/Mock_complex")
       fullName: MeshContainerTest.MeshTransformIsNotNull_Test("Prefabs/Mock_complex")
       resultStatus: 1
-      duration: 0.0002333
+      duration: 0.0002159
       messages: 
       output: 
       stacktrace: 
@@ -5911,7 +5967,7 @@ MonoBehaviour:
       name: MeshControllerTest
       fullName: MeshControllerTest
       resultStatus: 1
-      duration: 0.2899117
+      duration: 0.1296437
       messages: 
       output: 
       stacktrace: 
@@ -5927,7 +5983,7 @@ MonoBehaviour:
       name: AverageDose_Test
       fullName: MeshControllerTest.AverageDose_Test
       resultStatus: 1
-      duration: 0.0241382
+      duration: 0.0011181
       messages: 
       output: 
       stacktrace: 
@@ -5944,7 +6000,7 @@ MonoBehaviour:
       name: GetRelevantVerticePositionsReturnsCorrectNumberOfPositions_Test
       fullName: MeshControllerTest.GetRelevantVerticePositionsReturnsCorrectNumberOfPositions_Test
       resultStatus: 1
-      duration: 0.0010826
+      duration: 0.0005343
       messages: 
       output: 
       stacktrace: 
@@ -5961,7 +6017,7 @@ MonoBehaviour:
       name: GetRelevantVerticePositionsReturnsCorrectPositions_Test
       fullName: MeshControllerTest.GetRelevantVerticePositionsReturnsCorrectPositions_Test
       resultStatus: 1
-      duration: 0.0016261
+      duration: 0.000598
       messages: 
       output: 
       stacktrace: 
@@ -5978,7 +6034,7 @@ MonoBehaviour:
       name: MeshContainerIsNotNull_Test
       fullName: MeshControllerTest.MeshContainerIsNotNull_Test
       resultStatus: 1
-      duration: 0.002122
+      duration: 0.0004698
       messages: 
       output: 
       stacktrace: 
@@ -5995,7 +6051,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeXAxis_Test
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeXAxis_Test
       resultStatus: 1
-      duration: 0.0269812
+      duration: 0.0113186
       messages: 
       output: 
       stacktrace: 
@@ -6011,7 +6067,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeXAxis_Test("Mock_simple",4)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeXAxis_Test("Mock_simple",4)
       resultStatus: 1
-      duration: 0.0010309
+      duration: 0.0008455
       messages: 
       output: 
       stacktrace: 
@@ -6028,7 +6084,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeXAxis_Test("Mock_complex",16)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeXAxis_Test("Mock_complex",16)
       resultStatus: 1
-      duration: 0.001182
+      duration: 0.000367
       messages: 
       output: 
       stacktrace: 
@@ -6045,7 +6101,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnnegativeYAxis_Test
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnnegativeYAxis_Test
       resultStatus: 1
-      duration: 0.0112683
+      duration: 0.0123625
       messages: 
       output: 
       stacktrace: 
@@ -6061,7 +6117,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnnegativeYAxis_Test("Mock_simple",4)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnnegativeYAxis_Test("Mock_simple",4)
       resultStatus: 1
-      duration: 0.000518
+      duration: 0.000534
       messages: 
       output: 
       stacktrace: 
@@ -6078,7 +6134,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnnegativeYAxis_Test("Mock_complex",9)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnnegativeYAxis_Test("Mock_complex",9)
       resultStatus: 1
-      duration: 0.0003518
+      duration: 0.0003406
       messages: 
       output: 
       stacktrace: 
@@ -6095,7 +6151,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeZAxis_Test
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeZAxis_Test
       resultStatus: 1
-      duration: 0.0100975
+      duration: 0.0113519
       messages: 
       output: 
       stacktrace: 
@@ -6111,7 +6167,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeZAxis_Test("Mock_simple",4)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeZAxis_Test("Mock_simple",4)
       resultStatus: 1
-      duration: 0.0005392
+      duration: 0.0005436
       messages: 
       output: 
       stacktrace: 
@@ -6128,7 +6184,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeZAxis_Test("Mock_complex",16)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnNegativeZAxis_Test("Mock_complex",16)
       resultStatus: 1
-      duration: 0.0003397
+      duration: 0.0003418
       messages: 
       output: 
       stacktrace: 
@@ -6145,7 +6201,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnXAxis_Test
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnXAxis_Test
       resultStatus: 1
-      duration: 0.0103133
+      duration: 0.0134703
       messages: 
       output: 
       stacktrace: 
@@ -6161,7 +6217,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnXAxis_Test("Mock_simple",4)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnXAxis_Test("Mock_simple",4)
       resultStatus: 1
-      duration: 0.000518
+      duration: 0.0008703
       messages: 
       output: 
       stacktrace: 
@@ -6178,7 +6234,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnXAxis_Test("Mock_complex",16)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnXAxis_Test("Mock_complex",16)
       resultStatus: 1
-      duration: 0.0003379
+      duration: 0.0004834
       messages: 
       output: 
       stacktrace: 
@@ -6195,7 +6251,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnYAxis_Test
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnYAxis_Test
       resultStatus: 1
-      duration: 0.0102698
+      duration: 0.0200503
       messages: 
       output: 
       stacktrace: 
@@ -6211,7 +6267,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnYAxis_Test("Mock_simple",4)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnYAxis_Test("Mock_simple",4)
       resultStatus: 1
-      duration: 0.0005147
+      duration: 0.0006466
       messages: 
       output: 
       stacktrace: 
@@ -6228,7 +6284,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnYAxis_Test("Mock_complex",9)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnYAxis_Test("Mock_complex",9)
       resultStatus: 1
-      duration: 0.0003277
+      duration: 0.000646
       messages: 
       output: 
       stacktrace: 
@@ -6245,7 +6301,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnZAxis_Test
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnZAxis_Test
       resultStatus: 1
-      duration: 0.0107228
+      duration: 0.0132032
       messages: 
       output: 
       stacktrace: 
@@ -6261,7 +6317,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnZAxis_Test("Mock_simple",4)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnZAxis_Test("Mock_simple",4)
       resultStatus: 1
-      duration: 0.0005308
+      duration: 0.0005928
       messages: 
       output: 
       stacktrace: 
@@ -6278,7 +6334,7 @@ MonoBehaviour:
       name: RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnZAxis_Test("Mock_complex",12)
       fullName: MeshControllerTest.RelevantVerticesHasCorrectNumberAfterUpdateWithSourceOnZAxis_Test("Mock_complex",12)
       resultStatus: 1
-      duration: 0.0003475
+      duration: 0.0004221
       messages: 
       output: 
       stacktrace: 
@@ -6295,7 +6351,7 @@ MonoBehaviour:
       name: RelevantVerticesIsNotNull_Test
       fullName: MeshControllerTest.RelevantVerticesIsNotNull_Test
       resultStatus: 1
-      duration: 0.0002887
+      duration: 0.000576
       messages: 
       output: 
       stacktrace: 
@@ -6312,7 +6368,7 @@ MonoBehaviour:
       name: RelevantVerticesIsNotNullAfterUpdate_Test
       fullName: MeshControllerTest.RelevantVerticesIsNotNullAfterUpdate_Test
       resultStatus: 1
-      duration: 0.0003069
+      duration: 0.0008732
       messages: 
       output: 
       stacktrace: 
@@ -6329,7 +6385,7 @@ MonoBehaviour:
       name: SortOutUnhittedVerticesForAllVerticesHitted_Test
       fullName: MeshControllerTest.SortOutUnhittedVerticesForAllVerticesHitted_Test
       resultStatus: 1
-      duration: 0.1383207
+      duration: 0.0136101
       messages: 
       output: '3
 
@@ -6350,7 +6406,7 @@ MonoBehaviour:
       name: SortOutUnhittedVerticesForZeroVerticesHitted_Test
       fullName: MeshControllerTest.SortOutUnhittedVerticesForZeroVerticesHitted_Test
       resultStatus: 1
-      duration: 0.0017108
+      duration: 0.0009452
       messages: 
       output: 
       stacktrace: 
@@ -6367,7 +6423,7 @@ MonoBehaviour:
       name: StoreDosesForCorrespondingVertices_Test
       fullName: MeshControllerTest.StoreDosesForCorrespondingVertices_Test
       resultStatus: 1
-      duration: 0.0020103
+      duration: 0.001457
       messages: 
       output: 
       stacktrace: 
@@ -6384,7 +6440,7 @@ MonoBehaviour:
       name: StoreDosesForNoCorrespondingVertices_Test
       fullName: MeshControllerTest.StoreDosesForNoCorrespondingVertices_Test
       resultStatus: 1
-      duration: 0.00057
+      duration: 0.0005979
       messages: 
       output: 
       stacktrace: 
@@ -6401,7 +6457,7 @@ MonoBehaviour:
       name: VerticeDataIsNotNull_Test
       fullName: MeshControllerTest.VerticeDataIsNotNull_Test
       resultStatus: 1
-      duration: 0.0002772
+      duration: 0.0002738
       messages: 
       output: 
       stacktrace: 
@@ -6418,7 +6474,7 @@ MonoBehaviour:
       name: MoveableControllerTest
       fullName: MoveableControllerTest
       resultStatus: 1
-      duration: 0.0133449
+      duration: 0.0295666
       messages: 
       output: 
       stacktrace: 
@@ -6429,12 +6485,29 @@ MonoBehaviour:
       categories: []
       parentId: 1357
       parentUniqueId: "[D:/Projekte/R\xF6ntgenSim/XRaySimulation/XRaySimulation/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]"
+    - id: 1153
+      uniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/[Assembly-CSharp-Editor][MoveableControllerTest.ControllerIsNotNull_Test]
+      name: ControllerIsNotNull_Test
+      fullName: MoveableControllerTest.ControllerIsNotNull_Test
+      resultStatus: 1
+      duration: 0.001245
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1150
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveableControllerTest][suite]
     - id: 1151
       uniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/[Assembly-CSharp-Editor][MoveableControllerTest.FirstPressFWillLockTheTableToThePlayerMovementWhenIsTriggered_Test]
       name: FirstPressFWillLockTheTableToThePlayerMovementWhenIsTriggered_Test
       fullName: MoveableControllerTest.FirstPressFWillLockTheTableToThePlayerMovementWhenIsTriggered_Test
       resultStatus: 1
-      duration: 0.0019315
+      duration: 0.0008248
       messages: 
       output: 
       stacktrace: 
@@ -6447,11 +6520,114 @@ MonoBehaviour:
       parentId: 1150
       parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveableControllerTest][suite]
     - id: 1152
+      uniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/[Assembly-CSharp-Editor][MoveableControllerTest.FurnitrueIsNotNull_Test]
+      name: FurnitrueIsNotNull_Test
+      fullName: MoveableControllerTest.FurnitrueIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0003351
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1150
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveableControllerTest][suite]
+    - id: 1157
+      uniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/[Assembly-CSharp-Editor][MoveableControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test][suite]
+      name: NothingWillHappenWhenWronAmountOfInstructionsGiven_Test
+      fullName: MoveableControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test
+      resultStatus: 1
+      duration: 0.0116892
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1150
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveableControllerTest][suite]
+    - id: 1154
+      uniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/NothingWillHappenWhenWronAmountOfInstructionsGiven_Test/[Assembly-CSharp-Editor][MoveableControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])]
+      name: NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])
+      fullName: MoveableControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])
+      resultStatus: 1
+      duration: 0.0009234
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1157
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/[Assembly-CSharp-Editor][MoveableControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test][suite]
+    - id: 1155
+      uniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/NothingWillHappenWhenWronAmountOfInstructionsGiven_Test/[Assembly-CSharp-Editor][MoveableControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])]2
+      name: NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])
+      fullName: MoveableControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[]
+        GeneratedTestCase2)
+      resultStatus: 1
+      duration: 0.0004299
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1157
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/[Assembly-CSharp-Editor][MoveableControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test][suite]
+    - id: 1156
+      uniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/NothingWillHappenWhenWronAmountOfInstructionsGiven_Test/[Assembly-CSharp-Editor][MoveableControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])]3
+      name: NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[])
+      fullName: MoveableControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(System.Boolean[]
+        GeneratedTestCase3)
+      resultStatus: 1
+      duration: 0.0003831
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1157
+      parentUniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/[Assembly-CSharp-Editor][MoveableControllerTest.NothingWillHappenWhenWronAmountOfInstructionsGiven_Test][suite]
+    - id: 1152
       uniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/[Assembly-CSharp-Editor][MoveableControllerTest.SecondPressFWillReleaseTheTableFromThePlayerMovementWhenIsTriggerd_Test]
       name: SecondPressFWillReleaseTheTableFromThePlayerMovementWhenIsTriggerd_Test
       fullName: MoveableControllerTest.SecondPressFWillReleaseTheTableFromThePlayerMovementWhenIsTriggerd_Test
       resultStatus: 1
-      duration: 0.0006452
+      duration: 0.0005966
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1150
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][MoveableControllerTest][suite]
+    - id: 1151
+      uniqueId: Assembly-CSharp-Editor.dll/MoveableControllerTest/[Assembly-CSharp-Editor][MoveableControllerTest.TestObjectIsNotNull_Test]
+      name: TestObjectIsNotNull_Test
+      fullName: MoveableControllerTest.TestObjectIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0003308
       messages: 
       output: 
       stacktrace: 
@@ -6468,7 +6644,7 @@ MonoBehaviour:
       name: MoveControllerTest
       fullName: MoveControllerTest
       resultStatus: 1
-      duration: 0.1077006
+      duration: 0.1078803
       messages: 
       output: 
       stacktrace: 
@@ -6484,7 +6660,7 @@ MonoBehaviour:
       name: CharacterControllerIsNotNull_Test
       fullName: MoveControllerTest.CharacterControllerIsNotNull_Test
       resultStatus: 1
-      duration: 0.0009149
+      duration: 0.0011844
       messages: 
       output: 
       stacktrace: 
@@ -6501,7 +6677,7 @@ MonoBehaviour:
       name: MovesAlongNegativeXforInputLEFT_Test
       fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test
       resultStatus: 1
-      duration: 0.0120098
+      duration: 0.0110132
       messages: 
       output: 
       stacktrace: 
@@ -6517,7 +6693,7 @@ MonoBehaviour:
       name: MovesAlongNegativeXforInputLEFT_Test(-0.1f)
       fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.1f)
       resultStatus: 1
-      duration: 0.00133
+      duration: 0.0008075
       messages: 
       output: 
       stacktrace: 
@@ -6534,7 +6710,7 @@ MonoBehaviour:
       name: MovesAlongNegativeXforInputLEFT_Test(-0.75639f)
       fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.75639f)
       resultStatus: 1
-      duration: 0.0002827
+      duration: 0.0002618
       messages: 
       output: 
       stacktrace: 
@@ -6551,7 +6727,7 @@ MonoBehaviour:
       name: MovesAlongNegativeXforInputLEFT_Test(-1.0f)
       fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-1.0f)
       resultStatus: 1
-      duration: 0.000249
+      duration: 0.0002458
       messages: 
       output: 
       stacktrace: 
@@ -6568,7 +6744,7 @@ MonoBehaviour:
       name: MovesAlongNegativeXforInputLEFT_Test(-0.5f)
       fullName: MoveControllerTest.MovesAlongNegativeXforInputLEFT_Test(-0.5f)
       resultStatus: 1
-      duration: 0.0002412
+      duration: 0.0002442
       messages: 
       output: 
       stacktrace: 
@@ -6585,7 +6761,7 @@ MonoBehaviour:
       name: MovesAlongNegativeZforInputDOWN_Test
       fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test
       resultStatus: 1
-      duration: 0.0112087
+      duration: 0.0117854
       messages: 
       output: 
       stacktrace: 
@@ -6601,7 +6777,7 @@ MonoBehaviour:
       name: MovesAlongNegativeZforInputDOWN_Test(-0.1f)
       fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.1f)
       resultStatus: 1
-      duration: 0.0005822
+      duration: 0.0005603
       messages: 
       output: 
       stacktrace: 
@@ -6635,7 +6811,7 @@ MonoBehaviour:
       name: MovesAlongNegativeZforInputDOWN_Test(-1.0f)
       fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-1.0f)
       resultStatus: 1
-      duration: 0.0002485
+      duration: 0.0002562
       messages: 
       output: 
       stacktrace: 
@@ -6652,7 +6828,7 @@ MonoBehaviour:
       name: MovesAlongNegativeZforInputDOWN_Test(-0.5f)
       fullName: MoveControllerTest.MovesAlongNegativeZforInputDOWN_Test(-0.5f)
       resultStatus: 1
-      duration: 0.000246
+      duration: 0.0002535
       messages: 
       output: 
       stacktrace: 
@@ -6669,7 +6845,7 @@ MonoBehaviour:
       name: MovesAlongPositiveXforInputRIGHT_Test
       fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test
       resultStatus: 1
-      duration: 0.0123944
+      duration: 0.0114193
       messages: 
       output: 
       stacktrace: 
@@ -6685,7 +6861,7 @@ MonoBehaviour:
       name: MovesAlongPositiveXforInputRIGHT_Test(0.1f)
       fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.1f)
       resultStatus: 1
-      duration: 0.000615
+      duration: 0.0005639
       messages: 
       output: 
       stacktrace: 
@@ -6702,7 +6878,7 @@ MonoBehaviour:
       name: MovesAlongPositiveXforInputRIGHT_Test(0.75639f)
       fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.75639f)
       resultStatus: 1
-      duration: 0.000264
+      duration: 0.0002604
       messages: 
       output: 
       stacktrace: 
@@ -6719,7 +6895,7 @@ MonoBehaviour:
       name: MovesAlongPositiveXforInputRIGHT_Test(1.0f)
       fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(1.0f)
       resultStatus: 1
-      duration: 0.0002528
+      duration: 0.0002529
       messages: 
       output: 
       stacktrace: 
@@ -6736,7 +6912,7 @@ MonoBehaviour:
       name: MovesAlongPositiveXforInputRIGHT_Test(0.5f)
       fullName: MoveControllerTest.MovesAlongPositiveXforInputRIGHT_Test(0.5f)
       resultStatus: 1
-      duration: 0.0002462
+      duration: 0.0002493
       messages: 
       output: 
       stacktrace: 
@@ -6753,7 +6929,7 @@ MonoBehaviour:
       name: MovesAlongPositiveZforInputUP_Test
       fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test
       resultStatus: 1
-      duration: 0.0111647
+      duration: 0.0146701
       messages: 
       output: 
       stacktrace: 
@@ -6769,7 +6945,7 @@ MonoBehaviour:
       name: MovesAlongPositiveZforInputUP_Test(0.1f)
       fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.1f)
       resultStatus: 1
-      duration: 0.0005536
+      duration: 0.0005567
       messages: 
       output: 
       stacktrace: 
@@ -6786,7 +6962,7 @@ MonoBehaviour:
       name: MovesAlongPositiveZforInputUP_Test(0.75639f)
       fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.75639f)
       resultStatus: 1
-      duration: 0.000259
+      duration: 0.0002617
       messages: 
       output: 
       stacktrace: 
@@ -6803,7 +6979,7 @@ MonoBehaviour:
       name: MovesAlongPositiveZforInputUP_Test(1.0f)
       fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(1.0f)
       resultStatus: 1
-      duration: 0.0002542
+      duration: 0.0002515
       messages: 
       output: 
       stacktrace: 
@@ -6820,7 +6996,7 @@ MonoBehaviour:
       name: MovesAlongPositiveZforInputUP_Test(0.5f)
       fullName: MoveControllerTest.MovesAlongPositiveZforInputUP_Test(0.5f)
       resultStatus: 1
-      duration: 0.0002473
+      duration: 0.0002462
       messages: 
       output: 
       stacktrace: 
@@ -6837,7 +7013,7 @@ MonoBehaviour:
       name: MovesNotforInputDOWNisZero_Test
       fullName: MoveControllerTest.MovesNotforInputDOWNisZero_Test
       resultStatus: 1
-      duration: 0.0087324
+      duration: 0.0089534
       messages: 
       output: 
       stacktrace: 
@@ -6853,7 +7029,7 @@ MonoBehaviour:
       name: MovesNotforInputDOWNisZero_Test(0)
       fullName: MoveControllerTest.MovesNotforInputDOWNisZero_Test(0)
       resultStatus: 1
-      duration: 0.0006054
+      duration: 0.0005569
       messages: 
       output: 
       stacktrace: 
@@ -6870,7 +7046,7 @@ MonoBehaviour:
       name: MovesNotforInputLEFTisZero_Test
       fullName: MoveControllerTest.MovesNotforInputLEFTisZero_Test
       resultStatus: 1
-      duration: 0.0092508
+      duration: 0.0083767
       messages: 
       output: 
       stacktrace: 
@@ -6886,7 +7062,7 @@ MonoBehaviour:
       name: MovesNotforInputLEFTisZero_Test(0)
       fullName: MoveControllerTest.MovesNotforInputLEFTisZero_Test(0)
       resultStatus: 1
-      duration: 0.0006024
+      duration: 0.0005582
       messages: 
       output: 
       stacktrace: 
@@ -6903,7 +7079,7 @@ MonoBehaviour:
       name: MovesNotforInputRIGHTisZero_Test
       fullName: MoveControllerTest.MovesNotforInputRIGHTisZero_Test
       resultStatus: 1
-      duration: 0.0088477
+      duration: 0.0099128
       messages: 
       output: 
       stacktrace: 
@@ -6919,7 +7095,7 @@ MonoBehaviour:
       name: MovesNotforInputRIGHTisZero_Test(0)
       fullName: MoveControllerTest.MovesNotforInputRIGHTisZero_Test(0)
       resultStatus: 1
-      duration: 0.0005524
+      duration: 0.0005981
       messages: 
       output: 
       stacktrace: 
@@ -6936,7 +7112,7 @@ MonoBehaviour:
       name: MovesNotForInputUPisZero_Test
       fullName: MoveControllerTest.MovesNotForInputUPisZero_Test
       resultStatus: 1
-      duration: 0.0118946
+      duration: 0.0084419
       messages: 
       output: 
       stacktrace: 
@@ -6952,7 +7128,7 @@ MonoBehaviour:
       name: MovesNotForInputUPisZero_Test(0.0f)
       fullName: MoveControllerTest.MovesNotForInputUPisZero_Test(0.0f)
       resultStatus: 1
-      duration: 0.0005653
+      duration: 0.0005487
       messages: 
       output: 
       stacktrace: 
@@ -6969,7 +7145,7 @@ MonoBehaviour:
       name: PlayerMovementIsExistent_Test
       fullName: MoveControllerTest.PlayerMovementIsExistent_Test
       resultStatus: 1
-      duration: 0.0004614
+      duration: 0.0008288
       messages: 
       output: 
       stacktrace: 
@@ -6986,7 +7162,7 @@ MonoBehaviour:
       name: PlayerTransformIsNotNull_Test
       fullName: MoveControllerTest.PlayerTransformIsNotNull_Test
       resultStatus: 1
-      duration: 0.0003111
+      duration: 0.0003468
       messages: 
       output: 
       stacktrace: 
@@ -7003,7 +7179,7 @@ MonoBehaviour:
       name: PatientTableTest
       fullName: PatientTableTest
       resultStatus: 1
-      duration: 0.0643745
+      duration: 0.0806349
       messages: 
       output: 
       stacktrace: 
@@ -7019,7 +7195,7 @@ MonoBehaviour:
       name: ArrowDownMovesTableDownWhenTableIsTriggerd_Test
       fullName: PatientTableTest.ArrowDownMovesTableDownWhenTableIsTriggerd_Test
       resultStatus: 1
-      duration: 0.0091817
+      duration: 0.0091763
       messages: 
       output: 
       stacktrace: 
@@ -7035,7 +7211,7 @@ MonoBehaviour:
       name: ArrowDownMovesTableDownWhenTableIsTriggerd_Test(False,True)
       fullName: PatientTableTest.ArrowDownMovesTableDownWhenTableIsTriggerd_Test(False,True)
       resultStatus: 1
-      duration: 0.0015732
+      duration: 0.0014047
       messages: 
       output: 
       stacktrace: 
@@ -7052,7 +7228,7 @@ MonoBehaviour:
       name: ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test
       fullName: PatientTableTest.ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test
       resultStatus: 1
-      duration: 0.0092933
+      duration: 0.0125225
       messages: 
       output: 
       stacktrace: 
@@ -7068,7 +7244,7 @@ MonoBehaviour:
       name: ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test(True,True)
       fullName: PatientTableTest.ArrowUpAndArrowDownArePressedMovesTableUpWhenTableIsTriggerd_Test(True,True)
       resultStatus: 1
-      duration: 0.0006698
+      duration: 0.0007363
       messages: 
       output: 
       stacktrace: 
@@ -7085,7 +7261,7 @@ MonoBehaviour:
       name: ArrowUpMovesTableUpWhenTableIsTriggerd_Test
       fullName: PatientTableTest.ArrowUpMovesTableUpWhenTableIsTriggerd_Test
       resultStatus: 1
-      duration: 0.0097406
+      duration: 0.0127163
       messages: 
       output: 
       stacktrace: 
@@ -7101,7 +7277,7 @@ MonoBehaviour:
       name: ArrowUpMovesTableUpWhenTableIsTriggerd_Test(True,False)
       fullName: PatientTableTest.ArrowUpMovesTableUpWhenTableIsTriggerd_Test(True,False)
       resultStatus: 1
-      duration: 0.0006511
+      duration: 0.0011976
       messages: 
       output: 
       stacktrace: 
@@ -7113,12 +7289,63 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1517
       parentUniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.ArrowUpMovesTableUpWhenTableIsTriggerd_Test][suite]
+    - id: 1163
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.ControllerIsNotNull_Test]
+      name: ControllerIsNotNull_Test
+      fullName: PatientTableTest.ControllerIsNotNull_Test
+      resultStatus: 1
+      duration: 0.000528
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1160
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PatientTableTest][suite]
+    - id: 1162
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.FurnitrueIsNotNull_Test]
+      name: FurnitrueIsNotNull_Test
+      fullName: PatientTableTest.FurnitrueIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0003652
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1160
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PatientTableTest][suite]
+    - id: 1161
+      uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.TestObjectIsNotNull_Test]
+      name: TestObjectIsNotNull_Test
+      fullName: PatientTableTest.TestObjectIsNotNull_Test
+      resultStatus: 1
+      duration: 0.0003956
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1160
+      parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][PatientTableTest][suite]
     - id: 1528
       uniqueId: Assembly-CSharp-Editor.dll/PatientTableTest/[Assembly-CSharp-Editor][PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test][suite]
       name: TheTableDontMoveWhenThereAreNotEnoughInstructions_Test
       fullName: PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test
       resultStatus: 1
-      duration: 0.010649
+      duration: 0.0160217
       messages: 
       output: 
       stacktrace: 
@@ -7134,7 +7361,7 @@ MonoBehaviour:
       name: TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[])
       fullName: PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[])
       resultStatus: 1
-      duration: 0.000545
+      duration: 0.0007641
       messages: 
       output: 
       stacktrace: 
@@ -7152,7 +7379,7 @@ MonoBehaviour:
       fullName: PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[]
         GeneratedTestCase2)
       resultStatus: 1
-      duration: 0.0002722
+      duration: 0.000583
       messages: 
       output: 
       stacktrace: 
@@ -7170,7 +7397,7 @@ MonoBehaviour:
       fullName: PatientTableTest.TheTableDontMoveWhenThereAreNotEnoughInstructions_Test(System.Boolean[]
         GeneratedTestCase3)
       resultStatus: 1
-      duration: 0.0002634
+      duration: 0.0003226
       messages: 
       output: 
       stacktrace: 
@@ -7187,7 +7414,7 @@ MonoBehaviour:
       name: TheTableDontMoveWhenThereAreTooManyInstructions_Test
       fullName: PatientTableTest.TheTableDontMoveWhenThereAreTooManyInstructions_Test
       resultStatus: 1
-      duration: 0.011077
+      duration: 0.0125921
       messages: 
       output: 
       stacktrace: 
@@ -7203,7 +7430,7 @@ MonoBehaviour:
       name: TheTableDontMoveWhenThereAreTooManyInstructions_Test(System.Boolean[])
       fullName: PatientTableTest.TheTableDontMoveWhenThereAreTooManyInstructions_Test(System.Boolean[])
       resultStatus: 1
-      duration: 0.0005739
+      duration: 0.0006178
       messages: 
       output: 
       stacktrace: 
@@ -7221,7 +7448,7 @@ MonoBehaviour:
       fullName: PatientTableTest.TheTableDontMoveWhenThereAreTooManyInstructions_Test(System.Boolean[]
         GeneratedTestCase2)
       resultStatus: 1
-      duration: 0.0002647
+      duration: 0.0002667
       messages: 
       output: 
       stacktrace: 
@@ -7238,7 +7465,7 @@ MonoBehaviour:
       name: ProtectionWallTest
       fullName: ProtectionWallTest
       resultStatus: 1
-      duration: 0.0109058
+      duration: 0.011859
       messages: 
       output: 
       stacktrace: 
@@ -7254,7 +7481,7 @@ MonoBehaviour:
       name: FirstPressFWillLockTheWallToThePlayerMovementWhenIsTriggered_Test
       fullName: ProtectionWallTest.FirstPressFWillLockTheWallToThePlayerMovementWhenIsTriggered_Test
       resultStatus: 1
-      duration: 0.0013864
+      duration: 0.001384
       messages: 
       output: 
       stacktrace: 
@@ -7271,7 +7498,7 @@ MonoBehaviour:
       name: SecondPressFWillReleaseTheWallFromThePlayerMovementWhenIsTriggerd_Test
       fullName: ProtectionWallTest.SecondPressFWillReleaseTheWallFromThePlayerMovementWhenIsTriggerd_Test
       resultStatus: 1
-      duration: 0.0005487
+      duration: 0.0005622
       messages: 
       output: 
       stacktrace: 
@@ -7288,7 +7515,7 @@ MonoBehaviour:
       name: RayTracerTest
       fullName: RayTracerTest
       resultStatus: 1
-      duration: 0.0380749
+      duration: 0.0355076
       messages: 
       output: 
       stacktrace: 
@@ -7304,7 +7531,7 @@ MonoBehaviour:
       name: CreateRayReturnsFalseIfOtherHitDetected_Test
       fullName: RayTracerTest.CreateRayReturnsFalseIfOtherHitDetected_Test
       resultStatus: 1
-      duration: 0.0126219
+      duration: 0.0110635
       messages: 
       output: 
       stacktrace: 
@@ -7320,7 +7547,7 @@ MonoBehaviour:
       name: CreateRayReturnsFalseIfOtherHitDetected_Test("Mock_simple")
       fullName: RayTracerTest.CreateRayReturnsFalseIfOtherHitDetected_Test("Mock_simple")
       resultStatus: 1
-      duration: 0.0034867
+      duration: 0.0023613
       messages: 
       output: 
       stacktrace: 
@@ -7337,7 +7564,7 @@ MonoBehaviour:
       name: CreateRayReturnsFalseIfOtherHitDetected_Test("Mock_complex")
       fullName: RayTracerTest.CreateRayReturnsFalseIfOtherHitDetected_Test("Mock_complex")
       resultStatus: 1
-      duration: 0.0009869
+      duration: 0.0002672
       messages: 
       output: 
       stacktrace: 
@@ -7354,7 +7581,7 @@ MonoBehaviour:
       name: CreateRayReturnsFalseWhenNoHitDetected_Test
       fullName: RayTracerTest.CreateRayReturnsFalseWhenNoHitDetected_Test
       resultStatus: 1
-      duration: 0.0002712
+      duration: 0.0003035
       messages: 
       output: 
       stacktrace: 
@@ -7371,7 +7598,7 @@ MonoBehaviour:
       name: CreateRayReturnsTrueIfDocHitDetected_Test
       fullName: RayTracerTest.CreateRayReturnsTrueIfDocHitDetected_Test
       resultStatus: 1
-      duration: 0.0120114
+      duration: 0.0106151
       messages: 
       output: 
       stacktrace: 
@@ -7387,7 +7614,7 @@ MonoBehaviour:
       name: CreateRayReturnsTrueIfDocHitDetected_Test("Mock_simple")
       fullName: RayTracerTest.CreateRayReturnsTrueIfDocHitDetected_Test("Mock_simple")
       resultStatus: 1
-      duration: 0.0005273
+      duration: 0.0005664
       messages: 
       output: 
       stacktrace: 
@@ -7404,7 +7631,7 @@ MonoBehaviour:
       name: CreateRayReturnsTrueIfDocHitDetected_Test("Mock_complex")
       fullName: RayTracerTest.CreateRayReturnsTrueIfDocHitDetected_Test("Mock_complex")
       resultStatus: 1
-      duration: 0.0002692
+      duration: 0.0002689
       messages: 
       output: 
       stacktrace: 
@@ -7421,7 +7648,7 @@ MonoBehaviour:
       name: GetDistances_Test
       fullName: RayTracerTest.GetDistances_Test
       resultStatus: 1
-      duration: 0.0006899
+      duration: 0.0006594
       messages: 
       output: 
       stacktrace: 
@@ -7438,7 +7665,7 @@ MonoBehaviour:
       name: RayTracerIsNotNull_Test
       fullName: RayTracerTest.RayTracerIsNotNull_Test
       resultStatus: 1
-      duration: 0.0002545
+      duration: 0.0002537
       messages: 
       output: 
       stacktrace: 
@@ -7455,7 +7682,7 @@ MonoBehaviour:
       name: ThirdPersonCameraTest
       fullName: ThirdPersonCameraTest
       resultStatus: 1
-      duration: 0.0870165
+      duration: 0.0790296
       messages: 
       output: 
       stacktrace: 
@@ -7471,7 +7698,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraUp_Test
       fullName: ThirdPersonCameraTest.MouseInputDOWNRotatesCameraUp_Test
       resultStatus: 1
-      duration: 0.0125214
+      duration: 0.0121517
       messages: 
       output: 
       stacktrace: 
@@ -7487,7 +7714,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraUp_Test(-0.1f)
       fullName: ThirdPersonCameraTest.MouseInputDOWNRotatesCameraUp_Test(-0.1f)
       resultStatus: 1
-      duration: 0.0012342
+      duration: 0.0010392
       messages: 
       output: 
       stacktrace: 
@@ -7504,7 +7731,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraUp_Test(-0.75639f)
       fullName: ThirdPersonCameraTest.MouseInputDOWNRotatesCameraUp_Test(-0.75639f)
       resultStatus: 1
-      duration: 0.0002999
+      duration: 0.0003067
       messages: 
       output: 
       stacktrace: 
@@ -7521,7 +7748,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraUp_Test(-1.0f)
       fullName: ThirdPersonCameraTest.MouseInputDOWNRotatesCameraUp_Test(-1.0f)
       resultStatus: 1
-      duration: 0.0002918
+      duration: 0.0002914
       messages: 
       output: 
       stacktrace: 
@@ -7538,7 +7765,7 @@ MonoBehaviour:
       name: MouseInputDOWNRotatesCameraUp_Test(-0.5f)
       fullName: ThirdPersonCameraTest.MouseInputDOWNRotatesCameraUp_Test(-0.5f)
       resultStatus: 1
-      duration: 0.0003056
+      duration: 0.0002914
       messages: 
       output: 
       stacktrace: 
@@ -7555,7 +7782,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test
       fullName: ThirdPersonCameraTest.MouseInputLEFTRotatesPlayerLeft_Test
       resultStatus: 1
-      duration: 0.0174747
+      duration: 0.0116536
       messages: 
       output: 
       stacktrace: 
@@ -7571,7 +7798,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-0.1f)
       fullName: ThirdPersonCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-0.1f)
       resultStatus: 1
-      duration: 0.0006122
+      duration: 0.0006064
       messages: 
       output: 
       stacktrace: 
@@ -7588,7 +7815,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-0.75639f)
       fullName: ThirdPersonCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-0.75639f)
       resultStatus: 1
-      duration: 0.0003088
+      duration: 0.0003109
       messages: 
       output: 
       stacktrace: 
@@ -7605,7 +7832,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-1.0f)
       fullName: ThirdPersonCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-1.0f)
       resultStatus: 1
-      duration: 0.0002931
+      duration: 0.0003066
       messages: 
       output: 
       stacktrace: 
@@ -7622,7 +7849,7 @@ MonoBehaviour:
       name: MouseInputLEFTRotatesPlayerLeft_Test(-0.5f)
       fullName: ThirdPersonCameraTest.MouseInputLEFTRotatesPlayerLeft_Test(-0.5f)
       resultStatus: 1
-      duration: 0.0059168
+      duration: 0.000298
       messages: 
       output: 
       stacktrace: 
@@ -7639,7 +7866,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesPlayerRight_Test
       fullName: ThirdPersonCameraTest.MouseInputRIGHTRotatesPlayerRight_Test
       resultStatus: 1
-      duration: 0.0127164
+      duration: 0.0123579
       messages: 
       output: 
       stacktrace: 
@@ -7655,7 +7882,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesPlayerRight_Test(0.1f)
       fullName: ThirdPersonCameraTest.MouseInputRIGHTRotatesPlayerRight_Test(0.1f)
       resultStatus: 1
-      duration: 0.0006506
+      duration: 0.0005916
       messages: 
       output: 
       stacktrace: 
@@ -7672,7 +7899,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesPlayerRight_Test(0.75639f)
       fullName: ThirdPersonCameraTest.MouseInputRIGHTRotatesPlayerRight_Test(0.75639f)
       resultStatus: 1
-      duration: 0.0003025
+      duration: 0.000303
       messages: 
       output: 
       stacktrace: 
@@ -7689,7 +7916,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesPlayerRight_Test(1.0f)
       fullName: ThirdPersonCameraTest.MouseInputRIGHTRotatesPlayerRight_Test(1.0f)
       resultStatus: 1
-      duration: 0.0002844
+      duration: 0.0002854
       messages: 
       output: 
       stacktrace: 
@@ -7706,7 +7933,7 @@ MonoBehaviour:
       name: MouseInputRIGHTRotatesPlayerRight_Test(0.5f)
       fullName: ThirdPersonCameraTest.MouseInputRIGHTRotatesPlayerRight_Test(0.5f)
       resultStatus: 1
-      duration: 0.000285
+      duration: 0.0003173
       messages: 
       output: 
       stacktrace: 
@@ -7723,7 +7950,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraDown_Test
       fullName: ThirdPersonCameraTest.MouseInputUPRotatesCameraDown_Test
       resultStatus: 1
-      duration: 0.0120322
+      duration: 0.0117219
       messages: 
       output: 
       stacktrace: 
@@ -7739,7 +7966,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraDown_Test(0.1f)
       fullName: ThirdPersonCameraTest.MouseInputUPRotatesCameraDown_Test(0.1f)
       resultStatus: 1
-      duration: 0.0006163
+      duration: 0.0006334
       messages: 
       output: 
       stacktrace: 
@@ -7756,7 +7983,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraDown_Test(0.75639f)
       fullName: ThirdPersonCameraTest.MouseInputUPRotatesCameraDown_Test(0.75639f)
       resultStatus: 1
-      duration: 0.0003037
+      duration: 0.0003038
       messages: 
       output: 
       stacktrace: 
@@ -7773,7 +8000,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraDown_Test(1.0f)
       fullName: ThirdPersonCameraTest.MouseInputUPRotatesCameraDown_Test(1.0f)
       resultStatus: 1
-      duration: 0.0002871
+      duration: 0.0002955
       messages: 
       output: 
       stacktrace: 
@@ -7790,7 +8017,7 @@ MonoBehaviour:
       name: MouseInputUPRotatesCameraDown_Test(0.5f)
       fullName: ThirdPersonCameraTest.MouseInputUPRotatesCameraDown_Test(0.5f)
       resultStatus: 1
-      duration: 0.0003368
+      duration: 0.0002912
       messages: 
       output: 
       stacktrace: 
@@ -7807,7 +8034,7 @@ MonoBehaviour:
       name: PlayerCameraIsExistent_Test
       fullName: ThirdPersonCameraTest.PlayerCameraIsExistent_Test
       resultStatus: 1
-      duration: 0.0003781
+      duration: 0.0003732
       messages: 
       output: 
       stacktrace: 
@@ -7824,7 +8051,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test
       fullName: ThirdPersonCameraTest.ReturnsCorrectYRotation_Test
       resultStatus: 1
-      duration: 0.0138798
+      duration: 0.0129405
       messages: 
       output: 
       stacktrace: 
@@ -7840,7 +8067,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(0.0f)
       fullName: ThirdPersonCameraTest.ReturnsCorrectYRotation_Test(0.0f)
       resultStatus: 1
-      duration: 0.0006494
+      duration: 0.0005917
       messages: 
       output: 
       stacktrace: 
@@ -7857,7 +8084,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(10.0f)
       fullName: ThirdPersonCameraTest.ReturnsCorrectYRotation_Test(10.0f)
       resultStatus: 1
-      duration: 0.0003434
+      duration: 0.0003163
       messages: 
       output: 
       stacktrace: 
@@ -7874,7 +8101,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(-130.0f)
       fullName: ThirdPersonCameraTest.ReturnsCorrectYRotation_Test(-130.0f)
       resultStatus: 1
-      duration: 0.0002895
+      duration: 0.0003206
       messages: 
       output: 
       stacktrace: 
@@ -7891,7 +8118,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(1.0f)
       fullName: ThirdPersonCameraTest.ReturnsCorrectYRotation_Test(1.0f)
       resultStatus: 1
-      duration: 0.0002848
+      duration: 0.0003013
       messages: 
       output: 
       stacktrace: 
@@ -7908,7 +8135,7 @@ MonoBehaviour:
       name: ReturnsCorrectYRotation_Test(-0.001f)
       fullName: ThirdPersonCameraTest.ReturnsCorrectYRotation_Test(-0.001f)
       resultStatus: 1
-      duration: 0.0002825
+      duration: 0.0002986
       messages: 
       output: 
       stacktrace: 
@@ -7925,7 +8152,7 @@ MonoBehaviour:
       name: VertexDataTest
       fullName: VertexDataTest
       resultStatus: 1
-      duration: 0.0150602
+      duration: 0.014943
       messages: 
       output: 
       stacktrace: 
@@ -7941,7 +8168,7 @@ MonoBehaviour:
       name: Constructor_Test
       fullName: VertexDataTest.Constructor_Test
       resultStatus: 1
-      duration: 0.0003787
+      duration: 0.0004146
       messages: 
       output: 
       stacktrace: 
@@ -7958,7 +8185,7 @@ MonoBehaviour:
       name: ConstructorDose_Test
       fullName: VertexDataTest.ConstructorDose_Test
       resultStatus: 1
-      duration: 0.0002321
+      duration: 0.0002284
       messages: 
       output: 
       stacktrace: 
@@ -7975,7 +8202,7 @@ MonoBehaviour:
       name: ConstructorPosition_Test
       fullName: VertexDataTest.ConstructorPosition_Test
       resultStatus: 1
-      duration: 0.000255
+      duration: 0.0001992
       messages: 
       output: 
       stacktrace: 
@@ -7992,7 +8219,7 @@ MonoBehaviour:
       name: ConstructorVerticeWithSamePos_Test
       fullName: VertexDataTest.ConstructorVerticeWithSamePos_Test
       resultStatus: 1
-      duration: 0.0001873
+      duration: 0.000189
       messages: 
       output: 
       stacktrace: 
@@ -8009,7 +8236,7 @@ MonoBehaviour:
       name: DoseIsCorrect_Test
       fullName: VertexDataTest.DoseIsCorrect_Test
       resultStatus: 1
-      duration: 0.000232
+      duration: 0.0002541
       messages: 
       output: 
       stacktrace: 
@@ -8026,7 +8253,7 @@ MonoBehaviour:
       name: EmptyConstructor_Test
       fullName: VertexDataTest.EmptyConstructor_Test
       resultStatus: 1
-      duration: 0.000232
+      duration: 0.0002046
       messages: 
       output: 
       stacktrace: 
@@ -8043,7 +8270,7 @@ MonoBehaviour:
       name: IsDirtyCorrect_Test
       fullName: VertexDataTest.IsDirtyCorrect_Test
       resultStatus: 1
-      duration: 0.0001991
+      duration: 0.0001871
       messages: 
       output: 
       stacktrace: 
@@ -8060,7 +8287,7 @@ MonoBehaviour:
       name: PositionIsCorrect_Test
       fullName: VertexDataTest.PositionIsCorrect_Test
       resultStatus: 1
-      duration: 0.0002484
+      duration: 0.0002614
       messages: 
       output: 
       stacktrace: 
@@ -8077,7 +8304,7 @@ MonoBehaviour:
       name: VerticeWithSamePosIsCorrect_Test
       fullName: VertexDataTest.VerticeWithSamePosIsCorrect_Test
       resultStatus: 1
-      duration: 0.0002033
+      duration: 0.0001979
       messages: 
       output: 
       stacktrace: 
@@ -8089,13 +8316,16 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1388
       parentUniqueId: Assembly-CSharp-Editor.dll/[Assembly-CSharp-Editor][VertexDataTest][suite]
-    m_ResultText: MeshControllerTest (0,290s)
-    m_ResultStacktrace: 
+    m_ResultText: "SecondPressOfFWillCloseDoor_Test (0,009s)\n---\nExpected: -2.0f\r\n 
+      But was:  -0.5f\n---\nat DoorControllerTest.SecondPressOfFWillCloseDoor_Test
+      () [0x0006d] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\Furniture\\DoorControllerTest.cs:130"
+    m_ResultStacktrace: "at DoorControllerTest.SecondPressOfFWillCloseDoor_Test ()
+      [0x0006d] in D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation\\Assets\\Editor\\Tests\\Furniture\\DoorControllerTest.cs:130\r\n"
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e4b4e5e0
-      m_LastClickedID: -521816860
-      m_ExpandedIDs: 5bb529878035f988a729728ba3d4138ca9fb169a707ffc9e54b942ae9ab6b2b30f795bb40ce904bc04dd84c2cbf570c3734991c70c69a3d1c5a133e194629cf44c7becf69f8c79f72371f30712a7ee098d729f0add7be210e3d6231390d09e1634d6281b24e32e204755f32383518024036213367a363a3897c0413e9fcff33ef7d43845ec92ae45baec4348b3e2354fc8daac5409b4d1541a4e5359d2fa6f59a00d2a5ae022435c4bdc7061f8ac7a6b14b4636ef401357dffffff7f
+      m_SelectedIDs: 63b02017
+      m_LastClickedID: 388018275
+      m_ExpandedIDs: 5bb529878035f988a729728ba3d4138ca9fb169a707ffc9e54b942ae9ab6b2b30f795bb489012fb90ce904bc04dd84c2cbf570c3734991c70c69a3d1c5a133e15b0205e294629cf4fb908ff64c7becf69f8c79f72371f30712a7ee098d729f0add7be210e3d6231390d09e1634d6281b24e32e204755f32383518024036213367a363a3897c0413e9fcff33ef7d43845ec92ae45baec4348b3e2354fc8daac5409b4d1541a4e5359d2fa6f59a00d2a5ae022435c4bdc7061f8ac7a6b14b4636ef401357dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -8121,7 +8351,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &24
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8147,7 +8377,7 @@ MonoBehaviour:
     width: 550
     height: 799
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &25
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8163,19 +8393,19 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: -131512000283675692, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -2344
+    x: -2160
     y: 72.66667
-    width: 1507
+    width: 1323
     height: 929
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 2a4099751352f0447a31ce7ceda00ada
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
@@ -8183,25 +8413,25 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.5980489, y: 1.0750347, z: -2.8407307}
+    m_Target: {x: 5.8607497, y: -0.2262748, z: 14.550392}
     speed: 2
-    m_Value: {x: 1.5980489, y: 1.0750347, z: -2.8407307}
+    m_Value: {x: 5.8607497, y: -0.2262748, z: 14.550392}
   m_RenderMode: 0
   m_CameraMode:
-    drawMode: 0
-    name: Shaded
+    drawMode: 1
+    name: Wireframe
     section: Shading Mode
   m_ValidateTrueMetals: 0
   m_DoValidateTrueMetals: 0
   m_ExposureSliderValue: 0
   m_ExposureSliderMax: 10
   m_SceneViewState:
-    showFog: 1
+    showFog: 0
     showMaterialUpdate: 0
     showSkybox: 0
-    showFlares: 1
-    showImageEffects: 1
-    showParticleSystems: 1
+    showFlares: 0
+    showImageEffects: 0
+    showParticleSystems: 0
   m_Grid:
     xGrid:
       m_Fade:
@@ -8231,13 +8461,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.009074295, y: 0.9814842, z: -0.1852091, w: -0.049034487}
+    m_Target: {x: 0.10053813, y: 0.6962118, z: -0.0994602, w: 0.7037698}
     speed: 2
-    m_Value: {x: -0.00907384, y: 0.98143506, z: -0.18519983, w: -0.049032032}
+    m_Value: {x: 0.10174415, y: 0.6950046, z: -0.10035175, w: 0.7046605}
   m_Size:
-    m_Target: 2.8864126
+    m_Target: 1.9578936
     speed: 2
-    m_Value: 2.8864126
+    m_Value: 2.2578936
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -8255,14 +8485,14 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.2237493, y: -0.50116515, z: 0.13594864, w: 0.8248042}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
-  m_SceneVisActive: 1
+  m_SceneVisActive: 0
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &26
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8278,7 +8508,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: 8356117983803934776, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -8300,7 +8530,7 @@ MonoBehaviour:
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
---- !u!114 &27
+--- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8316,7 +8546,7 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -2032128904892744680, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -8324,7 +8554,7 @@ MonoBehaviour:
     x: -834.6666
     y: 72.66667
     width: 496
-    height: 503
+    height: 929
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -8339,20 +8569,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Materials
+    - Assets/Resources/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Resources/Materials
+  - Assets/Resources/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "D:\\Projekte\\R\xF6ntgenSim\\XRaySimulation\\XRaySimulation"
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92340000
-    m_LastClickedID: 13458
-    m_ExpandedIDs: 00000000783400007a3400007c3400007e34000080340000823400008434000000ca9a3b
+    m_SelectedIDs: ea360000
+    m_LastClickedID: 14058
+    m_ExpandedIDs: 00000000d2360000d4360000d636000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -8368,7 +8598,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
+      m_ClientGUIView: {fileID: 7}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -8380,7 +8610,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000783400007a3400007c3400007e340000803400008234000084340000
+    m_ExpandedIDs: 00000000d2360000d4360000d6360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -8407,7 +8637,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 48220000d0210000aa22000012230000ce21000064c9ffffb6220000d2210000d6210000868efdfff0040000d4210000dc210000a42b0000622200000a2200002828000012220000305000008422000016220000c032faff5c5bf7ffea2a00001e2c000020ca000016300000262d00004e630000d6620000d262000066620000342d0300bc350000fa3d0000ae410000244500006e4100008a3200006437000078370000000000000a360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -8424,7 +8654,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
+      m_ClientGUIView: {fileID: 7}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -8436,7 +8666,7 @@ MonoBehaviour:
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 110
---- !u!114 &28
+--- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8452,38 +8682,38 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -9000905672528348964, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: -2560
     y: 72.66667
-    width: 215
+    width: 399
     height: 929
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 50340000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 4adcfeff52e6feff9e3bffff749affff889affff0e9effffa6c3ffffaac3ffffbec3ffff2ec5ffffb2c7ffff1accffffdecdffff72ceffff98cfffffd8d1ffff4cfaffff52fbffffd2420000d64200000a4300005a43000068430000
+      m_SelectedIDs: 44faffff
+      m_LastClickedID: -1468
+      m_ExpandedIDs: 72fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: ProtectionWall (1)
-        m_OriginalName: ProtectionWall (1)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -63472
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 6}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -8491,7 +8721,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 66beb951ecb1cfa409b5b5ca8bd76afa
---- !u!114 &29
+--- !u!114 &26
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8507,7 +8737,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -3303252850963283158, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -8517,7 +8747,7 @@ MonoBehaviour:
     width: 2222
     height: 337
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &30
+--- !u!114 &27
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8533,7 +8763,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: 8356117983803934776, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
