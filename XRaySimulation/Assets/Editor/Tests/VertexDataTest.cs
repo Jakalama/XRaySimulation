@@ -48,20 +48,26 @@ public class VertexDataTest
     [Test]
     public void PositionIsCorrect_Test()
     {
+        // setup
         Vector3 expected = new Vector3(1f, 2f, 3f);
 
+        // perform
         data = new VertexData(expected, 0f);
 
+        // assert
         Assert.AreEqual(expected, data.Position);
     }
 
     [Test]
     public void DoseIsCorrect_Test()
     {
+        // setup
         float expected = 5.1f;
 
+        // perform
         data = new VertexData(new Vector3(), expected);
 
+        // assert
         Assert.AreEqual(expected, data.Dose);
     }
 

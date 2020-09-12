@@ -16,11 +16,12 @@ public class RayRecieverWithoutSourceTest
     [SetUp]
     public void SetUp()
     {
-        // Player / RayReciever
+        // Player
         GameObject prefab = Resources.Load<GameObject>("Prefabs/Player_Mock");
         testObj = GameObject.Instantiate(prefab);
         testObj.name = "Player";
 
+        // RayReciever
         reciever = testObj.GetComponent<RayReciever>();
 
         // Gui
@@ -29,12 +30,19 @@ public class RayRecieverWithoutSourceTest
         gui.name = "GUI";
     }
 
+    /// <summary>
+    /// Enables to get the value of a private field with given name.
+    /// Returns the value of the field.
+    /// </summary>
     private T GetPrivateField<T, U>(U obj, string fieldName)
     {
         System.Reflection.FieldInfo info = obj.GetType().GetField(fieldName, System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         return (T)info.GetValue(obj);
     }
 
+    /// <summary>
+    /// Enables to set the value of a private field with given name.
+    /// </summary>
     private void SetPrivateField<T, U>(T obj, string fieldName, U value)
     {
         System.Reflection.FieldInfo info = obj.GetType().GetField(fieldName, System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Static);
@@ -56,22 +64,30 @@ public class RayRecieverWithoutSourceTest
     [UnityTest]
     public IEnumerator AVGIsZero_Test()
     {
+        // setup
         float expected = 0f;
 
         // till start is called
+        yield return new WaitForEndOfFrame();
+        // till update is called
+        yield return new WaitForEndOfFrame();
+
+        // perform
         yield return new WaitForSeconds(1f);
 
+        // get
         controller = GetPrivateField<MeshController, RayReciever>(reciever, "controller");
-
         float[] doses = controller.VerticeData.Select(x => x.Dose).ToArray();
         float actual = DoseCalculator.GetAVGDose(doses);
 
+        // assert
         Assert.AreEqual(expected, actual);
     }
 
     [UnityTest]
     public IEnumerator AVGIsZeroWhenSourceShouldBeActive_Test()
     {
+        // setup
         float expected = 0f;
 
         IInputWrapper input = Substitute.For<IInputWrapper>();
@@ -83,15 +99,17 @@ public class RayRecieverWithoutSourceTest
         // till update is called
         yield return new WaitForEndOfFrame();
 
+        // perform
         input.GetKeyDown(KeyCode.Space).Returns(false);
 
         yield return new WaitForSeconds(1f);
 
+        // get
         controller = GetPrivateField<MeshController, RayReciever>(reciever, "controller");
-
         float[] doses = controller.VerticeData.Select(x => x.Dose).ToArray();
         float actual = DoseCalculator.GetAVGDose(doses);
 
+        // assert
         Assert.AreEqual(expected, actual);
     }
 

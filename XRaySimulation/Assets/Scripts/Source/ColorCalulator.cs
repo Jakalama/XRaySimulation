@@ -29,6 +29,8 @@ public static class ColorCalculator
     /// </summary>
     private static Color32 Calculate(float dose)
     {
+        dose = Mathf.Abs(dose);
+
         float baseH = startColor.h;
 
         // since HSV Colors have a h value range from 0 to 360

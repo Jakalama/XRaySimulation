@@ -1,8 +1,7 @@
 # XRaySimulation
 
 Das Handbuch liefert eine Einführung und Beschreibung der Interaktionsmöglichkeiten zwischen Nutzer und der Röntgenstrahlen Simulation.  
-Die in diesem Handbuch beschriebene Version der Röntgenstrahlen Simulation ist auf der dieser Arbeit beiliegenden DVD enthalten,  
-oder unter https://github.com/Jakalama/XRaySimulation.  
+Die in diesem Handbuch beschriebene Version der Röntgenstrahlen Simulation ist auf der dieser Arbeit beiliegenden DVD enthalten, oder unter https://github.com/Jakalama/XRaySimulation.  
 Stellen Sie sicher, dass Sie die Unity Version 2019.3.0f5 und den Unity Hub installiert haben.  
 In dem ersten Abschnitt werden die Möglichkeiten der Simulation beschrieben. Für eine weitere Erklärung dieser sind die späteren Abschnitte zu konsumieren.
 

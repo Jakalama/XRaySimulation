@@ -35,12 +35,19 @@ public class RayRecieverWithSourceTest
         gui.name = "GUI";
     }
 
+    /// <summary>
+    /// Enables to get the value of a private field with given name.
+    /// Returns the value of the field.
+    /// </summary>
     private T GetPrivateField<T, U>(U obj, string fieldName)
     {
         System.Reflection.FieldInfo info = obj.GetType().GetField(fieldName, System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         return (T)info.GetValue(obj);
     }
 
+    /// <summary>
+    /// Enables to set the value of a private field with given name.
+    /// </summary>
     private void SetPrivateField<T, U>(T obj, string fieldName, U value)
     {
         System.Reflection.FieldInfo info = obj.GetType().GetField(fieldName, System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
@@ -62,38 +69,48 @@ public class RayRecieverWithSourceTest
     [UnityTest]
     public IEnumerator AVGIsZeroWhenSourceIsNotActive_Test()
     {
+        // setup
         float expected = 0f;
 
-        // till start is called
+        // wait till start is called
+        yield return new WaitForEndOfFrame();
+        // wait till first update is called
+        yield return new WaitForEndOfFrame();
+
+        // perform
         yield return new WaitForSeconds(1f);
 
+        // get
         controller = GetPrivateField<MeshController, RayReciever>(reciever, "controller");
-
         float[] doses = controller.VerticeData.Select(x => x.Dose).ToArray();
         float actual = DoseCalculator.GetAVGDose(doses);
 
+        // assert
         Assert.AreEqual(expected, actual);
     }
 
     [UnityTest]
     public IEnumerator AVGIsGreaterZeroWhenSourceIsActive_Test()
     {
+        // setup
         float expected = 0f;
 
         SetPrivateField(reciever, "isActive", true);
 
-        // till start is called
+        // wait till start is called
         yield return new WaitForEndOfFrame();
-        //till first update is called
+        // wait till first update is called
         yield return new WaitForEndOfFrame();
 
+        // perform
         yield return new WaitForSeconds(1f);
 
+        // get
         controller = GetPrivateField<MeshController, RayReciever>(reciever, "controller");
-
         float[] doses = controller.VerticeData.Select(x => x.Dose).ToArray();
         float actual = DoseCalculator.GetAVGDose(doses);
 
+        // assert
         Assert.Greater(actual, expected);
     }
 

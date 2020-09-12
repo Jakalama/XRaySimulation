@@ -5,7 +5,7 @@ using NUnit.Framework;
 
 public class CameraPerspectiveTest
 {
-    GameObject mockObj;
+    private GameObject mockObj;
 
     [SetUp]
     public void Setup()
@@ -40,17 +40,21 @@ public class CameraPerspectiveTest
     [Test]
     public void WhenFPVisActiveInputSetsTPVActive_Test()
     {
+        // setup
         PlayerCamera pr = mockObj.GetComponent<PlayerCamera>();
 
         // set the private CameraController field of PlayerCamera, since it is set in the Start-Method
         System.Reflection.FieldInfo info = pr.GetType().GetField("cameraController", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         info.SetValue(pr, new FirstPersonCamera(pr.transform, 0f));
 
+        // perform
         pr.SwitchCamera();
 
+        // get
         bool FPV_isActive = mockObj.transform.Find("FPV").gameObject.activeSelf;
         bool TPV_isActive = mockObj.transform.Find("TPV").gameObject.activeSelf;
 
+        // assert
         Assert.IsTrue(TPV_isActive);
         Assert.IsFalse(FPV_isActive);
     }
@@ -58,6 +62,7 @@ public class CameraPerspectiveTest
     [Test]
     public void WhenTPVisActiveInputSetsFPVActive_Test()
     {
+        // setup
         PlayerCamera pr = mockObj.GetComponent<PlayerCamera>();
         mockObj.transform.Find("FPV").gameObject.SetActive(false);
         mockObj.transform.Find("TPV").gameObject.SetActive(true);
@@ -66,11 +71,14 @@ public class CameraPerspectiveTest
         System.Reflection.FieldInfo info = pr.GetType().GetField("cameraController", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         info.SetValue(pr, new ThirdPersonCamera(pr.transform, 0f));
 
+        // perform
         pr.SwitchCamera();
 
+        // get
         bool FPV_isActive = mockObj.transform.Find("FPV").gameObject.activeSelf;
         bool TPV_isActive = mockObj.transform.Find("TPV").gameObject.activeSelf;
 
+        // assert
         Assert.IsFalse(TPV_isActive);
         Assert.IsTrue(FPV_isActive);
     }

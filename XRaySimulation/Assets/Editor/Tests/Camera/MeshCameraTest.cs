@@ -14,9 +14,11 @@ public class MeshCameraTest
     [SetUp]
     public void SetUp()
     {
+        // create player and camera mock
         mock = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Player_Mock")).transform;
         cameraTransform = mock.Find("MeshCamera");
 
+        // mesh camera
         controller = new MeshCamera(cameraTransform, 0f);
 
         //Set SPEED const
@@ -39,6 +41,7 @@ public class MeshCameraTest
     [TestCase(0.5f)]
     public void MouseInputUPRotatesCameraDown_Test(float value)
     {
+        // setup
         float expected = value * 1f * SPEED;
 
         // since the desired rotation is clamped
@@ -46,9 +49,13 @@ public class MeshCameraTest
         // because Unity returns rotations from 0 to 360 degrees
         expected = 360f - expected;
 
+        // perform
         controller.Rotate(0f, value, 1f);
+        
+        // get
         Vector3 after = cameraTransform.rotation.eulerAngles;
 
+        // assert
         Assert.AreEqual(expected, (float)Math.Round(after.x, 3));
     }
 
@@ -59,6 +66,7 @@ public class MeshCameraTest
     [TestCase(-0.5f)]
     public void MouseInputDOWNRotatesCameraUp_Test(float value)
     {
+        // setup
         float expected = value * 1f * SPEED;
 
         // since the desired rotation is clamped
@@ -66,9 +74,13 @@ public class MeshCameraTest
         // because Unity returns rotations from 0 to 360 degrees
         expected = -expected;
 
+        // perform
         controller.Rotate(0f, value, 1f);
+        
+        // get
         Vector3 after = cameraTransform.rotation.eulerAngles;
 
+        // assert
         Assert.AreEqual(expected, (float)Math.Round(after.x, 3));
     }
 
@@ -79,11 +91,16 @@ public class MeshCameraTest
     [TestCase(0.5f)]
     public void MouseInputRIGHTRotatesCameraRight_Test(float value)
     {
+        // setup
         float expected = value * 1f * SPEED;
 
+        // perform
         controller.Rotate(value, 0f, 1f);
+        
+        // get
         Vector3 after = cameraTransform.rotation.eulerAngles;
 
+        // assert
         Assert.AreEqual(expected, after.y);
     }
 
@@ -94,13 +111,18 @@ public class MeshCameraTest
     [TestCase(-0.5f)]
     public void MouseInputLEFTRotatesPlayerLeft_Test(float value)
     {
+        // setup
         float expected = value * 1f * SPEED;
         // since Unity returns rotations form 0 to 360 degrees
         expected = 360f + expected;
 
+        // perform
         controller.Rotate(value, 0f, 1f);
+        
+        // get
         Vector3 after = cameraTransform.rotation.eulerAngles;
 
+        // assert
         Assert.AreEqual(expected, after.y);
     }
 
@@ -112,9 +134,13 @@ public class MeshCameraTest
     [TestCase(-0.0010f)]
     public void ReturnsCorrectYRotation_Test(float value)
     {
+        // perform
         controller.Rotate(value, 0f, 1f);
+        
+        // get
         float after = controller.GetYRotation();
 
+        // assert
         Assert.AreEqual(value * SPEED, after);
     }
 

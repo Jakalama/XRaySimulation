@@ -12,11 +12,20 @@ public class MoveableControllerTest
     [SetUp]
     public void Setup()
     {
+        // mobile table mock
         testObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/mobileTable"));
         testObj.name = "mobileTable";
 
         furniture = testObj.GetComponent<Furniture>();
         controller = new MoveableController(testObj.transform);
+    }
+
+    private GameObject CreatePlayerMock()
+    {
+        GameObject player = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Player_Mock"));
+        player.name = "Player";
+
+        return player;
     }
 
     [Test]
@@ -43,44 +52,55 @@ public class MoveableControllerTest
     [TestCase(new bool[] { false, false })]
     public void NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(bool[] instructions)
     {
-        GameObject playerObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Player_Mock"));
-        playerObj.name = "Player";
+        // setup
+        GameObject playerObj = CreatePlayerMock();
 
+        // perform
         controller.Interact(instructions, 1f);
 
+        // assert
         Assert.IsNull(playerObj.transform.Find("mobileTable"));
 
+        // cleanup
         GameObject.DestroyImmediate(playerObj);
     }
 
     [Test]
     public void FirstPressFWillLockTheTableToThePlayerMovementWhenIsTriggered_Test()
     {
-        GameObject playerObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Player_Mock"));
-        playerObj.name = "Player";
+        // setup
+        GameObject playerObj = CreatePlayerMock();
 
+        // perform
         controller.Interact(new bool[] { true }, 1f);
 
+        // assert
         Assert.IsNotNull(playerObj.transform.Find("mobileTable"));
 
+        // cleanup
         GameObject.DestroyImmediate(playerObj);
     }
 
     [Test]
     public void SecondPressFWillReleaseTheTableFromThePlayerMovementWhenIsTriggerd_Test()
     {
-        GameObject playerObj = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/Player_Mock"));
-        playerObj.name = "Player";
+        // setup
+        GameObject playerObj = CreatePlayerMock();
 
+        // perform
         controller.Interact(new bool[] { true }, 1f);
 
+        // assert
         Assert.IsNotNull(playerObj.transform.Find("mobileTable"));
 
+        // perform
         controller.Interact(new bool[] { true }, 1f);
 
+        // assert
         Assert.IsNull(playerObj.transform.Find("mobileTable"));
         Assert.IsNotNull(GameObject.Find("mobileTable"));
 
+        // cleanup
         GameObject.DestroyImmediate(playerObj);
     }
 

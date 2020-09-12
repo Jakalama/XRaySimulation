@@ -30,6 +30,7 @@ public class FurnitureInfoTest
     }
 
     [Test]
+    [TestCase("", "You are able to move it around!", new KeyCode[] { KeyCode.F })]
     [TestCase("Table", "You are able to move it around!", new KeyCode[] {KeyCode.F})]
     public void ConstructorName_Test(string expected, string description, KeyCode[] keys)
     {
@@ -39,6 +40,7 @@ public class FurnitureInfoTest
     }
 
     [Test]
+    [TestCase("Table", "", new KeyCode[] { KeyCode.F })]
     [TestCase("Table", "You are able to move it around!", new KeyCode[] { KeyCode.F })]
     public void ConstructorDescription_Test(string name, string expected, KeyCode[] keys)
     {
@@ -48,7 +50,9 @@ public class FurnitureInfoTest
     }
 
     [Test]
+    [TestCase("Table", "You are able to move it around!", new KeyCode[] { })]
     [TestCase("Table", "You are able to move it around!", new KeyCode[] { KeyCode.F })]
+    [TestCase("Table", "You are able to move it around!", new KeyCode[] { KeyCode.F, KeyCode.A })]
     public void ConstructorKeyCodes_Test(string name, string description, KeyCode[] expected)
     {
         FurnitureInfo info = new FurnitureInfo(name, description, expected);
@@ -56,6 +60,9 @@ public class FurnitureInfoTest
         Assert.AreEqual(expected, info.KeyCodes);
     }
 
+    /// <summary>
+    /// To Check if the FurnitureInfo can be set in the inspector.
+    /// </summary>
     [Test]
     public void IsSerializeable_Test()
     {

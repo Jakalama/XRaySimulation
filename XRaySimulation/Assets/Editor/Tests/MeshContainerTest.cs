@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using NUnit.Framework;
-using System.Linq;
+using System.Reflection;
 
 public class MeshContainerTest
 {
     private MeshContainer container;
     private GameObject meshObj;
 
+    // Can't be [SetUp] because these Functions can't have a parameter.
     private void SetUp(string prefabName)
     {
+        // create a mock gameobject with a mesh
         GameObject docMeshPref = Resources.Load<GameObject>(prefabName);
         meshObj = GameObject.Instantiate(docMeshPref);
         container = new MeshContainer(meshObj.transform);
@@ -41,9 +43,11 @@ public class MeshContainerTest
     {
         SetUp(mockName);
 
-        System.Reflection.FieldInfo info = container.GetType().GetField("meshTransform", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        // get
+        FieldInfo info = container.GetType().GetField("meshTransform", BindingFlags.NonPublic | BindingFlags.Instance);
         Transform transform = (Transform) info.GetValue(container);
 
+        // assert
         Assert.IsNotNull(transform);
     }
 
@@ -53,6 +57,7 @@ public class MeshContainerTest
     public void GetVerticesReturnsNotNull_Test(string mockName)
     {
         SetUp(mockName);
+
         Assert.IsNotNull(container.GetVertices());
     }
 
@@ -62,8 +67,11 @@ public class MeshContainerTest
     public void GetVerticesReturnsCorrectNumberOfVertices_Test(string mockName, int expected)
     {
         SetUp(mockName);
+
+        // perform
         Vector3[] vertices = container.GetVertices();
 
+        // assert
         Assert.AreEqual(expected, vertices.Length);
     }
 
@@ -73,6 +81,7 @@ public class MeshContainerTest
     public void GetNormalsReturnsNotNull_Test(string mockName)
     {
         SetUp(mockName);
+
         Assert.IsNotNull(container.GetNormals());
     }
 
@@ -82,8 +91,11 @@ public class MeshContainerTest
     public void GetNormalsReturnsCorrectNumberOfNormals_Test(string mockName, int expected)
     {
         SetUp(mockName);
+        
+        // perform
         Vector3[] normals = container.GetNormals();
 
+        // assert
         Assert.AreEqual(expected, normals.Length);
     }
 
@@ -106,11 +118,14 @@ public class MeshContainerTest
     [TestCase("Prefabs/Mock_simple", 20)]
     public void GetNormalsReturnsCorrectNormals_Test(string mockName, int index)
     {
+        // setup
         SetUp(mockName);
-
         Vector3 expected = normals[index / 4];
+        
+        // perform
         Vector3 normal = container.GetNormals()[index];
 
+        // assert
         Assert.AreEqual(expected.x, normal.x, delta: 0.001f);
         Assert.AreEqual(expected.y, normal.y, delta: 0.001f);
         Assert.AreEqual(expected.z, normal.z, delta: 0.001f);
@@ -135,12 +150,15 @@ public class MeshContainerTest
     [TestCase("Prefabs/Mock_simple", 20)]
     public void GetNormalsReturnsCorrectNormalsAfterRotation_Test(string mockName, int index)
     {
+        // setup
         SetUp(mockName);
         meshObj.transform.Rotate(new Vector3(60f, -1f, 45.7f));
-
         Vector3 expected = rotatedNormals[index / 4];
+
+        // perform
         Vector3 normal = container.GetNormals()[index];
 
+        // assert
         Assert.AreEqual(expected.x, normal.x, delta: 0.001f);
         Assert.AreEqual(expected.y, normal.y, delta: 0.001f);
         Assert.AreEqual(expected.z, normal.z, delta: 0.001f);
@@ -169,28 +187,20 @@ public class MeshContainerTest
     [TestCase("Prefabs/Mock_simple", 7)]
     public void GetVerticesRetrunsCorrectVertices_Test(string mockName, int index)
     {
+        // setup
         SetUp(mockName);
-
         Vector3 expected = vertices[index];
+
+        // perform
         Vector3 vertex = container.GetVertices()[index];
 
+        // assert
         Assert.AreEqual(expected.x, vertex.x, delta: 0.001f);
         Assert.AreEqual(expected.y, vertex.y, delta: 0.001f);
         Assert.AreEqual(expected.z, vertex.z, delta: 0.001f);
     }
 
-    private Vector3[] translatedVertices = new Vector3[]
-    {
-        new Vector3(1.5f, 2.5f, 3.5f),
-        new Vector3(0.5f, 2.5f, 3.5f),
-        new Vector3(1.5f, 2.5f, 2.5f),
-        new Vector3(0.5f, 2.5f, 2.5f),
-        new Vector3(1.5f, 1.5f, 2.5f),
-        new Vector3(0.5f, 1.5f, 2.5f),
-        new Vector3(1.5f, 1.5f, 3.5f),
-        new Vector3(0.5f, 1.5f, 3.5f),
-    };
-
+    
     [Test]
     [TestCase("Prefabs/Mock_simple", 0)]
     [TestCase("Prefabs/Mock_simple", 1)]
@@ -202,28 +212,34 @@ public class MeshContainerTest
     [TestCase("Prefabs/Mock_simple", 7)]
     public void GetVerticesRetrunsCorrectVerticesAfterTranslation_Test(string mockName, int index)
     {
-        SetUp(mockName);
-        meshObj.transform.position = new Vector3(1f, 2f, 3f);
+        // Array of expected vertice positions after translation.
+        Vector3[] translatedVertices = new Vector3[]
+        {
+            new Vector3(1.5f, 2.5f, 3.5f),
+            new Vector3(0.5f, 2.5f, 3.5f),
+            new Vector3(1.5f, 2.5f, 2.5f),
+            new Vector3(0.5f, 2.5f, 2.5f),
+            new Vector3(1.5f, 1.5f, 2.5f),
+            new Vector3(0.5f, 1.5f, 2.5f),
+            new Vector3(1.5f, 1.5f, 3.5f),
+            new Vector3(0.5f, 1.5f, 3.5f),
+        };
 
+        // setup
+        SetUp(mockName);
         Vector3 expected = translatedVertices[index];
+
+        // perform
+        meshObj.transform.position = new Vector3(1f, 2f, 3f);
         Vector3 vertex = container.GetVertices()[index];
 
+        // assert
         Assert.AreEqual(expected.x, vertex.x, delta: 0.001f);
         Assert.AreEqual(expected.y, vertex.y, delta: 0.001f);
         Assert.AreEqual(expected.z, vertex.z, delta: 0.001f);
     }
 
-    private Vector3[] rotatedVertices = new Vector3[]
-    {
-        new Vector3(0.7024f, 0.2697f, 0.4287f),
-        new Vector3(0.0149f, -0.3621f, 0.7865f),
-        new Vector3(-0.0237f, 0.8620f, 0.0794f),
-        new Vector3(-0.7112f, 0.2301f, 0.4373f),
-        new Vector3(-0.0149f, 0.3621f, -0.7865f),
-        new Vector3(-0.7024f, -0.2697f, -0.4287f),
-        new Vector3(0.7112f, -0.2301f, -0.4373f),
-        new Vector3(0.0237f, -0.8620f, -0.0794f),
-    };
+    
 
     [Test]
     [TestCase("Prefabs/Mock_simple", 0)]
@@ -236,12 +252,28 @@ public class MeshContainerTest
     [TestCase("Prefabs/Mock_simple", 7)]
     public void GetVerticesRetrunsCorrectVerticesAfterRotation_Test(string mockName, int index)
     {
-        SetUp(mockName);
-        meshObj.transform.Rotate(new Vector3(60f, -1f, 45.7f));
+        // Array of expected vertice positions after a rotation.
+        Vector3[] rotatedVertices = new Vector3[]
+        {
+            new Vector3(0.7024f, 0.2697f, 0.4287f),
+            new Vector3(0.0149f, -0.3621f, 0.7865f),
+            new Vector3(-0.0237f, 0.8620f, 0.0794f),
+            new Vector3(-0.7112f, 0.2301f, 0.4373f),
+            new Vector3(-0.0149f, 0.3621f, -0.7865f),
+            new Vector3(-0.7024f, -0.2697f, -0.4287f),
+            new Vector3(0.7112f, -0.2301f, -0.4373f),
+            new Vector3(0.0237f, -0.8620f, -0.0794f),
+        };
 
+        // setup
+        SetUp(mockName);
         Vector3 expected = rotatedVertices[index];
+
+        // perform
+        meshObj.transform.Rotate(new Vector3(60f, -1f, 45.7f));
         Vector3 vertex = container.GetVertices()[index];
 
+        // assert
         Assert.AreEqual(expected.x, vertex.x, delta: 0.001f);
         Assert.AreEqual(expected.y, vertex.y, delta: 0.001f);
         Assert.AreEqual(expected.z, vertex.z, delta: 0.001f);

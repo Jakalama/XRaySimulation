@@ -60,7 +60,7 @@ public class RayReciever : MonoBehaviour
 
         // get doses
         float[] distances = RaySource.Instance.RayTracer.GetDistances(controller.GetRelevantVerticePositions());
-        float[] addedDoses = DoseCalculator.Calculate(distances, RaySource.Instance.BaseEnergy, Time.deltaTime);
+        float[] addedDoses = DoseCalculator.Calculate(distances, RaySource.Instance.BaseEnergy, Time.fixedDeltaTime);
 
         // store doses
         controller.StoreDoses(addedDoses);

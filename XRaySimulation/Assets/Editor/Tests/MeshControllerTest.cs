@@ -10,7 +10,7 @@ public class MeshControllerTest
     private GameObject docMeshObj;
     private MeshController controller;
 
-    // Can't use normal Setup, because one test use different mocks.
+    // Can't use normal [SetUp], because one test use different mocks.
     // The default SetUp-Method can't have parameters.
     public void SetUp(string mockName = "Mock_simple")
     {
@@ -21,6 +21,10 @@ public class MeshControllerTest
         controller = new MeshController(container);
     }
 
+    /// <summary>
+    /// Enables to get the value of a private field with given name.
+    /// Returns the value of the field.
+    /// </summary>
     private T GetPrivateField<T>(string fieldName)
     {
         System.Reflection.FieldInfo info = controller.GetType().GetField(fieldName, System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
@@ -58,8 +62,10 @@ public class MeshControllerTest
     {
         SetUp();
 
+        // perform
         controller.UpdateVertices(new Vector3());
 
+        // assert
         Assert.IsNotNull(controller.RelevantVertices);
     }
 
@@ -70,8 +76,10 @@ public class MeshControllerTest
     {
         SetUp(mockName);
 
+        // perform
         controller.UpdateVertices(new Vector3(5f, 0f, 0f));
 
+        // assert
         Assert.AreEqual(expected, controller.RelevantVertices.Count);
     }
 
@@ -82,8 +90,10 @@ public class MeshControllerTest
     {
         SetUp(mockName);
 
+        // perform
         controller.UpdateVertices(new Vector3(0f, 5f, 0f));
 
+        // assert
         Assert.AreEqual(expected, controller.RelevantVertices.Count);
     }
 
@@ -94,8 +104,10 @@ public class MeshControllerTest
     {
         SetUp(mockName);
 
+        // perform
         controller.UpdateVertices(new Vector3(0f, 0f, 5f));
 
+        // assert
         Assert.AreEqual(expected, controller.RelevantVertices.Count);
     }
 
@@ -106,8 +118,10 @@ public class MeshControllerTest
     {
         SetUp(mockName);
 
+        // perform
         controller.UpdateVertices(new Vector3(-5f, 0f, 0f));
 
+        // assert
         Assert.AreEqual(expected, controller.RelevantVertices.Count);
     }
 
@@ -118,8 +132,10 @@ public class MeshControllerTest
     {
         SetUp(mockName);
 
+        // perform
         controller.UpdateVertices(new Vector3(0f, -5f, 0f));
 
+        // assert
         Assert.AreEqual(expected, controller.RelevantVertices.Count);
     }
 
@@ -130,16 +146,18 @@ public class MeshControllerTest
     {
         SetUp(mockName);
 
+        // perform
         controller.UpdateVertices(new Vector3(0f, 0f, -5f));
 
+        // assert
         Assert.AreEqual(expected, controller.RelevantVertices.Count);
     }
 
     [Test]
     public void GetRelevantVerticePositionsReturnsCorrectNumberOfPositions_Test()
     {
+        // setup
         SetUp();
-
         controller.RelevantVertices = new List<int> { 0, 1, 2 };
         controller.VerticeData = new VertexData[]
         {
@@ -148,12 +166,17 @@ public class MeshControllerTest
             new VertexData(new Vector3(0f, 0f, 1f), 0f),
         };
 
-        Assert.AreEqual(3, controller.GetRelevantVerticePositions().Length);
+        // perform
+        Vector3[] positions = controller.GetRelevantVerticePositions();
+
+        // assert
+        Assert.AreEqual(3, positions.Length);
     }
 
     [Test]
     public void GetRelevantVerticePositionsReturnsCorrectPositions_Test()
     {
+        // setup
         SetUp();
 
         VertexData[] expected = new VertexData[]
@@ -166,14 +189,19 @@ public class MeshControllerTest
         controller.RelevantVertices = new List<int> { 0, 1, 2 };
         controller.VerticeData = expected;
 
-        Assert.AreEqual(expected[0].Position, controller.GetRelevantVerticePositions()[0]);
-        Assert.AreEqual(expected[1].Position, controller.GetRelevantVerticePositions()[1]);
-        Assert.AreEqual(expected[2].Position, controller.GetRelevantVerticePositions()[2]);
+        // perform
+        Vector3[] positions = controller.GetRelevantVerticePositions();
+
+        // assert
+        Assert.AreEqual(expected[0].Position, positions[0]);
+        Assert.AreEqual(expected[1].Position, positions[1]);
+        Assert.AreEqual(expected[2].Position, positions[2]);
     }
 
     [Test]
     public void SortOutUnhittedVerticesForAllVerticesHitted_Test()
     {
+        // setup
         SetUp();
 
         controller.RelevantVertices = new List<int>() { 0, 1, 2 };
@@ -186,16 +214,17 @@ public class MeshControllerTest
         rt.CreateRay(controller.GetRelevantVerticePositions()[1]).Returns(true);
         rt.CreateRay(controller.GetRelevantVerticePositions()[2]).Returns(true);
 
+        // perform
         controller.SortOutUnhittedVertices(rt);
 
-        Debug.Log(controller.RelevantVertices.Count);
-
+        // assert
         Assert.AreEqual(expected, controller.RelevantVertices.Count);
     }
 
     [Test]
     public void SortOutUnhittedVerticesForZeroVerticesHitted_Test()
     {
+        // setup
         SetUp();
 
         controller.RelevantVertices = new List<int>() { 0, 1, 2 };
@@ -206,14 +235,17 @@ public class MeshControllerTest
         rt.CreateRay(controller.GetRelevantVerticePositions()[1]).Returns(false);
         rt.CreateRay(controller.GetRelevantVerticePositions()[2]).Returns(false);
 
+        // perform
         controller.SortOutUnhittedVertices(rt);
 
+        // assert
         Assert.AreEqual(expected, controller.RelevantVertices.Count);
     }
 
     [Test]
     public void StoreDosesForNoCorrespondingVertices_Test()
     {
+        // setup
         SetUp();
 
         controller.VerticeData = new VertexData[3]
@@ -228,22 +260,28 @@ public class MeshControllerTest
             0, 1, 2
         };
 
+        // disable linking of vertices with same position
+        // linking will result in error or needs a more complicated setup
         System.Reflection.MethodInfo info = controller.GetType().GetMethod("LinkVerticesWithSamePosition", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         info.Invoke(controller, null);
 
         float[] doses = new float[] { 3f, 2f, 1.256987f };
         float[] expected = new float[] { 3f, 4f, 11.256987f };
 
+        // perform
         controller.StoreDoses(doses);
 
+        // get
         float[] actual = controller.VerticeData.Select(x => x.Dose).ToArray();
 
+        // assert
         Assert.AreEqual(expected, actual);
     }
 
     [Test]
     public void StoreDosesForCorrespondingVertices_Test()
     {
+        // setup
         SetUp();
 
         controller.VerticeData = new VertexData[4]
@@ -259,22 +297,28 @@ public class MeshControllerTest
             0, 2
         };
 
+        // disable linking of vertices with same position
+        // linking will result in error or needs a more complicated setup
         System.Reflection.MethodInfo info = controller.GetType().GetMethod("LinkVerticesWithSamePosition", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         info.Invoke(controller, null);
 
         float[] doses = new float[] { 3f, 2f };
         float[] expected = new float[] { 3f, 3f, 4f, 4f};
 
+        // perform
         controller.StoreDoses(doses);
 
+        // get
         float[] actual = controller.VerticeData.Select(x => x.Dose).ToArray();
 
+        // assert
         Assert.AreEqual(expected, actual);
     }
 
     [Test]
     public void AverageDose_Test()
     {
+        // setup
         SetUp();
 
         controller.VerticeData = new VertexData[3]
@@ -286,7 +330,11 @@ public class MeshControllerTest
 
         float avg = (0f + 2f + 10f) / 3f;
 
-        Assert.AreEqual(avg, controller.AverageDose);
+        // perform
+        float actual = controller.AverageDose;
+
+        // assert
+        Assert.AreEqual(avg, actual);
     }
 
     [TearDown]

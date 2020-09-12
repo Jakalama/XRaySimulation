@@ -12,6 +12,7 @@ public class DoorControllerTest
     [SetUp]
     public void SetUp()
     {
+        // door mock
         GameObject prefab = Resources.Load<GameObject>("Prefabs/Door");
         testObj = GameObject.Instantiate(prefab);
         testObj.name = "Door";
@@ -20,6 +21,10 @@ public class DoorControllerTest
         controller = new DoorController(testObj.transform);
     }
 
+    /// <summary>
+    /// Enables to get the value of a private field with given name.
+    /// Returns the value of the field.
+    /// </summary>
     private T GetPrivateField<T>(string fieldName)
     {
         System.Reflection.FieldInfo info = controller.GetType().GetField(fieldName, System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
@@ -66,48 +71,61 @@ public class DoorControllerTest
     [TestCase(new bool[] { false, false })]
     public void NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(bool[] instructions)
     {
+        // perform
         controller.Interact(instructions, 1f);
 
+        // get
         bool isOpen = GetPrivateField<bool>("isOpen");
 
+        // assert
         Assert.IsFalse(isOpen);
     }
 
     [Test]
     public void FirstPressOfFWillSetIsOpenToTrue_Test()
     {
+        // perform
         controller.Interact(new bool[] { true }, 1f);
 
+        // get
         bool isOpen = GetPrivateField<bool>("isOpen");
 
+        // assert
         Assert.IsTrue(isOpen);
     }
 
     [Test]
     public void SecondPressOfFWillSetIsOpenFalse_Test()
     {
+        // perform
         controller.Interact(new bool[] { true }, 1f);
         controller.Interact(new bool[] { true }, 1f);
 
+        // get
         bool isOpen = GetPrivateField<bool>("isOpen");
 
+        // assert
         Assert.IsFalse(isOpen);
     }
 
     [Test]
     public void FirstPressOfFWillOpenDoor_Test()
     {
+        // setup
         Transform left = GetPrivateField<Transform>("leftDoor");
         Transform right = GetPrivateField<Transform>("rightDoor");
 
         Vector3 leftBefore = left.localPosition;
         Vector3 rightBefore = right.localPosition;
 
+        // perform
         controller.Interact(new bool[] { true }, 1);
 
+        // get
         Vector3 leftAfter = left.localPosition;
         Vector3 rightAfter = right.localPosition;
 
+        // assert
         Assert.Less(leftAfter.z, leftBefore.z);
         Assert.Greater(rightAfter.z, rightBefore.z);
     }
@@ -115,18 +133,22 @@ public class DoorControllerTest
     [Test]
     public void SecondPressOfFWillCloseDoor_Test()
     {
+        // setup
         Transform left = GetPrivateField<Transform>("leftDoor");
         Transform right = GetPrivateField<Transform>("rightDoor");
 
         Vector3 leftBefore = left.localPosition;
         Vector3 rightBefore = right.localPosition;
 
+        // perform
         controller.Interact(new bool[] { true }, 1);
         controller.Interact(new bool[] { true }, 1);
 
+        // get
         Vector3 leftAfter = left.localPosition;
         Vector3 rightAfter = right.localPosition;
 
+        // assert
         Assert.AreEqual(leftAfter.z, leftBefore.z);
         Assert.AreEqual(rightAfter.z, rightBefore.z);
     }

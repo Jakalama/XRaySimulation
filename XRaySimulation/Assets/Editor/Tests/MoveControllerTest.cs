@@ -10,15 +10,20 @@ public class MoveControllerTest
     [SetUp]
     public void SetUp()
     {
+        // Mock gameobject
         mock = GameObject.Instantiate(new GameObject()).transform;
         mock.position = Vector3.zero;
         mock.rotation = Quaternion.identity;
-
-        CharacterController c = mock.gameObject.AddComponent<CharacterController>();
+        mock.gameObject.AddComponent<CharacterController>();
       
+        // MoveController
         controller = new MoveController(mock);
     }
 
+    /// <summary>
+    /// Enables to get the value of a private field with given name.
+    /// Returns the value of the field.
+    /// </summary>
     private T GetPrivateField<T>(string fieldName)
     {
         System.Reflection.FieldInfo info = controller.GetType().GetField(fieldName, System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
@@ -28,9 +33,11 @@ public class MoveControllerTest
     [Test]
     public void PlayerMovementIsExistent_Test()
     {
+        // setup
         GameObject go = GameObject.Instantiate(new GameObject());
         PlayerMovement dm = go.AddComponent<PlayerMovement>();
 
+        // assert
         Assert.IsNotNull(dm);
     }
 
@@ -57,12 +64,16 @@ public class MoveControllerTest
     [TestCase(0.5f)]
     public void MovesAlongPositiveZforInputUP_Test(float value)
     {
+        // setup
         Vector3 before = mock.position;
 
+        // perform
         controller.Move(0f, value, 1f);
 
+        // get
         Vector3 after = mock.position;
 
+        // assert
         Assert.Greater(after.z, before.z);
         Assert.AreEqual(before.x, after.x, 0.01f);
         Assert.AreEqual(before.y, after.y, 0.01f);
@@ -72,12 +83,16 @@ public class MoveControllerTest
     [TestCase(0f)]
     public void MovesNotForInputUPisZero_Test(float value)
     {
+        // setup
         Vector3 before = mock.position;
 
+        // perform
         controller.Move(0f, value, 1f);
 
+        // get
         Vector3 after = mock.position;
 
+        // assert
         Assert.AreEqual(after.z, before.z);
         Assert.AreEqual(before.x, after.x, 0.01f);
         Assert.AreEqual(before.y, after.y, 0.01f);
@@ -90,12 +105,16 @@ public class MoveControllerTest
     [TestCase(-0.5f)]
     public void MovesAlongNegativeZforInputDOWN_Test(float value)
     {
+        // setup
         Vector3 before = mock.position;
 
+        // perform
         controller.Move(0f, value, 1f);
 
+        // get
         Vector3 after = mock.position;
 
+        // assert
         Assert.Less(after.z, before.z);
         Assert.AreEqual(before.x, after.x, 0.01f);
         Assert.AreEqual(before.y, after.y, 0.01f);
@@ -105,12 +124,16 @@ public class MoveControllerTest
     [TestCase(0)]
     public void MovesNotforInputDOWNisZero_Test(float value)
     {
+        // setup
         Vector3 before = mock.position;
 
+        // perform
         controller.Move(0f, value, 1f);
 
+        // get
         Vector3 after = mock.position;
 
+        // assert
         Assert.AreEqual(after.z, before.z);
         Assert.AreEqual(before.x, after.x, 0.01f);
         Assert.AreEqual(before.y, after.y, 0.01f);
@@ -123,12 +146,16 @@ public class MoveControllerTest
     [TestCase(0.5f)]
     public void MovesAlongPositiveXforInputRIGHT_Test(float value)
     {
+        // setup
         Vector3 before = mock.position;
 
+        // perform
         controller.Move(value, 0f, 1f);
 
+        // get
         Vector3 after = mock.position;
 
+        // assert
         Assert.Greater(after.x, before.x);
         Assert.AreEqual(before.z, after.z, 0.01f);
         Assert.AreEqual(before.y, after.y, 0.01f);
@@ -138,12 +165,16 @@ public class MoveControllerTest
     [TestCase(0)]
     public void MovesNotforInputRIGHTisZero_Test(float value)
     {
+        // setup
         Vector3 before = mock.position;
 
+        // perform
         controller.Move(value, 0f, 1f);
 
+        // get
         Vector3 after = mock.position;
 
+        // assert
         Assert.AreEqual(after.x, before.x);
         Assert.AreEqual(before.z, after.z, 0.01f);
         Assert.AreEqual(before.y, after.y, 0.01f);
@@ -156,12 +187,16 @@ public class MoveControllerTest
     [TestCase(-0.5f)]
     public void MovesAlongNegativeXforInputLEFT_Test(float value)
     {
+        // setup
         Vector3 before = mock.position;
 
+        // perform
         controller.Move(value, 0f, 1f);
 
+        // get
         Vector3 after = mock.position;
 
+        // assert
         Assert.Less(after.x, before.x);
         Assert.AreEqual(before.z, after.z, 0.01f);
         Assert.AreEqual(before.y, after.y, 0.01f);
@@ -171,12 +206,16 @@ public class MoveControllerTest
     [TestCase(0)]
     public void MovesNotforInputLEFTisZero_Test(float value)
     {
+        // setup
         Vector3 before = mock.position;
 
+        // perform
         controller.Move(value, 0f, 1f);
 
+        // get
         Vector3 after = mock.position;
 
+        // assert
         Assert.AreEqual(after.x, before.x);
         Assert.AreEqual(before.z, after.z, 0.01f);
         Assert.AreEqual(before.y, after.y, 0.01f);

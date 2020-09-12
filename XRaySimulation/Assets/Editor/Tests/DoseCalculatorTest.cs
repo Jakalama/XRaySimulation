@@ -11,6 +11,7 @@ public class DoseCalculatorTest
     [TestCase(new float[] { 1, 2f, 2.1f, 0f, 150f, float.NaN, -1f, -150f}, new float[] { 1.333f, 0.333f, 0.302f, float.PositiveInfinity, 0f, 0f, 1.333f, 0f})]
     public void CalculateReturnsCorrectDoses_Test(float[] distances, float[] expected)
     {
+        // perform
         float[] doses = DoseCalculator.Calculate(distances, 100f, 1f);
 
         // for easy readable numbers and corrections
@@ -19,6 +20,7 @@ public class DoseCalculatorTest
             doses[i] = (float)Math.Round(doses[i], 3);
         }
 
+        // assert
         Assert.AreEqual(expected, doses);
     }
 
@@ -27,8 +29,10 @@ public class DoseCalculatorTest
     [TestCase(new float[] { 1f, 2f, 1f, 1f, 1.5f, 2f}, 1.417f)]
     public void GetAVGDoseReturnsCorrectDose_Test(float[] doses, float expected)
     {
+        // perform
         float actual = DoseCalculator.GetAVGDose(doses);
 
+        // assert
         Assert.AreEqual(expected, actual);
     }
 }
