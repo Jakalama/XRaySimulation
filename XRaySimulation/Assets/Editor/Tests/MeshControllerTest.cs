@@ -207,8 +207,6 @@ public class MeshControllerTest
         controller.RelevantVertices = new List<int>() { 0, 1, 2 };
         int expected = 3;
 
-        Debug.Log(controller.RelevantVertices.Count);
-
         IRayTracer rt = Substitute.For<IRayTracer>();
         rt.CreateRay(controller.GetRelevantVerticePositions()[0]).Returns(true);
         rt.CreateRay(controller.GetRelevantVerticePositions()[1]).Returns(true);

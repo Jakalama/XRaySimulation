@@ -69,7 +69,7 @@ public class DoorControllerTest
     [TestCase(new bool[] { })]
     [TestCase(new bool[] { true, true })]
     [TestCase(new bool[] { false, false })]
-    public void NothingWillHappenWhenWronAmountOfInstructionsGiven_Test(bool[] instructions)
+    public void NothingWillHappenWhenWrongAmountOfInstructionsGiven_Test(bool[] instructions)
     {
         // perform
         controller.Interact(instructions, 1f);
