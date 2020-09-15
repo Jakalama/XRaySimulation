@@ -141,7 +141,7 @@ Die Katheterlabor Szene kann von Ihnen im Unity Editor verändert werden. Auch k
 Eine Szene besitzt erst den vollen Funktionsumfang wenn zusätzlich alle Einrichtungsgegenstände enthalten sind. Sehen Sie dazu im Abschnitt Einrichtungsgegenstände.
 Die Abbildung rechts zeigt dazu den Hierarchie-Baum der Labor Szene.
 
-![patientable with patient](/images/CBogenMitPatientUndTisch.PNG)
+![patientable with patient](/images/hierarchy.PNG)
 
 
 ### Verändern von Einrichtungsgegenständen
@@ -151,7 +151,7 @@ Im Inspector können Sie den Radius des Trigger-Colliders verändern. Damit erh�
 
 **Wichtig:** Sie sollten nicht den Eintrag „Type“ ändern. Dies kann zu Fehlern während der Laufzeit der Anwendung führen.  
 
-![patientable with patient](/images/CBogenMitPatientUndTisch.PNG)
+![patientable with patient](/images/addFurniture.PNG)
 
 
 ### Testen der Anwendung
