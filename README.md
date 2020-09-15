@@ -117,6 +117,7 @@ Die folgenden Einrichtungsgegenstände sind in dieser Simulation verfügbar:
 
 Mit Ausnahme des festen Tisches kann mit allen Einrichtungsgegenständen interagiert werden.  
 Nähern Sie sich dazu einem Einrichtungsgegenstand. Wenn sie nah genug herangegangen sind er-scheint in der oberen linken Ecke ein Einrichtungsgegenstand Info Fenster. Dieses zeigt Ihnen den Na-men, eine Beschreibung und die Tasten an mit denen Sie mit dem Gegenstand interagieren.
+
 **Wichtig:** Da die Röntgenstrahlung einen zentralen Punkt der Simulation darstellt kann mit der Strahlen-quelle (der C-Bogen) jederzeit interagiert werden.  
 
 In der folgenden Abbildung sehen Sie ein Beispiel des Einrichtungsgegenstand Info Fensters.  
@@ -131,6 +132,43 @@ Neben der Vergrößerung finden Sie die Bedeutung der einzelnen Textinhalte.
 
 **Wichtig:** Nicht jeder Einrichtungsgegenstand besitzt Tastenbefehle. In diesem Fall bleibt der Bereich leer.  
 Es ist auch nicht möglich, dass mehr als zwei Tastenbefehle angezeigt werden.
+
+### Verändern der Szene
+Die Katheterlabor Szene kann von Ihnen im Unity Editor verändert werden. Auch können Sie eine weitere Szene erstellen.  
+
+**Wichtig:** Eine Szene muss für die Simulation der Röntgenstrahlen einige Elemente enthalten. Dazu muss in der Szenen Hierarchie das GUI Prefab, ein PauseMenu Prefab, ein Player Prefab, ein Eventsystem und das XRaySource Prefab enthalten sein.  
+
+Eine Szene besitzt erst den vollen Funktionsumfang wenn zusätzlich alle Einrichtungsgegenstände enthalten sind. Sehen Sie dazu im Abschnitt Einrichtungsgegenstände.
+Die Abbildung rechts zeigt dazu den Hierarchie-Baum der Labor Szene.
+
+![patientable with patient](/images/CBogenMitPatientUndTisch.PNG)
+
+
+### Verändern von Einrichtungsgegenständen
+Wenn Sie Eigenschaften eines Einrichtungsgegenstandes verändern wollen, dann müssen Sie dessen Prefab unter „Assets/Ressources/Prefabs“ öffnen. 
+Die Furniture-Klasse befindet sich ebenso wie der Trigger-Collider dazu auf dem ersten GameObject. 
+Im Inspector können Sie den Radius des Trigger-Colliders verändern. Damit erhöhen oder reduzieren Sie die Interaktionsreichweite. Weiter können Sie den Namen, die Beschreibung und die Tastenbefehle zum Interagieren hier ändern.  
+
+**Wichtig:** Sie sollten nicht den Eintrag „Type“ ändern. Dies kann zu Fehlern während der Laufzeit der Anwendung führen.  
+
+![patientable with patient](/images/CBogenMitPatientUndTisch.PNG)
+
+
+### Testen der Anwendung
+Wenn Sie die Simulation in Ihrer Funktion anpassen oder erweitern wollen, ist es nötig dass Sie die Testfälle der Anwendung dementsprechend erweitern.  
+
+#### Tests durchführen
+Öffnen Sie den Unity Editor. Klicken Sie auf „Windows/General/Test Runner“. Nun sehen Sie das geöffnete „Test Runner“ Fenster. Hierin befinden sich alle existierenden Testfälle.  
+Im Reiter „EditMode“ können Sie alle Unit-Tests einsehen. Unter dem Reiter „PlayMode“ finden Sie weitere Tests. Hier finden Sie alle Tests die als die mehr als nur eine Klasse testen. Klicken Sie auf einen der Tests wird dieser ausgeführt. Klicken Sie auf „Run All“ werden alle Tests ausgeführt.  
+
+#### Tests hinzufügen
+Haben Sie die Simulation erweitert und wollen neue Testfälle hinzufügen, so müssen Sie beachten in welchem Ordner Sie die Tests abspeichern.  
+Ein Unit-Test kann nur unter „Assets/Editor/Tests“ abgespeichert werden. Während Sie einen Play-Mode Test unter „Assets/Scripts/PlayModeTest“ abspeichern müssen.
+In den meisten Fällen fügen Sie einen Unit-Test hinzu. Dies ist der Fall, wenn Sie die Funktionen einer einzelnen Klasse testen wollen. Testen Sie hingegen ein Konstrukt aus mehreren Klassen, so sollten Sie einen Play-Mode Test hinzufügen.  
+
+**Wichtig:** Sie sollten im Falle einer Änderung des Quellcodes immer alle Tests durchführen.  
+
+**Wichtig:** Stellen Sie sicher, dass Sie die Tests in der Test-Szene durchführen. Diese finden Sie unter „Assets/Resources/Scenes/AutomaticTestScene“.
 
 
 ### Einrichtungsgegenstände
